@@ -1,0 +1,48 @@
+permalink: /:title.html
+paginate: 10
+markdown: kramdown
+# auto: true
+gems: [jekyll-paginate]
+
+kramdown:
+  input: GFM
+
+# 作者信息
+author:
+  name: 子勰
+  email: blog@bihe0832.com
+  link: http://blog.bihe0832.com
+  weibo: http://weibo.com/bihe0832
+  github: http://github.com/bihe0832
+  oldblog: http://bihe0832.sinaapp.com
+  qq: 402998643
+
+
+# 站点信息
+title: 子勰的博客
+description: 屌丝程序猿，鸡血攻城狮；努力学技术，潜心做精品！
+url: http://blog.bihe0832.com
+rss_url: /pages/atom.xml
+
+# gavatar头像及Favicon
+gavatar: /public/img/head.jpg
+favicon: /public/img/favicon.ico
+
+# disqus 设置
+disqus:
+  shortname: bihe0832
+
+# 主题设置，自动激活某个标签
+active: 终端开发
+
+# 首页除了最新文章外显示分类
+cates:
+  - 常用工具
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 写在最后
+  newest: 最新文章
+  archive: 历史文章
+  content: 本文结构
