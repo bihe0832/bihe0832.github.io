@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mac上Android Studio 的一些设置
+title: iMac上Android Studio 的一些设置
 category: 终端开发
 tags: android 工具
 keywords: Mac Android Studio 快捷键
@@ -58,3 +58,5 @@ import | option + enter
 	例如我改为了，之后重试发现已经OK
 
 		<key>JVMVersion</key> <string>1.7*,1.7+</string>
+
+	
