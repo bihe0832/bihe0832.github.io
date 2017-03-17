@@ -54,6 +54,7 @@ import | option + enter
 	进入Android Studio的私有目录，需要修改/Application/Android Studio/Contents/info.plist中下面的配置：
 	
 		<key>JVMVersion</key> <string>1.6*,1.7+</string>
-例如我改为了，之后重试发现已经OK
+
+	例如我改为了，之后重试发现已经OK
 
 		<key>JVMVersion</key> <string>1.7*,1.7+</string>
