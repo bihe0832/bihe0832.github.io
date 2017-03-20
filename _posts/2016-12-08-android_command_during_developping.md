@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Android开发中一些常用命令备忘
+title: Android开发常用命令备忘
 category: 开发必备
-tags: 常用工具 android
+tags: android
 keywords: keywords
 description: 一些开发中经常要敲的命令，备忘一下懒得经常敲
 ---

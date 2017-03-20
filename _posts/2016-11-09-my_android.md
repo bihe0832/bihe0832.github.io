@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 个人终端开发常用的一些工具资源
+title: Android开发常用工具资源
 category: 终端开发
 tags: 常用工具 android
 keywords: 前端资源 通用 github
