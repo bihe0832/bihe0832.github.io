@@ -11,6 +11,8 @@ description: desc
 
 这是截至目前在使用Gradle的过程中遇到的最大的坑。目前**gradle的Android插件官方提供了两个版本：标准版本和实验性版本。而实验性版本对于Gradle的版本和NDK的版本都有特别说明，另外实验性版本中对于一些参数的定义和声明的方式与标准版并不一致。**
 
+对于gradle的两个版本的配置之间的区别，个人专门写了开源项目来介绍，详情可以查看：[https://github.com/bihe0832/Android-gradle-jni-so](https://github.com/bihe0832/Android-gradle-jni-so)
+
 ### Gradle Plugin User Guide
 
 下面是标准版本的官方用户使用指南：

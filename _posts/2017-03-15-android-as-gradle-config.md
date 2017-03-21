@@ -35,7 +35,7 @@ description: desc
 		sdk.dir=/Users/zixie/lib/android-sdk
 		ndk.dir =/Users/zixie/lib/android-ndk-r10e
 		
-- 修改项目根目录`gradle/wrapper/gradle-wrapper.properties`中关于使用的gradle版本的地址的修改，建议不要修改gradle的版本，仅修改引用地址即可。如下面事例的最后一行
+- 修改项目根目录`gradle/wrapper/gradle-wrapper.properties`中使用的gradle版本的地址，建议不要修改gradle的版本，仅修改引用地址即可。如下面事例的最后一行
 
 		#Tue Apr 19 20:27:20 CST 2016
 		distributionBase=GRADLE_USER_HOME
@@ -97,7 +97,7 @@ description: desc
 		#Mon Mar 13 16:35:36 CST 2017
 		sdk.dir=/Users/zixie/lib/android-sdk
 		
-- 修改项目根目录`gradle/wrapper/gradle-wrapper.properties`中关于使用的gradle版本的地址的修改，建议不要修改gradle的版本，仅修改引用地址即可。如下面事例的最后一行
+- 修改项目根目录`gradle/wrapper/gradle-wrapper.properties`中使用的gradle版本的地址，建议不要修改gradle的版本，仅修改引用地址即可。如下面事例的最后一行
 
 		#Tue Apr 19 20:27:20 CST 2016
 		distributionBase=GRADLE_USER_HOME
