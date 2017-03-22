@@ -73,15 +73,15 @@ description: desc
 	
 	Help tasks
 	----------
-	buildEnvironment - Displays all buildscript dependencies declared in root project 'Assistant_7.0_size_reduce'.
-	components - Displays the components produced by root project 'Assistant_7.0_size_reduce'. [incubating]
-	dependencies - Displays all dependencies declared in root project 'Assistant_7.0_size_reduce'.
-	dependencyInsight - Displays the insight into a specific dependency in root project 'Assistant_7.0_size_reduce'.
+	buildEnvironment - Displays all buildscript dependencies declared in root project 'Test'.
+	components - Displays the components produced by root project 'Test'. [incubating]
+	dependencies - Displays all dependencies declared in root project 'Test'.
+	dependencyInsight - Displays the insight into a specific dependency in root project 'Test'.
 	help - Displays a help message.
-	model - Displays the configuration model of root project 'Assistant_7.0_size_reduce'. [incubating]
-	projects - Displays the sub-projects of root project 'Assistant_7.0_size_reduce'.
-	properties - Displays the properties of root project 'Assistant_7.0_size_reduce'.
-	tasks - Displays the tasks runnable from root project 'Assistant_7.0_size_reduce' (some of the displayed tasks may belong to subprojects).
+	model - Displays the configuration model of root project 'Test'. [incubating]
+	projects - Displays the sub-projects of root project 'Test'.
+	properties - Displays the properties of root project 'Test'.
+	tasks - Displays the tasks runnable from root project 'Test' (some of the displayed tasks may belong to subprojects).
 	
 	Install tasks
 	-------------
