@@ -94,26 +94,27 @@ gif图片转换主要是两部分，一部分是将前一步的录制的视频�
 	开发者可以直接通过在github上clone源码以后按照指引来编译安装（对于mac上，更推荐使用homebrew来安装。如果不了解homebrew，请参考文档[OS X 不可或缺的套件管理器 —— Homebrew](http://blog.bihe0832.com/homebrew.html)）。在命令行下输入下面的命令安装gifsicle：
 		
 		➜	brew install gifsicle
-
- 	当gifsicle安装好以后，就可以使用下面的命令进行压缩了：
  	
- 		➜	gifsicle -O3 --colors=64 --resize-fit-height=600 ./NEED_OPTIMIZE.gif > ./AFTER_OPTIMIZE.gif
+	当gifsicle安装好以后，就可以使用下面的命令进行压缩：
+
+		➜ gifsicle -O3 --colors=64 --resize-fit-height=600 ./NEED_OPTIMIZE.gif > ./AFTER_OPTIMIZE.gif
+
 
 	参数含义如下：
 	
-	- -O 优化效果
-	
-			-O1 只保存每张图像上变化的部分。这是缺省模式。
-			-O2 进一步用透明度压缩图片。
-			-O3 尝试各种优化方法(通常速度会慢一些，有时会产生更好的效果)。
-	
-	- --colors
-
-		修改gif的调色盘，基本上使用64就可以了，至于调色盘是什么，自行google
+		- -O 优化效果
 		
-	- --resize-fit-height
-
-		调整图像的分辨率，通过调整到适当的大小也可以大大减少图片尺寸。
+				-O1 只保存每张图像上变化的部分。这是缺省模式。
+				-O2 进一步用透明度压缩图片。
+				-O3 尝试各种优化方法(通常速度会慢一些，有时会产生更好的效果)。
+		
+		- --colors
+	
+			修改gif的调色盘，基本上使用64就可以了，至于调色盘是什么，自行google
+			
+		- --resize-fit-height
+	
+			调整图像的分辨率，通过调整到适当的大小也可以大大减少图片尺寸。
 	
 	上面的几个参数是自己通过不断测试验证以后确定的参数，当然也可以根据自己的需要优化调整，接下来以实际图片展示一下gifsicle 的压缩效果
 	
