@@ -120,7 +120,7 @@ gif图片转换主要是两部分，一部分是将前一步的录制的视频�
 	
 		➜  du -h ./test.gif
 		1.2M	./test.gif
-		➜  gifsicle -O3 --colors=64 --resize-fit-height=600 ./test.gif> ./test_optimize.gif
+		➜  gifsicle -O3 --colors=64 --resize-fit-height=600 ./test.gif > ./test_optimize.gif
 		➜  du -h ./test_optimize.gif
 		488K	./test_optimize.gif
 	

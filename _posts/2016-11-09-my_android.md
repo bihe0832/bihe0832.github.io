@@ -25,9 +25,11 @@ Android开发调试常用工具例如：apktool、dex2jar、aapt、ndk-stack、j
 
 ### 图片处理
 
-#### TinyPng
+#### 图片优化
 
--  对应链接：[https://tinypng.com](https://tinypng.com)
+- [Android安装包精简系列之图片优化](http://blog.bihe0832.com/android-optimize-img.html)
+
+- [bihe0832/getImageInfo](https://github.com/bihe0832/getImageInfo)
 
 #### AndroidAssetStudio
 
