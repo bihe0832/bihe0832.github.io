@@ -13,6 +13,28 @@ description:
 
 这里都是自己结合网上大神们的指导，然后结合自己代码验证总结验证的。所有结论性的内容，会用红色特别标注出来的。
 
+### 相关项目：
+
+- Android-APK-Optimize：
+
+	- 简介:
+	
+		安装包精简项目的事例demo代码
+		
+	- github:
+		
+		[https://github.com/bihe0832/Android-APK-Optimize](https://github.com/bihe0832/Android-APK-Optimize)
+
+- getImageInfo：
+	
+	- 简介:
+
+		安装包精简项目中关于图片精简相关工具的源码，包括获取图片信息（大小、透明度以及编码方案）、图片压缩等
+	
+	- github:
+	
+		[https://github.com/bihe0832/getImageInfo](https://github.com/bihe0832/getImageInfo)
+
 ### 文章列表：
 
 目前还没有非常详细的文章列表，大体少就是从资源精简和代码精简两个方向入手。大纲里面的文章在规划好以后陆续补充吧
@@ -35,9 +57,9 @@ description:
 	
 	这是个人总结的应用安装精简系列的关于图片精简的第一篇，主要介绍怎么使用图标字体库来代替图标达到精简图片的效果。
 
-- `Android安装包精简系列之图片优化`：
+- `Android安装包精简系列之图片优化`：[点击查看](http://blog.bihe0832.com/android-optimize-img.html)
 
-	主要介绍大图相关的优化规则	
+	这是个人总结的应用安装精简系列的关于图片精简的第二篇，主要介绍在不降低用户体验的前提下，尽可能的精简图片的相关方案。`优化总体原则就是：在不降低图片效果、保证用户体验的前提下尽最大可能缩小图片文件的大小`。	
 
 - `Android安装包精简系列之资源精简`：
 	
