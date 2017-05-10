@@ -134,9 +134,17 @@ Eclipse直接能导出带签名的最终apk，非常方便，推荐使用，步�
 
 1. 如果遇到了ZipException invalid entry compressed size的错误，主要原因是平时Eclipse使用的ADT插件已经赋予了DEBUG权限的数字签名，我们可以通过导出一个未签名的APK文件就可以解决。
 
-- 使用jarsigner工具来签名，出现无法对jar进行签名：java.util.zip.ZipException: invalid entry compressed size (expected xxx but got xxx bytes)这样的提示。这些问题主要是由于资源文件造成的，对于android开发来说应该检查res文件夹中的文件，逐个排查。这个问题可以通过升级系统的JDK和JRE版本来解决。
+2. 使用jarsigner工具来签名，出现无法对jar进行签名：java.util.zip.ZipException: invalid entry compressed size (expected xxx but got xxx bytes)这样的提示。这些问题主要是由于资源文件造成的，对于android开发来说应该检查res文件夹中的文件，逐个排查。这个问题可以通过升级系统的JDK和JRE版本来解决。
 
-- 安装apk过程中出现：INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES。这样的问题主要是签名冲突造成的，比如你使用了ADB的debug权限签名，但后来使用标准sign签名后再安装同一个文件会出现这样的错误提示，解决的方法只有先老老实实从手机上卸载原有版本再进行安装，而adb install -r参数也无法解决这个问题。
+3. 安装apk过程中出现：INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES。这样的问题主要是签名冲突造成的，比如你使用了ADB的debug权限签名，但后来使用标准sign签名后再安装同一个文件会出现这样的错误提示，解决的方法只有先老老实实从手机上卸载原有版本再进行安装，而adb install -r参数也无法解决这个问题。
+
+4. android默认的debug.keystore的信息如下：
+
+		Keystore name: “debug.keystore”
+		Keystore password: “android”
+		Key alias: “androiddebugkey”
+		Key password: “android”
+		CN: “CN=Android Debug,O=Android,C=US”
 
 ## 参考文章：
 
