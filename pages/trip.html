@@ -108,8 +108,8 @@ var BJData = [
 
     [{name:''}, {name:'民乐',value:200}],
     [{name:''}, {name:'仙桃',value:200}],
+    [{name:''}, {name:'深圳',value:200}],
     [{name:''}, {name:'武汉',value:50}],
-
 
     [{name:''}, {name:'西安',value:50}],
     [{name:''}, {name:'中卫',value: 50}],
@@ -322,7 +322,7 @@ function showalert() {
     chart.setOption(option);
     a++;
     console.log(a);
-    if(a > 46){
+    if(a == BJData.length){
         clearInterval(id2);
     }
 }   
