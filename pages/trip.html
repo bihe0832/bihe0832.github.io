@@ -8,35 +8,35 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>旅行足迹</title>
-  <style type="text/css">
+    <style type="text/css">
 
-    body{font:14px/1.5 Tahoma;margin:0;padding:0;line-height: 40px;}
-    ul,ol{padding:0;margin:0;}
-    li{padding:0;margin:0;list-style:none;line-height: 1.75;}
-    h1{font-size:16px;color:#000;font-weight:bold;}
-    h2{margin:0;padding:5px 0;font-size:14px;font-weight:bold;color:#000;}
-    body{background:#f8f8f8;}
+        body{font:14px/1.5 Tahoma;margin:0;padding:0;line-height: 40px;}
+        ul,ol{padding:0;margin:0;}
+        li{padding:0;margin:0;list-style:none;line-height: 1.75;}
+        h1{font-size:16px;color:#000;font-weight:bold;}
+        h2{margin:0;padding:5px 0;font-size:14px;font-weight:bold;color:#000;}
+        body{background:#f8f8f8;}
 
-    .list-dot>li:before{content:'●';margin-right:6px;margin-left:-16px;}
-    .list-dot{color:#333;}
-    .list-dot li{margin-bottom:5px;padding-left:30px;line-height:1.75;}
-    .list-dot strong{color:#333;}
-    .list-desc li{ padding-left:30px;}
-    .how-app{padding:6px 15px;}
-    .hr{border:none;border-top:1px solid #ccc;border-bottom:1px solid #FFF;}
-    .link{color:#38c0ff;}
-    .special_desc{color:#ff2d2d;font-weight:bold;}
-    .title{
-        width:40%; 
-        margin:0 auto;
-        text-align: center;
-        vertical-align: middle;
-        line-height: 90px;  
-        font-family:    Arial, Helvetica, sans-serif;
-        font-size: 24px;
-        font-weight:    bold;
-    }
-  </style>
+        .list-dot>li:before{content:'●';margin-right:6px;margin-left:-16px;}
+        .list-dot{color:#333;}
+        .list-dot li{margin-bottom:5px;padding-left:30px;line-height:1.75;}
+        .list-dot strong{color:#333;}
+        .list-desc li{ padding-left:30px;}
+        .how-app{padding:6px 15px;}
+        .hr{border:none;border-top:1px solid #ccc;border-bottom:1px solid #FFF;}
+        .link{color:#38c0ff;}
+        .special_desc{color:#ff2d2d;font-weight:bold;}
+        .title{
+            width:40%; 
+            margin:0 auto;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 90px;  
+            font-family:    Arial, Helvetica, sans-serif;
+            font-size: 24px;
+            font-weight:    bold;
+        }
+    </style>
 </head>
 <body>
 
@@ -176,7 +176,7 @@ var BJData = [
 var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
 
 var convertData = function (dataItem) {
-  var res = [];
+    var res = [];
         var fromCoord = geoCoordMap[dataItem[0].name];
         var toCoord = geoCoordMap[dataItem[1].name];
         if (fromCoord && toCoord) {
@@ -221,108 +221,114 @@ option = {
 
 chart.setOption(option);
 
-window.setInterval(showalert, 500); 
+var id2 =  window.setInterval(showalert, 100); 
 var a = 0;
+var nameList = [];
 function showalert() { 
-  var item = BJData[a];
-   series.push(
-        {
-            type: 'lines',
-            zlevel: 1,
-            effect: {
-                show: true,
-                period: 6,
-                trailLength: 0.7,
-                color: '#fff',
-                symbolSize: 3
-            },
-            lineStyle: {
-                normal: {
-                    color: function(){
-                        if (item[0].name != "") {
-                            return color[0];
-                        }else{
-                            return color[1];
-                        }
-                    },
-                    width: 0,
-                    curveness: 0.2
-                }
-            },
-            data: convertData(item)
+    var item = BJData[a];
+    series.push(
+    {
+        type: 'lines',
+        zlevel: 1,
+        effect: {
+            show: true,
+            period: 6,
+            trailLength: 0.7,
+            color: '#fff',
+            symbolSize: 3
         },
-        {
-            type: 'lines',
-            zlevel: 2,
-            symbol: ['none', 'arrow'],
-            symbolSize: 10,
-            effect: {
-                show: true,
-                period: 6,
-                trailLength: 0,
-                symbol: planePath,
-                symbolSize: 15
-            },
-            lineStyle: {
-                normal: {
-                    color: function(){
-                        if (item[0].name != "") {
-                            return color[0];
-                        }else{
-                            return color[1];
-                        }
-                    },
-                    width: 1,
-                    opacity: 0.6,
-                    curveness: 0.2
-                }
-            },
-            data: convertData(item)
+        lineStyle: {
+            normal: {
+                color: function(){
+                    if (item[0].name != "") {
+                        return color[0];
+                    }else{
+                        return color[1];
+                    }
+                },
+                width: 0,
+                curveness: 0.2
+            }
         },
-        {
-            type: 'effectScatter',
-            coordinateSystem: 'geo',
-            zlevel: 2,
-            rippleEffect: {
-                brushType: 'stroke'
-            },
-            label: {
-                normal: {
-                    show: true,
-                    position: 'right',
-                    formatter: '{b}'
-                }
-            },
-            symbolSize: function (val) {
-              if(val != undefined){
+        data: convertData(item)
+    },
+    {
+        type: 'lines',
+        zlevel: 2,
+        symbol: ['none', 'arrow'],
+        symbolSize: 10,
+        effect: {
+            show: true,
+            period: 6,
+            trailLength: 0,
+            symbol: planePath,
+            symbolSize: 15
+        },
+        lineStyle: {
+            normal: {
+                color: function(){
+                    if (item[0].name != "") {
+                        return color[0];
+                    }else{
+                        return color[1];
+                    }
+                },
+                width: 1,
+                opacity: 0.6,
+                curveness: 0.2
+            }
+        },
+        data: convertData(item)
+    },
+    {
+        type: 'effectScatter',
+        coordinateSystem: 'geo',
+        zlevel: 2,
+        rippleEffect: {
+            brushType: 'stroke'
+        },
+        label: {
+            normal: {
+                show: true,
+                position: 'right',
+                formatter: '{b}'
+            }
+        },
+        symbolSize: function (val) {
+          if(val != undefined){
 
-                return val[2] / 8;
-              }
-            },
-            itemStyle: {
-                normal: {
-                    color: function(){
-                        if (item[0].name != "") {
-                            return color[0];
-                        }else{
-                            return color[1];
-                        }
-                    },
-                }
-            },
-            data: item.map(function (dataItem) {
-              if(dataItem.name != ""){
-
-                return {
-                    name: dataItem.name,
-                    value: geoCoordMap[dataItem.name].concat([dataItem.value])
-                };
-              }
-            })
-        });
-      chart.setOption(option);
-      a++;
-  }
+            return val[2] / 8;
+          }
+        },
+        itemStyle: {
+            normal: {
+                color: function(){
+                    if (item[0].name != "") {
+                        return color[0];
+                    }else{
+                        return color[1];
+                    }
+                },
+            }
+        },
+        data: item.map(function (dataItem) {
+          if(dataItem.name != "" && nameList.indexOf(dataItem.name)< 0){
+            var a = {
+                name: dataItem.name,
+                value: geoCoordMap[dataItem.name].concat([dataItem.value])
+            };
+            nameList.push(dataItem.name);
+            return a;
+          }
+        })
+    });
+    chart.setOption(option);
+    a++;
+    console.log(a);
+    if(a > 46){
+        clearInterval(id2);
+    }
+}   
 window.onresize = chart.resize;
 
 </script>
