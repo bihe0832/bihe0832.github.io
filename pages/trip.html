@@ -1,0 +1,332 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>旅行足迹</title>
+  <style type="text/css">
+
+    body{font:14px/1.5 Tahoma;margin:0;padding:0;line-height: 40px;}
+    ul,ol{padding:0;margin:0;}
+    li{padding:0;margin:0;list-style:none;line-height: 1.75;}
+    h1{font-size:16px;color:#000;font-weight:bold;}
+    h2{margin:0;padding:5px 0;font-size:14px;font-weight:bold;color:#000;}
+    body{background:#f8f8f8;}
+
+    .list-dot>li:before{content:'●';margin-right:6px;margin-left:-16px;}
+    .list-dot{color:#333;}
+    .list-dot li{margin-bottom:5px;padding-left:30px;line-height:1.75;}
+    .list-dot strong{color:#333;}
+    .list-desc li{ padding-left:30px;}
+    .how-app{padding:6px 15px;}
+    .hr{border:none;border-top:1px solid #ccc;border-bottom:1px solid #FFF;}
+    .link{color:#38c0ff;}
+    .special_desc{color:#ff2d2d;font-weight:bold;}
+    .title{
+        width:40%; 
+        margin:0 auto;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 90px;  
+        font-family:    Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight:    bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="title">
+    那些年，我们走过！牵着的手，从未放开~
+</div>
+<div id="main" style="height:90%;width:90%; margin:0 auto;"></div>
+<script src="./../public/js/echarts.min.js"></script>
+<script src="./../public/js/china.js"></script>
+<script type="text/javascript">
+var chart = echarts.init(document.getElementById('main'));
+var geoCoordMap = {
+
+    '新加坡': [103.863524,1.432116],
+    '首尔': [127.025721,37.594765],
+    '济州岛': [126.326624,33.33908],
+    '东京': [139.76125,35.890259],
+    '香港': [114.159352,22.288865],
+
+    '武汉': [114.308107,30.598432],
+    '仙桃': [113.460184,30.359312],
+    '民乐': [100.820592,38.44316],
+    '西安': [108.92241,34.250772],
+
+    '深圳': [114.05991,22.545525],
+    '广州': [113.5107,23.2196],
+    '惠州': [114.767164,22.687494],
+    '珠海': [113.553944,22.105303],
+    '顺德': [113.284154,22.88269],
+    '中山': [113.526307,22.478192],
+    
+    '嘉峪关': [98.347012,39.865997],
+    '酒泉': [98.347012,39.865997],
+    '张掖': [100.434667,38.93085],
+    
+    '额济纳': [101.048777,41.963928],
+    '阿拉善右旗': [101.66295,39.221851],
+    '兰州': [103.5901,36.3043],
+
+    '北京': [116.409328,39.913509],
+    '上海': [121.4648,31.2891],
+    '苏州': [120.6519,31.3989],
+    
+    '厦门': [118.070911,24.456886],
+    
+    '成都': [103.9526,30.7617],
+    '乐山': [103.784296,29.545081],
+    '泸定': [102.236259,29.919923],
+    '康定': [101.971981,30.005885],
+    '雅安': [103.020627,30.009888],
+    '新都桥': [101.501759,30.050457],
+    '理塘': [100.272479,29.99977],
+    '稻城': [100.300449,29.045197],
+    '日瓦': [100.3543,28.565534],
+    '亚丁': [100.357569,28.453277],
+    '乡城': [99.809304,28.936518],
+    '奔子栏': [99.30966,28.245811],
+    '香格里拉': [99.70203,27.826079],
+    '丽江': [100.231639,26.883461],
+    '泸沽湖': [100.755178,27.731208],
+    
+    
+    '中卫': [105.198462,37.505517],
+    '银川': [106.155333,38.497366],
+    '阿拉善左旗': [104.938953,37.603211],
+    '西宁': [101.770196,36.635069],
+    '青海湖': [100.501661,36.583881],
+
+};
+
+var BJData = [
+
+    [{name:''}, {name:'民乐',value:200}],
+    [{name:''}, {name:'仙桃',value:200}],
+    [{name:''}, {name:'武汉',value:50}],
+
+
+    [{name:''}, {name:'西安',value:50}],
+    [{name:''}, {name:'中卫',value: 50}],
+    [{name:''}, {name:'银川',value: 50}],
+    [{name:''}, {name:'阿拉善左旗',value: 50}],
+    
+    [{name:''}, {name:'西宁',value: 50}],
+    [{name:''}, {name:'青海湖',value: 50}],
+
+    [{name:'深圳'}, {name:'上海',value:50}],
+    [{name:''}, {name:'苏州',value: 50}],
+    [{name:'上海'}, {name:'深圳',value:200}],
+    [{name:''}, {name:'厦门',value: 50}],
+
+    [{name:'香港'},{name:'首尔',value:50}],
+    [{name:'首尔'},{name:'济州岛',value:50}],
+    [{name:'济州岛'},{name:'香港',value:50}],
+
+    [{name:'深圳'},{name:'东京',value:50}],
+    [{name:'东京'},{name:'深圳',value:200}],
+
+    [{name:'深圳'},{name:'新加坡',value:50}],
+    [{name:'新加坡'},{name:'深圳',value:200}],
+
+    [{name:'广州'},{name:'嘉峪关',value:50}],
+    [{name:''}, {name:'额济纳',value: 50}],
+    [{name:''}, {name:'阿拉善右旗',value: 50}],
+    [{name:''}, {name:'张掖',value: 50}],
+    
+    [{name:'兰州'},{name:'深圳',value:200}],
+
+    [{name:''}, {name:'惠州',value:50}],
+    [{name:''}, {name:'珠海',value:50}],
+    [{name:''}, {name:'顺德',value: 50}],
+    [{name:''}, {name:'中山',value: 50}],
+
+    [{name:'深圳'},{name:'成都',value:50}],
+    [{name:''}, {name:'乐山',value: 50}],
+    [{name:''}, {name:'泸定',value: 50}],
+    [{name:''}, {name:'雅安',value: 50}],
+    [{name:''}, {name:'康定',value: 50}],
+    [{name:''}, {name:'新都桥',value: 50}],
+    [{name:''}, {name:'理塘',value: 50}],
+    [{name:''}, {name:'稻城',value: 50}],
+    [{name:''}, {name:'日瓦',value: 50}],
+    [{name:''}, {name:'亚丁',value: 50}],
+    [{name:''}, {name:'乡城',value: 50}],
+    [{name:''}, {name:'奔子栏',value: 50}],
+    [{name:''}, {name:'香格里拉',value: 50}],
+    [{name:''}, {name:'泸沽湖',value:50}],
+    [{name:'丽江'},{name:'深圳',value:200}],
+
+    
+    [{name:'深圳'}, {name:'北京',value:50}],
+    [{name:'北京'}, {name:'深圳',value:200}],
+    
+    [{name:'深圳'},{name:'兰州',value:50}],
+];
+
+
+var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
+
+var convertData = function (dataItem) {
+  var res = [];
+        var fromCoord = geoCoordMap[dataItem[0].name];
+        var toCoord = geoCoordMap[dataItem[1].name];
+        if (fromCoord && toCoord) {
+            res.push({
+                fromName: dataItem[0].name,
+                toName: dataItem[1].name,
+                coords: [fromCoord, toCoord]
+            });
+        }
+
+    return res;
+};
+
+var color = ['#ffa022','#46bee9', '#a6c84c'];
+var series = [];
+option = {
+    backgroundColor: '#404a59',
+
+    tooltip : {
+        trigger: 'item'
+    },
+    geo: {
+        map: 'china',
+        label: {
+            emphasis: {
+                show: false
+            }
+        },
+        roam: true,
+        itemStyle: {
+            normal: {
+                areaColor: '#323c48',
+                borderColor: '#404a59'
+            },
+            emphasis: {
+                areaColor: '#2a333d'
+            }
+        }
+    },
+    series: series
+};
+
+chart.setOption(option);
+
+window.setInterval(showalert, 500); 
+var a = 0;
+function showalert() { 
+  var item = BJData[a];
+   series.push(
+        {
+            type: 'lines',
+            zlevel: 1,
+            effect: {
+                show: true,
+                period: 6,
+                trailLength: 0.7,
+                color: '#fff',
+                symbolSize: 3
+            },
+            lineStyle: {
+                normal: {
+                    color: function(){
+                        if (item[0].name != "") {
+                            return color[0];
+                        }else{
+                            return color[1];
+                        }
+                    },
+                    width: 0,
+                    curveness: 0.2
+                }
+            },
+            data: convertData(item)
+        },
+        {
+            type: 'lines',
+            zlevel: 2,
+            symbol: ['none', 'arrow'],
+            symbolSize: 10,
+            effect: {
+                show: true,
+                period: 6,
+                trailLength: 0,
+                symbol: planePath,
+                symbolSize: 15
+            },
+            lineStyle: {
+                normal: {
+                    color: function(){
+                        if (item[0].name != "") {
+                            return color[0];
+                        }else{
+                            return color[1];
+                        }
+                    },
+                    width: 1,
+                    opacity: 0.6,
+                    curveness: 0.2
+                }
+            },
+            data: convertData(item)
+        },
+        {
+            type: 'effectScatter',
+            coordinateSystem: 'geo',
+            zlevel: 2,
+            rippleEffect: {
+                brushType: 'stroke'
+            },
+            label: {
+                normal: {
+                    show: true,
+                    position: 'right',
+                    formatter: '{b}'
+                }
+            },
+            symbolSize: function (val) {
+              if(val != undefined){
+
+                return val[2] / 8;
+              }
+            },
+            itemStyle: {
+                normal: {
+                    color: function(){
+                        if (item[0].name != "") {
+                            return color[0];
+                        }else{
+                            return color[1];
+                        }
+                    },
+                }
+            },
+            data: item.map(function (dataItem) {
+              if(dataItem.name != ""){
+
+                return {
+                    name: dataItem.name,
+                    value: geoCoordMap[dataItem.name].concat([dataItem.value])
+                };
+              }
+            })
+        });
+      chart.setOption(option);
+      a++;
+  }
+window.onresize = chart.resize;
+
+</script>
+
+<script type="text/javascript" src="http://tajs.qq.com/stats?sId=37805902" charset="UTF-8"></script>
+</body>
+</html>
