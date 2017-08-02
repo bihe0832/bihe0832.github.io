@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 基于命令行的照片整理及查看工具
-category: 玩一玩
+category: 在路上
 tags: tags
 keywords: 照片整理
 description: desc
