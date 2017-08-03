@@ -29,9 +29,13 @@ description: desc
 	- 主要用于规划行程、了解路线和沿途攻略；同时对于旅行的一些细节也可以提问，主要也是当地的一些旅行团或者旅游行业的人士会解答
 	- 网址：[http://www.mafengwo.cn/](http://www.mafengwo.cn/)
 
-- 蚂蜂窝自由行：
+- 穷游：
 	- 主要用于规划行程、了解路线和沿途攻略
 	- 网址：[http://www.qyer.com/](http://www.qyer.com/)
+
+- 微博：
+	- 主要用于查看历史上相同时间去过的人的照片，了解当时的景色以及了解近期的景色
+	- 网址：[http://weibo.com/](http://weibo.com/)
 
 对于出行的路线规划主要是用百度和谷歌，目前百度和谷歌都支持导航设置途径点。不过百度的途经点远少于谷歌的，因此短距离可以用百度规划，长距离用谷歌规划。
 
@@ -74,9 +78,9 @@ description: desc
 <img alt="" src="./../public/photo/software/iPacking_item.png" width="365px">
 
 
-### 路线制作
+### 路线规划
 
-路线制作以及后面的游记整理我都是用markdown，什么是markdown。markdown的语法以及编辑工具可以参考下面的文章。
+路线规划以及后面的游记整理我都是用markdown，什么是markdown。markdown的语法以及编辑工具可以参考下面的文章。
 
 - Markdown语法简介：[http://blog.bihe0832.com/markdow_intrduce.html](http://blog.bihe0832.com/markdow_intrduce.html) 
 
@@ -127,5 +131,51 @@ description: desc
 
 
 
+## 汇总信息
 
+- 百度地图：
+
+  - 主要用于导航、记录足迹点、规划路线
+  - 网址：[http://map.baidu.com/](http://map.baidu.com/)
+
+- 谷歌地图：
+	- 主要用于制作路线图，根据照片经纬度确定对应地理位置来完成游记。
+	- [https://www.google.com/maps](https://www.google.com/maps)
+
+- PhotoManager：
+	- 整理拍摄照片、读取照片的拍摄时间、拍摄位置经纬度、海拔高度等信息，用于完成游记
+	- 网址：[https://github.com/bihe0832/PhotoManager](https://github.com/bihe0832/PhotoManager)
+
+- 实时高度表：
+	- 主要用于查看实时的车速和海拔
+	- iPhone应用，AppStore应用名称：实时高度表
+
+- iPacking：
+	- 主要用于出发前物品整理和打包
+	- iPhone应用，AppStore应用名称：iPacking
+
+- 携程：
+	- 主要用于酒店、机票预订
+	- 网址：[http://www.ctrip.com/](http://www.ctrip.com/)
+
+- 航旅纵横：
+	- 主要用于查看航班的历史飞行状态，早晚点等信息
+	- 网址：[http://www.umetrip.com/mskyweb/main/index.html](http://www.umetrip.com/mskyweb/main/index.html)
+ 
+- 蚂蜂窝自由行：
+	- 主要用于规划行程、了解路线和沿途攻略
+	- 网址：[http://www.mafengwo.cn/](http://www.mafengwo.cn/)
+
+- 穷游：
+	- 主要用于规划行程、了解路线和沿途攻略
+	- 网址：[http://www.qyer.com/](http://www.qyer.com/)
+
+- 微博：
+	- 主要用于查看历史上相同时间去过的人的照片，了解当时的景色以及了解近期的景色以及捡人
+	- 网址：[http://weibo.com/](http://weibo.com/)
+	
+- 捡人：
+	- 主要用于旅行约伴
+	- 网址：[http://www.ijianren.com/](http://www.ijianren.com/)
+      
 
