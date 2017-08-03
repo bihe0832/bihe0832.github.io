@@ -2,7 +2,7 @@
 layout: post
 title: markdown语法简介
 category: 开发必备
-tags: markdown 资源
+tags: Markdown 资源
 keywords: markdown
 description: Markdown —— 基于HTML 轻量 易读 标记语言
 ---
@@ -10,14 +10,18 @@ description: Markdown —— 基于HTML 轻量 易读 标记语言
 ## Markdown 是什么
 
 ### Markdown 是一种轻量级标记语言。
+
 #### 它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。
+
 #### Markdown 吸收了很多在电子邮件中已有的纯文本标记的特性。
 
 ![这是一个Markdown的对比图](../public/images/markdownSample.jpg "Markdown的原码和展示对比")
 
 
 ### Markdown有什么优点
+
 #### 特点：
+
 - **「易读易写」**
 
 - ** 兼容 HTML**
@@ -68,6 +72,7 @@ Markdown 支持两种标题的语法，类 Setext 和类 Atx 形式。
 - view：
 
 #### 这是 H4	
+
 ##### 这是 H5
 
 ### 列表 
@@ -209,7 +214,7 @@ Markdown 使用一种和链接很相似的语法来标记图片，同样也允�
 		![Alt text](../public/images/img1.png "Optional title")
 - View：
 
-	![Alt text](../public/images/img1.png "Optional title")
+	![Alt text](./../public/images/img1.png "Optional title")
 
 
 #### 参考式的图片语法：
@@ -224,7 +229,6 @@ Markdown 使用一种和链接很相似的语法来标记图片，同样也允�
 ![Alt text][2]
 [2]: ../public/images/img1.png  "Optional title attribute"
 	
-
 
 到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 <img> 标签。
 
