@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 为旅行锦上添花的那些软件
+title: 旅行中不可或缺的软件
 category: 在路上
 tags: tags
 keywords: keywords
