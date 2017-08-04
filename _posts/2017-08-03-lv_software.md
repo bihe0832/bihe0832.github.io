@@ -129,7 +129,19 @@ description: desc
 
 <img alt="" src="./../public/photo/software/google_map_location.png" width="600px">
 
+最后剩下的就是照片修改了，这里的照片修改不是指调色、增加滤镜等。个人很少做这些修改。这里的修改主要是针对图片尺寸和大小。目前拍摄的照片单张都在1M以上，如果浏览者用手机或者网络不好的时候体验都很不好，因此在发表游记时要对拍摄的照片做一些图片压缩、大小修改等方便浏览的调整。
 
+- 微信公众平台
+	- 目前微信公众平台的图片压缩质量都很好，因此可以先把照片上传微信公众平台的后台，然后再下载压缩后的图片
+	- 网址：[https://mp.weixin.qq.com](https://mp.weixin.qq.com)
+
+- uupoop：
+	- 主要是对过于大的照片进行缩放，因为微信公众平台对于上传的图片尺寸有一定的限制，裁剪时宽（横版图片）或者高（竖版图片）要在1920以上
+	- 网址：[http://www.uupoop.com/ex/](http://www.uupoop.com/ex/)
+
+- getImageInfo：
+	- 个人基于tinyjpg封装的图片压缩工具，主要是对过于大的照片进行压缩，微信公众平台对于上传的图片大小有一定的限制
+	- 网址：[https://github.com/bihe0832/getImageInfo](https://github.com/bihe0832/getImageInfo)
 
 ## 汇总信息
 
@@ -178,4 +190,14 @@ description: desc
 	- 主要用于旅行约伴
 	- 网址：[http://www.ijianren.com/](http://www.ijianren.com/)
       
+- 微信公众平台
+	- 目前微信公众平台的图片压缩质量都很好，因此可以先把照片上传微信公众平台的后台，然后再下载压缩后的图片
+	- 网址：[https://mp.weixin.qq.com](https://mp.weixin.qq.com)
 
+- uupoop：
+	- 主要是对过于大的照片进行缩放，因为微信公众平台对于上传的图片尺寸有一定的限制，裁剪时宽（横版图片）或者高（竖版图片）要在1920以上
+	- 网址：[http://www.uupoop.com/ex/](http://www.uupoop.com/ex/)
+
+- getImageInfo：
+	- 个人基于tinyjpg封装的图片压缩工具，主要是对过于大的照片进行压缩，微信公众平台对于上传的图片大小有一定的限制
+	- 网址：[https://github.com/bihe0832/getImageInfo](https://github.com/bihe0832/getImageInfo)
