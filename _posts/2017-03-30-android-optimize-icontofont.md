@@ -11,7 +11,7 @@ description: desc
 
 ## 概述
 
-在应用从会存在很多简单的按钮，一般这些按钮都会使用png的图片，虽然这部分图片并不会占用太多的资源，但是也是可以优化的内容，就以这部分的优化作为系列的开始。
+在应用会存在很多简单的按钮，一般这些按钮都会使用png的图片，虽然这部分图片并不会占用太多的资源，但是也是可以优化的内容，就以这部分的优化作为系列的开始。
 
 **`除 .9图、带阴影图外，所有常见的图标都做到字体库里，不使用icon图片。目前比较成熟的图标字体库可以使用font-awsome`**。Font Awesome为您提供可缩放的矢量图标，您可以使用CSS所提供的所有特性对它们进行更改，包括：大小、颜色、阴影或者其它任何支持的效果。
 
@@ -22,6 +22,8 @@ description: desc
 	[https://github.com/bihe0832/Android-APK-Optimize/tree/master/Resource](https://github.com/bihe0832/Android-APK-Optimize/tree/master/Resource)
 	
 ## 具体方案
+
+具体方案中包含了，怎么下载、怎么修改、怎么使用。
 
 ### 下载字体库
 
