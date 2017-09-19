@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 如何生成混淆过的可执行的jar程序
+title: 如何使用Eclipse开发可执行Jar程序，并生成混淆过的jar程序
 category: 终端开发
 tags: android java 工具
 keywords: keywords
