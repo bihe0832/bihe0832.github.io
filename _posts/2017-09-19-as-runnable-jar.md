@@ -131,7 +131,7 @@ description: 使用Android Studio开发可独立运行（runnable）Jar程序
 	    compile fileTree(dir: 'libs', include: ['*.jar'])
 	}
 	
-	task makeJar(type: proguard.gradle.ProGuardTask, dependsOn: "build") {
+	task proguardJar(type: proguard.gradle.ProGuardTask, dependsOn: "build") {
 	    // 未混淆的jar路径
 	    injars 'build/libs/'+ jar.baseName +'-'+ jar.version +'.jar'
 	    // 混淆后的jar输出路径
@@ -156,7 +156,7 @@ description: 使用Android Studio开发可独立运行（runnable）Jar程序
 
 之后，我们直接在项目根目录运行命令即可直接在项目根目录生成对应的混淆后的可运行jar
 
-	➜  JarDemoByAndroidStudio git:(master) ✗ ./gradlew makejar
+	➜  JarDemoByAndroidStudio git:(master) ✗ ./gradlew proguardJar
 	Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=1g; support was removed in 8.0
 	Parallel execution with configuration on demand is an incubating feature.
 	Incremental java compilation is an incubating feature.
@@ -185,6 +185,39 @@ description: 使用Android Studio开发可独立运行（runnable）Jar程序
 
 至此，我们就完成了所有关于使用Android Studio开发可以独立运行的Jar程序的所有工作。
 
+### 其他
+
+#### 怎么使用资源
+
+有时候我们在开发中会用到文本，xml等资源，通过下面的配置可以将非代码文件也打入jar包
+
+
+	//添加源码中引入的非代码文件，例如资源等
+	sourceSets.main.resources {
+	    srcDirs = [
+	            "src/main/java",
+	    ];
+	    include "**/*.*"
+	}
+
+#### 怎么怎编译时引入第三方Jar
+
+	//代码依赖
+	dependencies {
+	    compile fileTree(dir: 'libs', include: ['*.jar'])
+	}
+	
+#### 怎么将第三方Jar在打包时也已经打进去
+
+在Jar的定义中参照下面的事例
+	
+	//添加将引用的jar的源码打入最终的jar
+    from {
+        (configurations.runtime).collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+    
 ### 附录
 
 本文中设计到的所有代码都已经放在github上，可以前往查看：
