@@ -118,13 +118,13 @@ Eclipse直接能导出带签名的最终apk，非常方便，推荐使用，步�
 
 1. 导出
 
-	![导出](../public/images/android_signure_eclipse_export.png "导出")
+	![导出](./../public/images/android_signure_eclipse_export.png "导出")
 
 - 选择工程：选择你要导出apk的工程
 
 - 创建密钥库keystore,输入密钥库导出位置和密码，要记住密码
 
-	![创建密钥库keystore](../public/images/android_signure_eclipse_export.png "创建密钥库keystore")
+	![创建密钥库keystore](./../public/images/android_signure_eclipse_export.png "创建密钥库keystore")
 
 - 填写密钥库信息，填写一些apk文件的密码，使用期限和组织单位的信息
 
