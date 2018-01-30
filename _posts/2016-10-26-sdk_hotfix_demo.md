@@ -43,16 +43,18 @@ description: desc
 	- 执行命令结束以后，根目录bin目录会生成如下文件
 	
 			└── MD5
-			    │
-			    ├── bihe0832MD5.jar ：支持热更的SDK的版本
-			    │
-			    ├── bihe0832MD5_old.jar ：SDK编译生成的原始jar
-			    │
-			    ├── armeabi
-			    │		│
-			    │		└─── libbihe0832MD5.so ：arm指令集下的so文件
-			    │
-			    └── …… 其余so文件，因为我们仅关注arm，因此忽略其余的指令集
+				│
+				├── *_hash.txt ：当前版本的所有类文件的md5，用于后续生成补丁包
+				│
+				├── bihe0832MD5.jar ：支持热更的SDK的版本
+				│
+				├── bihe0832MD5_old.jar ：SDK编译生成的原始jar
+				│
+				├── armeabi
+				│		│
+				│		└─── libbihe0832MD5.so ：arm指令集下的so文件
+				│
+				└── …… 其余so文件，因为我们仅关注arm，因此忽略其余的指令集
 
 
 2. 生成集成了支持热更的SDK的apk
