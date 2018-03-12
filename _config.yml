@@ -2,7 +2,7 @@ permalink: /:title.html
 paginate: 10
 markdown: kramdown
 # auto: true
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 
 kramdown:
   input: GFM
