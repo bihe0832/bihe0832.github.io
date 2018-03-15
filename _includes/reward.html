@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.min.js"></script>
+    <title>打赏</title>
+    <style type="text/css">
+        .content{width:80%;margin:10px auto;}
+                .hide_box{z-index:999;filter:alpha(opacity=50);background:#666;opacity: 0.5;-moz-opacity: 0.5;left:0;top:0;height:99%;width:100%;position:fixed;display:none;}
+        .shang_box{width:500px;height:500px;padding:10px;background-color:#fff;border-radius:10px;position:fixed;z-index:1000;left:50%;top:50%;margin-left:-280px;margin-top:-280px;border:1px dotted #dedede;display:none;}
+        .shang_box img{border:none;border-width:0;}
+        .dashang{display:block;width:100px;margin:5px auto;height:45px;line-height:45px;padding-bottom:10px;background-color:#E74851;color:#fff;text-align:center;text-decoration:none;border-radius:10px;font-weight:bold;font-size:16px;transition: all 0.3s;}
+        .dashang:hover{opacity:0.8;font-size:18px;}
+        .shang_close{float:right;display:inline-block;}
+                .shang_logo{display:block;text-align:center;margin:20px auto;}
+        .shang_tit{width: 100%;height: 75px;text-align: center;line-height: 66px;color: #a3a3a3;font-size: 16px;font-family: 'Microsoft YaHei';margin-top: 10px;margin-right:2px;}
+        .shang_tit p{color:#a3a3a3;text-align:center;font-size:16px;}
+        .shang_payimg{width:350px;border:0px;margin:0 auto;height:350px;}
+        .shang_payimg img{display:block;text-align:center;width:350px;height:350px; }
+        .pay_explain{text-align:center;margin:10px auto;font-size:14px;color:#545454;}
+    </style>
+</head>
+
+<body>
+    <div class="content">
+    <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang" title="赞赏支持作者">赞赏</a></p>
+    <div class="hide_box"></div>
+    
+    <div class="shang_box">
+      <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()" title="关闭"><img src="./../public/img/close.jpg" alt="取消" /></a>
+      <div class="shang_tit">微信扫一扫，赞赏子勰</div>
+      <div class="shang_payimg">
+        <img src="./../public/img/wechat.jpeg" alt="扫码支持" title="扫一扫" />
+      </div>
+      <div class="pay_explain">屌丝程序猿，鸡血攻城狮！努力学技术，潜心做精品！</div>
+    </div>
+    </div>
+    <script type="text/javascript">
+    function dashangToggle(){
+      $(".hide_box").fadeToggle();
+      $(".shang_box").fadeToggle();
+    }
+    </script>
+</body>
+</html>

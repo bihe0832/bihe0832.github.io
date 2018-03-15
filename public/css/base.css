@@ -70,3 +70,33 @@ a:hover {text-decoration:none;}
 }
 /* 显示评论按钮 */
 .show-commend {width: 100%; margin-bottom: 40px;}
+
+table {
+    width: 100%; /*表格宽度*/
+    border: 1px solid #dddddd;
+    border-collapse: collapse; /*使用单一线条的边框*/
+    empty-cells: show; /*单元格无内容依旧绘制边框*/
+}
+
+table th,td {
+  height: 35px; /*统一每一行的默认高度*/
+  border: 1px solid #dddddd;
+  padding-left: 5px;
+}
+
+table th {
+    font-weight: bold; /*加粗*/
+    text-align: center !important; /*内容居中，加上 !important 避免被 Markdown 样式覆盖*/
+    background: #ECF2F9; /*背景色*/
+    white-space: nowrap; /*表头内容强制在一行显示*/
+}
+
+/* 隔行变色 */
+table tbody tr:nth-child(2n) {
+    background: #F4F7FB; 
+}
+/* 悬浮变色 */
+table tr:hover {
+    background: #B2B2B2; 
+}
+
