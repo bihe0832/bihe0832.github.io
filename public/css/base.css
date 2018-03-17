@@ -70,7 +70,25 @@ a:hover {text-decoration:none;}
 }
 /* 显示评论按钮 */
 .show-commend {width: 100%; margin-bottom: 40px;}
+h1{
+  font-size: 30px;
+}
 
+h2{
+  font-size: 26px;
+}
+h3{
+  font-size: 24px;
+}
+
+h4{
+  font-size: 20px;
+}
+
+h3,h4,h5,h6{
+  font-weight: 900;
+  color: #428bca;
+}
 table {
     width: 100%; /*表格宽度*/
     border: 1px solid #dddddd;
@@ -99,4 +117,5 @@ table tbody tr:nth-child(2n) {
 table tr:hover {
     background: #B2B2B2; 
 }
+
 
