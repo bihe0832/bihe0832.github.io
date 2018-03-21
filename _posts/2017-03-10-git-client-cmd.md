@@ -145,3 +145,77 @@ description: desc
 - 详细说明
 
 	运行完命令就会发现分支列表中的远程分支也已经被删除。
+	
+### 合并branch
+
+#### 分支合并
+
+为了方便解决冲突，一般是选择将远程的或者本地的分支合并到本地，然后解决冲突以后再提交到远程
+
+- 命令
+
+		git merge -Xignore-space-change  BRANCH_NAME
+		
+		-Xignore-space-change：可以忽略空白修改的冲突
+		
+- 事例
+
+	将本地的dev-2.0 合并到本地的master
+	
+		➜  readhub-android git:(dev-2.0) git branch
+		* dev-2.0
+		  master
+		➜  readhub-android git:(master) git merge dev-2.0
+		Updating b9287e9..455bc62
+		Fast-forward
+		
+		……
+		
+		➜  readhub-android git:(master) git status
+		On branch master
+		Your branch is ahead of 'origin/master' by 18 commits.
+		  (use "git push" to publish your local commits)
+		
+		nothing to commit, working tree clean
+		➜  readhub-android git:(master)	
+
+	将远程的dev-2.0 合并到本地的master
+
+		➜  readhub-android git:(master) git status
+		On branch master
+		Your branch is up-to-date with 'origin/master'.
+		
+		nothing to commit, working tree clean
+		➜  readhub-android git:(master) git branch -a
+		* master
+		  remotes/origin/HEAD -> origin/master
+		  remotes/origin/dev-2.0
+		  remotes/origin/master
+		➜  readhub-android git:(master) git merge remotes/origin/dev-2.0
+		Removing Main/src/main/res/values/strings.xml
+
+		➜  readhub-android git:(master) ✗ git status
+		On branch master
+		Your branch is up-to-date with 'origin/master'.
+		
+		All conflicts fixed but you are still merging.
+		  (use "git commit" to conclude merge)
+		
+		Changes to be committed:
+
+		modified:   Framework_core/src/main/java/com/ottd/libs/framework/OttdFramework.java
+		modified:   Framework_core/src/main/res/values/com_bihe0832_readhub_res.xml
+		modified:   Main/src/main/java/com/bihe0832/readhub/topic/TopicDetailActivity.kt
+		modified:   Main/src/main/java/com/bihe0832/readhub/topic/TopicListAdapter.kt
+		modified:   Main/src/main/res/layout/activity_topic_detail.xml
+		modified:   Main/src/main/res/layout/activity_topic_detail_news_item.xml
+		modified:   Main/src/main/res/layout/activity_topic_detail_timeline_item.xml
+		modified:   Main/src/main/res/layout/com_bihe0832_activity_splash.xml
+		modified:   Main/src/main/res/layout/fragment_topic_item_summary.xml
+		modified:   Main/src/main/res/values/card_res.xml
+		deleted:    Main/src/main/res/values/strings.xml
+	
+
+- 详细说明
+
+	合并以后还需要完成冲突解决、合并后代码本地提交和远程提交
