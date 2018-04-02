@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 前端开发中常用资源收集（网站小图标、css\js 框架等）
+title: 前端开发中常用资源收集（网站小图标、css、js 框架等）
 category: 开发必备
 tags: web 资源
 keywords: web ico httprequester CodePen 设计 bootstrap 
