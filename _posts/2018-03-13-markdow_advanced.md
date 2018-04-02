@@ -13,10 +13,22 @@ description: markdown格式优化及使用技巧
 
 其余通用的一些markdown的用法或者标签就不介绍了，这里重点介绍一下表格相关的内容。当使用markdown制作表格时，经常会遇到下面的问题：
 
+- 表格前期填充内容的同时还需要关注行列内容是否对齐，当空行较多是比较麻烦
 - 表格中内容的对齐，各种左中右对齐
 - 表格内容较多，尤其是某一列内容过多时，由于宽度自适应导致排版很丑
 
-对于这两个问题，可以分别通过下面的方法来解决
+
+对于这三个问题，可以分别通过下面的方法来解决
+
+#### 内容填充
+
+Tables Generator 是一个可以在线快速生成 Text、Markdown 格式等多种格式表格的工具，支持在表格中填充数据，保证排版整齐，而且支持将Excel等的表格转化为markdown的格式，生成复制以后即可使用。
+
+- 网址：[https://www.tablesgenerator.com/markdown_tables](https://www.tablesgenerator.com/markdown_tables)
+
+- 使用示例：
+
+	![](./../public/images/markdown_table_new.gif )
 
 #### 表格对齐
 
