@@ -1,3 +1,12 @@
+<style>
+.aside1_bottom_tr:hover {
+    background: transparent; 
+}
+.aside1_bottom_tr td {
+    border: 0px;
+}
+
+</style>
 <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 aside visible-md visible-lg">
   <div class="row">
     <div class="col-md-4 col-xs-4 aside1">
@@ -13,8 +22,8 @@
         <li><a class="pjaxlink" href="/pages/about.html">{{ site.locals.about }}</a></li>
       </ul>
       <div class="aside1_bottom">
-        <table class="table table-condensed">
-          <tr>
+        <table class="table table-condensed" style="border-width: 1px 0 0 0">
+          <tr class="aside1_bottom_tr">
           	<td><a href="{{ site.author.weibo }}" target="_blank"><i class="fa fa-weibo fa-x"></i></a></td>
            	<td><a href="{{ site.author.github }}" target="_blank"><i class="fa fa-github fa-x"></i></a></td>
            	<td><a href="{{ site.author.oldblog }}" target="_blank"><i class="fa fa-wordpress fa-x"></i></a></td>
