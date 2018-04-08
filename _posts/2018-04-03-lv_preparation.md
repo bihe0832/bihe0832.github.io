@@ -25,14 +25,15 @@ description: desc
 
 -  GG身份证
 -  MM身份证
--  GG护照
--  MM护照
--  GG签证
--  MM签证
 -  行程规划
 -  借记卡
 -  信用卡
 -  当地纸币
+-  当地电话卡
+-  GG护照
+-  MM护照
+-  GG签证
+-  MM签证
 
 ### 户外装备
 
@@ -83,6 +84,8 @@ description: desc
 -  MM泳衣
 -  GG泳帽
 -  MM泳帽
+-  GG泳镜
+-  MM泳镜
 
 ### 生活用品
 
@@ -98,7 +101,9 @@ description: desc
 -  牙膏
 -  MM相关护肤品
 -  钥匙
--  公交卡
+-  深圳通
+-  目的地公交卡
+-  靠枕
 
 ### 药品
 
@@ -117,3 +122,5 @@ description: desc
 -  相机
 -  降噪耳机
 -  便捷耳机
+-  各类软件：关于这部分内容个人专门写了一篇文章来介绍。请点击[ 旅行中不可或缺的软件](http://blog.bihe0832.com/lv_software.html) 查看详细内容。
+
