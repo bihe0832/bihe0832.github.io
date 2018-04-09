@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Font Awesome, 为 Bootstrap 而创造的图标字体
-category: web前端
+category: 前端开发
 tags: web 工具
 keywords: Awesome Bootstrap css 酷炫
 description: Font Awesome 是一套完美的图标字体，主要目的是和 Bootstrap 搭配使用

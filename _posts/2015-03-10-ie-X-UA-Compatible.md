@@ -1,7 +1,7 @@
 ---
 layout: post
 title: IE文档模式以及X-UA-Compatible
-category: web前端
+category: 前端开发
 tags: web bug
 keywords: IE X-UA-Compatible 
 description: 文件兼容性用于定义让IE如何编译你的网页。此文件解释文件兼容性，如何指定你网站的文件兼容性模式以及如何判断一个网页该使用的文件模式。
@@ -26,8 +26,8 @@ description: 文件兼容性用于定义让IE如何编译你的网页。此文�
 		
 ## 怎么取值
 
-| 内容值 | 含义 |
-|: ---- :|: ---- :|
+| 内容值 |含义 |
+|:----:|:----|
 | IE=5 | 使用 Internet Explorer 5 Quirks 模式呈现内容。|
 | IE=7 | 使用 Inernet Explorer 7 标准模式呈现内容。 |
 | IE=8 | 使用 Internet Explorer 8 标准模式呈现内容。 |

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 怎么让WordPress首页显示文章摘要(主题Twenty Twelve)
-category: web前端
+category: 前端开发
 tags: wordpress
 keywords:  wordpress Twenty Twelve
 description: 在WordPress系统中，默认的首页和目录页使用的书全文输出，这对于文章内容较长的博客来说很不方面，下面我介绍一个方法，可以简单的实现在WordPress首页和目录页显示摘要而非全文。找到wp-content/themes下你使用的模板目录，查找目录中的文件，如果有home.php则修改home.php，没有的话就修改index.php。WordPress的功能很强大，可以根据自己的需求来修改自己的网站。 
