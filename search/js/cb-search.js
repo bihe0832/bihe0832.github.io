@@ -65,7 +65,7 @@ $(document).ready(function () {
         if (data.code == 0) {
             for (var index in data.data) {
                 var item = data.data[index];
-                names.push(item.title);
+                names.push("「 " + item.title + " 」   —— " + item.tags + " —— " + item.keywords + " —— " + item.description);
                 urls.push(item.url);
             }
 
