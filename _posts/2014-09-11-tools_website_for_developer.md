@@ -30,6 +30,8 @@ git官方文档：[http://git-scm.com/book/en/v2](http://git-scm.com/book/en/v2)
 
 git 语法：[http://git-scm.com/docs](http://git-scm.com/docs)
 
+git常用命令：[http://blog.bihe0832.com/git-client-cmd.html](http://blog.bihe0832.com/git-client-cmd.html)
+
 ### OAuth 2.0：
 
 OAuth 2.0 介绍（看这个系列就够了）：[http://ifeve.com/oauth2-tutorial-all/](http://ifeve.com/oauth2-tutorial-all/)
