@@ -4,7 +4,7 @@ title: 开发中常用的文档管理、云端笔记等效率工具介绍
 category: 开发必备
 tags: Markdown
 keywords: 文档 笔记 工具 Markdown
-description: desc
+description: 这里主要介绍iMac下的一些开发中用于记录笔记、提高效率的工具。
 ---
 
 工欲善其事，必先利其器。每个程序员都会有一套自己喜欢的，适用自己的提高工作效率的工具。这里主要介绍iMac下的一些开发中用于记录笔记、提高效率的工具。
