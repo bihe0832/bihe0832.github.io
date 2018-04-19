@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MAC常用开发工具介绍
+title: iMac（OS X）常用开发工具介绍
 category: 开发必备
-tags: mac 工具
+tags: 工具 iMac
 keywords: 包管理 Homebrew 流程图 Gliffy Diagrams 抓包 网络代理 chairs   Fiddler 快速启动工具 Alfred 终极 Shell zsh 最强终端 iTerm 订阅管理 Reeder
-description: desc
+description: 主要介绍iMac下提高效率的一些工具，包括：Homebrew、Alfred、zsh、iTerm2、Charles & Fiddler等
 ---
 
-工欲善其事，必先利其器。每个程序员都会有一套自己喜欢的，适用自己的提供工作效率的工具。之前每次换电脑总是要折腾一次，总会遗漏一些，这次就统一整理一下。这里主要介绍MAC下的一些提高效率或者很好用的工具。
+工欲善其事，必先利其器。每个程序员都会有一套自己喜欢的，适用自己的提供工作效率的工具。之前每次换电脑总是要折腾一次，总会遗漏一些，这次就统一整理一下。这里主要介绍iMac下的一些提高效率或者很好用的工具。
 
 ### 包管理：Homebrew
 
@@ -58,7 +58,7 @@ Zsh是一款强大的虚拟终端，既是一个系统的虚拟终端，也可�
 
 	给懒人准备的，Mac自带了zsh，因此可以不用再安装，只需要加上对应的配置即可。
 
-### 最强终端：iTerm
+### 最强终端：iTerm2
 
 - iterm的一些主要优点：
 
@@ -88,26 +88,7 @@ Zsh是一款强大的虚拟终端，既是一个系统的虚拟终端，也可�
 	貌似有上面的快捷键就够了
 
 
-### 流程图：Gliffy Diagrams
-
-Gliffy Diagrams是一种全新类别的谷歌浏览器程序，它甚至可以脱机使用！适合于：基本绘图、流程图、 UML图表、网络图表、线框图和图样、网站地图、业务流程模型、组织机构图、平面图、文氏图、四点分析、技术图等。
-
-- 特点：
-	- 使用HTML5创建的易于使用的界面
-	- 成千上万种行业标准的形状、箭头和图标
-	- 网格对齐，绘图向导，形状对准和分布工具
-	- 将您的图片拖放至画布上
-	- 将图表导出成PNG格式（还将推出更多种文件格式）
-
-- 官网地址：
-
-	[https://www.gliffy.com/](https://www.gliffy.com/)
-
-- chrome插件：
-
-	[https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad](https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad)
-
-### 抓包、网络代理：Charles & Fiddler
+### 抓包：Charles & Fiddler
 
 总的一句话：mac下Charles和windows下的Fiddler绝对是你最爱的抓包工具。
 
@@ -131,18 +112,9 @@ Gliffy Diagrams是一种全新类别的谷歌浏览器程序，它甚至可以�
 **备注：**上面附的关于chairs和fiddler的使用方法是随机找了，大概浏览还可以的。个人使用太久了，当时参考的博客找不到了。不过类似的网上很多
 
 
+### 网络代理设置：
 
-### Markdown 处理神器：MacDown
-
-Markdown([点击了解](http://blog.bihe0832.com/markdow_intrduce.html))算是一门新兴语言。它设计的初衷就是让写字的人专注于写字，用纯文本简单的符号标记格式，最后再通过工具转换成鬼畜的 HTML/XHTML。Mou和MacDown都是 Mac 上的 Markdown 编辑器，两栏界面，直观清爽，功能简洁到位，会用的才知道。以前推荐mou，后来发现MacDown比Mou好太多……
-
-- Mou官网地址：
-
-	[http://25.io/mou/](http://25.io/mou/)
-
-- MacDown官网地址：
-
-	[http://macdown.uranusjr.com/](http://macdown.uranusjr.com/)
+- 日常开发中各种代理设置方法汇总（shell、Android Studio、gem、npm）：[http://blog.bihe0832.com/proxy.html](http://blog.bihe0832.com/proxy.html)
 
 ### 订阅管理：Reeder
 

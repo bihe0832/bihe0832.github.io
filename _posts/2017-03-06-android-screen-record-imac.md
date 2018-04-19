@@ -43,7 +43,7 @@ androidtool-mac是一款使用Swift语言编写的工具，可在mac上对Androi
 	[https://github.com/mortenjust/androidtool-mac/releases/](https://github.com/mortenjust/androidtool-mac/releases/)
 
 
-### android studio
+### Android Studio
 
 其实，Android Studio 已经提供了屏幕截图和录制的方式，在Android Studio开发界面视图的Android Monitor界面中就有截图和屏幕录制的按钮，他可以提供最长三分钟的屏幕录制。
 
