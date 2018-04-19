@@ -34,7 +34,7 @@ description: desc
 	DOES NOT VERIFY
 	ERROR: JAR signer YSDK.RSA: JAR signature META-INF/YSDK.SF indicates the APK is signed using APK Signature Scheme v2 but no such signature was found. Signature stripped?
 
-反编译apk以后发现`META-INF`文件夹中的摘要文件中关于应用签名版本的字段的内容如下：
+解压缩apk以后发现`META-INF`文件夹中的摘要文件中关于应用签名版本的字段的内容如下：
 
 	X-Android-APK-Signed: 2
 

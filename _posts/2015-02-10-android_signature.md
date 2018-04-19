@@ -36,7 +36,13 @@ description: 在Android 系统中，所有安装到系统的应用程序都必�
 
 在调试模式下，ADT会自动的使用debug密钥为应用程序签名，因此我们可以直接运行程序。
 
-- debug密钥：一个名为debug.keystore的文件
+- debug密钥：一个名为debug.keystore的文件，android默认的debug.keystore的信息如下：
+
+		Keystore name: “debug.keystore”
+		Keystore password: “android”
+		Key alias: “androiddebugkey”
+		Key password: “android”
+		CN: “CN=Android Debug,O=Android,C=US”
 
 - 存放位置：C:\Users\用户名\.android\debug.keystore
 
@@ -50,15 +56,15 @@ debug签名的两个风险：
 
 发布程序时，开发者需要使用自己的数字证书给apk包签名。使用自己的数字证书给APK签名有两种方法。将在下文描述。
 
-## 签名方法
+## 私钥生成
 
-### 使用keytool签名
+私钥目前主要是通过 keytool 生成，事例如下：
 
-1. 生成私钥：
+- 生成命令：
 
 		keytool -genkey -keystore bihe0832.keystore -alias bihe0832 -keypass android -keyalg RSA -validity 40000
 	
-	**常用参数含义：**
+- **常用参数含义：**
 
 	- genkey 在用户主目录中创建一个默认文件”.keystore”
 	- alias 产生别名 每个keystore都关联这一个独一无二的alias，这个alias通常不区分大小写
@@ -67,7 +73,7 @@ debug签名的两个风险：
 	- list 显示密钥库中的证书信息 keytool -list -v -keystore 指定keystore -storepass 密码
 	- v 显示密钥库中的证书详细信息
 	
-	**非常用参数含义：**
+- **非常用参数含义：**
 
 	- validity 指定创建的证书有效期多少天(默认 90)
 	- keysize 指定密钥长度 （默认 1024）
@@ -82,34 +88,45 @@ debug签名的两个风险：
 	- storepasswd 修改keystore口令 keytool -storepasswd -keystore g:\sso\michael.keystore(需修改口令的keystore) -storepass pwdold(原始密码) -new pwdnew(新密码)
 	- import 将已签名数字证书导入密钥库 keytool -import -alias 指定导入条目的别名 -keystore 指定keystore -file 需导入的证书
 
-2. 对APK进行签名
+## 签名方法
 
- - 使用jarsigner 签名
+### 使用keytool签名
+
+目前使用keytool签名有两种方式，一种是java提供的jarsigner，另一种是安卓官方提供的apksigner，这里分别介绍一下。**不过需要注意的是目前Android已经在逐渐淘汰基于 jarsigner 的 Android V1 签名模式，因此如非必需，建议使用基于 apksigner的 Android V2 签名方式签名apk。**关于 Android V2 签名的更多文章，请参考个人的另一篇文章：[关于Android的APK Signature Scheme v2签名相关的资料汇总](http://blog.bihe0832.com/android-v2.html) 
+
+#### 使用jarsigner 签名
  
-		jarsigner -verbose -keystore bihe0832.keystore -signedjar agsdkdemo_signed.apk  agsdkdemo.apk bihe0832.keystore
-    
+ - 签名命令：
 		
-	**参数含义：**    
+		jarsigner -verbose -keystore bihe0832.keystore -signedjar agsdkdemo_signed.apk  agsdkdemo.apk bihe0832
+    
+- **参数含义：**    
 	
 	- verbose 输出签名的详细信息
 	- keystore  bihe0832.keystore 密钥库位置
 	- agsdkdemo_signed.apk :名后产生的文件demo_signed
 	- agsdkdemo.apk :要签名的文件demo.apk
-	- bihe0832.keystore:密钥库
+	- bihe0832:私钥的alias
 			
-	**注意事项：**android工程的bin目录下的demo.apk默认是已经使用debug用户签名的，所以不能使用上述步骤对此文件再次签名。正确步骤应该是:在工程点击右键->Anroid Tools-Export Unsigned Application Package导出的apk采用上述步骤签名。
+- **注意事项：**android工程的bin目录下的demo.apk默认是已经使用debug用户签名的，所以不能使用上述步骤对此文件再次签名。正确步骤应该是:在工程点击右键->Anroid Tools-Export Unsigned Application Package导出的apk采用上述步骤签名。
+		
+####  使用apksigner 签名
 
- - 使用apksigner 签名
-
-		$ANDROID_HOME/build-tools/25.0.1/apksigner sign --ks ~/lib/bihe0832.keystore ./debug-ysdk.apk
+ - 签名命令：
  
-	**参数含义：**   
+		$ANDROID_HOME/build-tools/25.0.1/apksigner sign --ks ~/lib/bihe0832.keystore ./debug-ysdk.apk
+				
+		$ANDROID_HOME/build-tools/25.0.1/apksigner sign --ks ~/lib/bihe0832.keystore --out ./debug-ysdk-singned.apk --ks-pass pass:mypassword ./debug-ysdk.apk
+ 
+- **参数含义：**   
 	 
 	- sign 给应用签名
 	- --ks ~/lib/bihe0832.keystore 密钥库位置
+	- --out ./debug-ysdk-singned.apk 签名后应用
+	- --ks-pass pass:mypassword 文字格式的签名密码，其中mypassword即为密码
 	- ./debug-ysdk.apk 要签名的应用
 	
-	**注意事项：** apksigner是Android官方提供的签名及校验工具，从Android SDK Build Tools的24.0.3版本开始支持，具体路径在SDK目录的build-tools目录下。
+- **注意事项：** apksigner是Android官方提供的签名及校验工具，从Android SDK Build Tools的24.0.3版本开始支持，具体路径在SDK目录的build-tools目录下。
 		
 		
 ### 使用Eclipse直接导出带签名的APK
@@ -132,19 +149,47 @@ Eclipse直接能导出带签名的最终apk，非常方便，推荐使用，步�
 
 ## 常见问题
 
-1. 如果遇到了ZipException invalid entry compressed size的错误，主要原因是平时Eclipse使用的ADT插件已经赋予了DEBUG权限的数字签名，我们可以通过导出一个未签名的APK文件就可以解决。
+1. jarsigner: 找不到XXXX的证书链。XXXX必须引用包含私有密钥和相应的公共密钥证书链的有效密钥库密钥条目。
 
-2. 使用jarsigner工具来签名，出现无法对jar进行签名：java.util.zip.ZipException: invalid entry compressed size (expected xxx but got xxx bytes)这样的提示。这些问题主要是由于资源文件造成的，对于android开发来说应该检查res文件夹中的文件，逐个排查。这个问题可以通过升级系统的JDK和JRE版本来解决。
+	出现该错误是因为在命令输入的最后一个参数填写的是签名私钥的alias，而不是私钥的文件名称
+		
+2. jarsigner: 无法对 jar 进行签名: java.util.zip.ZipException: invalid entry compressed size (expected 19384 but got 19942 bytes)
 
-3. 安装apk过程中出现：INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES。这样的问题主要是签名冲突造成的，比如你使用了ADB的debug权限签名，但后来使用标准sign签名后再安装同一个文件会出现这样的错误提示，解决的方法只有先老老实实从手机上卸载原有版本再进行安装，而adb install -r参数也无法解决这个问题。
+	出现该错误的原因是因为对一个已经使用DEBUG权限的数字签名的包，使用jarsigner再次签名导致的，建议用V2重新签名或者导出一个未签名的apk重新签名即可，**如果一定要对当前包重新签名，可以选择将文件修改为.zip后缀，然后解压缩，删除`META-INF`目录，然后再次压缩为.zip并修改扩展名为.apk后再次签名**
+		
+3. jarsigner 错误: java.security.NoSuchAlgorithmException: unrecognized algorithm name: RSAwithDSA
 
-4. android默认的debug.keystore的信息如下：
+	出现该错误的原因是私钥算法与签名算法（命令中的-sigalg 参数的值）不兼容，直接使用keytool去查看私钥使用的算法修改即可，命令示例如下：
+	
+		➜  readhub git:(master) keytool -list -v -keystore bihe0832.keystore
+		输入密钥库口令:
+		……
+		
+		证书指纹:
+			……
+			 签名算法名称: SHA1withDSA
+		……
 
-		Keystore name: “debug.keystore”
-		Keystore password: “android”
-		Key alias: “androiddebugkey”
-		Key password: “android”
-		CN: “CN=Android Debug,O=Android,C=US”
+4. jarsigner: 无法对 jar 进行签名: 无法对jar进行签名：java.util.zip.ZipException: invalid entry compressed size (expected xxx but got xxx bytes)
+
+	出现该错误的原因是由于资源文件造成的，对于android开发来说应该检查res文件夹中的文件，逐个排查。当然也可以可以通过升级系统的JDK和JRE版本来解决。
+
+5. 安装apk过程中出现：adb: failed to install 2.apk: Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES: Failed to collect certificates from XXX.apk: Attempt to get length of null array]
+
+	使用adb安装时出现该错误是因为应用没有签名，需要先对apk签名之后再尝试安装
+		
+6. 安装apk过程中出现：adb: failed to install test.apk: Failure [INSTALL_PARSE_FAILED_NO_CERTIFICATES: Failed to collect certificates from XXX.apk: META-INF/CERT.SF has invalid digest for XXX.xml in XXX.apk]
+	
+	出现该的原因是由于使用jarsigner 方式签名时JDK的版本问题造成的，可以通过升级系统的JDK和JRE版本来解决。
+
+7. 安装apk过程中出现：adb: failed to install test-singend.apk: Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE: Package com.bihe0832.getsignature signatures do not match the previously installed version; ignoring!] 
+	
+	出现该错误的原因是因为设备上已经安装了一个同包名但是签名并不一致的apk，需要卸载原有apk重新安装新签名的apk。
+
+8. 安装apk过程中出现：adb: failed to install test-singend.apk: Failure [INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES]
+
+	出现该错误的原因是因为设备上已经安装了一个同包名但是签名并不一致的apk，并且已经安装的应用使用Android的debug签名文件来签名，即将安装的应用使用自定义签名文件签名，需要卸载原有apk重新安装新签名的apk。
+
 
 ## 参考文章：
 
