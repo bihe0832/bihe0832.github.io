@@ -98,16 +98,17 @@ debug签名的两个风险：
  
  - 签名命令：
 		
-		jarsigner -verbose -keystore bihe0832.keystore -signedjar agsdkdemo_signed.apk  agsdkdemo.apk bihe0832
+		jarsigner -verbose -keystore bihe0832.keystore -signedjar agsdkdemo_signed.apk  -digestalg SHA1 -sigalg SHA1withDSA agsdkdemo.apk bihe0832 -storepass mypassword
     
 - **参数含义：**    
 	
-	- verbose 输出签名的详细信息
-	- keystore  bihe0832.keystore 密钥库位置
-	- agsdkdemo_signed.apk :名后产生的文件demo_signed
-	- agsdkdemo.apk :要签名的文件demo.apk
-	- bihe0832:私钥的alias
-			
+	- verbose： 输出签名的详细信息
+	- `-keystore  bihe0832.keystore`： 密钥库位置
+	- `-signedjar agsdkdemo_signed.apk`：签名后产生的文件
+	- `-digestalg SHA1 -sigalg SHA1withDSA`：私钥算法
+	- `agsdkdemo.apk`：要签名的文件demo.apk
+	- `bihe0832`：私钥的alias
+	- `-storepass mypassword`：私钥密码，其中mypassword即为密码		
 - **注意事项：**android工程的bin目录下的demo.apk默认是已经使用debug用户签名的，所以不能使用上述步骤对此文件再次签名。正确步骤应该是:在工程点击右键->Anroid Tools-Export Unsigned Application Package导出的apk采用上述步骤签名。
 		
 ####  使用apksigner 签名
@@ -120,11 +121,11 @@ debug签名的两个风险：
  
 - **参数含义：**   
 	 
-	- sign 给应用签名
-	- --ks ~/lib/bihe0832.keystore 密钥库位置
-	- --out ./debug-ysdk-singned.apk 签名后应用
-	- --ks-pass pass:mypassword 文字格式的签名密码，其中mypassword即为密码
-	- ./debug-ysdk.apk 要签名的应用
+	- `sign` ：给应用签名
+	- `--ks ~/lib/bihe0832.keystore`： 密钥库位置
+	- `--out ./debug-ysdk-singned.apk`： 签名后应用
+	- `--ks-pass pass:mypassword`： 文字格式的私钥密码，其中mypassword即为密码
+	- `./debug-ysdk.apk`： 要签名的应用
 	
 - **注意事项：** apksigner是Android官方提供的签名及校验工具，从Android SDK Build Tools的24.0.3版本开始支持，具体路径在SDK目录的build-tools目录下。
 		
