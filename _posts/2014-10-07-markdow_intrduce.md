@@ -9,14 +9,13 @@ description: Markdown —— 基于HTML 轻量 易读 标记语言
 
 ## Markdown 是什么
 
-### Markdown 是一种轻量级标记语言。
+- Markdown 是一种轻量级标记语言。
 
-#### 它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。
+- 它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。
 
-#### Markdown 吸收了很多在电子邮件中已有的纯文本标记的特性。
+- Markdown 吸收了很多在电子邮件中已有的纯文本标记的特性。
 
 ![这是一个Markdown的对比图](../public/images/markdownSample.jpg "Markdown的原码和展示对比")
-
 
 ### Markdown有什么优点
 

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: markdown格式优化及使用技巧
+title: Markdown格式优化及使用技巧
 category: 开发必备
-tags: Markdown 资源
-keywords: markdown
-description: markdown格式优化及使用技巧
+tags: Markdown
+keywords: Markdown 表格
+description: Markdown格式优化及使用技巧
 ---
 
 从很早开始就热衷于使用markdown以及推广markdown，效果都还不错。目前个人基本上所有的文档都是使用markdown来书写。用的久了就会遇到一些之前没有遇到的奇奇怪怪的问题，以及一些经验总结，在这里集中记录一下，方便后续查找。
