@@ -26,9 +26,9 @@ description: desc
 	
 	- [基于Android Studio使用gradle构建包含jni以及so的构建实例](http://blog.bihe0832.com/gradle-test.html)
 	
-	- [gradle常见配置项](http://blog.bihe0832.com/gradle_config.html)
+	- [gradle常见配置项](http://blog.bihe0832.com/gradle-config.html)
 
-	- [gradle常见错误解决方案](http://blog.bihe0832.com/gradle_issues.html)
+	- [gradle常见错误解决方案](http://blog.bihe0832.com/gradle-issues.html)
 
 	
 ## 外部资料
