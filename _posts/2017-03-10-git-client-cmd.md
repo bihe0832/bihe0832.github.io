@@ -9,9 +9,9 @@ description: 总遇到使用git的时候需要敲一些不常用的命令，每�
 
 之前写过一篇文章[在Linux服务器（ubuntu 16）上部署并配置git（点击查看）](http://blog.bihe0832.com/linux_git_init.html)来专门介绍git的服务端部署相关的内容。最近总遇到使用git的时候需要敲一些不常用的命令，每次敲的时候都要搜索引擎查一次很麻烦，因此专门整理一篇文章，所有命令基于github上的项目[Android-GetAPKInfo](https://github.com/bihe0832/Android-GetAPKInfo)
 
-## branch和tag相关操作
+## branch相关操作
 
-主要是branch的增删改查相关的内容，tag同理，这里仅列出branch
+主要是branch的增删改查相关的内容
 
 ### 分支查看
 
@@ -220,7 +220,246 @@ description: 总遇到使用git的时候需要敲一些不常用的命令，每�
 
 	合并以后还需要完成冲突解决、合并后代码本地提交和远程提交
 	
-	
+## tag相关操作
+
+### 查看Tag
+
+#### 列出所有Tag
+
+- 命令
+
+		git tag
+			
+	如果在查看标签时加上-n，可以查看标示标签的注释
+
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) git tag -n
+		
+		v1.0.0          目录结构调整
+		v1.1.0          内容调整
+		v1.1.1          Update README.md
+		(END)
+
+#### 查看Tag信息
+
+- 命令
+
+		git show TAG_NAME
+			
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) git show v1.0.0
+		
+		commit ea1cb4708a4c35568b7c4973b711a8df3fe6c862 (tag: v1.0.0, origin/v1.0)
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Fri Dec 23 18:29:06 2016 +0800
+		
+		    目录结构调整
+		
+		……
+		
+		
+### 新建Tag
+
+#### 在当前commit新建Tag
+
+- 命令
+
+		git tag TAG_NAME
+					
+	新建Tag时加上-a参数可以创建标识标签，标示标签的参数可以通过-m 参数或者-f参数来添加
+
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) ✗ git tag -a test -m"This is a test"
+		➜  Android-GetAPKInfo git:(master) ✗ git tag -n
+		
+		
+		test            This is a test
+		v1.0.0          目录结构调整
+		v1.1.0          内容调整
+		v1.1.1          Update README.md
+		(END)
+
+		➜  Android-GetAPKInfo git:(master) ✗ git tag -a testFile --file=./README.md
+		➜  Android-GetAPKInfo git:(master) ✗ git tag -n
+		
+		test            This is a test
+		testFile        作为基于Android平台的渠道SDK的开发者或者联调同学每天都会
+		面对大量的apk，需要检查他们的包名（packageName）、版本(versionName\versionCode)、应用签名(Signature)等信息，尤其现在Android的V2签名认证(APK Signature Scheme v2)带来的问题更多，为了提高工作效率，整理了一个获取应用基本信
+		息的系列工具集。
+		v1.0.0          目录结构调整
+		v1.1.0          内容调整
+		v1.1.1          Update README.md
+		(END)
+
+#### 在指定commit新建Tag
+
+- 命令
+
+		git tag TAG_NAME COMMIT_INFO
+					
+	新建Tag时加上-a参数可以创建标识标签，标示标签的参数可以通过-m 参数或者-f参数来添加
+
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) ✗ git log
+		
+		commit fc0c0d33bef839cce5abe9521c6695a03c648efb (HEAD -> master, tag: testFile, tag: test, origin/master, origin/HEAD)
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Thu Sep 21 17:07:05 2017 +0800
+		
+		    修改为Android Studio 构建
+		
+		commit 6e5b24a2a9ce60678a8e02c9d89a5cb3a22e8aea
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Thu Sep 21 17:03:12 2017 +0800
+		
+		    修改为使用Android Studuio 构建
+		
+		➜  Android-GetAPKInfo git:(master) ✗ git tag tag_6e5b24 6e5b24
+		➜  Android-GetAPKInfo git:(master) ✗ git tag -n
+		
+		tag_6e5b24      修改为使用Android Studuio 构建
+		test            This is a test
+		testFile        作为基于Android平台的渠道SDK的开发者或者联调同学每天都会
+		面对大量的apk，需要检查他们的包名（packageName）、版本(versionName\versionCode)、应用签名(Signature)等信息，尤其现在Android的V2签名认证(APK Signature Scheme v2)带来的问题更多，为了提高工作效率，整理了一个获取应用基本信
+		息的系列工具集。
+		v1.0.0          目录结构调整
+		v1.1.0          内容调整
+		v1.1.1          Update README.md
+		(END)
+
+### 推送Tag
+
+#### 推送指定Tag
+
+- 命令
+
+		git push origin TAG_NAME
+					
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) ✗ git tag
+		
+		test
+		v1.0.0
+		v1.1.0
+		v1.1.1
+		(END)
+		
+		➜  Android-GetAPKInfo git:(master) ✗ git push origin test
+		Total 0 (delta 0), reused 0 (delta 0)
+		To https://github.com/bihe0832/Android-GetAPKInfo.git
+		 * [new tag]         test -> test
+
+#### 推送所有Tag
+
+- 命令
+
+		git push origin --tags
+					
+- 事例
+		
+		➜  Android-GetAPKInfo git:(master) ✗ git tag test1
+		➜  Android-GetAPKInfo git:(master) ✗ git tag test2
+		➜  Android-GetAPKInfo git:(master) ✗ git tag
+		
+		test
+		test1
+		test2
+		v1.0.0
+		v1.1.0
+		v1.1.1
+		(END)
+
+		➜  Android-GetAPKInfo git:(master) ✗ git push origin --tags
+		Total 0 (delta 0), reused 0 (delta 0)
+		To https://github.com/bihe0832/Android-GetAPKInfo.git
+		 * [new tag]         test1 -> test1
+		 * [new tag]         test2 -> test2
+
+### 删除Tag
+
+#### 删除本地tag
+
+- 命令
+
+		git tag -d TAG_NAME	
+
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) ✗ git tag -n
+		
+		tag_6e5b24      修改为使用Android Studuio 构建
+		test            This is a test
+		testFile        作为基于Android平台的渠道SDK的开发者或者联调同学每天都会
+		面对大量的apk，需要检查他们的包名（packageName）、版本(versionName\versionCode)、应用签名(Signature)等信息，尤其现在Android的V2签名认证(APK Signature Scheme v2)带来的问题更多，为了提高工作效率，整理了一个获取应用基本信
+		息的系列工具集。
+		v1.0.0          目录结构调整
+		v1.1.0          内容调整
+		v1.1.1          Update README.md
+		(END)
+
+		➜  Android-GetAPKInfo git:(master) ✗ git tag -d tag_6e5b24 test testFile
+		Deleted tag 'tag_6e5b24' (was 6e5b24a)
+		Deleted tag 'test' (was 09a7f5f)
+		Deleted tag 'testFile' (was 4d144d6)
+		➜  Android-GetAPKInfo git:(master) ✗ git tag -n
+		
+		v1.0.0          目录结构调整
+		v1.1.0          内容调整
+		v1.1.1          Update README.md
+		(END)
+
+
+#### 删除远程tag
+
+- 命令
+
+		git push origin :refs/tags/TAG_NAME
+
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) ✗ git tag
+		
+		test
+		v1.0.0
+		v1.1.0
+		v1.1.1
+
+		➜  Android-GetAPKInfo git:(master) ✗ git push origin :refs/tags/test
+		To https://github.com/bihe0832/Android-GetAPKInfo.git
+		 - [deleted]         test### 推送Tag
+		➜  Android-GetAPKInfo git:(master) ✗ git tag
+		
+		test
+		v1.0.0
+		v1.1.0
+		v1.1.1
+
+- 详细说明： 如果没有删除本地tag的前提下直接删除远程tag，本地tag并不会被删除
+
+### 新建指向Tag的分支
+
+- 命令
+
+		git branch origin :refs/tags/TAG_NAME
+
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) ✗ git branch test_branch v1.0.0
+		➜  Android-GetAPKInfo git:(master) ✗ git branch -a
+		* master
+		  test_branch
+		  remotes/origin/HEAD -> origin/master
+		  remotes/origin/eclipse
+		  remotes/origin/master
+		  remotes/origin/v1.0
+		  remotes/origin/v1.1
+		  remotes/origin/v1.1-preview-1	
+
 ## 多账号相关操作
 
 目前越来越多的地方都开始使用git了，GitHub，oschina等等，再加上公司的git，就会存在多账号的问题。例如有一天忽然发现公司的git上提交的代码，显示的  `user.name` 和 `user.email` 竟然是github的用户名和邮箱。这里汇总一下git多账号相关的问题怎么解决：
