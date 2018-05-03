@@ -27,12 +27,6 @@ rss_url: /pages/atom.xml
 gavatar: /public/img/head.jpg
 favicon: /public/img/favicon.ico
 
-# Reward 赞赏功能 by Ray-Eldath
-reward:
-  enable: true
-  reward_comment: '真诚赞赏 手留余香'
-  wechatpay: 'https://raw.githubusercontent.com/terrifyzhao/terrifyzhao.github.io/master/assets/img/wechat.jpeg'
-  
 # disqus 设置
 disqus:
   shortname: bihe0832

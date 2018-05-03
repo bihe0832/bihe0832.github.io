@@ -1,6 +1,6 @@
 ---
 layout: post
-title: git常用命令（持续更新~）
+title: git常用命令整理（已包括branch、tag等持续更新~）
 category: 开发必备
 tags: git 常用工具
 keywords: git branch tag origin config user.name user.email --global --system
