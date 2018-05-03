@@ -1,15 +1,17 @@
 ---
 layout: post
-title: gradle常见错误解决方案
+title: Android编译常见错误解决
 category: 终端开发
-tags: gradle 
-keywords: gradle jvmargs daemon parallel configureondemand javaMaxHeapSize
-description: desc
+tags: gradle android
+keywords: gradle jvmargs daemon parallel configureondemand javaMaxHeapSize android 
+description: 在使用Android Studio开发过程中，经常会遇到一些gradle相关的问题，本篇文章将用于收集整理这些问题，免得以后再去google。
 ---
 
-在平时开发中，经常会遇到一些gradle相关的问题，本篇文章将用于收集整理这些问题，免得以后再去google。
+在使用Android Studio开发过程中，经常会遇到一些gradle相关的问题，本篇文章将用于收集整理这些问题，免得以后再去google。
 
-### 构建失败，提示Could not resolve all dependencies for configuration ':classpath'
+### 常见问题：
+
+#### 构建失败，提示Could not resolve all dependencies for configuration ':classpath'
 
 - 问题现象
 
@@ -40,7 +42,7 @@ description: desc
 
 	修改项目根目录build.gradle中对于使用的maven库的声明，具体方法可以参考文章[终端基于gradle的开源项目运行环境配置指引](http://blog.bihe0832.com/android-as-gradle-config.html)
 
-### 构建失败，提示Downloading gradle Operation timed out
+#### 构建失败，提示Downloading gradle Operation timed out
 
 - 问题现象
 
@@ -57,7 +59,7 @@ description: desc
 
 	修改项目根目录gradle/wrapper/gradle-wrapper.properties中使用的gradle版本的地址，具体方法可以参考文章[终端基于gradle的开源项目运行环境配置指引](http://blog.bihe0832.com/android-as-gradle-config.html)
 
-### 构建失败，提示gc overhead limit exceeded 或者java.lang.outofmemoryerror java heap space 
+#### 构建失败，提示gc overhead limit exceeded 或者java.lang.outofmemoryerror java heap space 
 
 - 问题现象
 
