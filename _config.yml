@@ -16,7 +16,6 @@ author:
   github: http://github.com/bihe0832
   qq: 402998643
 
-
 # 站点信息
 title: 子勰的博客
 description: 屌丝程序猿，鸡血攻城狮；努力学技术，潜心做精品！
@@ -36,7 +35,6 @@ search: true
 
 # Night mode
 nightMode: true
-
 
 # 主题设置，自动激活某个标签
 active: 终端开发
