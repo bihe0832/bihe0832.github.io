@@ -86,4 +86,4 @@ description: desc
 ### 参考文章
 
 - [How I save 5h/week on Gradle builds](https://android.jlelse.eu/speeding-up-gradle-builds-619c442113cb#.4fw1hvk3d)
-- [探索 Android Studio | Android Developers](https://developer.android.com/studio/intro/?hl=zh-CN)
+- [探索 Android Studio - Android Developers](https://developer.android.com/studio/intro/?hl=zh-CN)
