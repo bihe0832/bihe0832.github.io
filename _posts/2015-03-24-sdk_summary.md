@@ -33,7 +33,7 @@ description: 做SDK已经一年左右了，期间感触，收获良多。爬过�
 
 #### 总纲
  	
-- `SDK那些事（总纲）`：[点击查看](http://blog.bihe0832.com/SDK_summary.html)
+- `SDK那些事（总纲）`：[点击查看](http://blog.bihe0832.com/sdk_summary.html)
 
 	也就是你正在看的这篇，算是个开头和总体总结把。
 	
@@ -41,13 +41,13 @@ description: 做SDK已经一年左右了，期间感触，收获良多。爬过�
 
 这里主要分析一些关于SDK的想法，为什么做，怎么做，做完基础功能以后何去何从之类。
 
-- `SDK之我理解的SDK`：[点击查看](http://blog.bihe0832.com/SDK_summary_sdk_of_my_explain.html)
+- `SDK之我理解的SDK`：[点击查看](http://blog.bihe0832.com/sdk_summary_sdk_of_my_explain.html)
 	
 	主要是一些自己对SDK的一些理解，为什么要做，SDK有什么特性，遇到的一些头疼的问题。（这个目前还没有具体思路，虽然是第一篇，估计要放在最后写了）
 	
 	确实和预期一致，这部分内容放到后面发现反而更难写了，临时改变了策略。先把自己想到的写上去，后续慢慢回顾总结再逐步加上去。这部分内容写太久了，趁着最近不是很忙，尽快都完善了。细节的内容慢慢完善吧。
 
-- `SDK之关于SDK的一些想法`：[点击查看](http://blog.bihe0832.com/SDK_summary_future.html)
+- `SDK之关于SDK的一些想法`：[点击查看](http://blog.bihe0832.com/sdk_summary_future.html)
 	
 	主要是对SDK的前路的一些思考。当SDK的主要功能，或者所有功能都已经完成以后，基于这个SDK我们还可以做什么，还有哪些发散点的一些想法。（这个也是只有一个大概思路，最后完成吧）
 	
@@ -57,19 +57,19 @@ description: 做SDK已经一年左右了，期间感触，收获良多。爬过�
 
 这部分主要总结一些再开发中遇到的因为前期设计不合理带来的一些阵痛以及改良的方法。
 
-- `SDK设计心得之版本号`：[点击查看](http://blog.bihe0832.com/SDK_design_versioncode.html)
+- `SDK设计心得之版本号`：[点击查看](http://blog.bihe0832.com/sdk_design_versioncode.html)
 
 	主要是对开发中SDK的版本号相关的一些总结和探讨。包括应该有几个版本号，这个版本号怎么生成怎么维护(这部分内容可能会和开发经验中关于版本相关的内容结合在一起)。
 
-- `SDK设计心得之错误码`：[点击查看](http://blog.bihe0832.com/SDK_design_errorcode.html)
+- `SDK设计心得之错误码`：[点击查看](http://blog.bihe0832.com/sdk_design_errorcode.html)
 
 	主要是对开发中与错误码相关的一些细节的分析和探讨，包括错误码有几级，默认的错误返回怎么初始化一级对于第三方平台的错误码如何处理等。（这部分内容也踩了不少坑。所以最先完成了。）
 
-- `SDK设计心得之接口设计`：[点击查看](http://blog.bihe0832.com/SDK_desigin_api.html)
+- `SDK设计心得之接口设计`：[点击查看](http://blog.bihe0832.com/sdk_desigin_api.html)
 
 	主要是对开发中接口设计的一些探讨，包括接口名称，回调设置、多线程、第三方平台的处理等。（这部分内容相对会比较好写一点，因为坑的比较多，思路比较清晰。）
 
-- `SDK设计心得之架构和资源`：[点击查看](http://blog.bihe0832.com/SDK_design_structure_resource.html)
+- `SDK设计心得之架构和资源`：[点击查看](http://blog.bihe0832.com/sdk_design_structure_resource.html)
 
 	这部分内容主要是对开发初期，怎么设计SDK的整体架构以及关于资源文件处理方法(这部分内容不多，相对好写)。
 	这部分内容确实好写，但是发现从计划开始写到现在竟然已经过去了两个多月，时间过的真快，最关键的是今天发现好多之前的思路都有点模糊了～～最近要尽快写完这个系列了，目前遗留的几篇应该都是最难写的了～～
@@ -78,29 +78,29 @@ description: 做SDK已经一年左右了，期间感触，收获良多。爬过�
 
 这部分内容主要是总结一些在项目慢慢积累总结的开发经验，感觉这部分内容其实和SDK开发关系并不大，无论是做什么的开发，这些点都应该注意，养成良好的开发习惯。
 
--  `SDK开发经验之版本`：[点击查看](http://blog.bihe0832.com/SDK_experience_version.html)
+-  `SDK开发经验之版本`：[点击查看](http://blog.bihe0832.com/sdk_experience_version.html)
 
 	版本是任何产品的核心，这里主要讨论版本如何发布，发布中的一些机制、流程；要不要兼容老版本，要怎么向下兼容等。（本设想这里的内容会和版本号还有关系，争取一起出了；最后做了一些改动，反而和测试关于更大，那就优先完成测试相关的内容吧）
 
--  `SDK开发经验之测试`：[点击查看](http://blog.bihe0832.com/SDK_experience_test.html)
+-  `SDK开发经验之测试`：[点击查看](http://blog.bihe0832.com/sdk_experience_test.html)
 
 	如何才能保证一个高质量的版本，肯定是非常完备的测试，这里主要介绍我们采用了哪些测试方法。我们怎么保证提交测试的版本质量，开发和测试应该怎么配合做一些想法。（本想和版本一起，结果发现内容还是太多了，分开吧）
 	
-- `SDK开发经验之开发习惯`：[点击查看](http://blog.bihe0832.com/SDK_experience_habit.html)
+- `SDK开发经验之开发习惯`：[点击查看](http://blog.bihe0832.com/sdk_experience_habit.html)
 
 	良好的开发习惯在项目中，尤其是多人协作中会大大提高协同开发的效率。这里主要聊一些关于注释、TODO标签等方面的习惯。（不会涉及到具体的语法习惯，因为这个有差异，主要还是说一些想法吧。这部分内容也比较杂，慢慢来写）
 	
 	这部分内容最终也补充上了，有点虎头鸡尾的感觉，因为写到后来感觉这部分内容不同的开发者差异性很大，其实没有太多的参考价值。
 	
-- `SDK开发经验之文档`：[点击查看](http://blog.bihe0832.com/SDK_experience_document.html)
+- `SDK开发经验之文档`：[点击查看](http://blog.bihe0832.com/sdk_experience_document.html)
 
 	对于SDK来说，如果只是提供接口，开发接入的成本其实很高，而文档和demo则是降低成本的利器。这里主要讨论文档关的一些内容。本来想和demo一起写，后来发现没那么容易写，而且好久没更新了，就分两篇吧。
 	
-- `SDK开发经验之Demo`：[点击查看](http://blog.bihe0832.com/SDK_experience_Demo.html)
+- `SDK开发经验之Demo`：[点击查看](http://blog.bihe0832.com/sdk_experience_Demo.html)
 
 	对于SDK来说，如果只是提供接口，开发接入的成本其实很高，而文档和demo则是降低成本的利器。这里主要讨论demo相关的一些内容。上午感觉词穷了，而且觉得内容比较多就分开了，结果下午发现逗比起来，还是比较好写。先加上，后续再想到陆续补充吧
 	
-- `SDK开发经验之自动构建`：[点击查看](http://blog.bihe0832.com/SDK_experience_auto_build.html)
+- `SDK开发经验之自动构建`：[点击查看](http://blog.bihe0832.com/sdk_experience_auto_build.html)
 
 	这里同样不会过度分析Android的自动构建工具有哪些以及他们的优缺点，为什么要使用自动构建等等。本文的侧重点还是集中在SDK的自动化构建中主要做那些工作。
 	
