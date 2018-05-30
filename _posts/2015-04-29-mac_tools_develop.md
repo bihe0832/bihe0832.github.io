@@ -22,7 +22,7 @@ description: 主要介绍iMac下提高效率的一些工具，包括：Homebrew�
 
 - 安装及使用方法：
 
-	[http://blog.bihe0832.com/Homebrew.html](http://blog.bihe0832.com/Homebrew.html)
+	[http://blog.bihe0832.com/Homebrew.html](http://blog.bihe0832.com/homebrew.html)
 
 ### 快速启动工具：Alfred
 

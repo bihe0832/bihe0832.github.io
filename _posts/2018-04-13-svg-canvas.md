@@ -27,7 +27,7 @@ description: 最近在使用canvas的时候，遇到需要画一些线条的场�
 
 ## 使用工具将SVG代码转为Canvas代码
 
-由于SVG的语法的固定，目前已经又专门的工具可以讲SVG的代码转化为Canvas对应的代码了，目前个人使用的是基于 `canvg.js`（[https://github.com/gabelerner/canvg](https://github.com/gabelerner/canvg)）开发的在线工具`svg2canvas`。
+由于SVG的语法的固定，目前已经又专门的工具可以将SVG的代码转化为Canvas对应的代码了，目前个人使用的是基于 `canvg.js`（[https://github.com/gabelerner/canvg](https://github.com/gabelerner/canvg)）开发的在线工具`svg2canvas`。
 
 - 网址：[http://demo.qunee.com/svg2canvas/](http://demo.qunee.com/svg2canvas/)
 

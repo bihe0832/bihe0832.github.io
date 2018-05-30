@@ -38,7 +38,7 @@ description: desc
 
 - 立即生效：
 
-		ssource ~/.bash_profile
+		source ~/.bash_profile
 
 - 个人配置：[https://github.com/bihe0832/Settings-Tools/tree/master/shell](https://github.com/bihe0832/Settings-Tools/tree/master/shell)
 
