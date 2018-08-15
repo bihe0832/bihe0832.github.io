@@ -92,3 +92,27 @@ description: 在使用Android Studio开发过程中，经常会遇到一些gradl
 		org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
 	
 	建议最好是直接按照[gradle常见配置项](http://blog.bihe0832.com/gradle_config.html)里面关于构建速度优化提到的方式配置所有的选项。
+	
+	
+	
+#### 升级gralde 插件版本以后编译报错提示使用 Java 6
+
+- 问题现象 
+
+	升级gradle到高版本，例如我升级到3.3以后编译报错。然而查看`File`-> `Project Structure` -> `SDK Location`里面的JDK已经是1.7
+	
+		Error:Gradle 3.3 requires Java 7 or later to run. You are currently using Java 6.
+		
+- 问题原因
+
+	Android Studio会自己设置默认的jdk位置，默认的jdk是`1.6*，1.7+`，虽然修改了Project Structure，但是plist里面并没有修改。
+
+- 解决办法：
+
+	进入Android Studio的私有目录，需要修改/Application/Android Studio/Contents/info.plist中下面的配置：
+	
+		<key>JVMVersion</key> <string>1.6*,1.7+</string>
+
+	例如我改为了，之后重试发现已经OK
+
+		<key>JVMVersion</key> <string>1.7*,1.7+</string>

@@ -145,6 +145,21 @@ description: 总遇到使用git的时候需要敲一些不常用的命令，每�
 - 详细说明
 
 	运行完命令就会发现分支列表中的远程分支也已经被删除。
+
+#### 同步远程分支
+
+- 命令
+
+		git remote prune origin
+	
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) git remote prune origin
+		
+
+- 详细说明
+
+	该命令的作用是同步远程已经删除的分支，例如部分分支远程已经删除，但是本地还存在，调用该命令即可删除。
 	
 ### 合并branch
 
@@ -441,6 +456,29 @@ description: 总遇到使用git的时候需要敲一些不常用的命令，每�
 
 - 详细说明： 如果没有删除本地tag的前提下直接删除远程tag，本地tag并不会被删除
 
+#### 同步远程Tag
+
+- 命令
+
+		git tag -l | xargs git tag -d
+		git fetch	
+		
+- 事例
+
+		➜  app git:(master) git tag -l | xargs git tag -d
+		Deleted tag 'Tag_JYP_0.0.0.1_382' (was 60a846b15)
+		Deleted tag 'Tag_JYP_0.0.0.1_388' (was 1697a8231)
+		Deleted tag 'Tag_JYP_0.0.0_0_20180523' (was e2eb990b5)
+		➜  app git:(publish_815) git fetch
+		From https://github.com/bihe0832/
+	 		 * [new tag]             Tag_JYP_0.2.3.1608_1213  -> Tag_JYP_0.2.3.1608_1213
+			 * [new tag]             Tag_JYP_0.2.4.1742_1254  -> Tag_JYP_0.2.4.1742_1254
+		
+- 详细说明
+
+	该命令的作用是同步远程的Tag，例如部分分支Tag已经删除，但是本地还存在，调用该命令即可完成同步（先删除本地的，然后再把远程的同步下来）。
+	
+	
 ### 新建指向Tag的分支
 
 - 命令
