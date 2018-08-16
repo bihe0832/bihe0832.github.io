@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iMac上Android Studio 的一些设置
+title: iMac上Android Studio 相关设置及常见问题
 category: 终端开发
 tags: android 工具
 keywords: Mac Android Studio 快捷键
@@ -37,26 +37,37 @@ import | option + enter
  
 ## 异常处理
 
-### 升级gralde以后编译报错
+### 通用大法
 
-- 问题现象 
+- clean整个工程
 
-	升级gradle到高版本，例如我升级到3.3以后编译报错。然而查看`File`-> `Project Structure` -> `SDK Location`里面的JDK已经是1.7
-	
-		Error:Gradle 3.3 requires Java 7 or later to run. You are currently using Java 6.
-		
-- 问题原因
+- Invalid Caches/Restart
 
-	Android Studio会自己设置默认的jdk位置，默认的jdk是`1.6*，1.7+`，虽然修改了Project Structure，但是plist里面并没有修改。
+- 关闭Android Studio，删除项目根目录的.idea 和.gradle 重启以后选择Open，重新打开，注意不是Open Recent
 
-- 解决办法：
+### 代码提示失效
 
-	进入Android Studio的私有目录，需要修改/Application/Android Studio/Contents/info.plist中下面的配置：
-	
-		<key>JVMVersion</key> <string>1.6*,1.7+</string>
+Android Studio 默认会开启代码自动提示功能，发现不生效时，原因可能是开启了省电模式，当设置了省电模式，AS会禁掉一些辅助功能，所以代码自动提示也被禁掉了。省电模式阔以通过下面的方式关闭：File选项 -> 最后一项：Power Save Mode；取消选中即可。
 
-	例如我改为了，之后重试发现已经OK
+### 更新AAR后没有生效
 
-		<key>JVMVersion</key> <string>1.7*,1.7+</string>
+- clean 
 
+- 去gradle的缓存删除对应aar的缓存
+
+- Invalid Caches/Restart
+
+- **最有效的方法：AAR换个名字，重编生效以后再改回去**
+
+### 清空缓存
+
+Android 项目生成的缓存包括：
+
+- Gradle缓存目录下的第三方引用的完整缓存
+
+- 项目根目录下的.gradle 和 .idea
+
+- Android Studio 的缓存
+
+- 项目代码build目录生成的内容
 	
