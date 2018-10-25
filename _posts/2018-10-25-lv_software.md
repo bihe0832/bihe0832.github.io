@@ -70,6 +70,28 @@ description: desc
 	- 主要用于查看航班的历史飞行状态，早晚点等信息；曾经根据机场的进出港航班和航空公司的延误情况准确预测到我们延误航班的预计登机时间被妹子表扬，[捂脸]
 	- 网址：[http://www.umetrip.com/mskyweb/main/index.html](http://www.umetrip.com/mskyweb/main/index.html)
 
+- 天巡网
+	- 主要用于海外机票预订
+	- 网址：[https://www.tianxun.com](https://www.tianxun.com)
+	- 特别说明：
+		
+		天巡主打就廉价航空、国际机票、特价机票查询预订
+		
+- Booking.com缤客
+	- 主要用于海外酒店预订
+	- 网址：[https://www.booking.com](https://www.booking.com)
+	- 特别说明：
+		
+		海外酒店多而且全，而且很多都是到付，免费取消。
+		
+- Airbnb
+
+	- 主要用于海外民宿预订
+	- 网址：[https://zh.airbnb.com/](https://zh.airbnb.com)
+	- 特别说明：
+	
+		如果不想住酒店，想住民宿，这是不二之选。不过好点的民宿价格不一定比酒店便宜。
+		
 ### 行李整理
 
 除了上面的准备，出发前的行李准备也很重要，尤其是长途旅行，准备的东西更加多，因此更容易漏了东西。而且有时候这次出去发现应该带什么忘了，下次出去的时候还是忘记了。目前我是用iPacking，主要用于出发前物品整理和打包。是一款iPhone应用，AppStore应用名称：iPacking。软件截图如下：
@@ -97,11 +119,15 @@ description: desc
 	- 主要用于导航、记录足迹点（用于协助后面的游记制作，当然我基本用得少）
 	- 网址：[http://map.baidu.com/](http://map.baidu.com/)
 
-如果去一些海拔比较高的地方的话，可以用实时高度表来实时查看当前的海拔高度的行车速度。实时高度表也是一款iPhone应用，AppStore应用名称：实时高度表。软件截图如下：
+- 实时高度表
 
-<img alt="" src="./../public/photo/software/haiba.jpg" width="365px">
+	如果去一些海拔比较高的地方的话，可以用实时高度表来实时查看当前的海拔高度的行车速度。实时高度表也是一款iPhone应用，AppStore应用名称：实时高度表。软件截图如下：
+	
+	<img alt="" src="./../public/photo/software/haiba.jpg" width="365px">
 
-对于吃的话主要就是用大众点评了，不过很多时候也会怎么方便怎么吃，只有晚上休息的时候会参考比较多。住的话就还是前面提到的主要参考携程，尤其是去一些偏远的地方一般酒店都是可以先看房在预订的，因此相对问题不大。
+- 大众点评
+	
+	对于吃的话主要就是用大众点评了，不过很多时候也会怎么方便怎么吃，只有晚上休息的时候会参考比较多。住的话就还是前面提到的主要参考携程，尤其是去一些偏远的地方一般酒店都是可以先看房在预订的，因此相对问题不大。
 
 除了上面的内容以外，**在旅行中最重要的一点就是多拍照片了，每天出发、休息、到标志性的地方都记得要拍照**。因为用脑子记住什么时候到了什么地方这些太难了，而且路上怎么会有心思记这些。因此我们都是想记下来的地方就拍一张照片，后面会用工具读取这张照片的拍摄时间、地点等信息。这样写游记就会方便很多。
 	
@@ -174,6 +200,19 @@ description: desc
 	- 主要用于查看航班的历史飞行状态，早晚点等信息
 	- 网址：[http://www.umetrip.com/mskyweb/main/index.html](http://www.umetrip.com/mskyweb/main/index.html)
  
+- 天巡网
+	- 主要用于海外机票预订
+	- 网址：[https://www.tianxun.com](https://www.tianxun.com)
+		
+- Booking.com缤客
+	- 主要用于海外酒店预订
+	- 网址：[https://www.booking.com](https://www.booking.com)
+		
+- Airbnb
+
+	- 主要用于海外民宿预订
+	- 网址：[https://zh.airbnb.com/](https://zh.airbnb.com)
+		
 - 蚂蜂窝自由行：
 	- 主要用于规划行程、了解路线和沿途攻略
 	- 网址：[http://www.mafengwo.cn/](http://www.mafengwo.cn/)
