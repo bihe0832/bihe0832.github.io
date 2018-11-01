@@ -9,6 +9,126 @@ description: 总遇到使用git的时候需要敲一些不常用的命令，每�
 
 之前写过一篇文章[在Linux服务器（ubuntu 16）上部署并配置git（点击查看）](http://blog.bihe0832.com/linux_git_init.html)来专门介绍git的服务端部署相关的内容。最近总遇到使用git的时候需要敲一些不常用的命令，每次敲的时候都要搜索引擎查一次很麻烦，因此专门整理一篇文章，所有命令基于github上的项目[Android-GetAPKInfo](https://github.com/bihe0832/Android-GetAPKInfo)
 
+## 提交相关
+
+主要是删除本地提交或者远程提交
+
+### 回退本地提交
+
+将master的最新一次提交删除
+
+- 命令
+
+		git reset --hard COMMIT
+	
+- 事例
+
+		➜  readhub git:(dev-2.0) git log
+		On branch dev-2.0
+		Your branch is ahead of 'origin/dev-2.0' by 2 commits.
+		  (use "git push" to publish your local commits)
+		
+		commit 0795c1ac4a172c8b50074cc5bb0a6181c03a314e (HEAD -> dev-2.0)
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Thu Nov 1 11:15:42 2018 +0800
+		
+		    test add
+		
+		commit 53c24ee06dc2aa6abaae3d16a38891f7fcc164f9
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Thu Nov 1 11:15:16 2018 +0800
+		
+		    test add
+		
+		commit 9926a26e10c36373ca85103d403c174a97bc18b1 (tag: V2.0.3, origin/master, origin/dev-2.0, origin/HEAD, master)
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Sun Aug 12 18:38:37 2018 +0800
+		
+		    2.0.3 版本换包	
+	    ➜  readhub git:(dev-2.0) git reset --hard 9926a26
+		HEAD is now at 9926a26 2.0.3 版本换包
+		➜  readhub git:(dev-2.0) git log
+		commit 9926a26e10c36373ca85103d403c174a97bc18b1 (HEAD -> dev-2.0, tag: V2.0.3, origin/master, origin/dev-2.0, origin/HEAD, master)
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Sun Aug 12 18:38:37 2018 +0800
+		
+		    2.0.3 版本换包
+		
+		commit 5b25dfff3f53f49893f448f956427d927bbcc223
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Sun Aug 12 18:37:12 2018 +0800
+		
+		    2.0.3 版本内容	
+		
+- 详细说明
+
+	 --hard 切换到指定commit，此commit之后的修改都不保留，谨慎使用
+
+### 回退远程提交
+
+将dev-2.0的最新一次远程提交删除，做法其实是先拉下来远程所有的提交，然后本地回退，然后把本地的回退强制提交
+
+- 命令
+
+		git log origin/BRANCH -n 3	
+		
+		git push -f
+		
+- 事例
+
+		➜  readhub git:(dev-2.0) git log origin/dev-2.0 -n 3
+		commit acba683aae382938828b90c496c42d1438c1a515 (HEAD -> dev-2.0, origin/dev-2.0)
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Thu Nov 1 12:44:19 2018 +0800
+		
+		    add test
+		
+		commit 9926a26e10c36373ca85103d403c174a97bc18b1 (tag: V2.0.3, origin/master, origin/HEAD, master)
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Sun Aug 12 18:38:37 2018 +0800
+		
+		    2.0.3 版本换包
+		
+		commit 5b25dfff3f53f49893f448f956427d927bbcc223
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Sun Aug 12 18:37:12 2018 +0800
+		
+		    2.0.3 版本内容
+	    ➜  readhub git:(dev-2.0) git pull --rebase
+		Already up to date.
+		Current branch dev-2.0 is up to date.
+	    ➜  readhub git:(dev-2.0) git reset --hard 9926a26
+		HEAD is now at 9926a26 2.0.3 版本换包
+		➜  readhub git:(dev-2.0) git push -f
+		Total 0 (delta 0), reused 0 (delta 0)
+		To https://github.com/bihe0832/readhub-android.git
+		 + acba683...9926a26 dev-2.0 -> dev-2.0 (forced update)
+		➜  readhub git:(dev-2.0) git log origin/dev-2.0 -n 3
+		commit 9926a26e10c36373ca85103d403c174a97bc18b1 (HEAD -> dev-2.0, tag: V2.0.3, origin/master, origin/dev-2.0, origin/HEAD, master)
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Sun Aug 12 18:38:37 2018 +0800
+		
+		    2.0.3 版本换包
+		
+		commit 5b25dfff3f53f49893f448f956427d927bbcc223
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Sun Aug 12 18:37:12 2018 +0800
+		
+		    2.0.3 版本内容
+		
+		commit 5339fbf511fa805926bb79b899ed777247f4a5a3
+		Merge: c3c0d5b a3eaabe
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Sun Aug 12 18:34:53 2018 +0800
+		
+		    V2.0.3合入
+		
+- 详细说明
+
+	 --hard 切换到指定commit，此commit之后的修改都不保留，谨慎使用
+	 
+	 -f 会强制提交，此commit之后的修改都不保留，谨慎使用
+
 ## branch相关操作
 
 主要是branch的增删改查相关的内容
@@ -234,7 +354,79 @@ description: 总遇到使用git的时候需要敲一些不常用的命令，每�
 - 详细说明
 
 	合并以后还需要完成冲突解决、合并后代码本地提交和远程提交
-	
+
+### 一个分支多次提交合并为一次merge到另一分支
+
+在需求开发中，我们可能在某个分支开发了几天，又多次提交，当需求开发完成，我们可能会想把所有的功能变更合并为一次提交合并到主干，做到不破坏主干的工作流，此时就需要用到分支多次提交合并为一次merge。
+
+- 命令
+
+		git merge --squash BRANCH_NAME
+		
+- 事例
+
+		➜  readhub git:(dev-2.0) git branch test
+		➜  readhub git:(dev-2.0) git checkout test
+		Switched to branch 'test'
+		➜  readhub git:(test) git status
+		On branch test
+		nothing to commit, working tree clean
+		➜  readhub git:(test) echo "fsdfdsf" > a.txt
+		➜  readhub git:(test) ✗ git commit -am"modify a"
+		[test 15f4eee] modify a
+		 1 file changed, 1 insertion(+)
+		➜  readhub git:(test) echo "fsdfdsfwerer" > a.txt
+		➜  readhub git:(test) ✗ git commit -am"modify a"
+		[test d8ea821] modify a
+		 1 file changed, 1 insertion(+), 1 deletion(-)
+		➜  readhub git:(test) git log
+		commit d8ea82168b27a51dfa07ecc70d5d9ba6b4fa2b6d (HEAD -> test)
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Thu Nov 1 13:00:06 2018 +0800
+		
+		    modify a
+		
+		commit 15f4eeef3c50d2a8592116875393dec49c8b4a78
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Thu Nov 1 12:59:57 2018 +0800
+		
+		    modify a
+		
+		commit 959ca16540453fbda4dca303c5f359bf1d840941 (dev-2.0)
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Thu Nov 1 12:57:22 2018 +0800
+		
+		    add test
+	    ➜  readhub git:(dev-2.0) git merge --squash test
+		Updating 97a96c1..d8ea821
+		Fast-forward
+		Squash commit -- not updating HEAD
+		 a.txt | 1 +
+		 b.txt | 0
+		 2 files changed, 1 insertion(+)
+		 create mode 100644 b.txt
+		➜  readhub git:(dev-2.0) ✗ git commit -am"merge test"
+		[dev-2.0 bd593d1] merge test
+		 2 files changed, 1 insertion(+)
+		 create mode 100644 b.txt
+		 ➜  readhub git:(dev-2.0) git log
+		 commit bd593d122437618ba50f8933fcaa9c4622e8454b (HEAD -> dev-2.0)
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Thu Nov 1 13:14:52 2018 +0800
+		
+		    merge test
+		
+		commit 97a96c1ba212913336bd4d0e308296847ad1571d
+		Author: 子勰 <code@bihe0832.com>
+		Date:   Thu Nov 1 12:56:42 2018 +0800
+		
+		    add test
+
+		
+- 详细说明
+
+	git merge --squash 执行完以后需要手动执行一次commit将所有变更提交
+
 ## tag相关操作
 
 ### 查看Tag
