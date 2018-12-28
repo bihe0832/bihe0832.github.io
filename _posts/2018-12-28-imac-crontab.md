@@ -3,7 +3,7 @@ layout: post
 title: iMac配置基于crontab的定时任务
 category: 开发必备
 tags: tags
-keywords: iMac crontab 恢复模式  "/usr/bin/vi" exited with status 1 Operation not permitted Rootless
+keywords: iMac crontab 恢复模式 exited with status 1 Operation not permitted Rootless
 description: 最近工作过程中需要跑一些定时任务，之前都是放在服务器上，这次的因为比较零散，就打算在iMac上自己跑，本来以为会很简单，结果发现竟然需要一番折腾，因此专门总结一下。尤其是里面有些步骤比如恢复模式，没有权限，查看启动项等，后续还是会遇到。
 ---
 
