@@ -3,7 +3,7 @@ layout: post
 title: iMac使用过程中的简单故障解决
 category: 开发必备
 tags: iMac
-keywords: iMac mac 耳机 音响 空格 回车 失灵 风扇 噪音
+keywords: iMac mac 耳机 音响 空格 回车 失灵 风扇 噪音 sz rz
 description: 这篇文章主要总结记录一下在使用过程中遇到的一些常见问题，免得以后每次去谷歌。具体包括插了耳机还用音响播放、空格回车失灵、风扇噪音等
 ---
 
@@ -40,3 +40,19 @@ description: 这篇文章主要总结记录一下在使用过程中遇到的一�
 	-  [重置 Mac 上的 NVRAM 或 PRAM - Apple 支持](https://support.apple.com/zh-cn/HT204063)
 
 	- [如何重置 Mac 上的系统管理控制器 (SMC) - Apple 支持](https://support.apple.com/zh-cn/HT201295)
+
+## Mac OS X 使用 sz/rz 命令下载/上传文件
+
+首先需要前往 [https://github.com/zixieTools/iterm2-zmodem](https://github.com/zixieTools/iterm2-zmodem) 下载对应脚本文件, 并放到 `/usr/local/bin` 目录下。之后在iTerm 偏好设置-> Profiles -> Default -> Advanced -> Triggers 的 Edit 按钮 点击 + 号, 加上以下 trigger 信息:
+
+	Regular expression: rz waiting to receive.\*\*B0100
+    Action: Run Silent Coprocess
+    Parameters: /usr/local/bin/iterm2-send-zmodem.sh
+    Instant: checked
+
+    Regular expression: \*\*B00000000000000
+    Action: Run Silent Coprocess
+    Parameters: /usr/local/bin/iterm2-recv-zmodem.sh
+    Instant: checked
+  
+ 这部分内容github的readme有介绍。
