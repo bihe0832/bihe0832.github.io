@@ -43,3 +43,12 @@ description: desc
 	- RESTful API 设计指南 ： [http://www.ruanyifeng.com/blog/2014/05/restful_api.html](http://www.ruanyifeng.com/blog/2014/05/restful_api.html)
 	- 理解RESTful架构 ： [http://www.ruanyifeng.com/blog/2011/09/restful.html](http://www.ruanyifeng.com/blog/2011/09/restful.html)
 	- 表现层状态转换 - 维基百科 ： [https://zh.wikipedia.org/wiki/%E8%A1%A8%E7%8E%B0%E5%B1%82%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2](https://zh.wikipedia.org/wiki/%E8%A1%A8%E7%8E%B0%E5%B1%82%E7%8A%B6%E6%80%81%E8%BD%AC%E6%8D%A2)
+
+### Flex 布局相关
+	
+- A Visual Guide to CSS3 Flexbox Properties ― Scotch：[https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties](https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties)
+- A Complete Guide to Flexbox ~ CSS-Tricks：[https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- Flex 布局教程：语法篇 - 阮一峰的网络日志：[http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+- Flex 布局教程：实例篇 - 阮一峰的网络日志：[http://www.ruanyifeng.com/blog/2015/07/flex-examples.html](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
+- Flex 布局示例：[http://static.vgee.cn/static/index.html](http://static.vgee.cn/static/index.html)
+- CSS Flexible Box Layout Module：[https://www.w3.org/html/ig/zh/css-flex-1](https://www.w3.org/html/ig/zh/css-flex-1/)
