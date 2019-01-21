@@ -68,5 +68,5 @@ description: 基于二维码实现签到的完整流程
 
 ## 源码下载：
 
-*   <http://microdemo.sinaapp.com/QrcodeSign/demo.zip>
+*   <http://microdemo.bihe0832.com/QrcodeSign/demo.zip>
 *   <https://github.com/bihe0832/QrcodeSign>
