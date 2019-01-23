@@ -52,3 +52,13 @@ description: desc
 - Flex 布局教程：实例篇 - 阮一峰的网络日志：[http://www.ruanyifeng.com/blog/2015/07/flex-examples.html](http://www.ruanyifeng.com/blog/2015/07/flex-examples.html)
 - Flex 布局示例：[http://static.vgee.cn/static/index.html](http://static.vgee.cn/static/index.html)
 - CSS Flexible Box Layout Module：[https://www.w3.org/html/ig/zh/css-flex-1](https://www.w3.org/html/ig/zh/css-flex-1/)
+
+
+### 贝塞尔曲线
+- 深度掌握SVG路径path的贝塞尔曲线指令 « 张鑫旭-鑫空间-鑫生活：
+	
+	- [http://www.zhangxinxu.com/wordpress/2014/06/deep-understand-svg-path-bezier-curves-command/](http://www.zhangxinxu.com/wordpress/2014/06/deep-understand-svg-path-bezier-curves-command/)
+
+- 贝塞尔曲线与CSS3动画、SVG和canvas的基情 « 张鑫旭-鑫空间-鑫生活：
+
+	- [http://www.zhangxinxu.com/wordpress/2013/08/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF-cubic-bezier-css3%E5%8A%A8%E7%94%BB-svg-canvas/](http://www.zhangxinxu.com/wordpress/2013/08/%E8%B4%9D%E5%A1%9E%E5%B0%94%E6%9B%B2%E7%BA%BF-cubic-bezier-css3%E5%8A%A8%E7%94%BB-svg-canvas/)
