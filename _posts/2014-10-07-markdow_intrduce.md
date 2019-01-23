@@ -1,7 +1,7 @@
 ---
 layout: post
 title: markdown语法简介
-category: 开发必备
+category: 开发工具
 tags: Markdown 资源
 keywords: markdown
 description: Markdown —— 基于HTML 轻量 易读 标记语言

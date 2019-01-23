@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 开发中一些常用的工具链接（MD5、Timestamp等）
-category: 开发必备
+category: 开发资源
 tags: 常用工具 web 工具
 keywords: MD5 TimeStamp JS AES DES RC4 Rabbit TripleDes 二维码 Unicode URLEncode  
 description: 开发中一些常用的工具链接

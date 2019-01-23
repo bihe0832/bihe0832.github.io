@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iMac（OS X）El Capitan 更新遇到的那些坑
-category: 开发必备
+category: 开发工具
 tags: iMac android
 keywords: OS X El Capitan 请等待 com.apple.appstore xcrun missing  Library Developer CommandLineTools jdk  xcode select install
 description: OS X El Capitan 作为最新苹果最新推出的OS X，让你能以更简单、更智能的方式，在 Mac 上处理日常事务。例如，借助 Split View 同时在多个 apps 中进行操作等。最近更新的时候遇到了一些坑，简单列举一下。

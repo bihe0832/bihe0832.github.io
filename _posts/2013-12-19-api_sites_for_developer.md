@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 开发中常用的一些API链接（天气预报、股票等）
-category: 开发必备
+category: 开发资源
 tags: API web 资源
 keywords: 股票 天气预报 城市代码 音乐 二维码 
 description: 开发中常用的一些API链接，包括股票查询、天气预报、城市代码查询、百度音乐、在线二维码生成等

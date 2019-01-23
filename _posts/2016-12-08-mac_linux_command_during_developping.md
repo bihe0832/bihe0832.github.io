@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linux & MacOS中一些常用命令备忘
-category: 开发必备
+category: 开发工具
 tags: 常用工具 mac
 keywords: keywords
 description: 一些开发中经常要敲的命令，备忘一下懒得经常敲

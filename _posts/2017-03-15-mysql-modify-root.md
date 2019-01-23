@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linux 下修改mysql的root密码
-category: 开发必备
+category: 后台开发
 tags: mysql 工具
 keywords: mysql root version service authentication_string password ERROR 1054  42S22
 description: Unknown column 'password' in 'field list'

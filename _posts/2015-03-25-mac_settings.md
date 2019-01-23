@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 开发环境通用设置
-category: 开发必备
+category: 开发工具
 tags: 工具
 keywords: 保护色
 description: desc

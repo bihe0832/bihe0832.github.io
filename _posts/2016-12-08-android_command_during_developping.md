@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Android开发常用命令备忘
-category: 开发必备
+category: 终端开发
 tags: android
 keywords: keywords
 description: 一些开发中经常要敲的命令，备忘一下懒得经常敲

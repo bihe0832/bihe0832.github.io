@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 开发中常用的一些知识检索链接（Markdown、SVN、Git等）
-category: 开发必备
+category: 开发资源
 tags: 常用工具 资源
 keywords: 常用工具 Markdown SVN
 description: desc

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 前端开发中常用资源收集（网站小图标、css、js 框架等）
-category: 开发必备
+category: 开发资源
 tags: web 资源
 keywords: web ico httprequester CodePen 设计 bootstrap 
 description: 在日常开发中，我们经常会需要一些常用的资源，虽然很容易找到，但是有时候却发现又不是那么好找。子勰把一些常用的工具整理了一下，发表在这里，供大家参考，同时也备忘方便自己使用。

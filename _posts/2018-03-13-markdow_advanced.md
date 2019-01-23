@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown格式优化及使用技巧
-category: 开发必备
+category: 开发工具
 tags: Markdown
 keywords: Markdown 表格
 description: Markdown格式优化及使用技巧

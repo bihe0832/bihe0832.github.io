@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iMac使用过程中的简单故障解决
-category: 开发必备
+category: 开发工具
 tags: iMac
 keywords: iMac mac 耳机 音响 空格 回车 失灵 风扇 噪音 sz rz
 description: 这篇文章主要总结记录一下在使用过程中遇到的一些常见问题，免得以后每次去谷歌。具体包括插了耳机还用音响播放、空格回车失灵、风扇噪音等

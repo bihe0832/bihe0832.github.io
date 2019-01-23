@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iMac（OS X）中设置大小写敏感的分区并切换
-category: 开发必备
+category: 开发工具
 tags: iMac 
 keywords: macOS 大小写 敏感 分区
 description: 由于历史原因，OS X虽然支持文件系统大小写敏感，但是默认是不敏感，再开发中就很蛋疼，这篇文章介绍如何设置大小写敏感分区

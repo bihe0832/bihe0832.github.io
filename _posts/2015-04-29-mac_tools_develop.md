@@ -1,7 +1,7 @@
 ---
 layout: post
 title: iMac（OS X）常用开发工具介绍
-category: 开发必备
+category: 开发工具
 tags: 工具 iMac
 keywords: 包管理 Homebrew 流程图 Gliffy Diagrams 抓包 网络代理 chairs   Fiddler 快速启动工具 Alfred 终极 Shell zsh 最强终端 iTerm 订阅管理 Reeder
 description: 主要介绍iMac下提高效率的一些工具，包括：Homebrew、Alfred、zsh、iTerm2、Charles & Fiddler等
