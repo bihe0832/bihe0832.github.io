@@ -96,8 +96,11 @@ description: 最近要把之前的一个项目迁移到云上，涉及到数据�
 			mysql> GRANT ALL ON *.* TO 'zixie'@'%';
 			Query OK, 0 rows affected (0.12 sec)
 			
+			mysql> flush privileges;
+			Query OK, 0 rows affected (0.01 sec)
+			
 			mysql>
-
+			
 ### 异常情况
 
 - 使用root用户登录，提示 Can't connect to local MySQL server through socket '/tmp/mysql.sock'
