@@ -21,10 +21,6 @@ description: 在日常开发中，我们经常会需要一些常用的资源，�
 **链接：**[http://app.baidu.com/app/enter?appid=127521](http://app.baidu.com/app/enter?appid=127521) 
 
 **简介：**百度应用上的一个小的应用，主要用于生成网站的icon。
- 
-**事例：**见下图
-    
-<img src="http://bihe0832-wordpress.stor.sinaapp.com/uploads/2014/01/1.png" alt="1" width="323" height="87" class="alignnone size-full wp-image-131" />
 
 ## 模拟post/get请求工具 httprequester（ff插件）：
 

@@ -78,5 +78,5 @@ description: 微信5.0新版本成为行业内外讨论的焦点。除了对移�
 
 **大家来捉鬼，一路走来，因为由您！**
 
- [1]: http://zixie.sinaapp.com
+ [1]: http://game.bihe0832.com
  [2]: http://mp.weixin.qq.com/wiki/index.php?title=%E9%80%9A%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3

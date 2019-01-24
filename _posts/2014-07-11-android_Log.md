@@ -27,13 +27,8 @@ description: 测试遇到的android log中遇到的一些边界值
 
 *   [点击下载][1]
 
-## Demo 结果：
-
-*   [点击下载][2]
-
 * * *
 
 PS：对于Log的详细描述，可以参考下面的博客：http://blog.csdn.net/thl789/article/details/6629905
 
  [1]: https://github.com/bihe0832/Sharing/tree/master/lesson_5
- [2]: http://bihe0832-wordpress.stor.sinaapp.com/uploads/2014/01/log

@@ -52,6 +52,16 @@ body, html {
   text-align: center;
   color: #FFF;
 }
+.aside3-title h5{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #FFF;
+}
+
+.legend_add{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .aside3-content {padding-left: 30px;padding-right: 30px;}
 /* 文章内容排版 */
 a:hover {text-decoration:none;}
