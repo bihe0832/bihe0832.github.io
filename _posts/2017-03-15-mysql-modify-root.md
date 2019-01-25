@@ -90,6 +90,36 @@ description: Unknown column 'password' in 'field list'
 
 		update user set authentication_string=password('password') where user='root';
 		
+### 修改密码报错，提示ERROR 1064 (42000)
+
+在iMac上使用上面的命令修改密码还是报错，提示：
+		
+	mysql> update user set authentication_string=password('password') where User='zixie';
+	ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right 			syntax to use near '('zixie@2019') where User='zixie'' at line 1
+
+怀疑是版本问题，查看版本如下：
+
+	mysql> show variables like "%version%";
+	+-------------------------+-----------------------+
+	| Variable_name           | Value                 |
+	+-------------------------+-----------------------+
+	| innodb_version          | 8.0.13                |
+	| protocol_version        | 10                    |
+	| slave_type_conversions  |                       |
+	| tls_version             | TLSv1,TLSv1.1,TLSv1.2 |
+	| version                 | 8.0.13                |
+	| version_comment         | Homebrew              |
+	| version_compile_machine | x86_64                |
+	| version_compile_os      | osx10.14              |
+	| version_compile_zlib    | 1.2.11                |
+	+-------------------------+-----------------------+
+	
+直接去google搜索`8.0.13 mysql modify password`，最终查询到已经又更换了命令：[https://dev.mysql.com/doc/refman/8.0/en/set-password.html](https://dev.mysql.com/doc/refman/8.0/en/set-password.html)，使用最新命令修改即可：
+
+	mysql> SET PASSWORD FOR 'zixie'@'localhost'= 'auth_string';
+	Query OK, 0 rows affected (0.03 sec)
+
+
 ### 修改密码后登录mysql失败，提示ERROR 2002 (HY000)
 
 在修改密码并重启以后，登录mysql的时候竟然登录不了，提示

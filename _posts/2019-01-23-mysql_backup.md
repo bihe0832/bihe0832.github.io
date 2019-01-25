@@ -93,7 +93,7 @@ description: 最近要把之前的一个项目迁移到云上，涉及到数据�
 
 	- 事例
 
-			mysql> GRANT ALL ON *.* TO 'zixie'@'%';
+			mysql> GRANT ALL ON *.* TO 'zixie'@'%' WITH GRANT OPTION;
 			Query OK, 0 rows affected (0.12 sec)
 			
 			mysql> flush privileges;

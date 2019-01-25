@@ -1,7 +1,7 @@
 ---
 layout: post
 title: nodejs入门之连接mysql
-category: 前端开发
+category: 后台开发
 tags: tags
 keywords: node mysql ER_NOT_SUPPORTED_AUTH_MODE 1396
 description: 总结node链接mysql相关的各种问题
