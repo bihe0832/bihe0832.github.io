@@ -15,13 +15,13 @@ description: 这里主要介绍iMac下的一些开发中用于记录笔记、提
 
 #### [markdown语法简介](http://blog.bihe0832.com/markdow_intrduce.html)
 
-- 概述：主要介绍Markdown的基本语法以及常用工具
+- 概述：主要介绍Markdown的基本语法、及常用工具以及关于boostnote的简单介绍
 
 - 链接：[http://blog.bihe0832.com/markdow_intrduce.html](http://blog.bihe0832.com/markdow_intrduce.html)
 
 #### [Markdown格式优化及使用技巧](http://blog.bihe0832.com/markdow_advanced.html)：
 
-- 概述：主要介绍Markdown 中表格使用遇到的问题以及关于boostnote的简单介绍
+- 概述：主要介绍Markdown 中表格使用遇到的问题基于其余主题优化相关的内容
 
 - 链接：[http://blog.bihe0832.com/markdow_advanced.html](http://blog.bihe0832.com/markdow_advanced.html)
 

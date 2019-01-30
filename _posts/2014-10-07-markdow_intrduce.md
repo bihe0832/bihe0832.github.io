@@ -257,7 +257,7 @@ Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符�
 
 #### Mac 平台
 
-- **Mou：** [http://mouapp.com](http://mouapp.com)
+- **MacDown：** [https://macdown.uranusjr.com/](https://macdown.uranusjr.com/)
 
 #### 在线编辑器
 
@@ -269,6 +269,27 @@ Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符�
 
 - MaDe (Chrome)：[MaDe](https://chrome.google.com/webstore/detail/oknndfeeopgpibecfjljjfanledpbkog)
 - 马克飞象：[http://maxiang.info/](http://maxiang.info/)
+
+
+## 基于markdown的云端笔记
+
+一直以来，日常笔记的云端同步都都很头痛，之前试用了很多，从印象笔记、到有道云笔记、到oneNote、再到使用自己搭的git，都或多或少有一些缺点。从去年中逛github的时候看到了目前用的boostnote以后，发现终于找到了一款到目前为止用的很顺手的笔记软件。废话不多，放上相关的地址和简单总结吧。
+
+- 官网地址： [https://boostnote.io](https://boostnote.io)
+
+- 在线体验地址：[https://boostnote.io/demo/](https://boostnote.io/demo/)
+- 优点：
+	- UI 自定义
+	- 支持代码格式
+	- 支持markdown
+	- 分组存储
+	- 结合Dropbox或者微云实现云端备份
+	- 剪贴板图片直接粘贴
+	- 开源
+	- 全平台
+- 缺点：
+	- 默认格式不是markdown
+	- 无法直接导出为pdf或者图片
 
 
 ## 参考文章：
