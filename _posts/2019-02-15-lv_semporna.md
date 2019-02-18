@@ -72,7 +72,7 @@ description: desc
 	
 ### 具体行程
 
-#### 第一天（2018-02-12）：
+#### 第一天（2018-02-12）：深圳 - 古晋 - 亚庇
 
 - 地点：深圳 - 古晋 - 亚庇
 - 概况：全天灰机、深圳出发古晋中转前往沙巴
@@ -94,37 +94,37 @@ description: desc
 
 	行李托运和换了登机牌之后，过海关，继续吃鸡和等等等。还要没有什么意外，准点登机。下飞机后，过古晋海关（**护照，电子签证（需打印），登机牌，机票单（需打印）**），然后同机场继续转机飞沙巴。等待的过程去洗漱一下，然后吃了份麦当劳（09:00）以后就开始无聊的等待了
 
-	<img alt="" src="./../public/photo/2018semporna/2018-02-12_09-00-14_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-12_09-00-14_optimized.jpg" width="600px" />
 
 	古晋机场很小，几乎没什么可以逛的，所以基本就是玩手机。等到11点多，安检准备前往沙巴的灰机，然后继续在登机口开始等待（12:03）
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-12_12-03-00_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-12_12-03-00_optimized.jpg" width="600px">
 	
 	到达沙巴以后，在机场就有人等着接机，接机送上酒店的车以后我们自行去酒店，他们就去接下一班人。到达酒店以后办理入住（**凭护照和确认号直接办理入住**），稍作休息以后，在下午（16:30）出发打车前往丹绒路海滩看日落。等接近的时候有点堵车，但还是在5点就到达了目的地
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-12_17-10-31_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-12_17-10-31_optimized.jpg" width="600px">
 
 	阳光太强就去附近的大排档转了一圈，补充点零食；然后边在海边走动，边等这太阳下山。等到6点的时候，终于有了夕阳西下的感觉。
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-12_18-03-00_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-12_18-03-00_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-12_18-09-17_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-12_18-09-17_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-12_18-15-28_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-12_18-15-28_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-12_18-25-48_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-12_18-25-48_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-12_18-32-43_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-12_18-32-43_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-12_18-38-06_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-12_18-38-06_optimized.jpg" width="600px">
 
 	由于已经晴天几天了，并没有太多云，所以晚霞不是很壮观。但是最上方的那抹云彩或多或少像凤凰，就算是意外的惊喜吧。看完夕阳出来，路边车太多，不太好打车，正好有很多操着中文的向导（黑车师傅），问好费用就让开着送我们去吃了第一家网红海鲜双天。价格不贵，但是综合评价比较一般，不过冻椰青还是很不错的。
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-12_19-16-43_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-12_19-16-43_optimized.jpg" width="600px">
 
 	因为前一天一晚上基本没睡，因此吃完饭也没有安排其余行程就打车（20:25）回酒店休息了。
 	
-#### 第二天（2018-02-13）：
+#### 第二天（2018-02-13）：亚庇
 
 - 地点：亚庇
 - 概况：亚庇一日游
@@ -139,38 +139,38 @@ description: desc
 
 	在之前的规划中，今天的上午就是睡懒觉加逛商场买买买的，因此早上起来以后打车（10:01）去了IMAGO，购物到11:39左右打车回到酒店，吃饭以后等待之前预定的KAWA红树林一日游接机导游来接。预定时间是13:30准时到酒店大堂。结果等到两点才来。先后去了海上清真寺，之后在拉萨莉亚香格里拉酒店吃了个简单的下午茶（15:24）就继续前往KAWA红树林，然后坐船（17:36）寻找长鼻猴。
     
-	<img alt="" src="./../public/photo/2018semporna/2018-02-13_17-37-13_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-13_17-37-13_optimized.jpg" width="600px">
 
 	当天天气不是很好，阴雨菲菲，看的长鼻猴都很少，但是有一种雨林穿梭的别样体验。
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-13-17-48-00.gif" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-13-17-48-00.gif" width="600px">
 
 
 	一旦发现大家就都争相拍照（下图中间大树冠间隙比较多的地方）
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-13_17-42-07_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-13_17-42-07_optimized.jpg" width="600px">
   
 	看长鼻猴大概一个多小时，上岸以后吃晚饭，比较简单也不是很好吃的自助餐，然后乘车前往萤火虫的码头。穿救生衣，上船后，小船在河道里缓缓前行。导游用特制的绿光灯，把萤火虫引到船上，由于阴雨，那天的萤火虫相对比较少，但是很容易让你想起《假如爱有天意》里面的场景。
 	
 	看完萤火虫回家的路上，车上有人讨论前一天吃了另一家网红华兴，刚好晚上没吃好，就让大巴在华兴附近停车（21:49），然后再去吃一顿。这一次果然没有失望，不论是椰青还是螺、老虎虾、蟹都很好吃，而且也不贵，只是螃蟹还是没吃到新加坡珍宝海鲜的味道。
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-13_22-00-50_optimized.jpg" width="600px">  
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-13_22-00-50_optimized.jpg" width="600px">  
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-13_22-04-24_optimized.jpg" width="600px">  
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-13_22-04-24_optimized.jpg" width="600px">  
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-13_22-18-08_optimized.jpg" width="600px">  
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-13_22-18-08_optimized.jpg" width="600px">  
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-13_22-26-43_optimized.jpg" width="600px">  
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-13_22-26-43_optimized.jpg" width="600px">  
   
-  <img alt="" src="./../public/photo/2018semporna/2018-02-13_22-28-27_optimized.jpg" width="600px">  
+  <img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-13_22-28-27_optimized.jpg" width="600px">  
   
-  <img alt="" src="./../public/photo/2018semporna/2018-02-13_22-58-17_optimized.jpg" width="600px"> 
+  <img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-13_22-58-17_optimized.jpg" width="600px"> 
   
   等吃完已经是晚上11点了，赶紧打车回家休息，因为明天又要早起。。。
   
-#### 第三天（2018-02-14）：
+#### 第三天（2018-02-14）：亚庇 - 仙本那 - 卡帕莱
 
-- 地点：亚庇 - 斗湖
+- 地点：亚庇 - 斗湖 - 卡帕莱
 - 概况：亚庇灰机前往斗湖后入住卡帕莱
 - 交通：
     - 亚庇 - 斗湖：亚航 AK 6260 09:50（BKI (T1)）- 10:45 (TWU, Tawau Airport)
@@ -185,74 +185,72 @@ description: desc
 
 	今天的行程就是从沙巴出发前往卡帕莱，由于酒店的接送机时间比较奇葩，我们不到八点（07:56）就到达机场了。实在无聊就四处走走顺便吃点早饭咯，便利店有各种泡面，味道也还不错。
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_08-51-00_optimized.jpg" width="600px"> 
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_08-51-00_optimized.jpg" width="600px"> 
 	  
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_09-00-29_optimized.jpg" width="600px"> 
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_09-00-29_optimized.jpg" width="600px"> 
     
 	从昨天下午开始一直有雨，到机场的时候雨也很大。
         
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_09-22-05_optimized.jpg" width="600px"> 
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_09-22-05_optimized.jpg" width="600px"> 
     
 	还好飞机没有晚点，准点起飞，很快就变成了朗朗晴空
    
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_10-18-29_optimized.jpg" width="600px"> 
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_10-18-29_optimized.jpg" width="600px"> 
    
 	10:40的时候准点到达。斗湖机场很小，下飞机以后都不用摆渡车，直接自己走进去。
    
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_10-34-14_optimized.jpg" width="600px"> 
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_10-34-14_optimized.jpg" width="600px"> 
    
 	出了机场就会发现各种酒店的人都在门口接人，基本都要么举着牌，要么穿着酒店的衣服。等人都到齐就出发了，路上会让提前填写各种个人信息和告知书，中午（12:28）终于到达酒店在仙本那的码头。
    
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_12-28-16_optimized.jpg" width="600px"> 
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_12-28-16_optimized.jpg" width="600px"> 
    
 	休息，办理入住（由于是旺季，酒店已经提前把房间都分配好了，只是排队领一下行李牌、船票）。一切就绪后（12：40）就坐上了前往卡帕莱的快艇，一路上风比较大，而且也比较晒。不过景色还不错。
    
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_12-48-18_optimized.jpg" width="600px"> 
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_12-48-18_optimized.jpg" width="600px"> 
    
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_12-54-44_optimized.jpg" width="600px"> 
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_12-54-44_optimized.jpg" width="600px"> 
    
 	沿途也会看到马步和马达京。
    
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_13-12-48_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_13-12-48_optimized.jpg" width="600px">
  
 	到酒店（13:23）以后先安排吃饭、吃完饭以后会有工作人员把所有的新人集中到一个房间，讲解各种注意事项。
    
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_13-24-02_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_13-24-02_optimized.jpg" width="600px">
 
 	彻底搞完（14:51）终于可以坐小电动回房间休息了，行李已经提前送到了房间门口。房间很大，而且海风吹的很舒畅，当然户外就是非常晒了。
 
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_14-55-56_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_14-55-56_optimized.jpg" width="600px">
    	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_15-07-34_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_15-07-34_optimized.jpg" width="600px">
    	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_15-08-03_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_15-08-03_optimized.jpg" width="600px">
  
 	休息到下午四半多，感觉阳光相对温和了以后，打算出门探探酒店，顺便拍点海岛游少不了的比基尼等，除了风大，还是很晒。
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_16-28-00_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_16-28-00_optimized.jpg" width="600px">
 
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_16-28-01_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_16-28-01_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_16-28-17_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_16-28-17_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_16-50-11_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_16-50-11_optimized.jpg" width="600px">
 	
 	也看到水屋还在不停的扩建中
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_18-19-10_optimized.jpg" width="600px">	
-	
-	
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_18-19-10_optimized.jpg" width="600px">	
 	既然海岛摊着，又木有电视，接下来的几天基本上都是吃了睡，睡了吃，早上早起看看日出、下午看看夕阳；顶着大太阳走一走，转一转，晚上再去看看星星，如果有兴趣了写写代码（是的，程序员走到哪里都不能忘记电脑）。把整个酒店走了一圈以后，就找了个地方坐下来吹海风，看日落：
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_17-44-45_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_17-44-45_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_18-21-20_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_18-21-20_optimized.jpg" width="600px">
 
-	<img alt="" src="./../public/photo/2018semporna/2018-02-14_18-23-58_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_18-23-58_optimized.jpg" width="600px">
 
 	结果发现因为下雨导致云层太厚，加上位置不好，夕阳并没有惊喜，就回去吃饭洗洗睡了。
 
-#### 第四天（2018-02-15）
+#### 第四天（2018-02-15）：卡帕莱
 
 - 地点：卡帕莱
 - 概况：卡帕莱自由活动
@@ -265,56 +263,57 @@ description: desc
 - 沿途介绍： 
 
 	前一天天气加行程的原因并不完美，今天就是标准的海岛游的一天。早上以为天气不好就偷懒选择在房间看日出，结果差点错过了最美的日出。早上闹钟响起，在阳台探头一看东方一片金黄	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_06-01-00.gif" width="600px">
+	
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_06-01-00.gif" width="600px">
 	
 	一边拍一边赶紧叫妹子起床，出门，还好虽然错过了前奏，至少还来得及
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_06-10-41_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_06-10-41_optimized.jpg" width="600px">
 	
 	赶紧跑过去，终于，海岛游的日出套餐完美了~
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_06-14-35_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_06-14-35_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_06-23-14_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_06-23-14_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_06-24-35_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_06-24-35_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_06-25-23_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_06-25-23_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_06-25-45_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_06-25-45_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_06-26-38_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_06-26-38_optimized.jpg" width="600px">
 
 	真是再晚几分钟就遗憾好久了，此时回头，住宿区也一片霞光，这个时间随手拍光线都不是一般的好
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_06-30-25_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_06-30-25_optimized.jpg" width="600px">
 	
 	看完了日出就慢慢溜达着早餐，然后回来补觉。晌午打算出门走一圈结果看到阳光还是放弃了
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_10-39-50_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_10-39-50_optimized.jpg" width="600px">
 	
 	实在是晒，继续窝在房间看海，睡觉，看别人玩水。然后中午再去吃个午饭：
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_13-11-13_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_13-11-13_optimized.jpg" width="600px">
 	
 	继续睡觉，等到下午实在待不住，一起出门顶着太阳去逛了一圈卡帕莱上的植物园，然后随便吹吹风，聊聊天，准备看夕阳，有了早上的鼓励，下午看夕阳也有点动力了
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_16-46-08_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_16-46-08_optimized.jpg" width="600px">
 	
 	结果可能是早上的日出太惊艳，日落以惊艳开场，结果以猝不及防的一团积雨云结束了。
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_17-52-14_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_17-52-14_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_18-03-37_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_18-03-37_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_18-05-35_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_18-05-35_optimized.jpg" width="600px">
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-15_18-13-39_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-15_18-13-39_optimized.jpg" width="600px">
 	
 	是的，就最后一张图右边的云，很快就挡住了所有的光芒，一点不留，只好黯然离场，去吃晚饭。吃完饭云太厚，也没有星星看，回房间玩玩手机、定好半夜的起床看星星的闹钟就入睡了。晚上起来了两次，可以看到的星星很多，但是因为有云加上有居住区，因此银河只能隐约看到并不清晰。	
 	就这样看日出、看夕阳、看星星、吃、喝、睡的一天又过去了，真真的海岛瘫。
 
-#### 第五天（2018-02-16）
+#### 第五天（2018-02-16）：卡帕莱
 
 - 地点：卡帕莱
 - 概况：卡帕莱自由活动
@@ -328,9 +327,9 @@ description: desc
 
 	前面两天穿插已近把水屋玩的很彻底了，又不想坐船去别的海岛玩，所以原本的规划今天是去深潜的，结果临时遇到一点状况，最终深潜没有成行，浮潜之前体验了一把以后也没太大兴趣（主要还是人太多太乱了），今天的行程就和昨天基本一样了，唯一多出来的就是穿插拍拍鱼，拍拍海之类。今天天气不作美，日出、晚霞、星星都很一般，相当于木有~
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-16_14-08-00_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-16_14-08-00_optimized.jpg" width="600px">
 	
-#### 第六天（2018-02-17）：
+#### 第六天（2018-02-17）：斗湖 - 亚庇 - 广州
 
 - 地点：斗湖 - 亚庇 - 广州
 - 概况：全天灰机、斗湖出发亚庇中转前往广州
@@ -354,13 +353,13 @@ description: desc
 	
 	到机场安检、继续等，然后准点从斗湖出发。到达沙巴机场才发现时间还很早，待着太无聊，就又临时打车（15：02）去了一趟IMAGO扫货。因为已经是第二次去了，很熟悉，所以扫货很快，加上担心回来的时候遇到晚高峰，因此比较早的时候（16:13）就又回到了机场。
 	
-	<img alt="" src="./../public/photo/2018semporna/2018-02-17_17-04-57_optimized.jpg" width="600px">
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-17_17-04-57_optimized.jpg" width="600px">
 
 	再吃了个麦当劳就已经五点多了，然后托运，过关，再免税店再扫货一波，基本上就快登机了。登机以后妹子说终于要回家了，好亲切。
 	
 	估计由于是晚上的航班，加上天气还好，所以没有什么延误。晚上10点到达广州，因为我们是南航的中转联程，因此预定了南航的中转住宿，到达后过关，拿行李，就到航站楼1层20号门南航中转住宿柜台去，给服务人员机票，然后确认以后就开始等酒店来接。到酒店已经十一点多了，因为明天还要早起，就洗洗赶紧睡了。
 	
-#### 第七天（2018-02-18）：
+#### 第七天（2018-02-18）：广州 - 武汉
 
 - 地点：广州 - 武汉
 - 概况：上午飞机从广州飞往武汉
