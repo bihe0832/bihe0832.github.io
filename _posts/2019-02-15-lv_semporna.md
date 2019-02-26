@@ -238,12 +238,13 @@ description: desc
 	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_16-50-11_optimized.jpg" width="600px">
 	
 	也看到水屋还在不停的扩建中
-	
-	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_18-19-10_optimized.jpg" width="600px">	
+
+	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_18-19-10_optimized.jpg" width="600px">
+
 	既然海岛摊着，又木有电视，接下来的几天基本上都是吃了睡，睡了吃，早上早起看看日出、下午看看夕阳；顶着大太阳走一走，转一转，晚上再去看看星星，如果有兴趣了写写代码（是的，程序员走到哪里都不能忘记电脑）。把整个酒店走了一圈以后，就找了个地方坐下来吹海风，看日落：
-	
+
 	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_17-44-45_optimized.jpg" width="600px">
-	
+
 	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_18-21-20_optimized.jpg" width="600px">
 
 	<img src="https://blog.bihe0832.com/public/photo/2018semporna/2018-02-14_18-23-58_optimized.jpg" width="600px">
