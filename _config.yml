@@ -11,15 +11,15 @@ kramdown:
 author:
   name: 子勰
   email: blog@bihe0832.com
-  link: http://blog.bihe0832.com
+  link: https://blog.bihe0832.com
   weibo: http://weibo.com/bihe0832
-  github: http://github.com/bihe0832
+  github: https://github.com/bihe0832
   qq: 402998643
 
 # 站点信息
 title: 子勰的博客
 description: 屌丝程序猿，鸡血攻城狮；努力学技术，潜心做精品！
-url: http://blog.bihe0832.com
+url: https://blog.bihe0832.com
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
