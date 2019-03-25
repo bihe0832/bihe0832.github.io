@@ -22,18 +22,21 @@ description: desc
 
 遇到的第一个问题，就是快捷键，本来想改为和Eclipse一致的，最终在基友的劝说下决定既然走上不归路，就重新适应他的快捷键。整理了下常用的一些快捷键。
 
-操作             |     对应快捷键    
+|操作             |     对应快捷键  |
 ----------------|----------------
-删除行 | Cmd + del   
-格式化代码  | Cmd + Option + L 
-查找+替换  | Cmd + R 
-import | option + enter 
-清除无效包引用      | Option + Control + O 
-查找调用的位置 | Ctrl + Option + H
-上下移动代码        | Option + Shift + Up/Down 
-注释代码(//)        | Cmd + /
-注释代码(/**/)      | Cmd + Option + / 
-快捷覆写方法        | Cmd + O
+| 删除行 | Cmd + del   |
+| 格式化代码  | Cmd + Option + L |
+| 查找+替换  | Cmd + R |
+| 使用推荐 | option + enter |
+| 清除无效包引用      | Option + Control + O |
+| 查找调用的位置 | Option + F7|
+| 全局修改 | Shift + F6|
+| 上下移动代码        | Option + Shift + Up/Down |
+| 注释代码(//)        | Cmd + /|
+| 注释代码(/**/)      | Cmd + Option + / |
+| 全局查找类       | Cmd + O|
+| 全局设置及工具查找 | Cmd + Shift + A |
+| 当前类查找变量或函数     | Cmd + F12|
  
 ## 异常处理
 
