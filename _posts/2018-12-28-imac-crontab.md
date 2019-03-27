@@ -59,7 +59,7 @@ description: 最近工作过程中需要跑一些定时任务，之前都是放�
 
 	➜  LaunchAgents  sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 	
-然后发现这个过程会持续几分钟，我在中途继续尝试查看启动项，发现还是一样的提示，然后再次load他也会提示已经在load：
+**然后发现这个过程会持续几分钟，我在中途继续尝试查看启动项，发现还是一样的提示，然后再次load他也会提示已经在load**：
 	
 	➜  LaunchAgents  locate com.vix.cron
 	
@@ -74,7 +74,7 @@ description: 最近工作过程中需要跑一些定时任务，之前都是放�
 	➜  LaunchAgents  sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
 	/System/Library/LaunchDaemons/com.apple.locate.plist: service already loaded
 
-在等待一段时间以后，再次键入命令，终于出现了预期的结果
+**在等待一段时间以后，再次键入命令，终于出现了预期的结果:**
 
 	➜  LaunchAgents  locate com.vix.cron
 	/System/Library/LaunchDaemons/com.vix.cron.plist
