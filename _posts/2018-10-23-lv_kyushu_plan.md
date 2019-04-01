@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2018年十一国庆九州行规划
+title: 2018年十一国庆九州行行程规划
 category: 在路上
 tags: 旅行
 keywords: 九州 屋久岛 鹿儿岛 白谷云水峡 宫之浦 安房 千寻
