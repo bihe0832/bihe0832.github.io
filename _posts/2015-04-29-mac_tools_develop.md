@@ -50,11 +50,11 @@ Zsh是一款强大的虚拟终端，既是一个系统的虚拟终端，也可�
 
 - 个人配置文件：
 	
-	[https://github.com/bihe0832/Settings-Tools/blob/master/config/.zshrc](https://github.com/bihe0832/Settings-Tools/blob/master/config/.zshrc)
+	[https://raw.githubusercontent.com/bihe0832/Settings-Tools/master/config/mac/.zshrc](https://raw.githubusercontent.com/bihe0832/Settings-Tools/master/config/mac/.zshrc)
 
 - oh-my-zsh相关文件：
 
-	[https://github.com/bihe0832/Settings-Tools/blob/master/config/.oh-my-zsh.zip](https://github.com/bihe0832/Settings-Tools/blob/master/config/.oh-my-zsh.zip)，
+	[https://raw.githubusercontent.com/bihe0832/Settings-Tools/master/config/.oh-my-zsh.zip](https://raw.githubusercontent.com/bihe0832/Settings-Tools/master/config/.oh-my-zsh.zip)，
 
 	给懒人准备的，Mac自带了zsh，因此可以不用再安装，只需要加上对应的配置即可。
 
