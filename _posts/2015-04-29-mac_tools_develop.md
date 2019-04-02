@@ -40,24 +40,6 @@ Mac下一款完美替代spotlight的工具，可以快速的搜索本地程序�
 
 	[http://www.zhihu.com/question/20656680](http://www.zhihu.com/question/20656680)
 
-### 终极 Shell：zsh
-
-Zsh是一款强大的虚拟终端，既是一个系统的虚拟终端，也可以作为一个脚本语言的交互解析器。它在兼容Bash的同时有如下优点：更快、优化了的自动补全、优化的模式识别、Improved array handling、全面可定制。
-
-- 使用方法：
-
-	网上有很多，自行google。后续自己出一个。
-
-- 个人配置文件：
-	
-	[https://raw.githubusercontent.com/bihe0832/Settings-Tools/master/config/mac/.zshrc](https://raw.githubusercontent.com/bihe0832/Settings-Tools/master/config/mac/.zshrc)
-
-- oh-my-zsh相关文件：
-
-	[https://raw.githubusercontent.com/bihe0832/Settings-Tools/master/config/.oh-my-zsh.zip](https://raw.githubusercontent.com/bihe0832/Settings-Tools/master/config/.oh-my-zsh.zip)，
-
-	给懒人准备的，Mac自带了zsh，因此可以不用再安装，只需要加上对应的配置即可。
-
 ### 最强终端：iTerm2
 
 - iterm的一些主要优点：
@@ -87,7 +69,55 @@ Zsh是一款强大的虚拟终端，既是一个系统的虚拟终端，也可�
 
 	貌似有上面的快捷键就够了
 
+### 终极 Shell：zsh
 
+Zsh是一款强大的虚拟终端，既是一个系统的虚拟终端，也可以作为一个脚本语言的交互解析器。它在兼容Bash的同时有如下优点：更快、优化了的自动补全、优化的模式识别、Improved array handling、全面可定制。
+
+- 使用方法：
+
+	网上有很多，自行google。后续自己出一个。
+
+- 切换方法：
+
+	输入命令查看系统支持的shell以及当前使用的shell：
+
+		➜  ~  cat /etc/shells
+		# List of acceptable shells for chpass(1).
+		# Ftpd will not allow users to connect who are not using
+		# one of these shells.
+		
+		/bin/bash
+		/bin/csh
+		/bin/ksh
+		/bin/sh
+		/bin/tcsh
+		/bin/zsh
+		➜  ~  echo $SHELL
+		/bin/bash
+
+	可以看到系统默认的shell还是bash，而且Mac已经支持了zsh，因此只需要执行下面的命令切换即可：
+
+		➜  ~  chsh -s /bin/zsh
+		Changing shell for zixie.
+		Password for zixie:
+	
+	切换以后，关闭并重启终端，运行命令查看已经切换为zsh了。
+	
+		➜  ~  echo $SHELL
+		/bin/zsh
+
+- 增加自定义配置 
+
+	由于个人已经把自己常用的各种环境配置等使用了专门的github仓库来管理，因此这一步就需要去github仓库clone对应的开发配置。包括：zsh的配置、环境变量配置等。将配置clone到`~/zixie/github`以后，执行下面的命令设置并生效配置：
+
+		cp -fr ~/zixie/github/Settings-Tools/config/.oh-my-zsh ~/.oh-my-zsh
+		cp -fr ~/zixie/github/Settings-Tools/config/mac/.zshrc ~/.zshrc
+		source ~/.zshrc
+
+- 个人配置：
+	
+	- 配置对应github：[https://github.com/bihe0832/Settings-Tools](https://github.com/bihe0832/Settings-Tools)
+	
 ### 抓包：Charles & Fiddler
 
 总的一句话：mac下Charles和windows下的Fiddler绝对是你最爱的抓包工具。
