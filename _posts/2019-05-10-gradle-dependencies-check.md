@@ -98,6 +98,10 @@ description: 在平时的开发中，大家经常会遇到因为gradle的构建�
 	
 ## 工程介绍
 
+### 代码路径
+
+github：[https://github.com/bihe0832/Gradle-Dependencies-Check](https://github.com/bihe0832/Gradle-Dependencies-Check)
+
 ### 代码目录
 
 	Gradle-Dependencies-Check
