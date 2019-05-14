@@ -15,11 +15,16 @@ description: 在平时的开发中，大家经常会遇到因为gradle的构建�
 
 ### 在项目中添加插件
 
-- 在repositories中添加插件仓库：
+- 在项目根目录的build.gradle中添加插件仓库：
 	
-	    repositories {
-	        maven { url "https://plugins.gradle.org/m2/" }
-	    }
+	    buildscript {
+	       repositories {
+		        jcenter()
+		    }
+		    dependencies {
+		        classpath "com.bihe0832:GradleDependenciesCheck:1.0.2"
+		    }
+		}
 
 -	引入插件，并添加插件相关配置
 
@@ -44,9 +49,11 @@ description: 在平时的开发中，大家经常会遇到因为gradle的构建�
 
 - 将插件添加到其余系统任务中自动执行
 
-		afterEvaluate { Project project ->
-	        project.getTasks().getByName('clean').dependsOn("checkGradleDependencies")
-	        project.getTasks().getByName('preBuild').dependsOn("checkGradleDependencies")
+		subprojects {
+			afterEvaluate { Project project ->
+		        project.getTasks().getByName('clean').dependsOn("checkGradleDependencies")
+		        project.getTasks().getByName('preBuild').dependsOn("checkGradleDependencies")
+		    }
 	    }
 
 完整的插件使用方式，可以参考项目的事例Sample的根目录的build.gradle
@@ -96,39 +103,13 @@ description: 在平时的开发中，大家经常会遇到因为gradle的构建�
 		
 		4:39:17 PM: Task execution finished 'listGradleDependencies'.
 	
-## 工程介绍
+## 项目相关：
 
-### 代码路径
+### 源码地址
 
-github：[https://github.com/bihe0832/Gradle-Dependencies-Check](https://github.com/bihe0832/Gradle-Dependencies-Check)
+-  项目源码及使用Demo：[https://github.com/bihe0832/Gradle-Dependencies-Check](https://github.com/bihe0832/Gradle-Dependencies-Check)
 
-### 代码目录
-
-	Gradle-Dependencies-Check
-		│
-		├─── Gradle-Dependencies-Check-Plugin 构建依赖自动检查插件源码
-		|
-		├─── Sample 构建依赖自动检查插件测试用Demo
-		│
-		└─── README.md 项目介绍
-	   	
-### 使用方法
-
-- 如何修改配置及运行工程，请参考本人博客：[终端基于gradle的开源项目运行环境配置指引](
-http://blog.bihe0832.com/android-as-gradle-config.html)
-
-- 运行流程：
-
-	- 启动Gradle-Dependencies-Check-Plugin，编辑通过错以后，执行Task uploadArchives
-	- 启动Sample，修改根目录build.gradle的repositories，修改后如下：
-
-		    repositories {
-			        maven { url './libs/maven_local' }
-			//        maven { url "https://plugins.gradle.org/m2/" }
-			}
-	- 在Sample运行clean，查看效果
-
-## 后续规划
+### 后续规划
 
 - 检查所有依赖的最新版，然后推荐更新
 
