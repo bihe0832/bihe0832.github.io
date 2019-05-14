@@ -22,8 +22,10 @@
 <script>
     {% if page.category %}
       $('a[href="#{{ page.category }}"]').tab('show');
-    {% else %}
+    {% else if site.active %}
         $('a[href="#{{ site.active }}"]').tab('show');
+    {% else %}
+      $('a[href="#终端开发"]').tab('show');
     {% endif %} 
 </script>
 <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px;

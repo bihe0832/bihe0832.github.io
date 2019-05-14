@@ -5,3 +5,17 @@
         <div id="nav"></div>
     </div>
 </div>
+<script type="text/javascript" src="/public/js/jquery.js"></script>
+<script type="text/javascript" src="/public/js/bootstrap.js"></script>
+<script src="/public/js/jquery.pjax.js"></script>
+<script src="/public/js/prettify/prettify.js"></script>
+<script src="/public/js/base.js"></script>
+<script>
+    {% if page.category %}
+      $('a[href="#{{ page.category }}"]').tab('show');
+    {% else if site.active %}
+        $('a[href="#{{ site.active }}"]').tab('show');
+    {% else %}
+    	$('a[href="#终端开发"]').tab('show');
+    {% endif %} 
+</script>
