@@ -16,13 +16,13 @@ description: desc1
 
 	也就是你正在看的这篇，算是个开头和总体总结。
 
-- `开发第一个gradle插件`：待写
+- `开发第一个gradle插件`：[点击查看](https://blog.bihe0832.com/gradle_plugin_new.html)
 
-	主要介绍一个简单的gradle插件从0开始写到可以本地运行需要的问题
+	主要介绍如何从0新建一个简单的gradle插件并可以在本地运行的过程
 
-- `gradle插件调试方法`：待写
+- `gradle插件调试方法`：[点击查看](https://blog.bihe0832.com/gradle_plugin_debug.html)
 
-	主要介绍一个gradle插件开发过程中，如何动态调试你的gradle插件
+	主要介绍gradle插件开发过程中，如何动态调试你的gradle插件
 
 - `发布gradle插件到gradle插件库`：待写
 
