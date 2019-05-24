@@ -2,24 +2,39 @@
 layout: default
 ---
 {% include header.html %}
-<article class="post">
-  <div class="col-md-12 aside3-title">
-    <br>
-    <h2 id="#identifier">{{ page.title }}</h2>
-    {{ page.date | date:"%Y年%m月%d日" }}
-    <HR>
-  </div>
-  <div id="content" style="margin-left:40px;margin-right:40px;color:#fff;height:100%">
-	{{ content }}
-  </div>
-</article>
- 	
-<script type="text/javascript" src="https://tajs.qq.com/stats?sId=37805902" charset="UTF-8"></script>
-<script type="text/javascript" src="./../public/js/kity.min.js"></script>
-<script type="text/javascript" src="./../public/js/kityminder.core.js"></script>
+ <meta name="viewport" content="initial-scale=1.0, user-scalable=no" >
+<link rel="stylesheet" href="/public/css/kityminder.css" rel="stylesheet">
+<style type="text/css">
+    .go-back {
+        padding-top: 20;
+        font-size: 18px;
+        margin-left: 20;
+        line-height: 1.5;
+    }
+
+    .go-back a{
+        color:white;
+    }
+</style>
+<script type="text/javascript" src="/public/js/kity.min.js"></script>
+<div class="go-back">
+  <a class="pjaxlink" href="/"> 回到主页</a>
+</div>
+
+<div class="col-md-12 aside3-title">
+<h3 id="#identifier">{{ page.title }}</h3>
+{{ page.date | date:"%Y年%m月%d日" }}
+<HR>
+</div>
+
+{{ content }}
+<script type="text/javascript" src="/public/js/kityminder.core.min.js"></script>
 <script type="text/javascript">
-var km = window.km = new kityminder.Minder();
-[].forEach.call(document.querySelectorAll(".km-container"), function(dom){
-	km.setup(dom);
-});
+    // 创建 km 实例
+    /* global kityminder */
+    var km = window.km = new kityminder.Minder();
+    km.setup('#minder-view');
+    km.disable();
+    km.execCommand('hand');
 </script>
+
