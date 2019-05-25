@@ -7,6 +7,16 @@
 {% if page.description  %}
   <meta name="description " content="{{ page.description  }}">
 {% endif %}
+<meta property="og:title" content="{{ page.title }}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:description" content="{{ page.description  }}" />
+<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+<meta property="og:site_name" content="{{ site.title }}" />
+<meta property="og:type" content="article" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","url":"{{ site.url }}{{ page.url }}","headline":"SDK思维导图","dateModified":" {{ site.time }}","datePublished":" {{ site.time }}","author":{"@type":"Person","name":"{{ site.author.name }}"},"description":"{{ page.description }}","mainEntityOfPage":{"@type":"WebPage","@id":"{{ site.url }}{{ page.url }}"},"@context":"http://schema.org"}</script>
+
 <link rel="shortcut icon" href="{{ site.favicon }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/public/css/bootstrap.css">
@@ -14,3 +24,4 @@
 <link rel="stylesheet" href="/public/js/prettify/prettify.css">
 <link rel="stylesheet" href="/public/css/base.css">
 <link href="/pages/atom.xml" rel="alternate" title="{{site.title}}" type="application/atom+xml">
+
