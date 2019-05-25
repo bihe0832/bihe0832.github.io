@@ -3,7 +3,7 @@ layout: post
 title: Gradle环境变量那些事
 category: 开发工具
 tags: tags
-keywords: Gradle 环境变量 gradle.properties
+keywords: Gradle 环境变量 gradle properties
 description: Gradle环境变量相关的内容，然后整理一下
 ---
 

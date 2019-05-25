@@ -8,7 +8,7 @@ description: 主要介绍如何新建一个插件并可以在本地运行
 ---
 ### 背景
 
-这是[Gradle插件开发系列之总纲（点击查看）](https://blog.bihe0832.com/gradle_plugin_summary.html)系列的第二篇，整个文档基于开发的插件[一款检查Gradle依赖配置是否冲突的插件](https://blog.bihe0832.com/gradle-dependencies-check.html)完成。
+这是[Gradle插件开发系列之总纲（点击查看）](https://blog.bihe0832.com/gradle_plugin_summary.html)系列的第二篇，整个文档基于开发的插件[一款检查Gradle依赖配置是否冲突的插件](https://blog.bihe0832.com/gradle-dependencies-check.html)完成。相关源码在 [https://github.com/bihe0832/Gradle-Dependencies-Check](https://github.com/bihe0832/Gradle-Dependencies-Check)。
 
 这篇文章主要介绍如何新建一个插件并可以在本地运行。
 
