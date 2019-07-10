@@ -77,169 +77,134 @@ description: 最近有一个产品需求又涉及到了JSBridge，继续一边�
 	
 3. 初始化web端的JSBridge实例
 
-	在新打卡页面的Console中输入下面的JS代码，初始化web端的JSBridge实例。
+	在新打卡页面的Console中输入下面的JS代码，初始化web端的JSBridge实例。如果是实际开发，可以在页面中引入js：
 	
-		//注册全局回调必须
-		window.MyJSBridge = window.MyJSBridge || {};
-		
-		var framesPool = [];
-		
-		function createNewFrame() {
-		    var frame = document.createElement("iframe");
-		    framesPool.push(frame);
-		    frame.style.cssText = "position:absolute;left:0;top:0;width:0;height:0;visibility:hidden;";
-		    frame.frameBorder = "0";
-		    document.body.appendChild(frame);
-		    return frame;
-		}
-		
-		function _createMultiCallback(callbackParams, alias) {
-		    return function (res) {
-		        callbackParams.result[alias] = res;
-		        callbackParams.count--;
-		        if (callbackParams.count == 0 && callbackParams.callback) {
-		            res = callbackParams.callback(callbackParams.result);
-		            if (res && typeof res == "object") {
-		                multiCall.apply(null, [res].concat(callbackParams.callbackChain));
-		            }
-		        }
-		    };
-		};
-		
-		var _callWithScheme = callWithScheme = function (url) {
-		    console.log("JsBridge.callWithScheme: ", url); // @debug
-		    var frame;
-		    for (var i = 0; frame = framesPool[i]; i++) {
-		        if (!frame._busy) {
-		            break;
-		        }
-		    }
-		    if (!frame || frame._busy) {
-		        frame = createNewFrame();
-		    }
-		    frame._busy = true;
-		    frame.src = url;
-		    setTimeout(function () {
-		        frame._busy = false;
-		    }, 0);
-		};
-		
-		var allowBatchCall = true;
-		
-		var seq = 1;
-		var map = {};
-		var pool = [];
-		var timer = 0;
-		
-		function callSingle(name, args, callback, callbackChain) {
-		    var url = ["jsb:/", name, seq, "MyJSBridge.callback?"].join("/"), params = [];
-		    for (var key in args) {
-		        params.push(encodeURIComponent(key) + "=" + encodeURIComponent(args[key] + ""));
-		    }
-		    url += params.join("&");
-		    map[seq++] = {
-		        callback: callback,
-		        callbackChain: callbackChain
-		    };
-		    _callWithScheme(url);
-		}
-		
-		function callBatch() {
-		    timer = 0;
-		    if (pool.length == 1) {
-		        var one = pool[0];
-		        callSingle(one.name, one.args, one.callback, one.callbackChain);
-		    } else {
-		        var params = [];
-		        for (var i = 0, one; one = pool[i]; i++) {
-		            if (one.args) {  
-		                for (var p in one.args) {
-		                    if(one.args.hasOwnProperty(p)) {
-		                        if (one.args[p]) {
-		                            one.args[p] = encodeURIComponent(one.args[p]);
-		                        }
-		                    }
-		                }
-		            }
-		            params.push({
-		                method: one.name,
-		                seqid: seq,
-		                args: one.args,
-		                callback: "MyJSBridge.callback"
-		            });
-		            map[seq++] = {
-		                callback: one.callback
-		            };
-		        }
-		        var url = ["jsb://callBatch", seq++, "MyJSBridge.callback?param="].join("/");
-		        url += encodeURIComponent(JSON.stringify(params));
-		        _callWithScheme(url);
-		    }
-		    pool = [];
-		}
-		
-		var call = _call = function (name, args, callback) {
-		    console.log("JsBridge._call: ", name, args); // @debug
-		    args = args || {};
-		    var callbackChain = [].slice.call(arguments, 3);
-		    if (allowBatchCall) {
-		        pool.push({
-		            name: name,
-		            args: args,
-		            callback: callback,
-		            callbackChain: callbackChain
-		        });
-		        !timer && (timer = setTimeout(callBatch, 0));
-		    } else {
-		        callSingle(name, args, callback, callbackChain);
-		    }
-		};
-		
-		var multiCall = function (args, callback) {
-		    console.log("JsBridge.multiCall: ", args); // @debug
-		    var params = [], callbackParams = {
-		        callback: callback,
-		        callbackChain: [].slice.call(arguments, 2),
-		        count: 0,
-		        result: {}
-		    };
-		    for (var alias in args) {
-		        var one = args[alias];
-		        params.push({
-		            method: one.name,
-		            seqid: seq,
-		            args: one.args || {},
-		            callback: "MyJSBridge.callback"
-		        });
-		        map[seq++] = {
-		            callback: _createMultiCallback(callbackParams, alias)
-		        };
-		        callbackParams.count++;
-		    }
-		    if (callbackParams.count == 0) {
-		        return;
-		    }
-		    var url = ["jsb://callBatch", seq++, "MyJSBridge.callback?param="].join("/")
-		    url += encodeURIComponent(JSON.stringify(params));
-		    _callWithScheme(url);
-		};
-		
-		var callback = function (args) {
-		    console.log("MyJSBridge.callback: ", args); // @debug
-		    var one, res, callbackChain;
-		    if (map[args.seqid]) {
-		        one = map[args.seqid];
-		        callbackChain = one.callbackChain;
-		        res = one.callback && one.callback(args);
-		        delete map[args.seqid];
-		    }
-		    if (res && typeof res == "object") {
-		        call.apply(null, [res.name, res.args || {}].concat(callbackChain || []));
-		    }
-		};
-		
-		MyJSBridge.callback = callback;
+	https://microdemo.bihe0832.com/res/js/jsbridge.js 
+	
+	即可直接调用，具体可以参考页面：
+	
+	https://microdemo.bihe0832.com/jsbridge/index.html
+	
 
+		//注册全局回调必须
+		 window.ZixieJSBridge = window.ZixieJSBridge || {};
+			
+		 var framesPool = [];
+			
+		 function createNewFrame() {
+		     var frame = document.createElement("iframe");
+		     framesPool.push(frame);
+		     frame.style.cssText = "position:absolute;left:0;top:0;width:0;height:0;visibility:hidden;";
+		     frame.frameBorder = "0";
+		     document.body.appendChild(frame);
+		     return frame;
+		 }
+		
+		 var _callWithScheme = callWithScheme = function (url) {
+		     console.log("JsBridge.callWithScheme: ", url); // @debug
+		     var frame;
+		     for (var i = 0; frame = framesPool[i]; i++) {
+		         if (!frame._busy) {
+		             break;
+		         }
+		     }
+		     if (!frame || frame._busy) {
+		         frame = createNewFrame();
+		     }
+		     frame._busy = true;
+		     frame.src = url;
+		     setTimeout(function () {
+		         frame._busy = false;
+		     }, 0);
+		 };
+			
+		 var allowBatchCall = true;
+			
+		 var seq = 1;
+		 var map = {};
+		 var pool = [];
+		 var timer = 0;
+			
+		 function callSingle(name, args, callback, callbackChain) {
+		     var url = ["jsb:/", name, seq, "ZixieJSBridge.callback?"].join("/"), params = [];
+		     for (var key in args) {
+		         params.push(encodeURIComponent(key) + "=" + encodeURIComponent(args[key] + ""));
+		     }
+		     url += params.join("&");
+		     map[seq++] = {
+		         callback: callback,
+		         callbackChain: callbackChain
+		     };
+		     _callWithScheme(url);
+		 }
+			
+		 function callBatch() {
+		     timer = 0;
+		     if (pool.length == 1) {
+		         var one = pool[0];
+		         callSingle(one.name, one.args, one.callback, one.callbackChain);
+		     } else {
+		         var params = [];
+		         for (var i = 0, one; one = pool[i]; i++) {
+		             if (one.args) {  
+		                 for (var p in one.args) {
+		                     if(one.args.hasOwnProperty(p)) {
+		                         if (one.args[p]) {
+		                             one.args[p] = encodeURIComponent(one.args[p]);
+		                         }
+		                     }
+		                 }
+		             }
+		             params.push({
+		                 method: one.name,
+		                 seqid: seq,
+		                 args: one.args,
+		                 callback: "ZixieJSBridge.callback"
+		             });
+		             map[seq++] = {
+		                 callback: one.callback
+		             };
+		         }
+		         var url = ["jsb://callBatch", seq++, "ZixieJSBridge.callback?param="].join("/");
+		         url += encodeURIComponent(JSON.stringify(params));
+		         _callWithScheme(url);
+		     }
+		     pool = [];
+		 }
+			
+		 var call = _call = function (name, args, callback) {
+		     console.log("JsBridge._call: ", name, args); // @debug
+		     args = args || {};
+		     var callbackChain = [].slice.call(arguments, 3);
+		     if (allowBatchCall) {
+		         pool.push({
+		             name: name,
+		             args: args,
+		             callback: callback,
+		             callbackChain: callbackChain
+		         });
+		         !timer && (timer = setTimeout(callBatch, 0));
+		     } else {
+		         callSingle(name, args, callback, callbackChain);
+		     }
+		 };
+			
+		 var callback = function (args) {
+		     console.log("ZixieJSBridge.callback: ", args); // @debug
+		     var one, res, callbackChain;
+		     if (map[args.seqid]) {
+		         one = map[args.seqid];
+		         callbackChain = one.callbackChain;
+		         res = one.callback && one.callback(args);
+		         delete map[args.seqid];
+		     }
+		     if (res && typeof res == "object") {
+		         call.apply(null, [res.name, res.args || {}].concat(callbackChain || []));
+		     }
+		 };
+			
+		 ZixieJSBridge.callback = callback;
+		 
 4. 当在页面中完成Web端的JSBridge实例的实例化以后，就可以调用新增的接口，测试效果，例如：
 
 		call('getAppInfo', {packagename:"com.tencent.mm"}, (res) => {
