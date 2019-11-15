@@ -92,4 +92,14 @@ description: 个人写的所有关于iMac相关的文章汇总
 		
 	- 概述：介绍使用 Xcode 过程中一些配置相关的内容。
 
+- [iMac上安装Python2.7 和 Python3](http://blog.bihe0832.com/imac-python.html)
+	
+	- 链接：[http://blog.bihe0832.com/imac-python.html](http://blog.bihe0832.com/imac-python.html)
+		
+	- 概述：介绍使用 Homebrew 安装Python相关的内容。
 
+- [iMac 使用自带的 Apache 启用本地web服务](http://blog.bihe0832.com/imac-apache.html)
+	
+	- 链接：[http://blog.bihe0832.com/imac-apache.html](http://blog.bihe0832.com/imac-apache.html)
+		
+	- 概述：介绍如何使用 iMac自带的Apache 在本地启用web服务，以及过程中发现的问题
