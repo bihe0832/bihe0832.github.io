@@ -92,6 +92,12 @@ description: 个人写的所有关于iMac相关的文章汇总
 		
 	- 概述：介绍使用 Xcode 过程中一些配置相关的内容。
 
+- [iMac搭建jekyll本地环境](https://blog.bihe0832.com/imac-jekyll.html)
+	
+	- 链接：[https://blog.bihe0832.com/imac-jekyll.html](https://blog.bihe0832.com/imac-jekyll.html)
+		
+	- 概述：介绍使用 Homebrew 安装jekyll相关的内容。
+
 - [iMac上安装Python2.7 和 Python3](http://blog.bihe0832.com/imac-python.html)
 	
 	- 链接：[http://blog.bihe0832.com/imac-python.html](http://blog.bihe0832.com/imac-python.html)
