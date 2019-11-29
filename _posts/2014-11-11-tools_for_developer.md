@@ -48,6 +48,12 @@ description: 开发中一些常用的工具链接
 
 - **联图：**[http://www.liantu.com/](http://www.liantu.com/)
 
+### 二维码API：
+
+- **草料：**[https://cli.im/api](https://cli.im/api) 
+
+- **联图：**[http://topscan.com/pingtai](http://topscan.com/pingtai)
+
 ### 网络相关工具：
 
 - **端口扫描：**[http://tool.chinaz.com/port/](http://tool.chinaz.com/port/) 
