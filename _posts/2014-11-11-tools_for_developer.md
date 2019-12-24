@@ -36,7 +36,12 @@ description: 开发中一些常用的工具链接
      
 - **RGB转HEX：**[http://www.javascripter.net/faq/rgbtohex.htm](http://www.javascripter.net/faq/rgbtohex.htm)   
 
-- **JS混淆、加密、压缩：** [http://tool.chinaz.com/js.aspx](http://tool.chinaz.com/js.aspx) 
+
+- **JS混淆、加密、压缩：** 
+
+	- [https://www.css-js.com/](https://www.css-js.com/)
+
+	- [http://tool.chinaz.com/js.aspx](http://tool.chinaz.com/js.aspx) 
 
 - **CSS 格式化：** [http://tool.chinaz.com/Tools/CssFormat.aspx](http://tool.chinaz.com/Tools/CssFormat.aspx) 
 
