@@ -690,6 +690,136 @@ description: 总遇到使用git的时候需要敲一些不常用的命令，每�
 		  remotes/origin/v1.1
 		  remotes/origin/v1.1-preview-1	
 
+## 日志相关
+
+### 日志展示参数
+
+git log包含了相当丰富的版本提交信息，平时我们有时候想要更加简洁或者定制的信息，就可以使用利用他提供的参数来获取。下面列出一些常用的占位符参数：
+
+- 提交状态基础信息
+
+	主要是版本基础信息，例如作者、日期、commit哈希等
+
+	| 参数 | 含义                                       |
+	|------|--------------------------------------------|
+	| %H   | 提交对象（commit）的完整哈希字串           |
+	| %h   | 提交对象的简短哈希字串                     |
+	| %T   | 树对象（tree）的完整哈希字串               |
+	| %t   | 树对象的简短哈希字串                       |
+	| %P   | 父对象（parent）的完整哈希字串             |
+	| %p   | 父对象的简短哈希字串                       |
+	| %an  | 作者（author）的名字                       |
+	| %ae  | 作者的电子邮件地址                         |
+	| %ad  | 作者修订日期（可以用 -date= 选项定制格式） |
+	| %ar  | 作者修订日期，相对格式按多久以前的方式显示（1 day ago）|
+	| %at  | 作者修订日期，UNIX timestamp        |
+	| %ai | 作者修订日期，ISO 8601 格式 (2019-11-15 13:06:25 +0800)       |
+	| %d   | ref名称                                   |
+	| %cn  | 提交者(committer)的名字                    |
+	| %ce  | 提交者的电子邮件地址                       |
+	| %cd  | 提交日期（可以用 -date= 选项定制格式） |
+	| %cr  | 提交日期，相对格式按多久以前的方式显示（1 day ago）|
+	| %ct  | 提交日期，UNIX timestamp        |
+	| %ci  | 提交日期，ISO 8601 格式 (2019-11-15 13:06:25 +0800)       |
+	| %s   | commit信息标题                                   |
+	| %f   | sanitized subject line, suitable for a filename |
+	| %b   | commit信息内容 |
+	| %N   | commit notes |
+
+- 提交内容信息
+
+	主要是每次提交的数据统计、版本树形图等
+	
+	| 选项            | 说明                       |
+	|-----------------|----------------------------|
+	| -p              | 按补丁格式显示每个更新之间的差异   |
+	| --stat          | 显示每次更新的文件修改统计信息 |
+	| --shortstat     | 只显示 --stat 中最后的行数修改添加移除统计  |
+	| --name-only     | 仅在提交信息后显示已修改的文件清单      |
+	| --name-status   | 显示新增、修改、删除的文件清单  |
+	| --abbrev-commit | 仅显示 SHA-1 的前几个字符，而非所有的 40 个字符 |
+	| --relative-date | 使用较短的相对时间显示（比如，“2 weeks ago”） |
+	| --graph         | 显示 ASCII 图形表示的分支合并历史       |
+	| --pretty        | 使用其他格式显示历史提交信息。可用的选项包括 oneline，short，full，fuller 和 format（后跟指定格式） |
+	| --decorate      | 显示指向这个提交的所有引用（比如说分支、标签等）   |
+	| --date      | 日期展示格式，例如--date=short 或  --date=format:'%Y-%m-%d %H:%M:%S' |
+
+- 筛选参数
+
+	主要是用于提交日志的筛选，例如指定数量，指定日期，指定作者等 
+	
+	| 选项            | 说明                       |
+	|----------------|----------------------------|
+	| -(n)           | 仅显示最近的 n 条提交   |
+	| --since, --after  | 仅显示指定时间之后的提交  |
+	|--until, --before  | 仅显示指定时间之前的提交   |
+	| --author | 仅显示指定作者相关的提交   |
+	| --committer  | 仅显示指定提交者相关的提交   |
+
+- 展示优化
+
+	| 选项            | 说明                       |
+	|----------------|----------------------------|
+	|%C(...)|指定颜色，可选值有：black、red、green、yellow、blue、magenta、cyan、white，定义可以查看 [https://en.wikipedia.org/wiki/ANSI_escape_code](https://en.wikipedia.org/wiki/ANSI_escape_code)|
+	|%n           | 换行   |
+	
+	
+
+### 命令事例
+
+	➜  _posts git:(master) ✗  git log --graph --decorate --abbrev-commit --no-merges --date=short  --pretty=format:"%Cred%h%Creset%C(yellow)%d%Creset | %Cgreen%ad%Creset | %s %C(yellow)[%an]%Creset"
+	
+	* 2de8443 (HEAD -> master, origin/master, origin/HEAD) | 2019-12-24 | js [子勰]
+	* 55df910 | 2019-12-06 | android schema [子勰]
+	* 7951c7e | 2019-12-02 | android res [子勰]
+	* 9f9202f | 2019-11-29 | 二维码API [子勰]
+	* f8a4b23 | 2019-11-22 | 更正 [子勰]
+
+	➜  _posts git:(master) ✗ git log --graph --decorate --abbrev-commit --no-merges --date=format:'%Y-%m-%d %H:%M:%S'  --stat  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cblue %s %Cgreen(%cd) %C(bold blue)<%an>%Creset'
+	
+	* 2de8443 - (HEAD -> master, origin/master, origin/HEAD) js (2019-12-24 14:31:15) <子勰>|
+	|  _posts/2014-11-11-tools_for_developer.md | 7 ++++++-
+	|  1 file changed, 6 insertions(+), 1 deletion(-)
+	
+	* 55df910 - android schema (2019-12-06 16:34:10) <子勰>|
+	|  _posts/2019-12-04-androir_schema.md |  34 ++++++++++++++++++++++++++++++++++
+	|  public/images/router_page.png       | Bin 0 -> 282166 bytes
+	|  2 files changed, 34 insertions(+)
+
+### 添加快捷方式
+
+如果每次输入上面的事例，过于麻烦，可以通过给命令设置快捷方式来实现。利用命令
+
+`git config --global alias.ALIAS "COMMAND"` 设置快捷方式以后，再使用 `git ALIAS` 执行的效果就和 `git COMMAND` 一致了，例如上面的两个命令修改以后的效果：
+
+	➜  _posts git:(master) ✗ git config --global alias.logl "log --graph --decorate --oneline --abbrev-commit --no-merges --date=short  --pretty=format:'%Cred%h%Creset%C(yellow)%d%Creset | %Cgreen%ad%Creset | %s %C(yellow)[%an]%Creset'"
+	➜  _posts git:(master) ✗ git config --global alias.logc "log --graph --decorate --abbrev-commit --no-merges --date=format:'%Y-%m-%d %H:%M:%S'  --stat  --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cblue %s %Cgreen(%cd) %C(bold blue)<%an>%Creset'"
+	➜  _posts git:(master) ✗ git l
+	log       -- show commit logs
+	logc      -- alias for 'log --graph --decorate --abbrev-commit --no-merges --date=format:'%Y-%m-%d %H
+	logl      -- alias for 'log --graph --decorate --oneline --abbrev-commit --no-merges --date=short  --
+	ls-files  -- information about files in index/working directory
+	
+	➜  _posts git:(master) ✗ git logc
+	
+	* 2de8443 - (HEAD -> master, origin/master, origin/HEAD) js (2019-12-24 14:31:15) <子勰>|
+	|  _posts/2014-11-11-tools_for_developer.md | 7 ++++++-
+	|  1 file changed, 6 insertions(+), 1 deletion(-)
+	
+	* 55df910 - android schema (2019-12-06 16:34:10) <子勰>|
+	|  _posts/2019-12-04-androir_schema.md |  34 ++++++++++++++++++++++++++++++++++
+	|  public/images/router_page.png       | Bin 0 -> 282166 bytes
+	|  2 files changed, 34 insertions(+)
+
+	➜  _posts git:(master) ✗ git logl
+	
+	* 2de8443 (HEAD -> master, origin/master, origin/HEAD) | 2019-12-24 | js [子勰]
+	* 55df910 | 2019-12-06 | android schema [子勰]
+	* 7951c7e | 2019-12-02 | android res [子勰]
+	* 9f9202f | 2019-11-29 | 二维码API [子勰]
+	* f8a4b23 | 2019-11-22 | 更正 [子勰]
+	* 8d5683d | 2019-11-19 | 整理介绍 [子勰]
+
 ## 多账号相关操作
 
 目前越来越多的地方都开始使用git了，GitHub，oschina等等，再加上公司的git，就会存在多账号的问题。例如有一天忽然发现公司的git上提交的代码，显示的  `user.name` 和 `user.email` 竟然是github的用户名和邮箱。这里汇总一下git多账号相关的问题怎么解决：
