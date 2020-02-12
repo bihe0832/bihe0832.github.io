@@ -141,3 +141,30 @@ iMac系统自带的Python在`/usr/bin`目录下，而通过homebrew安装的在`
 		Requirement already satisfied: pyelliptic==1.5.7 in /usr/local/lib/python2.7/site-packages (1.5.7)
 		➜  blog git:(master) ✗
 	
+- 安装扩展提示openssl 版本异常
+
+	- 错误示例
+	
+			➜  blog git:(master) ✗  pip3.7 install Appium-Python-Client
+			pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.
+			Collecting Appium-Python-Client
+			  Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /simple/appium-python-client/
+			  Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /simple/appium-python-client/
+			  Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /simple/appium-python-client/
+			  Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /simple/appium-python-client/
+			  Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'SSLError("Can't connect to HTTPS URL because the SSL module is not available.")': /simple/appium-python-client/
+			  Could not fetch URL https://pypi.org/simple/appium-python-client/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/appium-python-client/ (Caused by SSLError("Can't connect to HTTPS URL because the SSL module is not available.")) - skipping
+			  Could not find a version that satisfies the requirement Appium-Python-Client (from versions: )
+			No matching distribution found for Appium-Python-Client
+			pip is configured with locations that require TLS/SSL, however the ssl module in Python is not available.
+			Could not fetch URL https://pypi.org/simple/pip/: There was a problem confirming the ssl certificate: HTTPSConnectionPool(host='pypi.org', port=443): Max retries exceeded with url: /simple/pip/ (Caused by SSLError("Can't connect to HTTPS URL because the SSL module is not available.")) - skipping
+	
+	- 解决方案 
+	
+		删除Python的OpenSSL依赖并重装
+	
+			brew update && brew upgrade
+			brew uninstall --ignore-dependencies openssl; 
+			brew install https://github.com/tebelorg/Tump/releases/download/v1.0.0/openssl.rb
+			brew reinstall python
+
