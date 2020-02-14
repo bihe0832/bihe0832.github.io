@@ -169,12 +169,5 @@ iMac系统自带的Python在`/usr/bin`目录下，而通过homebrew安装的在`
 			brew reinstall python
 			
 	
-- 修改pip的镜像源
-
-由于国外官方pypi经常被墙，所以我们最好是将自己使用的pip源更换一下。iMac下，修改 ~/.pip/pip.conf (没有就创建一个)内容如下:
-		
-	 [global]
-	 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-		
 				
 
