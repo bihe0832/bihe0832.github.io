@@ -1,6 +1,6 @@
 ---
 layout: post
-title: appium爬坑之iMac上appium自动测试环境搭建
+title: appium爬坑之iMac上基于appium多设备并发测试
 category: 终端开发
 tags: Android 自动 测试 appium
 keywords: appium Android iMac
@@ -9,7 +9,7 @@ description: 最近因为项目需要对于一些Android的基础功能添加自
 
 最近因为项目需要对于一些Android的基础功能添加自动化测试。以前都是基于Robotium来写，比较费时费力，这次选择用Appium，而且这样测试也可以完全黑盒。
 
-在用例写好以后，我们就需要有专门的环境来定时运行测试用例，这边文章主要介绍在iMac上搭建appium自动测试的服务器环境及自动控制脚本。
+在用例写好以后，我们就需要有专门的环境来定时运行测试用例，这边文章主要介绍在iMac上搭建appium自动测试的服务器环境及多设备并发测试自动控制脚本。
 
 ## 环境准备
 
