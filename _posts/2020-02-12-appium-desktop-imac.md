@@ -1,6 +1,6 @@
 ---
 layout: post
-title: iMac上appium环境搭建及使用真机测试Android项目简介
+title: appium爬坑之iMac上appium环境搭建及使用真机测试Android项目简介
 category: 终端开发
 tags: Android 自动 测试 
 keywords: appium Android iMac
@@ -12,6 +12,30 @@ description: 最近因为项目需要对于一些Android的基础功能添加自
 这边文章主要介绍完整流程，后续会在其他文章介绍结合场景介绍具体的测试用例书写。
 
 ## 环境准备
+
+#### 设备环境
+
+- 系统版本
+
+    系统版本：	macOS 10.15.1 (19B88)
+    内核版本：	Darwin 19.0.0
+
+- 工具版本
+
+        ➜  ~  echo $SHELL
+        /bin/zsh
+        ➜  ~  java -version
+        java version "1.8.0_201"
+        Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
+        Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
+        ➜  ~  python3.7 -V
+        Python 3.7.5
+        ➜  ~  pip3.7 -V
+        pip 19.3.1 from /usr/local/lib/python3.7/site-packages/pip (python 3.7)
+        ➜  ~  node -v
+        v13.1.0
+        ➜  ~  cnpm -v
+        6.12.1
 
 ####  下载Appium桌面版
 
