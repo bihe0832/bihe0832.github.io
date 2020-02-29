@@ -335,7 +335,8 @@ OK 至此就算搭建安装完成~
     
     mkdir android-sdk-linux
     cd  android-sdk-linux
-    # yum install java-1.8.0-openjdk-devel.x86_64
+    yum install java-1.8.0-openjdk-devel.x86_64
+    yum install git
     # sudo apt-get update
     # sudo apt-get install openjdk-8-jdk
     java -version
@@ -346,7 +347,7 @@ OK 至此就算搭建安装完成~
     export PATH=${ANDROID_HOME}/tools/bin:$PATH
     echo $ANDROID_HOME
     sdkmanager --version
-    sdkmanager --install "build-tools;19.1.0" "build-tools;28.0.3" "platforms;android-28"%
+    sdkmanager --install "build-tools;19.1.0" "build-tools;28.0.3" "platforms;android-28"
 
 
     
