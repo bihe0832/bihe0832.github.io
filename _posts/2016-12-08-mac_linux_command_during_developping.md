@@ -127,6 +127,7 @@ chown将指定文件的拥有者改为指定的用户或组，用户可以是用
 
 
 ### screencapture
+
 screencapture命令可以截图。和Grab.app与cmd + shift + 3或cmd + shift + 4热键相似，但更加的灵活。
 
 - 用鼠标选择一个矩形范围并包含光标的范围，并复制到剪贴板，同时在preview打开
@@ -137,3 +138,12 @@ screencapture命令可以截图。和Grab.app与cmd + shift + 3或cmd + shift + 
 
 
 		$ screencapture -W -c -C -P /tmp/screen.png
+
+## lsof
+
+查看端口占用：
+
+	➜  ~  sudo lsof -wni tcp:4000
+	COMMAND   PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+	ruby    46559 zixie    9u  IPv4 0xbb90ea0c4aa06c0b      0t0  TCP 127.0.0.1:terabase (LISTEN)
+	➜  ~
