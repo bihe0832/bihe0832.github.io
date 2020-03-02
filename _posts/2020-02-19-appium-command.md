@@ -41,7 +41,8 @@ description: 最近因为项目需要对于一些Android的基础功能添加自
 官方的Appium服务端是基于node的，因此直接使用npm安装即可。
 
 
-    > ➜  ~  cnpm install -g appium
+    > ➜  ~  sudo npm install -g appium --unsafe-perm=true --allow-root --chromedriver_version="2.46"
+    
     /usr/local/bin/appium -> /usr/local/lib/node_modules/appium/build/lib/main.js
     /usr/local/bin/authorize-ios -> /usr/local/lib/node_modules/appium/node_modules/.bin/authorize-ios
     + appium@1.16.0
