@@ -180,16 +180,18 @@ Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个�
 	✔ 文件上传成功 842 个
 	✖ 文件上传失败 0 个
 
-#### 访问静态页面
+#### 管理静态页面及修改设置
 
-上传结束以后，在静态页面托管的「文件管理」页面可以对我们上传的内容进行调整，在「设置」页面可以添加域名、错误页面等信息，同时也给出了腾讯云提供的默认域名。
+上传结束以后，在静态页面托管的「文件管理」页面可以对我们上传的内容进行调整，在「设置」页面可以添加域名、错误页面等信息，同时也给出了腾讯云提供的默认域名。如果你有自己的域名，你也可以添加自己的域名解析，例如下面我修改为使用我自己的域名，并设置了自定义的索引页和404页面：
 	
 ![qcloud_jekyll_settings.png](./../public/images/qcloud_jekyll_settings.png)
-	
-在浏览器输入域名 [https://blog-qcloud-new-131e7b.tcloudbaseapp.com/index.html](https://blog-qcloud-new-131e7b.tcloudbaseapp.com/index.html)，即可打开部署好的静态服务，由于默认资源免费的，腾讯云对下载速度做了限速，因此打开速度会很慢。
+
+#### 访问静态页面
+
+在浏览器输入讯云提供的默认域名 [https://blog-qcloud-new-131e7b.tcloudbaseapp.com/index.html](https://blog-qcloud-new-131e7b.tcloudbaseapp.com/index.html)， 或者使用自己的域名[http://qcloud.bihe0832.com/index.html](http://qcloud.bihe0832.com/index.html) 均可打开部署好的静态服务，由于默认资源免费的，腾讯云对下载速度做了限速，因此打开速度会很慢。
 
 **特别说明：**由于默认资源腾讯云对下载速度做了限速，所以我对于我的站点做了特殊配置：
 
-- 默认打开 [https://blog-qcloud-new-131e7b.tcloudbaseapp.com/jump.html](https://blog-qcloud-new-131e7b.tcloudbaseapp.com/jump.html)时 还是跳转到我的服务器
+- 默认打开 [http://qcloud.bihe0832.com/jump.html](http://qcloud.bihe0832.com/jump.html)时 还是跳转到我的博客域名及服务器 [http://blog.bihe0832.com](http://blog.bihe0832.com)
 
-- 完整路径打开 [https://blog-qcloud-new-131e7b.tcloudbaseapp.com/index.html](https://blog-qcloud-new-131e7b.tcloudbaseapp.com/index.html)时使用腾讯云托管的服务
+- 完整路径打开 [http://qcloud.bihe0832.com/index.html](http://qcloud.bihe0832.com/index.html) 时使用腾讯云托管的服务
