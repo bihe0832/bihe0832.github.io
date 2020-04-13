@@ -127,7 +127,7 @@ Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个�
 	✖ 未知错误：请求超时，请检查你的网络，如果终端无法直接访问公网，请设置终端 HTTP 请求代理！
 	请检查你的网络，尝试重新运行 cloudbase login 命令！
 	
-如果遇到上面的错误，一般是因为网络限制，需要添加 http 代理，可以参照文章 「iMac（OS X）日常开发中各种代理设置方法汇总（shell、Android Studio、gem、npm） [https://blog.bihe0832.com/imac-jekyll.html](https://blog.bihe0832.com/imac-jekyll.html)」设置 shell 代理即可。设置代理后重试：
+如果遇到上面的错误，一般是因为网络限制，需要添加 http 代理，可以参照文章 「iMac（OS X）日常开发中各种代理设置方法汇总（shell、Android Studio、gem、npm） [https://blog.bihe0832.com/proxy.html](https://blog.bihe0832.com/proxy.html)」设置 shell 代理即可。设置代理后重试：
 	
 	➜  _posts git:(master) ✗ tcb login
 	✔ 已打开云开发 CLI 授权页面，请在云开发 CLI 授权页面同意授权

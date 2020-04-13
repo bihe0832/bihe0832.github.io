@@ -86,10 +86,13 @@ Octopress is a blogging framework for hackers。
 
 这部分内容可以参考官网提供的「Configuring Octopress [http://octopress.org/docs/configuring/](http://octopress.org/docs/configuring/)」来根据配置自定义你的站点风格。我重点修改了 `_config.yml` 添加一些自定义配置。
 
+在搭建好静态站点以后，就可以在`source/_posts`添加你的文章了，我选择了直接迁移过来两篇自己的文章。
+
 #### 编译构建
 
-由于 Octopress 是基于 Jekyll的，因此他的静态站点的目录结构和Jekyll的很相似。我直接在`source/_posts`添加了两篇文章然后使用 Jekyll 通过本地 build 验证构建有没有问题 （你也阔以继续使用`rake generate`）。在项目根目录直接命令行运行 ` jekyll build ` 即可查看构建结果
-	
+在项目根目录直接命令行运行 `rake generate ` 即可查看构建结果
+
+
 	➜  www.bihe0832.com git:(master) ✗ rake generate
 		rake aborted!
 		Gem::LoadError: You have already activated rake 12.3.2, but your Gemfile requires rake 10.5.0. Prepending `bundle exec` to your command may solve this.
@@ -115,29 +118,26 @@ Octopress is a blogging framework for hackers。
 		      Generating...
 		                    done.
 		 Auto-regeneration: disabled. Use --watch to enable.
-	➜  www.bihe0832.com git:(master) ✗ jekyll build
+		 
+如果构建没有报错，你就可以选择将构建结果 `public` 部署到你的服务器。如果想在本地查看效果，在项目根目录直接命令行运行 ` rake preview ` 即可
+
+	➜  www.bihe0832.com git:(master) ✗ bundle exec rake preview
+		Starting to watch source with Jekyll and Compass. Starting Rack on port 4000
+		[2020-04-13 16:30:18] INFO  WEBrick 1.4.2
+		[2020-04-13 16:30:18] INFO  ruby 2.6.2 (2019-03-13) [x86_64-darwin18]
+		[2020-04-13 16:30:18] INFO  WEBrick::HTTPServer#start: pid=75677 port=4000
+		>>> Compass is watching for changes. Press Ctrl-C to Stop.
 		Configuration file: /github/www.bihe0832.com/_config.yml
 		            Source: source
 		       Destination: public
 		      Generating...
 		                    done.
-		 Auto-regeneration: disabled. Use --watch to enable.
-	➜  www.bihe0832.com git:(master) ✗
+		 Auto-regeneration: enabled for 'source'
+		    write public/stylesheets/screen.css
+		::1 - - [13/Apr/2020:16:30:22 +0800] "GET / HTTP/1.1" 200 16703 0.0151
 
-如果构建没有报错，你就可以选择将构建结果 `_sites ` 部署到你的服务器。如果想在本地查看效果，在项目根目录直接命令行运行 ` jekyll server ` 即可
+然后在浏览器打开 [http://localhost:4000/](http://localhost:4000/) 即可查看效果
 
-	➜  www.bihe0832.com git:(master) ✗ jekyll server
-	Configuration file: /Volumes/Document/Documents/github/www.bihe0832.com/_config.yml
-	            Source: source
-	       Destination: _sites
-	      Generating...
-	                    done.
-	 Auto-regeneration: enabled for 'source'
-	Configuration file: /Volumes/Document/Documents/github/www.bihe0832.com/_config.yml
-	    Server address: http://127.0.0.1:4000/
-	  Server running... press ctrl-c to stop.
-
-然后在浏览器打开 [http://127.0.0.1:4000](http://127.0.0.1:4000) 即可查看效果
 
 ## 将静态站点使用腾讯云静态网站托管
 
@@ -179,7 +179,7 @@ Octopress is a blogging framework for hackers。
 	✖ 未知错误：请求超时，请检查你的网络，如果终端无法直接访问公网，请设置终端 HTTP 请求代理！
 	请检查你的网络，尝试重新运行 cloudbase login 命令！
 	
-如果遇到上面的错误，一般是因为网络限制，需要添加 http 代理，可以参照文章 「iMac（OS X）日常开发中各种代理设置方法汇总（shell、Android Studio、gem、npm） [https://blog.bihe0832.com/imac-jekyll.html](https://blog.bihe0832.com/imac-jekyll.html)」设置 shell 代理即可。设置代理后重试：
+如果遇到上面的错误，一般是因为网络限制，需要添加 http 代理，可以参照文章 「iMac（OS X）日常开发中各种代理设置方法汇总（shell、Android Studio、gem、npm） [https://blog.bihe0832.com/proxy.html](https://blog.bihe0832.com/proxy.html)」设置 shell 代理即可。设置代理后重试：
 	
 	➜  _posts git:(master) ✗ tcb login
 	✔ 已打开云开发 CLI 授权页面，请在云开发 CLI 授权页面同意授权
@@ -205,37 +205,38 @@ Octopress is a blogging framework for hackers。
 	
 	Tips：可以使用简写命令 tcb 代替 cloudbase
 	
-使用 hosting 命令 将本地已经编译的静态文件部署到托管服务（例如部署我的博客的 `_site` ），命令行中-e 后面的环境ID就是首页生成的环境ID，一般腾讯云会在我们的自定义名称后面加一个后缀。由于博客的内容比较大、加上网络代理，发现有时候会失败，重试即可。
+使用 hosting 命令 将本地已经编译的静态文件部署到托管服务（例如部署我的博客的 `public` ），命令行中-e 后面的环境ID就是首页生成的环境ID，一般腾讯云会在我们的自定义名称后面加一个后缀。由于博客的内容比较大、加上网络代理，发现有时候会失败，重试即可。
 	
-	➜  www.bihe0832.com git:(master) ✗ jekyll build
-	Configuration file: /github/www.bihe0832.com/_config.yml
-	            Source: /github/www.bihe0832.com
-	       Destination: /github/www.bihe0832.com/_sites
-	 Incremental build: disabled. Enable with --incremental
-	      Generating...
-	                    done in 4.504 seconds.
-	 Auto-regeneration: disabled. Use --watch to enable.
-	➜  www.bihe0832.com git:(master) ✗ tcb hosting:deploy ./_sites/ -e blog-www-173dc4
-	FetchError: request to https://tcb-admin.tencentcloudapi.com/admin failed, reason: connect ECONNRESET 127.0.0.1:12639
-	    at ClientRequest.<anonymous> (/usr/local/lib/node_modules/@cloudbase/cli/node_modules/node-fetch/lib/index.js:1455:11)
-	    at ClientRequest.emit (events.js:205:15)
-	    at ClientRequest.EventEmitter.emit (domain.js:471:20)
-	    at onerror (/usr/local/lib/node_modules/@cloudbase/cli/node_modules/agent-base/index.js:101:9)
-	    at callbackError (/usr/local/lib/node_modules/@cloudbase/cli/node_modules/agent-base/index.js:123:5)
-	    at processTicksAndRejections (internal/process/task_queues.js:89:5)
-	✖ request to https://tcb-admin.tencentcloudapi.com/admin failed, reason: connect ECONNRESET 127.0.0.1:12639
-	➜  www.bihe0832.com git:(master) ✗ tcb hosting:deploy ./_sites/ -e blog-www-173dc4
-	文件传输中 [==================================================] 100% 0.0s
-	✔ 文件共计 65 个
-	✔ 文件上传成功 65 个
-	✖ 文件上传失败 0 个
+	➜  www.bihe0832.com git:(master) ✗ bundle exec rake generate
+		## Generating Site with Jekyll
+		    write source/stylesheets/screen.css
+		Configuration file: /github/www.bihe0832.com/_config.yml
+		            Source: source
+		       Destination: public
+		      Generating...
+		                    done.
+		 Auto-regeneration: disabled. Use --watch to enable.
+	➜  www.bihe0832.com git:(master) ✗ tcb hosting:deploy ./public/ -e blog-www-173dc4
+		FetchError: request to https://tcb-admin.tencentcloudapi.com/admin failed, reason: connect ECONNRESET 127.0.0.1:12639
+		    at ClientRequest.<anonymous> (/usr/local/lib/node_modules/@cloudbase/cli/node_modules/node-fetch/lib/index.js:1455:11)
+		    at ClientRequest.emit (events.js:205:15)
+		    at ClientRequest.EventEmitter.emit (domain.js:471:20)
+		    at onerror (/usr/local/lib/node_modules/@cloudbase/cli/node_modules/agent-base/index.js:101:9)
+		    at callbackError (/usr/local/lib/node_modules/@cloudbase/cli/node_modules/agent-base/index.js:123:5)
+		    at processTicksAndRejections (internal/process/task_queues.js:89:5)
+		✖ request to https://tcb-admin.tencentcloudapi.com/admin failed, reason: connect ECONNRESET 127.0.0.1:12639
+		➜  www.bihe0832.com git:(master) ✗ tcb hosting:deploy ./public/ -e blog-www-173dc4
+		文件传输中 [==================================================] 100% 0.0s
+		✔ 文件共计 65 个
+		✔ 文件上传成功 65 个
+		✖ 文件上传失败 0 个
 
 如果调试通了，也阔以一个命令直接完成编译到部署：
 
-	➜  www.bihe0832.com git:(master) ✗ jekyll build && tcb login && tcb hosting:deploy ./_sites/ -e blog-www-173dc4
-		Configuration file: /Volumes/Document/Documents/github/www.bihe0832.com/_config.yml
+	➜  www.bihe0832.com git:(master) ✗ bundle exec rake generate && tcb login && tcb hosting:deploy ./public/ -e blog-www-173dc4
+		Configuration file: /github/www.bihe0832.com/_config.yml
 		            Source: source
-		       Destination: _sites
+		       Destination: public
 		      Generating...
 		                    done.
 		 Auto-regeneration: disabled. Use --watch to enable.
