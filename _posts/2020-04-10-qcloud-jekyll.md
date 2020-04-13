@@ -188,9 +188,9 @@ Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个�
 
 #### 访问静态页面
 
-在浏览器输入讯云提供的默认域名 [https://blog-qcloud-new-131e7b.tcloudbaseapp.com/index.html](https://blog-qcloud-new-131e7b.tcloudbaseapp.com/index.html)， 或者使用自己的域名[http://qcloud.bihe0832.com/index.html](http://qcloud.bihe0832.com/index.html) 均可打开部署好的静态服务，由于默认资源免费的，腾讯云对下载速度做了限速，因此打开速度会很慢。
+在浏览器输入讯云提供的默认域名 [https://blog-qcloud-new-131e7b.tcloudbaseapp.com/index.html](https://blog-qcloud-new-131e7b.tcloudbaseapp.com/index.html)， 或者使用自己的域名[http://qcloud.bihe0832.com/index.html](http://qcloud.bihe0832.com/index.html) 均可打开部署好的静态服务，由于默认域名和资源是免费的，腾讯云对下载速度做了限速，因此打开速度会很慢。
 
-**特别说明：**由于默认资源腾讯云对下载速度做了限速，所以我对于我的站点做了特殊配置：
+**特别说明：**由于默认域名腾讯云对下载速度做了限速，所以我对于我的站点做了特殊配置：
 
 - 默认打开 [http://qcloud.bihe0832.com/jump.html](http://qcloud.bihe0832.com/jump.html)时 还是跳转到我的博客域名及服务器 [http://blog.bihe0832.com](http://blog.bihe0832.com)
 
