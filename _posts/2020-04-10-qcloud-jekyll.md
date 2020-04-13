@@ -22,7 +22,7 @@ Jekyll 是一个简单的博客形态的静态站点生产机器。它有一个�
 上面的翻译站点已经提供了详细的搭建介绍，通过「快速搭建指南：[http://jekyllcn.com/docs/quickstart/](http://jekyllcn.com/docs/quickstart/) 」可以快速基于Jekyll完成站点搭建。本文将基于个人博客 [https://blog.bihe0832.com/](https://blog.bihe0832.com/) 的迁移来讲下iMac搭建Jekyll本地环境
 及迁移。
 
-安装Jekyll等插件可以参考官网提供的「安装文档 [http://jekyllcn.com/docs/installation/](http://jekyllcn.com/docs/installation/)」来安装。由于系统默认Ruby安装过程中容易出现各种问题，因此建议自定义安装新的Ruby。关于卸载及重装 Ruby 和 Jekyll的详细内容，也可以参考文章[iMac搭建Jekyll本地环境](https://blog.bihe0832.com/imac-jekyll.html)。以下为简单的安装事例：
+安装Jekyll等插件可以参考官网提供的「安装文档 [http://jekyllcn.com/docs/installation/](http://jekyllcn.com/docs/installation/)」来安装。**由于系统默认Ruby安装过程中容易出现各种问题，因此建议自定义安装新的Ruby。关于卸载及重装 Ruby 和 Jekyll的详细内容，可以参考文章「iMac搭建Jekyll本地环境 [https://blog.bihe0832.com/imac-jekyll.html](https://blog.bihe0832.com/imac-jekyll.html) 」和 「 iMac上RubyGems相关的问题汇总 [https://blog.bihe0832.com/imac_gem.html](https://blog.bihe0832.com/imac_gem.html)」。**以下为简单的安装事例：
 
 		➜  blog git:(master) ✗ gem install jekyll
 		Fetching mercenary-0.3.6.gem	
