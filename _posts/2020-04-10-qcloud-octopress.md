@@ -254,4 +254,4 @@ Octopress is a blogging framework for hackers。
 
 #### 访问静态页面
 
-在浏览器输入讯云提供的默认域名 [https://blog-www-173dc4.tcloudbaseapp.com/](https://blog-www-173dc4.tcloudbaseapp.com/)即可打开部署好的静态服务，由于默认域名是免费的，腾讯云对下载速度做了限速，因此打开速度会很慢。
+在浏览器输入讯云提供的默认域名 [https://blog-www-173dc4.tcloudbaseapp.com/](https://blog-www-173dc4.tcloudbaseapp.com/)即可打开部署好的静态服务，由于默认资源免费的，腾讯云对下载速度做了限速，因此打开速度会很慢。
