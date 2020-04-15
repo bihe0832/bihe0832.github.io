@@ -22,6 +22,7 @@ buildNumber.properties
 ######################
 .jekyll-cache
 _site
+Gemfile.lock
 
 ######################
 # 解决各类编辑器自动产生的文件
