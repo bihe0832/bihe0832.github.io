@@ -13,7 +13,7 @@ description: desc
 
 ### 相关源码：
 
-- [https://github.com/bihe0832/AndroidGetAPKInfo/tree/master/CheckAndroidV2Signature](https://github.com/bihe0832/AndroidGetAPKInfo/tree/master/CheckAndroidV2Signature)
+- [https://github.com/bihe0832/AndroidGetAPKInfo](https://github.com/bihe0832/AndroidGetAPKInfo)
 
 ### 具体案例
 
@@ -36,7 +36,7 @@ description: desc
 
 #### 相关源码：
 
-- [https://github.com/bihe0832/AndroidGetAPKInfo/tree/master/CheckAndroidV2Signature](https://github.com/bihe0832/AndroidGetAPKInfo/tree/master/CheckAndroidV2Signature)
+- [https://github.com/bihe0832/AndroidGetAPKInfo](https://github.com/bihe0832/AndroidGetAPKInfo)
 
 ### 具体案例
 
@@ -71,7 +71,7 @@ description: desc
 
 #### 相关源码：
 
-- [https://github.com/bihe0832/AndroidGetAPKInfo/tree/master/GetApkInfo](https://github.com/bihe0832/AndroidGetAPKInfo/tree/master/GetApkInfo)
+- [https://github.com/bihe0832/AndroidGetAPKInfo](https://github.com/bihe0832/AndroidGetAPKInfo)
 
 ### 具体案例
 

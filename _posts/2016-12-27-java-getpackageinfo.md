@@ -23,18 +23,16 @@ description: desc
 
 - 下载地址：
 	
-	- [https://github.com/bihe0832/AndroidAPKInfo/blob/master/getPackageInfo.jar](https://github.com/bihe0832/AndroidAPKInfo/blob/master/getPackageInfo.jar)
+	- [https://github.com/bihe0832/AndroidAPKInfo](https://github.com/bihe0832/AndroidAPKInfo)
 
 - MD5:
 
-		MD5 (getPackageInfo.jar) = 20b55844e04e4328bbc9cc67081cedff
+		MD5 (GetAPKInfo.jar) = be02c0f33345a743f75f3a2ccccf9ef3
 
 ## 目录介绍
 	
  
-	├── getPackageInfo-inner.jar : 混淆前的可执行jar
-	│ 
-	├── getPackageInfo.jar : 混淆后的可执行jar
+	├── GetAPKInfo.jar : 混淆前的可执行jar
 	│ 
 	├── libs  : 第三方包依赖
 	│   │

@@ -130,5 +130,5 @@ Android 7.0 引入一项新的应用签名方案 APK Signature Scheme v2，它�
 
 #### 源码地址:
 
-- [https://github.com/bihe0832/AndroidAPKInfo/tree/master/CheckAndroidV2Signature](https://github.com/bihe0832/AndroidAPKInfo/tree/master/CheckAndroidV2Signature)
+- [https://github.com/bihe0832/AndroidAPKInfo](https://github.com/bihe0832/AndroidAPKInfo)
 
