@@ -2,7 +2,7 @@
 layout: post
 title: Android 相关的学习资料整理(持续更新)
 category: 终端开发
-tags: 常用工具 android
+tags: android
 keywords: keywords
 description: desc
 ---
