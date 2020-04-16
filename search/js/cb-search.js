@@ -37,7 +37,7 @@ $(document).ready(function () {
                     $(".cb-search-tool").css("display", "none");
                     show = false;
                 } else {
-                    $(".cb-search-tool").css("display", "block");
+                    $(".cb-search-tool").css("display", "none");
                     show = true;
                     $("#cb-search-content").val("");
                     $("#cb-search-content").focus();
@@ -52,6 +52,14 @@ $(document).ready(function () {
         show = false;
         time1 = 0;
     });
+
+    $("#cb-search-google").click(function () {
+        var a = $('<a href=https://www.google.com/search?sitesearch=bihe0832.com&q=' + document.getElementById("cb-search-content").value + ' target="_blank"></a>')[0];
+        var e = document.createEvent('MouseEvents');
+        e.initEvent('click', true, true);
+        a.dispatchEvent(e);
+    });
+
 
     $("#cb-search-btn").click(function () {
         $(".cb-search-tool").css("display", "block");
