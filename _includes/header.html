@@ -24,7 +24,14 @@
     "datePublished":" {{ page.date }}",
     "author":{"@type":"Person","name":"{{ site.author.name }}"},
     "description":"{{ page.description }}",
-    "publisher":{"@type":"Person","name":"{{ site.author.name }}"},
+    "publisher":{
+        "@type":"Organization",
+        "name":"{{ site.author.name }}"
+        "logo": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/public/img/head.jpg"
+        }
+      },
     "image": "{{ site.url }}/public/img/cv.png",
     "mainEntityOfPage":{"@type":"WebPage",
     "@id":"{{ site.url }}{{ page.url }}"},
