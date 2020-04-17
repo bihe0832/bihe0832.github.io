@@ -19,14 +19,14 @@
 {
     "@type":"BlogPosting",
     "url":"{{ site.url }}{{ page.url }}",
-    "headline":"{{site.title}}",
+    "headline":"{{page.title}}",
     "dateModified":" {{ site.time }}",
     "datePublished":" {{ page.date }}",
     "author":{"@type":"Person","name":"{{ site.author.name }}"},
     "description":"{{ page.description }}",
     "publisher":{
         "@type":"Organization",
-        "name":"{{ site.author.name }}"
+        "name":"{{ site.author.name }}",
         "logo": {
           "@type": "ImageObject",
           "url": "{{ site.url }}/public/img/head.jpg"
@@ -36,6 +36,21 @@
     "mainEntityOfPage":{"@type":"WebPage",
     "@id":"{{ site.url }}{{ page.url }}"},
     "@context":"http://schema.org"
+  }
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "{{ page.category }}",
+      "item": "{{ site.url }}{{ page.url }}"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "{{ page.title }}",
+      "item": "{{ site.url }}{{ page.url }}"
+    }]
   }
 </script>
 
