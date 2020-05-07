@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 照片整理系列一 —— 基于命令行的照片整理及查看工具
+title: 照片整理系列之基于命令行的照片整理及查看工具
 category: 在路上
 tags: tags
 keywords: 照片整理
