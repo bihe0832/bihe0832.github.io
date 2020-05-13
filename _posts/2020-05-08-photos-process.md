@@ -3,8 +3,8 @@ layout: post
 title: 照片整理系列之单次整理流程
 category: 在路上
 tags: tags
-keywords: keywords
-description: desc1
+keywords: 照片 整理
+description: 随着拍摄设备的普及，我们随时随地都可以留下各种影像，随着时间的积累，会有越来越多的照片。极大方便的同时也带来了很多问题。这篇文章主要记录单次整理照片的流程，方便后续定期整理时参考
 ---
 
 ### 背景
