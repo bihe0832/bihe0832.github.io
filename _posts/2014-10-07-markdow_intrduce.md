@@ -1,6 +1,6 @@
 ---
 layout: post
-title: markdown语法简介
+title: Markdown语法简介
 category: 开发工具
 tags: Markdown 资源
 keywords: markdown
@@ -224,10 +224,10 @@ Markdown 使用一种和链接很相似的语法来标记图片，同样也允�
 		[2]: ../public/images/img1.png  "Optional title attribute" 
 
 - View：
-
-![Alt text][2]
-[2]: ../public/images/img1.png  "Optional title attribute"
 	
+	![Alt text][2]
+	[2]: ../public/images/img1.png  "Optional title attribute"
+		
 
 到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 <img> 标签。
 

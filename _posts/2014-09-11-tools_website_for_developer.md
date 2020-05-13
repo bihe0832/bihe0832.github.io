@@ -8,9 +8,9 @@ description: desc
 ---
 ### Markdown：
 
-- markdown on github: [https://help.github.com/articles/markdown-basics/](https://help.github.com/articles/markdown-basics/)
-- Markdown 中文文档：[http://wowubuntu.com/markdown/](http://wowubuntu.com/markdown/)
 - Markdown 语法概述：[http://blog.bihe0832.com/markdow_intrduce.html](http://blog.bihe0832.com/markdow_intrduce.html)
+
+- Markdown格式优化及使用技巧：[https://blog.bihe0832.com/markdow_advanced.html](https://blog.bihe0832.com/markdow_advanced.html)
 
 ### SVN：
 
