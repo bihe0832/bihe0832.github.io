@@ -1,11 +1,24 @@
 ---
 layout: post
-title: adb Advanced Command
+title: ADB命令系列之 Advanced Command
 category: 终端开发
 tags: android adb
 keywords: android adb monkey getprop setprop pm am dumpsys  
 description: adb中一些相对复杂的命令，主要有monkey、getprop、setprop、pm、am、dumpsys等。monkey主要用于自动化测试，而getprop和dumpsys则在定位问题的时候非常有用。
 ---
+
+# 相关文章
+
+- ADB命令系列之 Base Command：[点击查看](https://blog.bihe0832.com/adb-base.html)
+
+-   ADB命令系列之  Advanced Command：[点击查看](https://blog.bihe0832.com/adb-advanced.html)
+
+-   ADB命令系列之 adb shell input：[点击查看](https://blog.bihe0832.com/adb-shell-input.html)
+
+-   ADB命令系列之 再说ADB：[点击查看](https://blog.bihe0832.com/review_adb.html)
+
+
+# 命令介绍
 
 ## adb shell screencap
 
