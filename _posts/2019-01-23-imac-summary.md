@@ -114,4 +114,4 @@ description: 个人写的所有关于iMac相关的文章汇总
 	
 	- 链接：[http://blog.bihe0832.com/mac_img.html](http://blog.bihe0832.com/mac_img.html)
 		
-	- 概述：介绍iMac下常用的图片处理的一些工具，包括： Fotor Photo Editor 、ImageOptim 、 XnConvert等
+	- 概述：介绍iMac下常用的图片处理的一些工具，包括： Fotor Photo Editor 、ImageOptim 、 XnConvert
