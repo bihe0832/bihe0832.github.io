@@ -109,3 +109,9 @@ description: 个人写的所有关于iMac相关的文章汇总
 	- 链接：[http://blog.bihe0832.com/imac-apache.html](http://blog.bihe0832.com/imac-apache.html)
 		
 	- 概述：介绍如何使用 iMac自带的Apache 在本地启用web服务，以及过程中发现的问题
+
+- [iMac（OS X）常用图片处理工具介绍](http://blog.bihe0832.com/mac_img.html)
+	
+	- 链接：[http://blog.bihe0832.com/mac_img.html](http://blog.bihe0832.com/mac_img.html)
+		
+	- 概述：介绍iMac下常用的图片处理的一些工具，包括： Fotor Photo Editor 、ImageOptim 、 XnConvert等
