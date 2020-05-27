@@ -9,9 +9,9 @@ description: 这里主要介绍iMac下的一些开发中用于记录笔记、提
 
 工欲善其事，必先利其器。每个程序员都会有一套自己喜欢的，适用自己的提高工作效率的工具。这里主要介绍iMac下的一些开发中用于记录笔记、提高效率的工具。
 
-### 笔记工具：Markdown + boostnote + 微云
+## 文档格式：Markdown
 
-从很早开始就热衷于使用markdown以及推广markdown，效果都还不错。但是一直以来，日常笔记的云端同步都都很头痛，之前试用了很多，从印象笔记、到有道云笔记、到oneNote、再到使用自己搭的git，都或多或少有一些缺点。从去年中逛github的时候看到了目前用的boostnote以后，发现终于找到了一款到目前为止用的很顺手的笔记软件。boostnote + 微云可以方便实现笔记内容的云端同步，再加上基于Markdown 开发效率很高。下面是个人陆续整理的相关的文章：
+从很早开始就热衷于使用markdown以及推广markdown，效果都还不错。下面是个人陆续整理的相关的文章：
 
 #### [markdown语法简介](http://blog.bihe0832.com/markdow_intrduce.html)
 
@@ -35,9 +35,41 @@ description: 这里主要介绍iMac下的一些开发中用于记录笔记、提
 
 - 概述：主要介绍基于mdwiki和bootstrap实现的markdown编辑内容的js wiki框架的使用，比较适合对外文档
 
-- 链接：[http://blog.bihe0832.com/remark.js.html](http://blog.bihe0832.com/remark.js.html)
+- 链接：[http://blog.bihe0832.com/mdwiki.html](http://blog.bihe0832.com/mdwiki.html)
 
-### 浏览器内容管理
+## 笔记工具：boostnote + 微云
+
+一直以来，日常笔记的云端同步都都很头痛，之前试用了很多，从印象笔记、到有道云笔记、到oneNote、再到使用自己搭的git，都或多或少有一些缺点。17年中逛github的时候看到了目前用的boostnote以后，发现终于找到了一款到目前为止用的很顺手的笔记软件。
+
+boostnote + 微云（**也阔以是任意一个云同步软件**）可以方便实现笔记内容的云端同步，再加上基于 Markdown 效率很高。
+
+#### boostnote 
+
+**boostnote团队现在在转型付费，因此他们有两个版本，旧版是boostnote，完全免费的，支持自定义目录；新版 Boost Note，提供了付费和免费服务，尚不支持自定义目录**
+
+- 下载地址
+
+	- boostnote  新版下载：
+	
+		[https://boostnote.io/](https://boostnote.io/)
+	
+	- **boostnote  旧版下载（推荐下载）**：
+	
+		[https://github.com/BoostIO/boost-releases/releases/](https://github.com/BoostIO/boost-releases/releases/)
+	
+- 云同步设置
+
+	1. 在微云的同步目录，增加boostnote目录
+
+	2. 添加本地目录到boosnote
+
+		打开Boostnote的配置，选择「本地存储」，点击「添加一个本地存储」，然后如图配置
+		
+		![bootsnote_settings.jpg](./../public/images/bootsnote_settings.jpg )
+
+	3. 后续boostnote就只是一个笔记工具了 ，所有的同步都交给微云等云盘
+
+## 浏览器内容管理
 
 这两个工具在另一篇关乎chrome插件的文章中也有说明，这里因为感觉和效率关系比较大，因此再列一次。
 
@@ -58,7 +90,7 @@ Chrome的速度快，但缺点也很明显，打开的Tab页越多越耗内存�
 	[https://chrome.google.com/webstore/detail/%E7%AE%80%E5%8D%95-qr-%E7%94%9F%E6%88%90%E5%99%A8/ajaomcmkalmeeahjfdklkcjbljhbokjl?hl=zh-CN](https://chrome.google.com/webstore/detail/%E7%AE%80%E5%8D%95-qr-%E7%94%9F%E6%88%90%E5%99%A8/ajaomcmkalmeeahjfdklkcjbljhbokjl?hl=zh-CN)
 
 
-### 订阅管理：Reeder
+## 订阅管理：Reeder
 
 在Google Reader关闭服务后，Feedly、Digg reader等产品异军突起，纷纷抢占这一市场。目前使用最爽的还是Reeder 2。
 
