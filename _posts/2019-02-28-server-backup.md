@@ -39,60 +39,7 @@ description: 由于目前个人域名已经备案了，而且因为小程序也�
 
 ### 环境安装
 
-    #!/bin/sh
-    # author code@bihe0832.com
-
-    function checkResult() {  
-       result=$?
-       echo "result : $result"
-       if [ $result -eq 0 ];then
-          echo "checkResult: execCommand succ"
-       else
-        echo "checkResult: execCommand failed"
-        exit $result
-       fi
-    }  
-    #zsh git
-    sudo yum update
-    sudo yum install zsh
-    sudo yum install git
-    cd ~/
-    mkdir temp 
-    cd ~/zixie/github/
-    checkResult
-    if [ ! -d "./Settings-Tools" ]; then
-      git clone https://github.com/bihe0832/Settings-Tools.git
-    fi
-    cp -fr ~/zixie/github/Settings-Tools/config/.oh-my-zsh/ ~/
-    cp -fr ~/zixie/github/Settings-Tools/config/linux/.zshrc ~/
-    chsh -s /bin/zsh
-
-    sudo yum install tree
-    sudo yum install rz
-    sudo yum install lrzsz
-
-    sudo yum erase nodejs npm -y   # 卸载旧版本的nodejs
-    sudo rm /usr/local/bin/npm
-    sudo rm /usr/local/share/man/man1/node.1
-    sudo rm /usr/local/lib/dtrace/node.d
-    sudo rm -rf ~/.npm
-    sudo rm -rf ~/.node-gyp
-    sudo rm /opt/local/bin/node
-    sudo rm /opt/local/include/node
-    sudo rm -rf /opt/local/lib/node_modules
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-    export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-    nvm install node
-    nvm install nodejs
-    nvm install npm
-
-    sudo yum update
-    sudo yum install nginx
-    sudo yum install php
-    sudo yum install mysql
-    sudo yum install php-fpm
-    sudo yum install mysql-server
+    curl -o- https://raw.githubusercontent.com/bihe0832/Settings-Tools/master/webInit/install.sh | bash
 
 ### 梳理源码与域名的对应关系并部署（已整理脚本）
 
