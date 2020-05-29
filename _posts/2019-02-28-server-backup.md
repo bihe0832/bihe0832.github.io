@@ -39,7 +39,7 @@ description: 由于目前个人域名已经备案了，而且因为小程序也�
 
 ### 环境安装
 
-    source <(curl -s https://raw.githubusercontent.com/bihe0832/Settings-Tools/tree/master/webInit/install.sh)
+    source <(curl -s https://raw.githubusercontent.com/bihe0832/Settings-Tools/master/webInit/install.sh)
         
 ### 梳理源码与域名的对应关系并部署（已整理脚本）
 
