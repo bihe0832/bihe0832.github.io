@@ -11,6 +11,9 @@ description: Unknown column 'password' in 'field list'
 
 服务部署在mysql上应该有好几个月了，因为现在的工作基本都在终端，因此很少登陆，今天要修改个东西，忽然发现我竟然已经彻底忘记了mysql的密码，去代码里面爬终于找到了业务数据库的密码，但是root密码还是没有找到，权限没法改呀，于是开始爬坑之旅，估计以后还会遇到，就整理记录一下。
 
+
+## Ubuntu 解决方案
+
 ### 系统参数
 	
 - 服务器
@@ -40,7 +43,7 @@ description: Unknown column 'password' in 'field list'
 		| version_compile_os      | Linux                   |
 		+-------------------------+-------------------------+
 
-## 解决方案
+### 重置方法
 
 以安全模式启动mysql，可以直接以root身份登录，然后重设密码。下面是具体步骤
 
@@ -73,6 +76,78 @@ description: Unknown column 'password' in 'field list'
 - 密码登录：
 
 		mysql -u root -p
+
+## Centos 解决方案
+
+### 系统参数
+	
+- 服务器
+
+		➜  ~   cat /proc/version
+		Linux version 3.10.0-957.1.3.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ) #1 SMP Thu Nov 29 14:49:43 UTC 2018
+		
+- mysql
+	
+		mysql> show variables like "%version%";
+		+-------------------------+------------------------------+
+		| Variable_name           | Value                        |
+		+-------------------------+------------------------------+
+		| innodb_version          | 5.6.43                       |
+		| protocol_version        | 10                           |
+		| slave_type_conversions  |                              |
+		| version                 | 5.6.43                       |
+		| version_comment         | MySQL Community Server (GPL) |
+		| version_compile_machine | x86_64                       |
+		| version_compile_os      | Linux                        |
+		+-------------------------+------------------------------+
+		7 rows in set (0.00 sec)
+
+### 重置方法
+
+- 停掉在运行的MySQL服务：
+
+		systemctl stop mysqld.service
+		
+- 以root用户登录linux，修改/etc/my.cnf
+
+		vim /etc/my.cnf
+
+	在[mysqld]的段中加上一句：skip-grant-tables
+		
+		[mysqld] 
+		
+		datadir=/var/lib/mysql 
+		socket=/var/lib/mysql/mysql.sock 
+		skip-grant-tables 
+
+- 退出保存，重新启动mysqld
+
+		systemctl restart mysqld.service
+
+- 直接用root登录，无需密码：
+
+		mysql -uroot -p
+
+- 重设密码：
+
+		mysql> use mysql;
+		mysql> update user set authentication_string=password('password') where user='root';
+		mysql> flush privileges;
+
+- 退出mysql
+
+		mysql > quit
+		
+- 修改配置文件，删除`skip-grant-tables`
+
+- 重启mysql
+
+		systemctl restart mysqld.service
+		
+- 密码登录：
+
+		mysql -u root -p
+
 
 ## 异常处理
 
