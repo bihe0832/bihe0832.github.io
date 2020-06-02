@@ -18,7 +18,7 @@ TODO顾名思义就是要做的事情，一般你当前做不了但是迟早需�
 
 TODO标签是目前个人感觉作用最大的一个功能。一般的每个的IDE都会有tasklist。例如下面是eclipse的：
 
-![eclipse todo](./../public/images/sdk_eclipse_todo.png)
+![eclipse todo](https://blog.bihe0832.com/public/images/sdk_eclipse_todo.png)
 
 当你在代码中添加注释的时候以大写的TODO开始，这个标记就会出现在tasklist里面。例如下面的TODO就对应tasklist里面的第一条TODO信息：
 
@@ -34,12 +34,12 @@ TODO标签是目前个人感觉作用最大的一个功能。一般的每个的I
 
 	有时候开发周期比较长，很容易忘了最开始的修改，也容易出问题，如果在修改的时候就加个TODO，等到最终提测版本时同样能够发现。例如下面这样：
 	
-		// TODO hardyshi 为了查看请求内容，临时解密，最终发布时修改回去
+		// TODO zixie 为了查看请求内容，临时解密，最终发布时修改回去
     	public static final Boolean isEncode = false;
 
 - 开发中代码写到一半被更高优先级的事情打断，为了临时标注一下，后续处理。例如：
 
-		//TODO hardyshi 暂时写到这里，走开一下，回来继续完成数据落地到DB的逻辑
+		//TODO zixie 暂时写到这里，走开一下，回来继续完成数据落地到DB的逻辑
 		
 - 开发中有时候逻辑比较多，或者比较复杂，可能会优先完成主体部分而遗漏一些待处理的分支，例如：
 	- 一些简单的分支逻辑
@@ -56,7 +56,7 @@ TODO标签是目前个人感觉作用最大的一个功能。一般的每个的I
 
 - 临时类的： 
 
-		// TODO hardyshi（负责人，如果最后看不懂这个TODO，就找他） 具体要做什么事情 
+		// TODO zixie（负责人，如果最后看不懂这个TODO，就找他） 具体要做什么事情 
 - 提醒类的：
 
 		//TODO GAME 游戏需要在onCreate里面完成初始化
