@@ -26,7 +26,7 @@ description: desc
 		➜  getPNGInfo git:(master) java -jar getImgInfo.jar head.png
 		{"ret":0,"msg":"图片是否有渐变: true ,图片尺寸为(宽*高): 344 * 344 , 图片大小: 33 KB,图片类型: 6","hasAlpha":true,"type":6,"width":344,"height":344,"size":33}
 	
-	如果`用工具检查确认图片不含渐变或者透明的效果，必须将png图片转为无alpha通道的jpg，另外对于存在渐变或者透明度的图片，也要判断下是否必须，非必须也要转为jpg`。
+	如果`用工具检查确认图片不含渐变或者透明的效果，必须将png图片转为无alpha通道的jpg，另外对于存在渐变或者透明度的图片，也要判断下是否必须，非必须也要转为jpg`。
 - 尽可能使用代码、.9图等代替png
 
 	在开发中对于一些简单图片，我们其实可以通过多种方式来替换，达到精简图片的效果，具体包括：
