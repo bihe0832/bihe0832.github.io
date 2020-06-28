@@ -4,7 +4,7 @@ title: Gradle插件开发系列之gradle插件调试方法
 category: 终端开发
 tags: tags
 keywords: Gradle 插件 plugin
-description: 主要介绍如何新建一个插件并可以在本地运行
+description: 文章主要介绍在插件开发过程中，如何设置断点动态调试插件
 ---
 ### 背景
 
