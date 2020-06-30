@@ -906,3 +906,24 @@ git的配置修改有两种方法：
 		user.name=zixie1
 		user.name=zixie2
 		user.name=zixie3
+		
+### git部分特殊配置
+
+- 忽略filemode的变化
+
+	文件chmod后其文件某些位是改变了的，如果严格的比较原文件和chmod后的文件，两者是有区别的，但是源代码通常只关心文本内容，因此chmod产生的变化应该忽略：
+	
+		git config --global  --add core.filemode false
+		
+- 添加或忽略换行符检查
+
+	git提供了换行符检查功能（core.safecrlf），可以在提交时检查文件是否混用了不同风格的换行符。这个功能的选项如下：
+
+	- false - 不做任何检查
+	- warn - 在提交时检查并警告
+	- true - 在提交时检查，如果发现混用则拒绝提交
+	建议使用最严格的 true 选项。
+
+	设置方法
+	
+		 git config --global core.safecrlf warn 
