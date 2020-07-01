@@ -101,5 +101,7 @@ Jekyll 依赖Ruby，而且不同的OS 版本对于 Ruby的支持版本也不一�
 	
 如果你想要在 crontab 中自动构建，要把上面的bin  换为 wrappers ，也就是：
 
-	/usr/local/rvm/gems/ruby-2.4.1/wrappers/jekyll build --incremental
+	/usr/local/rvm/gems/ruby-2.4.1/wrappers/jekyll build
 
+
+另外如果已经发布的内容还是频繁修改的话，建议尽量不要用 --incremental 参数
