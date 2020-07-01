@@ -3,7 +3,7 @@ layout: post
 title: Linux & MacOS中一些常用命令备忘
 category: 开发工具
 tags: 常用工具 mac
-keywords: keywords
+keywords: xargs find kill crontab chmod chown pbcopy pbpaste open screencapture lsof 
 description: 一些开发中经常要敲的命令，备忘一下懒得经常敲
 ---
 
@@ -110,6 +110,45 @@ chown将指定文件的拥有者改为指定的用户或组，用户可以是用
 
 		chown -R -v USER:GROUP PATH
 		chown USER:GROUP FILE
+
+### crontab 
+
+crontab 是用来让使用者在固定时间或固定间隔执行程序。
+
+- 参数说明：
+
+	-e : 执行文字编辑器来设定时程表，内定的文字编辑器是 VI，如果你想用别的文字编辑器，则请先设定 VISUAL 环境变数来指定使用那个文字编辑器(比如说 setenv VISUAL joe)
+	
+	-r : 删除目前的时程表
+	
+	-l : 列出目前的时程表
+
+- 时间格式如下：
+
+	f1 f2 f3 f4 f5 program
+		
+	其中 f1 是表示分钟，f2 表示小时，f3 表示一个月份中的第几日，f4 表示月份，f5 表示一个星期中的第几天。program 表示要执行的程序。
+		
+	当 f1 为 * 时表示每分钟都要执行 program，f2 为 * 时表示每小时都要执行程序，其它类推
+		
+	当 f1 为 a-b 时表示从第 a 分钟到第 b 分钟这段时间内要执行，f2 为 a-b 时表示从第 a 到第 b 小时都要执行，其它类推
+		
+	当 f1 为 */n 时表示每 n 分钟个时间间隔执行一次，f2 为 */n 表示每 n 小时个时间间隔执行一次，其它类推
+		
+	当 f1 为 a, b, c,... 时表示第 a, b, c,... 分钟要执行，f2 为 a, b, c,... 时表示第 a, b, c...个小时要执行，其它类推
+	
+		*    *    *    *    *
+		-    -    -    -    -
+		|    |    |    |    |
+		|    |    |    |    +----- 星期中星期几 (0 - 7) (星期天 为0)
+		|    |    |    +---------- 月份 (1 - 12) 
+		|    |    +--------------- 一个月中的第几天 (1 - 31)
+		|    +-------------------- 小时 (0 - 23)
+		+------------------------- 分钟 (0 - 59)
+		
+	使用者也可以将所有的设定先存放在文件中，用 crontab file 的方式来设定执行时间。
+
+- 在线测试：[https://crontab.guru/](https://crontab.guru/)
 
 ## MAC
 
