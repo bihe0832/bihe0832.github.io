@@ -68,6 +68,22 @@ Mac下一款完美替代spotlight的工具，可以快速的搜索本地程序�
 - 使用手册：
 
 	貌似有上面的快捷键就够了
+	
+- 个性化设置：
+
+	目前关于iTerm的个性化设置，都保存在 [https://github.com/bihe0832/Settings-Tools/config/mac/ZshProfiles.json](https://github.com/bihe0832/Settings-Tools/config/mac/ZshProfiles.json)，直接import即可。
+	
+	最近看到一个皮卡丘的主题，发现还挺好看，专门整理一下怎么切换设置
+	
+	- 下载并安装主题：
+
+			cd ~/zixie/github/ git clone https://github.com/zixieTools/Pokemon-Terminal.git && cd Pokemon-Terminal && python3.7 setup.py install
+	
+	- 应用主题：
+
+			pokemon pikachu
+
+	- 主题包含很多个设置，具体设置，可以参考shell [https://github.com/bihe0832/Settings-Tools/config/mac/pokemon-terminal.sh](https://github.com/bihe0832/Settings-Tools/config/mac/pokemon-terminal.sh)
 
 ### 终极 Shell：zsh
 
@@ -118,6 +134,7 @@ Zsh是一款强大的虚拟终端，既是一个系统的虚拟终端，也可�
 	
 	- 配置对应github：[https://github.com/bihe0832/Settings-Tools](https://github.com/bihe0832/Settings-Tools)
 	
+
 ### 抓包：Charles & Fiddler
 
 总的一句话：mac下Charles和windows下的Fiddler绝对是你最爱的抓包工具。

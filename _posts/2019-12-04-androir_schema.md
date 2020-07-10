@@ -15,7 +15,7 @@ description: 在终端开发中，经常会遇到Web页面与终端联动的需�
 
 2. 按照下图的指引，输入URL后使用手机扫描即可跳转体验
 
-	<img src="./../public/images/router_page.png" width="80%" />
+	<img src="https://blog.bihe0832.com/public/images/router_page.png" width="80%" />
 
 ## 相关代码
 
