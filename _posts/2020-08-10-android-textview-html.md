@@ -31,7 +31,7 @@ Android 原生 Textview 对于 HTML的 支持相对还比较多，考虑到兼�
 	<p><font color='#428bca'>修改文字颜色</font></p>
 
 - Android 效果：
-
-	![qcloud_oct_evn.png](./../public/images/android_textview_html.png)
+	
+	<img src="./../public/images/android_textview_html.png" width="600px" />
 
 	
