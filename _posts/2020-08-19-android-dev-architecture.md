@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 安卓开发那些事
+title: 安卓那些事之框架设计
 category: 终端开发
 tags: tags
 keywords: keywords
