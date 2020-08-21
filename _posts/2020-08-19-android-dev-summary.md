@@ -37,7 +37,7 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 
 在新方案的设计和优化过程中，我们重点思考和解决的也主要是上面的几个问题，最终目标是一套代码可以支持所有项目，即使不能支持所有项目，也要做到相同逻辑的代码尽可能只有一份。
 
-对于开发框架，设计几个核心原则就是分层、解耦、依赖隔离，组件化开发。
+对于开发框架，核心就是组件化开发，设计中遵循的原则就是组件单一职责、分层、高内聚低耦合、依赖倒置。
 
 对于开发模式的优化，主要是集中在怎么更好的提升开发效率，完善基础工具
 
@@ -49,13 +49,23 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 
 ### 开发框架
 
-- 待添加
+- 架构介绍
 
 ### 开发模式
 
-- 待添加
+- 依赖管理
+
+- 快捷调试
 
 ### 工具和流程
+
+- 自动构建
+
+- 版本发布
+
+- 更新弹框
+
+- 开发规范
 
 - Android-GetAPKInfo
 
@@ -65,4 +75,10 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 
 	梳理并检查项目中多个 module 的 gradle 依赖配置是否存在冲突的工具，对应Github 为 [https://github.com/bihe0832/Gradle-Dependencies-Check](https://github.com/bihe0832/Gradle-Dependencies-Check)
 
+- iMac（OS X）搭建私有maven仓库，提供Nexus Responsitory镜像
 
+	iMac机器上部署一套私有仓库代理，即用于自己的开发，也提供给团队或者自己其余的机器使用。对应链接 为 [https://blog.bihe0832.com/private_maven.html](https://blog.bihe0832.com/private_maven.html)
+
+- 发布开源代码到jcenter
+
+	从头开始介绍怎么把开源代码发布到jcenter，并在项目中使用。包括注册账号，发布，发布后使用以及发布中一些常见的问题。对应链接 为 [https://blog.bihe0832.com/jcenter.html](https://blog.bihe0832.com/jcenter.html)
