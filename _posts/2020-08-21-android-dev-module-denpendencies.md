@@ -25,7 +25,7 @@ description:
 
 尤其是当一个模块被依赖越来越多，这个问题就会越复杂。
 
-## 方案概述
+## 组件管理方案概述
 
 在前期我们曾经基于Android Studio 提供的构建模式 ➕ 手动维护来管理依赖，后来当组件数量发展到几十个以后，这种方式已经不能很好的满足项目的开发和维护。
 
@@ -37,7 +37,13 @@ description:
 
 - **开发结束以后，根据提示运行对应的命令，即可完成所有相关依赖组件的更新。**
 
-## 方案实现
+重构构建方式以后，提供三种开发方式开发，每种开发方式的要求不同。
+
+- 对于 **`基于全量开发` 模式，没有前置条件**
+
+- 对于 **`基于最小依赖` 和 `基于最全依赖` 开发，在首次运行时需要先完成预处理操作，然后再按照对应的开发方式开发：**
+
+## 组件管理方案实现
 
 首先，我们把所有组件的版本、依赖管理都集中统一，然后所有的构建相关的配置都通过Gradle自动生成。下面是我们新的构建相关的配置：
 
@@ -54,7 +60,7 @@ ext {
     zixieModuleInfo = ext.moduleInfo
     zixieModules = new ArrayList<>()
     zixieIsDebug = false
-    zixieIncludeALL = includeALLDependOnDevelopModule
+    zixieIncludeALL = ext.includeALLDependOnDevelopModule
     zixieIncludeList = new ArrayList()
     zixieDepenciesList = new HashMap<String, ArrayList>()
     zixieUpdateRealDependencies = this.&updateRealDependencies
@@ -65,7 +71,21 @@ ext {
 }
 ```
 
-这是具体项目的构建配置
+这里有几个定义比较重要：
+
+- zixieMainProject (ext.mainProject)
+
+	当前开发中，最终运行的主工程，也就是最终运行的那个Module
+
+- zixieDevelopModule  (ext.developModule)
+
+	当前开发的模块，可以配置多个，构建脚本会根据`mainProject` 和 `developModule` 的配置，自动 include 相关联的模块，如果 `mainProject` 依赖的模块不在 `developModule`，就会尝试使用本地的二进制文件
+ 
+- zixieIncludeALL (ext.includeALLDependOnDevelopModule)
+
+	是否将所有依赖了 `developModule` 的模块都加载进来，如果为false，会只加载与 `mainProject`相关的，如果为 true 则会把所有依赖他的模块全加载
+
+这是具体项目的构建配置：
 
 ```
 apply from: rootDir.toString() + '/config.gradle'
@@ -119,7 +139,7 @@ ext.moduleInfo = [
 
 接下来我们将基于这个配置文件来介绍怎么解决前面的几个问题。
 
-### 模块导入
+### 组件导入
 
 #### 重构前后对比
 
