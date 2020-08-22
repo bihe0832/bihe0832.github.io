@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 安卓组件化之组件管理（导入、依赖、升级）
+title: 安卓组件化之组件调试和运行
 category: 终端开发
 tags: tags
 keywords: 安卓 组件化
