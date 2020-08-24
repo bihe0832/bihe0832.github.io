@@ -4,10 +4,10 @@ title: 安卓组件化之组件管理（导入、依赖、升级）
 category: 终端开发
 tags: tags
 keywords: 安卓 组件化
-description: 
+description: 这篇文章主要总结组件化开发框架中，我们是怎么通过对项目的工程配置、编译、依赖管理等进行重构，来更方便的管理所有组件，提高日常的开发效率。
 ---
 
-这篇文章主要总结组件化开发框架怎么通过开发模式的优化，通过最小改变运行，增加调试入口等提高日常的开发效率。也先写一些核心内容，详细内容后续逐渐完善。
+这篇文章主要总结组件化开发框架中，我们是怎么通过对项目的工程配置、编译、依赖管理等进行重构，来更方便的管理所有组件，提高日常的开发效率。
 
 ## 写在前面
 
@@ -15,7 +15,7 @@ description:
 
 下图列出来大部分项目都会遇到的常用的依赖关系（后面的内容都会基于这个依赖关系图来介绍。）
 
-![](./../public/images/android_dev/module_dependencies.png )
+<img src="./../public/images/android_dev/module_dependencies.png" width="80%" />
 
 在基于上面的依赖关系下，我们设想一个场景：当前参与开发源码依赖的模块有ModuleH、ModuleE、ModuleB；此时
 
@@ -105,6 +105,12 @@ ext.developModule = "LibWrapper"
  *  false 仅加载与 mainProject 相关的模块
  */
 ext.includeALLDependOnDevelopModule = false
+/**
+ * 应用组件 （各个外发APP的发布模块）是否以application模式运行，当需要独立运行应用组件时修改，默认为false
+ * true 表示以 application 模式运行
+ * false 表示以 Android Library 模式运行
+ */
+ext.pubModuleIsApplication = false
 /**
  * 组件所有模块的最新版本，下次发布时使用
  */
@@ -456,7 +462,7 @@ def addDependenciesOnce(String projectName, String moduleName, String sourceType
 	}
 	```
 
-- 重构以前的根 build.gradle
+- 重构以后的根 build.gradle
 
 	```
 	allprojects {

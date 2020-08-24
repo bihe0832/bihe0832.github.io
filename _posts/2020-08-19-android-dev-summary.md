@@ -9,13 +9,15 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 
 开始做酱油的时候发现做开发那么久竟然没有一整套顺手的开发方案，要从头开始一个一个搭建（相当于之前做的就没什么沉淀），因此开始逐渐整理一整套相对全面并且顺手的开发方案。随着这几年逐渐完善，现在基本上具备雏形了，逐渐总结一下。
 
+目前主要总结方案的实现思路和方法，同时提供对于整体方案实现比较关键的代码片段。后续脱敏以后会逐渐将完整的方案代码整理出来。
+
 ## 方案范围
 
-终端项目其实就是一个个版本。所以方案**将会从版本的日常开发、发布升级和遇到问题怎么回溯**逐渐整理总结出来，可能也会把之前写的一些东西再次回顾、升级、整合一下。目前暂时先写一个大纲和大概，详细内容后续逐渐完善
+终端项目其实就是一个个版本。所以方案**将会从版本的日常开发、发布升级和遇到问题怎么回溯**逐渐整理总结出来，可能也会把之前写的一些东西再次回顾、升级、整合一下。
 
-对于版本的日常开发，会从代码框架、开发模式来逐渐总结。由于整套框架的核心就是组件化开发，因此这部分文章都会围绕组件化展开。为了用标题党吸引眼球，也为了突出重点，部分文章可能都以组件化为题；但是对于整个方案，组件化只是其中的一部分。
+对于版本的日常开发，首先会从代码框架、开发模式来逐渐总结，然后会把一些之前实现的技术方案也加入进来。由于整套框架的核心就是组件化开发，因此这部分文章都会围绕组件化展开。为了用标题党吸引眼球，也为了突出重点，部分文章可能都以组件化为题；但是对于整个方案，组件化只是其中的一部分。
 
-对于版本的发布升级与回溯，可能会一起来总结。主要包括我们对于一个版本，有哪些标识，以及这些标识怎么生成，用于什么场景，解决什么问题。
+版本的发布升级与回溯，可能会一起来总结。主要包括我们对于一个版本，有哪些标识，以及这些标识怎么生成，用于什么场景，解决什么问题。
 
 ## 方案目标
 
@@ -27,44 +29,90 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 
 在下面的文章中，将会详细的介绍在这几个方面我们做的一些沉淀。
 
-### 日常开发
+### 组件化框架
 
-- 安卓组件化之框架设计：[]()
+由于整套框架的核心就是组件化开发，因此日常开发文章都会围绕组件化展开，框架设计将整体的设计，接下来的内容都是围绕组件管理、组件及调试运行、组件的自动构建来介绍；主要还是对整体设计中的一些细节的进一步完善。
+
+- `安卓组件化之框架设计`：[https://blog.bihe0832.com/android-dev-architecture.html](https://blog.bihe0832.com/android-dev-architecture.html)
 
    介绍整体的组件化框架的设计，包括背景和具体的方案。框架核心就是组件化开发，设计中遵循组件单一职责、分层、高内聚低耦合、依赖倒置的原则。
 
-- 安卓组件化之组件管理（导入、依赖、升级）：[]()
+- `安卓组件化之组件管理（导入、依赖、升级）`：[https://blog.bihe0832.com/android-dev-module-denpendencies.html](https://blog.bihe0832.com/android-dev-module-denpendencies.html)
 
     当项目随着业务模块的增加组件数量变多以后，组件依赖复杂，维护成本越来越高。这篇文章介绍我们对整个组件化项目的工程配置、编译、依赖管理等的优化。包括**模块怎么导入、依赖关系怎么添加、修改以后怎么更新组件**。
 
-- 安卓组件化之组件调试和运行：[]()
+- `安卓组件化之组件调试和运行`：[https://blog.bihe0832.com/android-dev-module-debug.html](https://blog.bihe0832.com/android-dev-module-debug.html)
 
-    这篇文章主要主要是集中在怎么基于组件化更好的提升开发效率。包括如果做到最小单元运行、怎么提供更便捷的调试。
+    这篇文章主要集中在怎么基于组件化更好的提升开发效率。包括如何做到最小单元运行、怎么提供更便捷的调试。
     
+- `安卓组件化之持续集成与自动构建`：[https://blog.bihe0832.com/android-dev-module-build.html](https://blog.bihe0832.com/android-dev-module-build.html)
 
-- 安卓组件化之持续集成与自动构建：[]()
+	这篇文章总结组件化开发框架怎么通过自动构建，完成一套代码同时支撑超过多款APP的构建发布。
 
-### 版本发布与回溯
+- `安卓开发那些事之版本管理`：[https://blog.bihe0832.com/android-dev-module-version.html](https://blog.bihe0832.com/android-dev-module-version.html)
 
-- 版本发布
+	这篇文章和组件化的关系不大，主要是讲应用的版本，包括版本怎么定义，有哪些标识，以及这些标识怎么生成，用于什么场景，解决什么问题。以及版本发布方法，遇到问题怎么回溯。
 
+- `安卓组件化之组件通信及拦截`：[https://blog.bihe0832.com/android-dev-router.html](https://blog.bihe0832.com/android-dev-router.html)
+
+	这篇文章主要总结了我们基于路由的组件通信怎么设计的，包括怎么定义路由，怎么生成，以及怎么基于路由处理通用拦截及页面返回等逻辑。
+
+- `H5页面通过指定Schema拉起Android应用的实现（H5调用路由）`：[https://blog.bihe0832.com/android_schema.html](https://blog.bihe0832.com/android_schema.html)
+
+
+	在终端开发中，经常会遇到Web页面与终端联动的需求，因此基本上终端都会添加schema支持。终端测试总是很方便，但是一旦和H5结合，尤其H5的页面还没开发好的时候，联动测试就比较麻烦。就顺手撸了一个工具。	
+### 通用技术方案
+
+- `Android JSBridge简介`：[https://blog.bihe0832.com/android_jsbridge.html](https://blog.bihe0832.com/android_jsbridge.html)
+
+
+	Android JSBridge 的实现及测试方法总结。	
+- `Android安装包精简系列（总纲）`：[https://blog.bihe0832.com/android_optimize_summary.html](https://blog.bihe0832.com/android_optimize_summary.html)
+
+	目前Android安装包的瘦身或者精简相关的成熟项目也已经很多，很多其实都是可以总结成为方法论或者工具的东西，因此陆续把一些方案整理总结一下，出一个关于应用安装包优化的系列。
+	
 
 ### 其他工具和流程
 
-- 开发规范
+这部分内容主要总结通用的一些开发内容以及在开发过程为了提升开发效率开发的一些工具。
 
-- Android-GetAPKInfo
+- `安卓开发那些事之组件开发基本规范` 
 
-	通过命令行或者安装APK后 获取 手机已安装应用基本信息的工具集，对应Github 为：[https://github.com/bihe0832/Android-GetAPKInfo](https://github.com/bihe0832/Android-GetAPKInfo)
+	这篇文章总结组件化开发框架相关的一些开发规范，这些规范是保证组件化框架可以持续保持生命力的基本条件。对应链接为：[https://blog.bihe0832.com/android-dev-rules.html](https://blog.bihe0832.com/android-dev-rules.html)
 
-- Gradle-Dependencies-Check
+- `Android-GetAPKInfo`
 
-	梳理并检查项目中多个 module 的 gradle 依赖配置是否存在冲突的工具，对应Github 为 [https://github.com/bihe0832/Gradle-Dependencies-Check](https://github.com/bihe0832/Gradle-Dependencies-Check)
+	通过命令行或者安装APK后 获取 手机已安装应用基本信息的工具集，对应 Github 为：[https://github.com/bihe0832/Android-GetAPKInfo](https://github.com/bihe0832/Android-GetAPKInfo)
 
-- iMac（OS X）搭建私有maven仓库，提供Nexus Responsitory镜像
+- `Gradle-Dependencies-Check`
 
-	iMac机器上部署一套私有仓库代理，即用于自己的开发，也提供给团队或者自己其余的机器使用。对应链接 为 [https://blog.bihe0832.com/private_maven.html](https://blog.bihe0832.com/private_maven.html)
+	一款检查Gradle依赖配置是否冲突的插件，梳理并检查项目中多个 module 的 gradle 依赖配置是否存在冲突。
+	
+	- 对应 Github： [https://github.com/bihe0832/Gradle-Dependencies-Check](https://github.com/bihe0832/Gradle-Dependencies-Check)
+	
+	- 对应文章：[https://blog.bihe0832.com/gradle-dependencies-check.html](https://blog.bihe0832.com/gradle-dependencies-check.html)
+	
+- `iMac（OS X）搭建私有maven仓库，提供Nexus Responsitory镜像`
 
-- 发布开源代码到jcenter
+	iMac 机器上部署一套私有仓库代理，即用于自己的开发，也提供给团队或者自己其余的机器使用。对应链接为： [https://blog.bihe0832.com/private_maven.html](https://blog.bihe0832.com/private_maven.html)
 
-	从头开始介绍怎么把开源代码发布到jcenter，并在项目中使用。包括注册账号，发布，发布后使用以及发布中一些常见的问题。对应链接 为 [https://blog.bihe0832.com/jcenter.html](https://blog.bihe0832.com/jcenter.html)
+- `Linux 搭建 Android 编译构建环境`
+
+	使用Linux服务搭建专用构建环境的简单总结。对应链接为：[https://blog.bihe0832.com/linux-android-build.html](https://blog.bihe0832.com/linux-android-build.html)
+	
+- `Gradle插件开发系列`
+
+	在开发 Gradle 插件的过程中发现由于每次间隔时间太久，之前的坑又踩了一轮，因此系统总结整理了一下。对应链接为：[https://blog.bihe0832.com/gradle_plugin_summary.html](https://blog.bihe0832.com/gradle_plugin_summary.html)
+
+- `发布开源代码到jcenter`
+
+	从头开始介绍怎么把开源代码发布到 jcenter，并在项目中使用。包括注册账号，发布，发布后使用以及发布中一些常见的问题。对应链接为： [https://blog.bihe0832.com/jcenter.html](https://blog.bihe0832.com/jcenter.html)
+
+- `Android编译编译速度提升`
+
+	集中总结了项目开发中用到的一些优化Android编译编译速度的方式。对应链接为：[https://blog.bihe0832.com/gradle-config.html](https://blog.bihe0832.com/gradle-config.html)
+
+- `Android开发常用工具资源`
+
+	个人常用的一些简单的终端开发相关资源的地址以及功能。对应链接为：[https://blog.bihe0832.com/my_android.html](https://blog.bihe0832.com/my_android.html)
+
