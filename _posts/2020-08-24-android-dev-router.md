@@ -3,8 +3,8 @@ layout: post
 title: 安卓组件化之组件通信及拦截
 category: 终端开发
 tags: tags
-keywords: 安卓 组件化
-description: 
+keywords: 安卓 组件化 路由
+description: 这篇文章主要总结了我们基于路由的组件通信怎么设计的，以及怎么基于路由处理通用拦截及页面返回等逻辑。
 ---
 
 这篇文章主要总结了我们基于路由的组件通信怎么设计的，以及怎么基于路由处理通用拦截及页面返回等逻辑。

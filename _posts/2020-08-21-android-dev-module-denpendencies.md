@@ -3,7 +3,7 @@ layout: post
 title: 安卓组件化之组件管理（导入、依赖、升级）
 category: 终端开发
 tags: tags
-keywords: 安卓 组件化
+keywords: 安卓 组件化 组件 依赖  dependencies
 description: 这篇文章主要总结组件化开发框架中，我们是怎么通过对项目的工程配置、编译、依赖管理等进行重构，来更方便的管理所有组件，提高日常的开发效率。
 ---
 

@@ -3,8 +3,8 @@ layout: post
 title: 安卓开发那些事之组件开发基本规范
 category: 终端开发
 tags: tags
-keywords: 安卓 组件化
-description: 
+keywords: 安卓 组件化 规范
+description: 这篇文章总结组件化开发框架相关的一些开发规范，这些规范是保证组件化框架可以持续保持生命力的基本条件。
 ---
 
 这篇文章总结组件化开发框架相关的一些开发规范，这些规范是保证组件化框架可以持续保持生命力的基本条件。

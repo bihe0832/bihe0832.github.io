@@ -3,8 +3,8 @@ layout: post
 title: 安卓组件化之组件调试和运行
 category: 终端开发
 tags: tags
-keywords: 安卓 组件化
-description: 
+keywords: 安卓 组件化 调试 Application Library
+description: 这篇文章总结组件化开发框架怎么基于组件化更好的提升开发效率。包括如何做到最小单元运行、怎么增加调试入口提供更便捷的调试。
 ---
 
 这篇文章总结组件化开发框架怎么基于组件化更好的提升开发效率。包括如何做到最小单元运行、怎么增加调试入口提供更便捷的调试。

@@ -3,8 +3,8 @@ layout: post
 title: 安卓组件化之持续集成与自动构建
 category: 终端开发
 tags: tags
-keywords: 安卓 组件化
-description: 
+keywords: 安卓 组件化 持续集成 自动构建
+description: 这篇文章总结组件化开发框架怎么通过自动构建，完成一套代码同时支撑超过5款以上的APP的构建发布等。
 ---
 
 这篇文章总结组件化开发框架怎么通过自动构建，完成一套代码同时支撑超过5款以上的APP的构建发布等。
