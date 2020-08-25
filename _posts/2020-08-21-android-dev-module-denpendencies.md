@@ -7,7 +7,7 @@ keywords: 安卓 组件化 组件 依赖  dependencies
 description: 这篇文章主要总结组件化开发框架中，我们是怎么通过对项目的工程配置、编译、依赖管理等进行重构，来更方便的管理所有组件，提高日常的开发效率。
 ---
 
-这篇文章主要总结组件化开发框架中，我们是怎么通过对项目的工程配置、编译、依赖管理等进行重构，来更方便的管理所有组件，提高日常的开发效率。
+这篇文章主要总结组件化开发框架中，我们是怎么通过对项目的工程配置、编译、依赖管理等进行重构，来更方便的管理所有组件，提高日常的开发效率。目前关于组件依赖的代码，我已经整理开源，可以参考源码：[https://github.com/bihe0832/AndroidAppFactory](https://github.com/bihe0832/AndroidAppFactory)
 
 ## 写在前面
 
@@ -17,9 +17,9 @@ description: 这篇文章主要总结组件化开发框架中，我们是怎么�
 
 <img src="./../public/images/android_dev/module_dependencies.png" width="80%" />
 
-在基于上面的依赖关系下，我们设想一个场景：当前参与开发源码依赖的模块有ModuleH、ModuleE、ModuleB；此时
+在基于上面的依赖关系下，我们设想一个场景：当前参与开发源码依赖的模块有ModuleH、ModuleE、ModuleB、ModuleI；此时
 
-- 如果修改ModuleH、ModuleE，是没有任何问题的。
+- 如果修改ModuleH、ModuleI、ModuleE，是没有任何问题的。
 	
 - 如果修改ModuleB，ModuleH、ModuleE会立即生效，但是ModuleF、ModuleG、ModuleI对应的ModuleB还是老版本，就出现了版本不一致
 

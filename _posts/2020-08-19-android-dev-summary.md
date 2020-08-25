@@ -13,17 +13,17 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 
 ## 方案范围
 
-终端项目其实就是一个个版本。所以方案**将会从版本的日常开发、发布升级和遇到问题怎么回溯**逐渐整理总结出来，可能也会把之前写的一些东西再次回顾、升级、整合一下。
+终端项目其实就是一个个版本。所以方案**将会从版本的日常开发、发布升级和遇到问题怎么回溯**逐渐整理总结，可能也会把之前写的一些东西整合一下加入进来。
 
-对于版本的日常开发，首先会从代码框架、开发模式来逐渐总结，然后会把一些之前实现的技术方案也加入进来。由于整套框架的核心就是组件化开发，因此这部分文章都会围绕组件化展开。为了用标题党吸引眼球，也为了突出重点，部分文章可能都以组件化为题；但是对于整个方案，组件化只是其中的一部分。
+对于版本的日常开发，首先会从整体框架、开发模式逐渐总结，把一些之前已经沉淀的技术方案加入进来。由于整套框架的核心就是组件化开发，因此这部分文章都会围绕组件化展开。为了用标题党吸引眼球，也为了突出重点，部分文章可能都以组件化为题；但是对于整个方案，组件化只是其中的一部分。
 
-版本的发布升级与回溯，可能会一起来总结。主要包括我们对于一个版本，有哪些标识，以及这些标识怎么生成，用于什么场景，解决什么问题。
+版本的发布升级与回溯，可能会一起来总结。主要包括我们对于一个版本有哪些标识，以及这些标识怎么生成，用于什么场景，解决什么问题。
 
 ## 方案目标
 
-在新方案的设计和优化过程中，我们的最终目标是统一技术栈，同一个问题彻底研究一次，然后提供唯一的解决方案，后续可以直接放心使用。
+在新方案的设计和优化过程中，我们的最终目标是统一技术栈，同一个问题彻底研究一次，然后提供唯一的解决方案，后续可以直接放心使用。最终做到技术方案可以轻松的从一个项目复用到另一个项目，或者可以快速在这一系列框架基础上开发出另一个独立的应用，开发过程中基本聚焦在新业务的逻辑，而不是基础功能。
 
-具体到开发就是一套代码可以支持所有项目（尤其是业务无关的底层逻辑），即使不能支持所有项目，也要做到相同逻辑的代码尽可能只有一份。这份代码是经过认真优化和项目考验的。同时每一个解决方案都可以轻松的被其余任何项目复用。
+具体到开发就是一套代码可以支持所有项目（尤其是业务无关的底层逻辑），即使不能支持所有项目，也要做到相同逻辑的代码尽可能只有一份。这份代码是经过认真优化和项目考验的。
 
 ## 相关链接
 
@@ -49,32 +49,30 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 
 	这篇文章总结组件化开发框架怎么通过自动构建，完成一套代码同时支撑超过多款APP的构建发布。
 
-- `安卓开发那些事之版本管理`：[https://blog.bihe0832.com/android-dev-module-version.html](https://blog.bihe0832.com/android-dev-module-version.html)
-
-	这篇文章和组件化的关系不大，主要是讲应用的版本，包括版本怎么定义，有哪些标识，以及这些标识怎么生成，用于什么场景，解决什么问题。以及版本发布方法，遇到问题怎么回溯。
-
 - `安卓组件化之组件通信及拦截`：[https://blog.bihe0832.com/android-dev-router.html](https://blog.bihe0832.com/android-dev-router.html)
 
-	这篇文章主要总结了我们基于路由的组件通信怎么设计的，包括怎么定义路由，怎么生成，以及怎么基于路由处理通用拦截及页面返回等逻辑。
+	这篇文章主要总结了我们基于路由的组件通信怎么设计的，包括路由怎么配置、怎么生成，以及怎么基于路由处理通用拦截及页面返回等逻辑。
 
 - `H5页面通过指定Schema拉起Android应用的实现（H5调用路由）`：[https://blog.bihe0832.com/android_schema.html](https://blog.bihe0832.com/android_schema.html)
 
+	在路由的使用场景中，有一个就是和H5结合。但是H5的页面还没开发好的时候，联调测试比较麻烦，因此专门写了一个通用的路由测试工具
 
-	在终端开发中，经常会遇到Web页面与终端联动的需求，因此基本上终端都会添加schema支持。终端测试总是很方便，但是一旦和H5结合，尤其H5的页面还没开发好的时候，联动测试就比较麻烦。就顺手撸了一个工具。	
+- `安卓开发那些事之版本管理`：[https://blog.bihe0832.com/android-dev-module-version.html](https://blog.bihe0832.com/android-dev-module-version.html)
+
+	这篇文章和组件化的关系不大，主要是讲应用的版本，包括版本怎么定义，有哪些标识，以及这些标识怎么生成，用于什么场景，解决什么问题。以及版本发布方法，遇到问题怎么回溯。
+	
 ### 通用技术方案
 
 - `Android JSBridge简介`：[https://blog.bihe0832.com/android_jsbridge.html](https://blog.bihe0832.com/android_jsbridge.html)
 
-
 	Android JSBridge 的实现及测试方法总结。	
 - `Android安装包精简系列（总纲）`：[https://blog.bihe0832.com/android_optimize_summary.html](https://blog.bihe0832.com/android_optimize_summary.html)
 
-	目前Android安装包的瘦身或者精简相关的成熟项目也已经很多，很多其实都是可以总结成为方法论或者工具的东西，因此陆续把一些方案整理总结一下，出一个关于应用安装包优化的系列。
-	
+	Android安装包精简的方案的总结，包括为什么精简、怎么精简等
 
 ### 其他工具和流程
 
-这部分内容主要总结通用的一些开发内容以及在开发过程为了提升开发效率开发的一些工具。
+这部分内容主要是一些通用内容以及为了提升开发效率开发的一些工具。
 
 - `安卓开发那些事之组件开发基本规范` 
 
@@ -90,8 +88,18 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 	
 	- 对应 Github： [https://github.com/bihe0832/Gradle-Dependencies-Check](https://github.com/bihe0832/Gradle-Dependencies-Check)
 	
-	- 对应文章：[https://blog.bihe0832.com/gradle-dependencies-check.html](https://blog.bihe0832.com/gradle-dependencies-check.html)
+	- 对应介绍：[https://blog.bihe0832.com/gradle-dependencies-check.html](https://blog.bihe0832.com/gradle-dependencies-check.html)
 	
+- `Android编译编译速度提升`
+
+	集中总结了项目开发中用到的一些优化Android编译编译速度的方式。对应链接为：[https://blog.bihe0832.com/gradle-config.html](https://blog.bihe0832.com/gradle-config.html)
+
+- `Android开发常用工具资源`
+
+	个人常用的一些简单的终端开发相关资源的地址以及功能。例如：开发调试常用工具、图片压缩及查看、制作Iocn，ActionBar，点9 图、查看方法数等。对应链接为：[https://blog.bihe0832.com/my_android.html](https://blog.bihe0832.com/my_android.html)
+
+### 开发环境及技术
+
 - `iMac（OS X）搭建私有maven仓库，提供Nexus Responsitory镜像`
 
 	iMac 机器上部署一套私有仓库代理，即用于自己的开发，也提供给团队或者自己其余的机器使用。对应链接为： [https://blog.bihe0832.com/private_maven.html](https://blog.bihe0832.com/private_maven.html)
@@ -107,12 +115,3 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 - `发布开源代码到jcenter`
 
 	从头开始介绍怎么把开源代码发布到 jcenter，并在项目中使用。包括注册账号，发布，发布后使用以及发布中一些常见的问题。对应链接为： [https://blog.bihe0832.com/jcenter.html](https://blog.bihe0832.com/jcenter.html)
-
-- `Android编译编译速度提升`
-
-	集中总结了项目开发中用到的一些优化Android编译编译速度的方式。对应链接为：[https://blog.bihe0832.com/gradle-config.html](https://blog.bihe0832.com/gradle-config.html)
-
-- `Android开发常用工具资源`
-
-	个人常用的一些简单的终端开发相关资源的地址以及功能。对应链接为：[https://blog.bihe0832.com/my_android.html](https://blog.bihe0832.com/my_android.html)
-

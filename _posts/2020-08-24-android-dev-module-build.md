@@ -21,7 +21,7 @@ description: 这篇文章总结组件化开发框架怎么通过自动构建，�
 
 ## 我们的构建流程
 
-关于自动构建，也阔以看一篇以前写的SDK自动构建的内容，两者算是一脉相承不断完善吧。SDK开发经验之自动构建：[https://blog.bihe0832.com/sdk_experience_auto_build.html](https://blog.bihe0832.com/sdk_experience_auto_build.html)
+关于自动构建，也阔以看一篇以前写的 [SDK开发经验之自动构建](https://blog.bihe0832.com/sdk_experience_auto_build.html) ，两者算是一脉相承不断完善吧。
 
 这里仅仅列出我们的调试包的构件流程，正式包的流程基本一致，只是多了各种文件和资源的备份。在启动构建时，提供即将构建应用的几个基本信息即可。例如：
 
