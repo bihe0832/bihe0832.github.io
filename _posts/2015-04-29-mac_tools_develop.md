@@ -71,7 +71,7 @@ Mac下一款完美替代spotlight的工具，可以快速的搜索本地程序�
 	
 - 个性化设置：
 
-	目前关于iTerm的个性化设置，都保存在 [https://github.com/bihe0832/Settings-Tools/config/mac/ZshProfiles.json](https://github.com/bihe0832/Settings-Tools/config/mac/ZshProfiles.json)，直接import即可。
+	目前关于iTerm的个性化设置，都保存在 [https://github.com/bihe0832/Settings-Tools/raw/master/config/mac/Profiles.json](https://github.com/bihe0832/Settings-Tools/raw/master/config/mac/Profiles.json)，直接import即可。
 	
 	最近看到一个皮卡丘的主题，发现还挺好看，专门整理一下怎么切换设置
 	
