@@ -77,7 +77,7 @@ Mac下一款完美替代spotlight的工具，可以快速的搜索本地程序�
 	
 	- 下载并安装主题：
 
-			cd ~/zixie/github/ git clone https://github.com/zixieTools/Pokemon-Terminal.git && cd Pokemon-Terminal && python3.7 setup.py install
+			cd ~/zixie/github/ && git clone https://github.com/zixieTools/Pokemon-Terminal.git && cd Pokemon-Terminal && python3.7 setup.py install
 	
 	- 应用主题：
 
