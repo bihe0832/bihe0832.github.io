@@ -38,6 +38,14 @@ description: desc
 | 全局设置及工具查找 | Cmd + Shift + A |
 | 当前类查找变量或函数     | Cmd + F12|
  
+## 重要插件
+
+- Easy Gradle：https://plugins.jetbrains.com/plugin/index?xmlId=cn.renyuzhuo.plugin.easygradle
+
+- Save Actions
+
+- RoboPOJOGenerator ：https://plugins.jetbrains.com/plugin/8634-robopojogenerator
+
 ## 异常处理
 
 ### 通用大法

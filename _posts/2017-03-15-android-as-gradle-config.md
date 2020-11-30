@@ -49,6 +49,7 @@ description: desc
 		buildscript {
 		    repositories {
 		        maven { url "http://maven.bihe0832.com:8081/nexus/content/repositories/android"}
+		        jcenter()
 		    }
 		    dependencies {
 		        classpath 'com.android.tools.build:gradle:1.+'
@@ -58,6 +59,7 @@ description: desc
 		allprojects {
 		    repositories {
 		        maven { url "http://maven.bihe0832.com:8081/nexus/content/repositories/android"}
+		        jcenter()
 		    }
 		}
 
@@ -112,6 +114,7 @@ description: desc
 		buildscript {
 		    repositories {
 		        maven { url "http://maven.bihe0832.com:8081/nexus/content/repositories/android"}
+		        jcenter()
 		    }
 		    dependencies {
 		        classpath 'com.android.tools.build:gradle:1.+'
@@ -121,6 +124,7 @@ description: desc
 		allprojects {
 		    repositories {
 		        maven { url "http://maven.bihe0832.com:8081/nexus/content/repositories/android"}
+		        jcenter()
 		    }
 		}
 
