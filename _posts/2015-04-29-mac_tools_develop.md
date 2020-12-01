@@ -126,7 +126,7 @@ Zsh是一款强大的虚拟终端，既是一个系统的虚拟终端，也可�
 
 	由于个人已经把自己常用的各种环境配置等使用了专门的github仓库来管理，因此这一步就需要去github仓库clone对应的开发配置。包括：zsh的配置、环境变量配置等。将配置clone到`~/zixie/github`以后，执行下面的命令设置并生效配置：
 
-		cp -fr ~/zixie/github/Settings-Tools/config/.oh-my-zsh ~/.oh-my-zsh
+		wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
 		cp -fr ~/zixie/github/Settings-Tools/config/mac/.zshrc ~/.zshrc
 		source ~/.zshrc
 
