@@ -13,124 +13,145 @@ description: 最近在整理权限相关的东西，每次查询比较方便，�
 
 ### 权限列表
 
-| 权限                                                   | 名称                 | 描述                                                                             |
-|--------------------------------------------------------|----------------------|----------------------------------------------------------------------------------|
-| android.permission.ACCESS_CHECKIN_PROPERTIES           | 访问登记属性         | 读取或写入登记check-in数据库属性表的权限                                         |
-| android.permission.ACCESS_COARSE_LOCATION              | 获取错略位置         | 通过WiFi或移动基站的方式获取用户错略的经纬度信息,定位精度大概误差在30~1500米     |
-| android.permission.ACCESS_FINE_LOCATION                | 获取精确位置         | 通过GPS芯片接收卫星的定位信息,定位精度达10米以内                                 |
-| android.permission.ACCESS_LOCATION_EXTRA_COMMANDS      | 访问定位额外命令     | 允许程序访问额外的定位提供者指令                                                 |
-| android.permission.ACCESS_MOCK_LOCATION                | 获取模拟定位信息     | 获取模拟定位信息,一般用于帮助开发者调试应用                                      |
-| android.permission.ACCESS_NETWORK_STATE                | 获取网络状态         | 获取网络信息状态,如当前的网络连接是否有效                                        |
-| android.permission.ACCESS_SURFACE_FLINGER              | 访问Surface Flinger  | Android平台上底层的图形显示支持,一般用于游戏或照相机预览界面和底层模式的屏幕截图 |
-| android.permission.ACCESS_WIFI_STATE                   | 获取WiFi状态         | 获取当前WiFi接入的状态以及WLAN热点的信息                                         |
-| android.permission.ACCOUNT_MANAGER                     | 账户管理             | 获取账户验证信息,主要为GMail账户信息,只有系统级进程才能访问的权限                |
-| android.permission.AUTHENTICATE_ACCOUNTS               | 验证账户             | 允许一个程序通过账户验证方式访问账户管理ACCOUNT_MANAGER相关信息                  |
-| android.permission.BATTERY_STATS                       | 电量统计             | 获取电池电量统计信息                                                             |
-| android.permission.BIND_APPWIDGET                      | 绑定小插件           | 允许一个程序告诉appWidget服务需要访问小插件的数据库,只有非常少的应用才用到此权限 |
-| android.permission.BIND_DEVICE_ADMIN                   | 绑定设备管理         | 请求系统管理员接收者receiver,只有系统才能使用                                    |
-| android.permission.BIND_INPUT_METHOD                   | 绑定输入法           | 请求InputMethodService服务,只有系统才能使用                                      |
-| android.permission.BIND_REMOTEVIEWS                    | 绑定RemoteView       | 必须通过RemoteViewsService服务来请求,只有系统才能用                              |
-| android.permission.BIND_WALLPAPER                      | 绑定壁纸             | 必须通过WallpaperService服务来请求,只有系统才能用                                |
-| android.permission.BLUETOOTH                           | 使用蓝牙             | 允许程序连接配对过的蓝牙设备                                                     |
-| android.permission.BLUETOOTH_ADMIN                     | 蓝牙管理             | 允许程序进行发现和配对新的蓝牙设备                                               |
-| android.permission.BRICK                               | 变成砖头             | 能够禁用手机,非常危险,顾名思义就是让手机变成砖头                                 |
-| android.permission.BROADCAST_PACKAGE_REMOVED           | 应用删除时广播       | 当一个应用在删除时触发一个广播                                                   |
-| android.permission.BROADCAST_SMS                       | 收到短信时广播       | 当收到短信时触发一个广播                                                         |
-| android.permission.BROADCAST_STICKY                    | 连续广播             | 允许一个程序收到广播后快速收到下一个广播                                         |
-| android.permission.BROADCAST_WAP_PUSH                  | WAP PUSH广播         | WAP PUSH服务收到后触发一个广播                                                   |
-| android.permission.CALL_PHONE                          | 拨打电话             | 允许程序从非系统拨号器里输入电话号码                                             |
-| android.permission.CALL_PRIVILEGED                     | 通话权限             | 允许程序拨打电话,替换系统的拨号器界面                                            |
-| android.permission.CAMERA                              | 拍照权限             | 允许访问摄像头进行拍照                                                           |
-| android.permission.CHANGE_COMPONENT_ENABLED_STATE      | 改变组件状态         | 改变组件是否启用状态                                                             |
-| android.permission.CHANGE_CONFIGURATION                | 改变配置             | 允许当前应用改变配置,如定位                                                      |
-| android.permission.CHANGE_NETWORK_STATE                | 改变网络状态         | 改变网络状态如是否能联网                                                         |
-| android.permission.CHANGE_WIFI_MULTICAST_STATE         | 改变WiFi多播状态     | 改变WiFi多播状态                                                                 |
-| android.permission.CHANGE_WIFI_STATE                   | 改变WiFi状态         | 改变WiFi状态                                                                     |
-| android.permission.CLEAR_APP_CACHE                     | 清除应用缓存         | 清除应用缓存                                                                     |
-| android.permission.CLEAR_APP_USER_DATA                 | 清除用户数据         | 清除应用的用户数据                                                               |
-| android.permission.CWJ_GROUP                           | 底层访问权限         | 允许CWJ账户组访问底层信息                                                        |
-| android.permission.CELL_PHONE_MASTER_EX                | 手机优化大师扩展权限 | 手机优化大师扩展权限                                                             |
-| android.permission.CONTROL_LOCATION_UPDATES            | 控制定位更新         | 允许获得移动网络定位信息改变                                                     |
-| android.permission.DELETE_CACHE_FILES                  | 删除缓存文件         | 允许应用删除缓存文件                                                             |
-| android.permission.DELETE_PACKAGES                     | 删除应用             | 允许程序删除应用                                                                 |
-| android.permission.DEVICE_POWER                        | 电源管理             | 允许访问底层电源管理                                                             |
-| android.permission.DIAGNOSTIC                          | 应用诊断             | 允许程序到RW到诊断资源                                                           |
-| android.permission.DISABLE_KEYGUARD                    | 禁用键盘锁           | 允许程序禁用键盘锁                                                               |
-| android.permission.DUMP                                | 转存系统信息         | 允许程序获取系统dump信息从系统服务                                               |
-| android.permission.EXPAND_STATUS_BAR                   | 状态栏控制           | 允许程序扩展或收缩状态栏                                                         |
-| android.permission.FACTORY_TEST                        | 工厂测试模式         | 允许程序运行工厂测试模式                                                         |
-| android.permission.FLASHLIGHT                          | 使用闪光灯           | 允许访问闪光灯                                                                   |
-| android.permission.FORCE_BACK                          | 强制后退             | 允许程序强制使用back后退按键,无论Activity是否在顶层                              |
-| android.permission.GET_ACCOUNTS                        | 访问账户Gmail列表    | 访问GMail账户列表                                                                |
-| android.permission.GET_PACKAGE_SIZE                    | 获取应用大小         | 获取应用的文件大小                                                               |
-| android.permission.GET_TASKS                           | 获取任务信息         | 允许程序获取当前或最近运行的应用                                                 |
-| android.permission.GLOBAL_SEARCH                       | 允许全局搜索         | 允许程序使用全局搜索功能                                                         |
-| android.permission.HARDWARE_TEST                       | 硬件测试             | 访问硬件辅助设备,用于硬件测试                                                    |
-| android.permission.INJECT_EVENTS                       | 注射事件             | 允许访问本程序的底层事件,获取按键、轨迹球的事件流                                |
-| android.permission.INSTALL_LOCATION_PROVIDER           | 安装定位提供         | 安装定位提供                                                                     |
-| android.permission.INSTALL_PACKAGES                    | 安装应用程序         | 允许程序安装应用                                                                 |
-| android.permission.INTERNAL_SYSTEM_WINDOW              | 内部系统窗口         | 允许程序打开内部窗口,不对第三方应用程序开放此权限                                |
-| android.permission.INTERNET                            | 访问网络             | 访问网络连接,可能产生GPRS流量                                                    |
-| android.permission.KILL_BACKGROUND_PROCESSES           | 结束后台进程         | 允许程序调用killBackgroundProcesses(String).方法结束后台进程                     |
-| android.permission.MANAGE_ACCOUNTS                     | 管理账户             | 允许程序管理AccountManager中的账户列表                                           |
-| android.permission.MANAGE_APP_TOKENS                   | 管理程序引用         | 管理创建、摧毁、Z轴顺序,仅用于系统                                               |
-| android.permission.MTWEAK_USER                         | 高级权限             | 允许mTweak用户访问高级系统权限                                                   |
-| android.permission.MTWEAK_FORUM                        | 社区权限             | 允许使用mTweak社区权限                                                           |
-| android.permission.MASTER_CLEAR                        | 软格式化             | 允许程序执行软格式化,删除系统配置信息                                            |
-| android.permission.MODIFY_AUDIO_SETTINGS               | 修改声音设置         | 修改声音设置信息                                                                 |
-| android.permission.MODIFY_PHONE_STATE                  | 修改电话状态         | 修改电话状态,如飞行模式,但不包含替换系统拨号器界面                               |
-| android.permission.MOUNT_FORMAT_FILESYSTEMS            | 格式化文件系统       | 格式化可移动文件系统,比如格式化清空SD卡                                          |
-| android.permission.MOUNT_UNMOUNT_FILESYSTEMS           | 挂载文件系统         | 挂载、反挂载外部文件系统                                                         |
-| android.permission.NFC                                 | 允许NFC通讯          | 允许程序执行NFC近距离通讯操作,用于移动支持                                       |
-| android.permission.PERSISTENT_ACTIVITY                 | 永久Activity         | 创建一个永久的Activity,该功能标记为将来将被移除                                  |
-| android.permission.PROCESS_OUTGOING_CALLS              | 处理拨出电话         | 允许程序监视,修改或放弃播出电话                                                  |
-| android.permission.READ_CALENDAR                       | 读取日程提醒         | 允许程序读取用户的日程信息                                                       |
-| android.permission.READ_CONTACTS                       | 读取联系人           | 允许应用访问联系人通讯录信息                                                     |
-| android.permission.READ_FRAME_BUFFER                   | 屏幕截图             | 读取帧缓存用于屏幕截图                                                           |
-| com.android.browser.permission.READ_HISTORY_BOOKMARKS  | 读取收藏夹和历史记录 | 读取浏览器收藏夹和历史记录                                                       |
-| android.permission.READ_INPUT_STATE                    | 读取输入状态         | 读取当前键的输入状态,仅用于系统                                                  |
-| android.permission.READ_LOGS                           | 读取系统日志         | 读取系统底层日志                                                                 |
-| android.permission.READ_PHONE_STATE                    | 读取电话状态         | 访问电话状态                                                                     |
-| android.permission.READ_SMS                            | 读取短信内容         | 读取短信内容                                                                     |
-| android.permission.READ_SYNC_SETTINGS                  | 读取同步设置         | 读取同步设置,读取Google在线同步设置                                              |
-| android.permission.READ_SYNC_STATS                     | 读取同步状态         | 读取同步状态,获得Google在线同步状态                                              |
-| android.permission.REBOOT                              | 重启设备             | 允许程序重新启动设备                                                             |
-| android.permission.RECEIVE_BOOT_COMPLETED              | 开机自动允许         | 允许程序开机自动运行                                                             |
-| android.permission.RECEIVE_MMS                         | 接收彩信             | 接收彩信                                                                         |
-| android.permission.RECEIVE_SMS                         | 接收短信             | 接收短信                                                                         |
-| android.permission.RECEIVE_WAP_PUSH                    | 接收Wap Push         | 接收WAP PUSH信息                                                                 |
-| android.permission.RECORD_AUDIO                        | 录音                 | 录制声音通过手机或耳机的麦克                                                     |
-| android.permission.REORDER_TASKS                       | 排序系统任务         | 重新排序系统Z轴运行中的任务                                                      |
-| android.permission.RESTART_PACKAGES                    | 结束系统任务         | 结束任务通过restartPackage(String)方法,该方式将在外来放弃                        |
-| android.permission.SEND_SMS                            | 发送短信             | 发送短信                                                                         |
-| android.permission.SET_ACTIVITY_WATCHER                | 设置Activity观察其   | 设置Activity观察器一般用于monkey测试                                             |
-| com.android.alarm.permission.SET_ALARM                 | 设置闹铃提醒         | 设置闹铃提醒                                                                     |
-| android.permission.SET_ALWAYS_FINISH                   | 设置总是退出         | 设置程序在后台是否总是退出                                                       |
-| android.permission.SET_ANIMATION_SCALE                 | 设置动画缩放         | 设置全局动画缩放                                                                 |
-| android.permission.SET_DEBUG_APP                       | 设置调试程序         | 设置调试程序,一般用于开发                                                        |
-| android.permission.SET_ORIENTATION                     | 设置屏幕方向         | 设置屏幕方向为横屏或标准方式显示,不用于普通应用                                  |
-| android.permission.SET_PREFERRED_APPLICATIONS          | 设置应用参数         | 设置应用的参数,已不再工作具体查看addPackageToPreferred(String)介绍               |
-| android.permission.SET_PROCESS_LIMIT                   | 设置进程限制         | 允许程序设置最大的进程数量的限制                                                 |
-| android.permission.SET_TIME                            | 设置系统时间         | 设置系统时间                                                                     |
-| android.permission.SET_TIME_ZONE                       | 设置系统时区         | 设置系统时区                                                                     |
-| android.permission.SET_WALLPAPER                       | 设置桌面壁纸         | 设置桌面壁纸                                                                     |
-| android.permission.SET_WALLPAPER_HINTS                 | 设置壁纸建议         | 设置壁纸建议                                                                     |
-| android.permission.SIGNAL_PERSISTENT_PROCESSES         | 发送永久进程信号     | 发送一个永久的进程信号                                                           |
-| android.permission.STATUS_BAR                          | 状态栏控制           | 允许程序打开、关闭、禁用状态栏                                                   |
-| android.permission.SUBSCRIBED_FEEDS_READ               | 访问订阅内容         | 访问订阅信息的数据库                                                             |
-| android.permission.SUBSCRIBED_FEEDS_WRITE              | 写入订阅内容         | 写入或修改订阅内容的数据库                                                       |
-| android.permission.SYSTEM_ALERT_WINDOW                 | 显示系统窗口         | 显示系统窗口                                                                     |
-| android.permission.UPDATE_DEVICE_STATS                 | 更新设备状态         | 更新设备状态                                                                     |
-| android.permission.USE_CREDENTIALS                     | 使用证书             | 允许程序请求验证从AccountManager                                                 |
-| android.permission.USE_SIP                             | 使用SIP视频          | 允许程序使用SIP视频服务                                                          |
-| android.permission.VIBRATE                             | 使用振动             | 允许振动                                                                         |
-| android.permission.WAKE_LOCK                           | 唤醒锁定             | 允许程序在手机屏幕关闭后后台进程仍然运行                                         |
-| android.permission.WRITE_APN_SETTINGS                  | 写入GPRS接入点设置   | 写入网络GPRS接入点设置                                                           |
-| android.permission.WRITE_CALENDAR                      | 写入日程提醒         | 写入日程,但不可读取                                                              |
-| android.permission.WRITE_CONTACTS                      | 写入联系人           | 写入联系人,但不可读取                                                            |
-| android.permission.WRITE_EXTERNAL_STORAGE              | 写入外部存储         | 允许程序写入外部存储,如SD卡上写文件                                              |
-| android.permission.WRITE_GSERVICES                     | 写入Google地图数据   | 允许程序写入Google Map服务数据                                                   |
-| com.android.browser.permission.WRITE_HISTORY_BOOKMARKS | 写入收藏夹和历史记录 | 写入浏览器历史记录或收藏夹,但不可读取                                            |
-| android.permission.WRITE_SECURE_SETTINGS               | 读写系统敏感设置     | 允许程序读写系统安全敏感的设置项                                                 |
-| android.permission.WRITE_SETTINGS                      | 读写系统设置         | 允许读写系统设置项                                                               |
-| android.permission.WRITE_SMS                           | 编写短信             | 允许编写短信                                                                     |
+| Key                                                         | Title                                        | Memo                                                                                                                                                                 | Level |
+|-------------------------------------------------------------|----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
+| android.permission.ACCESS_CHECKIN_PROPERTIES                | 访问检入属性                                 | 允许对检入服务上传的属性进行读/写访问。普通应用程序不能使用此权限。                                                                                                  | 0     |
+| android.permission.ACCESS_COARSE_LOCATION                   | 大概位置                                     | 访问大概的位置源(例如蜂窝网络数据库)以确定手机的大概位置(如果可以)。恶意应用程序可借此确定您所处的大概位置。                                                         | 1     |
+| android.permission.ACCESS_FINE_LOCATION                     | 精准的(GPS)位置                              | 访问精准的位置源，例如手机上的全球定位系统(如果有)。恶意应用程序可能会借此确定您所处的位置，并可能消耗额外的电池电量。                                               | 1     |
+| android.permission.ACCESS_LOCATION_EXTRA_COMMANDS           | 访问额外的位置信息提供程序命令               | 访问额外的位置信息提供程序命令。恶意应用程序可借此干扰 GPS 或其他位置源的正常工作。                                                                                  | 1     |
+| android.permission.ACCESS_MOCK_LOCATION                     | 使用模拟地点来源进行测试                     | 创建模拟地点来源进行测试。恶意应用程序可能利用此选项覆盖由真实地点来源（如 GPS 或网络提供商）传回的地点和/或状态。                                                   | 1     |
+| android.permission.ACCESS_NETWORK_STATE                     | 查看网络状态                                 | 允许应用程序查看所有网络的状态。                                                                                                                                     | 0     |
+| android.permission.ACCESS_SURFACE_FLINGER                   | 访问 SurfaceFlinger                          | 允许应用程序使用 SurfaceFlinger 低级别功能。                                                                                                                         | 0     |
+| android.permission.ACCESS_WIFI_STATE                        | 查看 WLAN 状态                               | 允许应用程序查看有关 WLAN 状态的信息。                                                                                                                               | 0     |
+| android.permission.ADD_SYSTEM_SERVICE                       | 系统级服务                                   | 允许程序发布系统级服务                                                                                                                                               | 0     |
+| android.permission.BATTERY_STATS                            | 修改电池统计信息                             | 允许修改收集的电池使用情况统计信息。普通应用程序不能使用此权限。                                                                                                     | 0     |
+| android.permission.BLUETOOTH                                | 创建蓝牙连接                                 | 允许应用程序查看本地蓝牙手机的配置，以及建立或接受与配对设备的连接。                                                                                                 | 1     |
+| android.permission.BLUETOOTH_ADMIN                          | 蓝牙管理                                     | 允许应用程序配置本地蓝牙手机，以及发现远程设备并与其配对。                                                                                                           | 0     |
+| android.permission.BRICK                                    | 永久停用手机                                 | 允许应用程序永久停用整个手机，这非常危险。                                                                                                                           | 2     |
+| android.permission.BROADCAST_PACKAGE_REMOVED                | 发送包删除的广播                             | 允许应用程序广播已删除某应用程序包的通知。恶意应用程序可借此终止任何正在运行的其他应用程序。                                                                         | 1     |
+| android.permission.BROADCAST_STICKY                         | 发送置顶广播                                 | 允许应用程序发送顽固广播，这些广播在结束后仍会保留。恶意应用程序可能会借此使手机耗用太多内存，从而降低其速度或稳定性。                                               | 1     |
+| android.permission.CALL_PHONE                               | 直接拨打电话号码                             | 允许应用程序在您不介入的情况下拨打电话。恶意应用程序可借此在您的话费单上产生意外通话费。请注意，此权限不允许应用程序拨打紧急呼救电话。                               | 2     |
+| android.permission.CALL_PRIVILEGED                          | 直接呼叫任何电话号码                         | 允许应用程序在您不介入的情况下拨打任何电话（包括紧急呼救）。恶意应用程序可借此向应急服务机构拨打骚扰电话甚至非法电话。                                               | 2     |
+| android.permission.CAMERA                                   | 拍照                                         | 允许应用程序使用相机拍照，这样应用程序可随时收集进入相机镜头的图像。                                                                                                 | 0     |
+| android.permission.CHANGE_COMPONENT_ENABLED_STATE           | 启用或停用应用程序组件                       | 允许应用程序更改是否启用其他应用程序的组件。恶意应用程序可借此停用重要的手机功能。使用此权限时务必谨慎，因为这可能导致应用程序组件进入不可用、不一致或不稳定的状态。 | 1     |
+| android.permission.CHANGE_CONFIGURATION                     | 更改用户界面设置                             | 允许应用程序更改当前配置，例如语言设置或整体的字体大小。                                                                                                             | 0     |
+| android.permission.CHANGE_NETWORK_STATE                     | 更改网络连接性                               | 允许应用程序更改网络连接的状态。                                                                                                                                     | 0     |
+| android.permission.CHANGE_WIFI_STATE                        | 更改 WLAN 状态                               | 允许应用程序连接到 WLAN 接入点以及与 WLAN 接入点断开连接，并对配置的 WLAN 网络进行更改。                                                                             | 0     |
+| android.permission.CLEAR_APP_CACHE                          | 删除所有应用程序缓存数据                     | 允许应用程序通过删除应用程序缓存目录中的文件释放手机存储空间。通常此权限只适用于系统进程。                                                                           | 0     |
+| android.permission.CLEAR_APP_USER_DATA                      | 删除其他应用程序的数据                       | 允许应用程序清除用户数据。                                                                                                                                           | 1     |
+| android.permission.CONTROL_LOCATION_UPDATES                 | 控制位置更新通知                             | 允许启用/停用来自收音机的位置更新通知。普通应用程序不能使用此权限。                                                                                                  | 0     |
+| android.permission.DELETE_CACHE_FILES                       | 删除其他应用程序的缓存                       | 允许应用程序删除缓存文件。                                                                                                                                           | 0     |
+| android.permission.DELETE_PACKAGES                          | 删除应用程序                                 | 允许应用程序删除 Android 包。恶意应用程序可借此删除重要的应用程序。                                                                                                  | 0     |
+| android.permission.DEVICE_POWER                             | 开机或关机                                   | 允许应用程序打开或关闭手机。                                                                                                                                         | 0     |
+| android.permission.DIAGNOSTIC                               | 读取/写入诊断所拥有的资源                    | 允许应用程序读取/写入诊断组所拥有的任何资源（例如，/dev 中的文件）。这可能会影响系统稳定性和安全性。此权限仅供制造商或运营商诊断硬件问题。                           | 2     |
+| android.permission.DISABLE_KEYGUARD                         | 停用键锁                                     | 允许应用程序停用键锁和任何关联的密码安全设置。例如，在手机上接听电话时停用键锁，在通话结束后重新启用键锁。                                                           | 0     |
+| android.permission.DUMP                                     | 检索系统内部状态                             | 允许应用程序检索系统的内部状态。恶意应用程序可借此检索它们本不需要的各种保密信息和安全信息。                                                                         | 0     |
+| android.permission.EXPAND_STATUS_BAR                        | 展开/收拢状态栏                              | 允许应用程序展开或收拢状态栏。                                                                                                                                       | 0     |
+| android.permission.FACTORY_TEST                             | 在出厂测试模式下运行                         | 作为一项低级制造商测试来运行，从而允许对手机硬件进行完全访问。此权限仅当手机在制造商测试模式下运行时才可用。                                                         | 0     |
+| android.permission.FLASHLIGHT                               | 控制闪光灯                                   | 允许应用程序控制闪光灯。                                                                                                                                             | 0     |
+| android.permission.FORCE_BACK                               | 强制应用程序关闭                             | 允许应用程序强制前端的任何活动关闭并重新开始。普通应用程序从不需要使用此权限。                                                                                       | 0     |
+| android.permission.FOTA_UPDATE                              | 系统升级                                     | 运行应用程序使用空中升级系统                                                                                                                                         | 0     |
+| android.permission.GET_ACCOUNTS                             | 发现已知帐户                                 | 允许应用程序获取手机已知的帐户列表。                                                                                                                                 | 0     |
+| android.permission.GET_PACKAGE_SIZE                         | 计算应用程序存储空间                         | 允许应用程序检索其代码、数据和缓存大小                                                                                                                               | 0     |
+| android.permission.GET_TASKS                                | 检索当前运行的应用程序                       | 允许应用程序检索有关当前和最近运行的任务的信息。恶意应用程序可借此发现有关其他应用程序的保密信息。                                                                   | 1     |
+| android.permission.HARDWARE_TEST                            | 测试硬件                                     | 允许应用程序控制各外围设备以进行硬件测试。                                                                                                                           | 0     |
+| android.permission.INJECT_EVENTS                            | 按键和控制按钮                               | 允许应用程序将其自己的输入活动（按键等）提供给其他应用程序。恶意应用程序可借此掌控手机。                                                                             | 2     |
+| android.permission.INSTALL_PACKAGES                         | 直接安装应用程序                             | 允许应用程序安装全新的或更新的 Android 包。恶意应用程序可能会借此添加其具有任意权限的新应用程序。                                                                    | 1     |
+| android.permission.INTERNAL_SYSTEM_WINDOW                   | 显示未授权的窗口                             | 允许创建专用于内部系统用户界面的窗口。普通应用程序不能使用此权限。                                                                                                   | 0     |
+| android.permission.INTERNET                                 | 访问网络                                     | 允许程序访问网络.                                                                                                                                                    | 0     |
+| android.permission.MANAGE_APP_TOKENS                        | 管理应用程序令牌                             | 允许应用程序创建和管理自己的令牌，从而绕开其常规的 Z 方向。普通应用程序从不需要使用此权限。                                                                          | 0     |
+| android.permission.MASTER_CLEAR                             | 恢复出厂设置                                 | 允许应用程序将系统恢复为出厂设置，即清除所有数据、配置以及所安装的应用程序。                                                                                         | 2     |
+| android.permission.MODIFY_AUDIO_SETTINGS                    | 更改您的音频设置                             | 允许应用程序修改整个系统的音频设置，如音量和路由。                                                                                                                   | 0     |
+| android.permission.MODIFY_PHONE_STATE                       | 修改手机状态                                 | 允许应用程序控制设备的电话功能。拥有此权限的应用程序可自行切换网络、打开和关闭无线通信等，而不会通知您。                                                             | 1     |
+| android.permission.MOUNT_UNMOUNT_FILESYSTEMS                | 装载和卸载文件系统                           | 允许应用程序装载和卸载可移动存储器的文件系统。                                                                                                                       | 0     |
+| android.permission.PERSISTENT_ACTIVITY                      | 让应用程序始终运行                           | 允许应用程序部分持续运行，这样系统便不能将其用于其他应用程序。                                                                                                       | 0     |
+| android.permission.PROCESS_OUTGOING_CALLS                   | 拦截外拨电话                                 | 允许应用程序处理外拨电话或更改要拨打的号码。恶意应用程序可能会借此监视、另行转接甚至阻止外拨电话。                                                                   | 2     |
+| android.permission.READ_CALENDAR                            | 读取日历活动                                 | 允许应用程序读取您手机上存储的所有日历活动。恶意应用程序可借此将您的日历活动发送给其他人。                                                                           | 1     |
+| android.permission.READ_CONTACTS                            | 读取联系人数据                               | 允许应用程序读取您手机上存储的所有联系人（地址）数据。恶意应用程序可借此将您的数据发送给其他人。                                                                     | 1     |
+| android.permission.READ_FRAME_BUFFER                        | 读取帧缓冲区                                 | 允许应用程序读取帧缓冲区中的内容,比如抓屏程序.                                                                                                                       | 0     |
+| android.permission.READ_INPUT_STATE                         | 记录您键入的内容和执行的操作                 | 允许应用程序查看您按的键，即使在与其他应用程序交互（例如输入密码）时也不例外。普通应用程序从不需要使用此权限。                                                       | 2     |
+| android.permission.READ_LOGS                                | 读取系统日志文件                             | 允许应用程序从系统的各日志文件中读取信息。这样应用程序可以发现您的手机使用情况，但这些信息不应包含任何个人信息或保密信息。                                           | 0     |
+| android.permission.READ_OWNER_DATA                          | 读取所有者数据                               | 允许应用程序读取您手机上存储的手机所有者数据。恶意应用程序可借此读取手机所有者数据。                                                                                 | 1     |
+| android.permission.READ_SMS                                 | 读取短信或彩信                               | 允许应用程序读取您的手机或 SIM 卡中存储的短信。恶意应用程序可借此读取您的机密信息。                                                                                  | 2     |
+| android.permission.READ_SYNC_SETTINGS                       | 读取同步设置                                 | 允许应用程序读取同步设置，例如是否为 联系人 启用同步。                                                                                                               | 0     |
+| android.permission.READ_SYNC_STATS                          | 读取同步统计信息                             | 允许应用程序读取同步统计信息；例如已发生的同步历史记录。                                                                                                             | 0     |
+| android.permission.REBOOT                                   | 强行重新启动手机                             | 允许应用程序强行重新启动手机。                                                                                                                                       | 1     |
+| android.permission.RECEIVE_BOOT_COMPLETED                   | 开机时自动启动                               | 允许应用程序在系统完成启动后即自行启动。这样会延长手机的启动时间，而且如果应用程序一直运行，会降低手机的整体速度。                                                   | 1     |
+| android.permission.RECEIVE_MMS                              | 接收彩信                                     | 允许应用程序接收和处理彩信。恶意应用程序可借此监视您的信息，或者将信息删除而不向您显示。                                                                             | 1     |
+| android.permission.RECEIVE_SMS                              | 接收短信                                     | 允许应用程序接收和处理短信。恶意应用程序可借此监视您的信息，或者将信息删除而不向您显示。                                                                             | 1     |
+| android.permission.RECEIVE_WAP_PUSH                         | 接收 WAP                                     | 允许应用程序接收和处理 WAP 信息。恶意应用程序可借此监视您的信息，或者将信息删除而不向您显示。                                                                        | 1     |
+| android.permission.RECORD_AUDIO                             | 录音                                         | 允许应用程序访问录音路径。                                                                                                                                           | 1     |
+| android.permission.REORDER_TASKS                            | 对正在运行的应用程序重新排序                 | 允许应用程序将任务移至前端和后台。恶意应用程序可借此强行进入前端，而不受您的控制。                                                                                   | 1     |
+| android.permission.RESTART_PACKAGES                         | 重启程序                                     | 允许程序自己重启或重启其他程序                                                                                                                                       | 0     |
+| android.permission.SEND_SMS                                 | 发送短信                                     | 允许应用程序发送短信。恶意应用程序可能会不经您的确认就发送信息，给您带来费用。                                                                                       | 2     |
+| android.permission.SET_ACTIVITY_WATCHER                     | 监控所有应用程序的启动                       | 允许应用程序监控系统启动活动的方式。恶意应用程序可借此彻底损坏系统。此权限仅在开发时才需要，普通的手机应用不需要。                                                   | 1     |
+| android.permission.SET_ALWAYS_FINISH                        | 关闭所有后台应用程序                         | 允许应用程序控制活动是否始终是一转至后台就完成。普通应用程序从不需要使用此权限。                                                                                     | 0     |
+| android.permission.SET_ANIMATION_SCALE                      | 修改全局动画速度                             | 允许应用程序随时更改全局动画速度（加快或放慢动画）。                                                                                                                 | 0     |
+| android.permission.SET_DEBUG_APP                            | 启用应用程序调试                             | 允许应用程序启动对其他应用程序的调试。恶意应用程序可借此终止其他应用程序。                                                                                           | 1     |
+| android.permission.SET_ORIENTATION                          | 更改屏幕显示方向                             | 允许应用程序随时更改屏幕的旋转方向。普通应用程序从不需要使用此权限。                                                                                                 | 0     |
+| android.permission.SET_PREFERRED_APPLICATIONS               | 设置首选应用程序                             | 允许应用程序修改首选的应用程序。这样恶意应用程序可能会暗中更改运行的应用程序，从而骗过您的现有应用程序来收集您的保密数据。                                           | 1     |
+| android.permission.SET_PROCESS_FOREGROUND                   | 强制前台运行                                 | 允许程序强制前台运行                                                                                                                                                 | 0     |
+| android.permission.SET_PROCESS_LIMIT                        | 限制运行的进程个数                           | 允许应用程序控制将运行的进程数上限。普通应用程序从不需要使用此权限。                                                                                                 | 0     |
+| android.permission.SET_TIME_ZONE                            | 设置时区                                     | 允许应用程序更改手机的时区。                                                                                                                                         | 0     |
+| android.permission.SET_WALLPAPER                            | 设置壁纸                                     | 允许应用程序设置系统壁纸。                                                                                                                                           | 0     |
+| android.permission.SET_WALLPAPER_HINTS                      | 设置壁纸大小提示                             | 允许应用程序设置有关壁纸大小的提示。                                                                                                                                 | 0     |
+| android.permission.SIGNAL_PERSISTENT_PROCESSES              | 向应用程序发送 Linux 信号                    | 允许应用程序请求将所提供的信号发送给所有持久进程。                                                                                                                   | 0     |
+| android.permission.STATUS_BAR                               | 停用或修改状态栏                             | 允许应用程序停用状态栏或者增删系统图标。                                                                                                                             | 0     |
+| android.permission.SUBSCRIBED_FEEDS_READ                    | 读取订阅的供稿                               | 允许应用程序获取有关当前同步的供稿的详细信息。                                                                                                                       | 0     |
+| android.permission.SUBSCRIBED_FEEDS_WRITE                   | 写入订阅的供稿                               | 允许应用程序修改您当前同步的供稿。恶意应用程序可借此更改您同步的供稿。                                                                                               | 1     |
+| android.permission.SYSTEM_ALERT_WINDOW                      | 显示系统级警报                               | 允许应用程序显示系统警报窗口。恶意应用程序可借此掌控整个手机屏幕。                                                                                                   | 1     |
+| android.permission.VIBRATE                                  | 控制振动器                                   | 允许应用程序控制振动器。                                                                                                                                             | 0     |
+| android.permission.WAKE_LOCK                                | 防止手机休眠                                 | 允许应用程序防止手机进入休眠状态。                                                                                                                                   | 0     |
+| android.permission.WRITE_APN_SETTINGS                       | 写入 接入点名称 设置                         | 允许应用程序修改 APN 设置，例如任何 APN 的代理和端口。                                                                                                               | 0     |
+| android.permission.WRITE_CALENDAR                           | 添加或修改日历活动以及向邀请对象发送电子邮件 | 允许应用程序添加或更改日历中的活动，这可能会向邀请对象发送电子邮件。恶意应用程序可能会借此清除或修改您的日历活动，或者向邀请对象发送电子邮件。                       | 1     |
+| android.permission.WRITE_CONTACTS                           | 写入联系数据                                 | 允许应用程序修改您手机上存储的联系人（地址）数据。恶意应用程序可借此清除或修改您的联系人数据。                                                                       | 1     |
+| android.permission.WRITE_GSERVICES                          | 修改 Google 地图                             | 允许应用程序修改 Google 服务地图。普通应用程序不能使用此权限。                                                                                                       | 0     |
+| android.permission.WRITE_OWNER_DATA                         | 写入所有者数据                               | 允许应用程序修改您手机上存储的手机所有者数据。恶意应用程序可借此清除或修改所有者数据。                                                                               | 1     |
+| android.permission.WRITE_SETTINGS                           | 修改全局系统设置                             | 允许应用程序修改系统设置方面的数据。恶意应用程序可借此破坏您的系统配置。                                                                                             | 1     |
+| android.permission.WRITE_SMS                                | 编辑短信或彩信                               | 允许应用程序写入手机或 SIM 卡中存储的短信。恶意应用程序可借此删除您的信息。                                                                                          | 1     |
+| android.permission.WRITE_SYNC_SETTINGS                      | 写入同步设置                                 | 允许应用程序修改同步设置，例如是否为 联系人 启用同步。                                                                                                               | 1     |
+| android.permission.ACCESS_CACHE_FILESYSTEM                  | 访问缓存文件系统                             | 允许应用程序读取和写入缓存文件系统。                                                                                                                                 | 0     |
+| android.permission.ACCOUNT_MANAGER                          | 作为帐户身份验证程序                         | 允许应用程序使用 AccountManager 的帐户身份验证程序功能，包括创建帐户以及获取和设置其密码。                                                                           | 0     |
+| android.permission.ASEC_ACCESS                              | 获取有关安全存储的信息                       | 允许应用程序获取有关安全存储的信息。                                                                                                                                 | 0     |
+| android.permission.ASEC_CREATE                              | 创建安全存储                                 | 允许应用程序创建安全存储。                                                                                                                                           | 0     |
+| android.permission.ASEC_DESTROY                             | 清除安全存储                                 | 允许应用程序清除安全存储。                                                                                                                                           | 0     |
+| android.permission.ASEC_MOUNT_UNMOUNT                       | 安装/卸载安全存储                            | 允许应用程序安装/卸载安全存储。                                                                                                                                      | 0     |
+| android.permission.ASEC_RENAME                              | 重命名安全存储                               | 允许应用程序重命名安全存储。                                                                                                                                         | 0     |
+| android.permission.AUTHENTICATE_ACCOUNTS                    | 作为帐户身份验证程序                         | 允许应用程序使用 AccountManager 的帐户身份验证程序功能，包括创建帐户以及获取和设置其密码。                                                                           | 0     |
+| android.permission.BACKUP                                   | 控制系统备份和还原                           | 允许应用程序控制系统的备份和还原机制。普通应用程序不能使用此权限。                                                                                                   | 0     |
+| android.permission.BIND_APPWIDGET                           | 选择窗口小部件                               | 允许应用程序告诉系统哪个应用程序可以使用哪些窗口小部件。具有该权限的应用程序可以允许其他应用程序访问个人数据。普通应用程序不能使用此权限。                           | 0     |
+| android.permission.BIND_DEVICE_ADMIN                        | 与设备管理器交互                             | 允许持有对象将意向发送到设备管理器。普通的应用程序一律无需此权限。                                                                                                   | 0     |
+| android.permission.BIND_INPUT_METHOD                        | 绑定至输入法                                 | 允许手机用户绑定至输入法的顶级界面。普通应用程序从不需要使用此权限。                                                                                                 | 0     |
+| android.permission.BIND_WALLPAPER                           | 绑定到壁纸                                   | 允许手机用户绑定到壁纸的顶级界面。应该从不需要将此权限授予普通应用程序。                                                                                             | 0     |
+| android.permission.BROADCAST_SMS                            | 发送短信收到的广播                           | 允许应用程序广播已收到短信的通知。恶意应用程序可借此伪造收到的短信。                                                                                                 | 1     |
+| android.intent.category.MASTER_CLEAR.permission.C2D_MESSAGE | C2DM权限(云端)                               | C2DM允许第三方开发者开发相关的应用来推送少量数据消息到用户的手机上。                                                                                                 | 1     |
+| android.permission.CHANGE_BACKGROUND_DATA_SETTING           | 更改背景数据使用设置                         | 允许应用程序更改背景数据使用设置。                                                                                                                                   | 0     |
+| android.permission.CHANGE_WIFI_MULTICAST_STATE              | 允许接收WLAN多播                             | 允许应用程序接收并非直接向您的设备发送的数据包。这样在查找附近提供的服务时很有用。这种操作所耗电量大于非多播模式。                                                   | 1     |
+| android.permission.COPY_PROTECTED_DATA                      | 复制保护数据                                 | 允许调用默认的容器服务复制内容。不适用于普通应用程序使用。                                                                                                           | 1     |
+| android.permission.FORCE_STOP_PACKAGES                      | 强行停止其他应用程序                         | 允许应用程序强行停止其他应用程序。                                                                                                                                   | 0     |
+| android.permission.GLOBAL_SEARCH                            | 全局搜索                                     | 允许应用程序使用全局搜索。                                                                                                                                           | 0     |
+| android.permission.GLOBAL_SEARCH_CONTROL                    | 全局搜索控制                                 | 允许应用程序控制全局搜索。                                                                                                                                           | 0     |
+| android.permission.INSTALL_LOCATION_PROVIDER                | 允许安装位置信息提供程序                     | 创建模拟地点来源进行测试。恶意应用程序可能利用此选项覆盖由真实地点来源（如 GPS 或网络提供商）所传回的地点和/或状态，或者监视您的位置并将其提供给外部来源。           | 1     |
+| android.permission.KILL_BACKGROUND_PROCESSES                | 结束后台进程                                 | 无论内存资源是否紧张，都允许应用程序结束其他应用程序的后台进程。                                                                                                     | 0     |
+| android.permission.LEDS                                     | 控制键盘灯                                   | 允许应用程序控制键盘灯。                                                                                                                                             | 0     |
+| android.permission.MANAGE_ACCOUNTS                          | 管理帐户列表                                 | 允许应用程序执行添加、删除帐户及删除其密码之类的操作。                                                                                                               | 0     |
+| android.permission.MEIZU_SYS_PHONE_FUNC                     | 魅族手机系统程序                             | 魅族手机系统程序。不做解释.                                                                                                                                          | 0     |
+| android.permission.MOUNT_FORMAT_FILESYSTEMS                 | 格式化外部存储设备                           | 允许应用程序格式化可移除的存储设备。                                                                                                                                 | 2     |
+| android.permission.MOVE_PACKAGE                             | 移动应用程序资源                             | 允许应用程序在内部介质和外部介质之间移动应用程序资源。                                                                                                               | 0     |
+| android.permission.PACKAGE_USAGE_STATS                      | 更新组件使用统计                             | 允许使用统计资料的收集组件修改。普通应用程序不适合使用。                                                                                                             | 0     |
+| android.permission.PERFORM_CDMA_PROVISIONING                | 直接启动CDMA电话设置                         | 允许应用程序启动 CDMA 服务。恶意应用程序可能会无端启动 CDMA 服务                                                                                                     | 1     |
+| android.permission.READ_CONTACTS_SUPER                      | 读取联系人                                   | 允许应用程序读取联系人数据(超级权限).                                                                                                                                | 2     |
+| android.permission.READ_HISTORY_BOOKMARKS                   | 读取历史记录                                 | 允许应用程序读取浏览器历史记录.                                                                                                                                      | 1     |
+| android.permission.READ_PHONE_STATE                         | 读取手机状态和身份                           | 允许应用程序访问设备的手机功能。有此权限的应用程序可确定此手机的号码和序列号，是否正在通话，以及对方的号码等。                                                       | 1     |
+| android.permission.READ_USER_DICTIONARY                     | 读取用户定义的词典                           | 允许应用程序读取用户在用户词典中存储的任意私有字词、名称和短语。                                                                                                     | 0     |
+| android.permission.SET_TIME                                 | 设置时间                                     | 允许应用程序更改手机的时间。                                                                                                                                         | 0     |
+| android.permission.SET_WALLPAPER_COMPONENT                  | 设置壁纸组件                                 | 允许应用程序设置壁纸组件。                                                                                                                                           | 0     |
+| android.permission.SHUTDOWN                                 | 部分关机                                     | 使活动管理器进入关闭状态。不执行彻底关机。                                                                                                                           | 0     |
+| android.permission.STOP_APP_SWITCHES                        | 禁止切换应用程序                             | 禁止用户切换到另一应用程序。                                                                                                                                         | 0     |
+| android.permission.UPDATE_DEVICE_STATS                      | 更新设备状态                                 | 允许应用程序更新设备状态。                                                                                                                                           | 0     |
+| android.permission.USE_CREDENTIALS                          | 使用帐户的身份验证凭据                       | 允许应用程序请求身份验证标记。                                                                                                                                       | 0     |
+| android.permission.WRITE_CONTACTS_SUPER                     | 写入联系人数据                               | 允许应用程序写入联系人数据(超级权限)。                                                                                                                               | 0     |
+| android.permission.WRITE_EXTERNAL_STORAGE                   | 修改/删除SD卡中的内容                        | 允许应用程序写入SD卡。                                                                                                                                               | 0     |
+| com.android.browser.permission.WRITE_HISTORY_BOOKMARKS      | 写入浏览器历史和书签记录                     | 允许应用程序写入浏览器历史和书签记录。                                                                                                                               | 0     |
+| android.permission.WRITE_SECURE_SETTINGS                    | 修改安全系统设置                             | 允许应用程序修改系统的安全设置数据。普通应用程序不能使用此权限。                                                                                                     | 1     |
+| android.permission.WRITE_USER_DICTIONARY                    | 写入用户定义的词典                           | 允许应用程序向用户词典中写入新词。                                                                                                                                   | 1     |
