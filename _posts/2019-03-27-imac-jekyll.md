@@ -7,7 +7,8 @@ keywords: jekyll ruby
 description: 每次更新机器的时候都因为iMac默认的Ruby导致搭建本地的jekyll环境格外麻烦，之前都是零零散散的总结，这次彻底总结一下正确的步骤
 ---
 
-每次更新机器的时候都因为iMac默认的Ruby导致搭建本地的jekyll环境格外麻烦，之前都是零零散散的总结，这次彻底总结一下正确的步骤。
+每次更新机器的时候都因为iMac默认的Ruby导致搭建本地的jekyll环境格外麻烦，之前都是零零散散的总结，这次彻底总结一下正确的步骤。建议参照[https://github.com/bihe0832/Settings-Tools/blob/master/tools/mac_init.sh](https://github.com/bihe0832/Settings-Tools/blob/master/tools/mac_init.sh) 完成各项配置。
+
 
 ## 卸载系统默认Ruby安装的所有插件
 
@@ -26,7 +27,7 @@ description: 每次更新机器的时候都因为iMac默认的Ruby导致搭建�
 
 - 安装Ruby
 
-		➜  blog git:(master) ✗ brew install ruby
+		➜  blog git:(master) ✗ brew install ruby@2.6
 		Updating Homebrew...
 		==> Downloading https://homebrew.bintray.com/bottles/ruby-2.6.2.mojave.bottle.tar.g
 		######################################################################## 100.0%
@@ -46,6 +47,8 @@ description: 每次更新机器的时候都因为iMac默认的Ruby导致搭建�
 		➜  blog git:(master) ✗ source ~/.zshrc
 		
 ## 安装Jekyll等插件
+
+	➜  blog git:(master) ✗ gem install ffi -- --disable-system-libffi
 
 	➜  blog git:(master) ✗ gem install jekyll
 	Fetching mercenary-0.3.6.gem	
