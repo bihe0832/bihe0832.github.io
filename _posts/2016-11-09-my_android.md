@@ -33,13 +33,13 @@ description: desc
 
 -  简单介绍：子勰的Jsbridge测试Demo，使用方式链接有介绍。详细内容可以参考文章：[Android JSBridge简介 - 子勰的博客](https://blog.bihe0832.com/android_jsbridge.html)
 
--  对应链接：[https://microdemo.bihe0832.com/jsbridge/index.html](https://microdemo.bihe0832.com/jsbridge/index.html)
+-  对应链接：[https://cdn.bihe0832.com/tools/jsbridge/index.html](https://cdn.bihe0832.com/tools/jsbridge/index.html)
 
 #### 终端路由跳转调试
 
 -  简单介绍：子勰的Android通过Schema拉起应用链接生成Demo，使用方式链接有介绍。
 
--  对应链接：[https://microdemo.bihe0832.com/MyJS/router/index.html](https://microdemo.bihe0832.com/MyJS/router/index.html)
+-  对应链接：[https://cdn.bihe0832.com/tools/router/index.html](https://cdn.bihe0832.com/tools/router/index.html)
 
 ## apk出包相关
 

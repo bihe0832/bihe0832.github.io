@@ -79,11 +79,11 @@ description: 最近有一个产品需求又涉及到了JSBridge，继续一边�
 
 	在新打卡页面的Console中输入下面的JS代码，初始化web端的JSBridge实例。如果是实际开发，可以在页面中引入js：
 	
-	https://microdemo.bihe0832.com/res/js/jsbridge.js 
+	https://cdn.bihe0832.com/js/jsbridge.js 
 	
 	即可直接调用，具体可以参考页面：
 	
-	https://microdemo.bihe0832.com/jsbridge/index.html
+	https://cdn.bihe0832.com/tools/jsbridge/index.html
 	
 
 		//注册全局回调必须
