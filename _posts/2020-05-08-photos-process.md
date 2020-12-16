@@ -9,7 +9,7 @@ description: 随着拍摄设备的普及，我们随时随地都可以留下各�
 
 ### 背景
 
-这篇文章主要记录单次整理照片的流程，方便后续定期整理时参考。由于现在历史照片都已经整理完成了，该步骤主要整理家里所有人手机近期拍的照片。
+之前在[照片整理系列之整理及归档的总体方案](https://blog.bihe0832.com/photos.html) 已经介绍了照片整理的总体方案，这篇文章主要记录自己单次整理照片的流程，方便后续定期整理时参考。由于现在历史照片都已经整理完成了，该步骤主要整理家里所有人手机近期拍的照片。
 
 ### 照片导出
 
@@ -51,6 +51,7 @@ description: 随着拍摄设备的普及，我们随时随地都可以留下各�
 		201207 201802 201805 201808 201811 201902 201905 201908 201911 202002
 		201210 201803 201806 201809 201812 201903 201906 201909 201912 202003
 		➜  2
+		
 3. 手动将文件夹1  中的照片按月份移动到文件夹3 
 
 4. 然后使用自动归档归档到文件夹2下对应月份的目录
@@ -88,6 +89,42 @@ description: 随着拍摄设备的普及，我们随时随地都可以留下各�
 	- 对于无法归档的，转移到文件夹2中的对应月份文件夹
 	- 再次使用自动归档，将文件夹3的照片归档到文件夹2中的对应月份文件夹
 
+7. 检查并自动优化命名不规范文件。
+
+		/bin/bash ~/zixie/github/PhotoManager/shell/optimize.sh ./
+
+	例如：
+
+		➜  201802  /bin/bash ~/zixie/github/PhotoManager/shell/optimize.sh ~/3/
+			~/3
+			============ zixe check photos start ======================
+			----------- process photo start -----------
+			~/3/ start to check:
+			process *.jpg
+			mv: rename *.jpg to *.JPG: No such file or directory
+			process *.png
+			mv: rename *.png to *.PNG: No such file or directory
+			----------- process photo end -----------
+			----------- process photo start -----------
+			~/3/201802/ start to check:
+			process 2018-02-01_09-21-52.jpg
+			process 2018-02-01_15-53-55.jpg
+			process 2018-02-01_20-15-28.jpg
+			process 2018-02-02_12-02-13.jpg
+			process 2018-02-02_12-16-01.jpg
+			process 2018-02-02_19-02-23.jpg
+			process *.png
+			mv: rename *.png to *.PNG: No such file or directory
+			----------- process photo end -----------
+			----------- delete DS_Store-----------
+			----------- find bad name photo -----------
+			~/3//201802/2018-02-03_13-05.JPG
+			~/3//201802/2018-02-03-12-44-03.JPG
+			============ zixe check photos finished ======================
+			➜  201802  ls
+			2018-02-01_09-21-52.JPG 2018-02-01_20-15-28.JPG 2018-02-02_19-02-23.JPG
+			2018-02-01_15-50-00.JPG 2018-02-02_12-02-13.JPG 2018-02-03-12-44-03.JPG
+			2018-02-01_15-53-55.JPG 2018-02-02_12-16-01.JPG 2018-02-03_13-05.JPG
 
 #### 三、按照上面的步骤整理下一个人的手机照片
 
