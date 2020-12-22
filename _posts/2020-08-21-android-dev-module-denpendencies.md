@@ -476,7 +476,7 @@ def addDependenciesOnce(String projectName, String moduleName, String sourceType
 	
 	                System.err.println("\n\n >>>>>>>>>>>>>>>>>>>>>>>>>>>> AndroidAPPFactory <<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
 	                System.err.println("|\n|       Android 构建已基于组件化重构，构建方式发生变化，详细信息可以参考文档")
-	                System.err.println("|\n|  https://iwiki.oa.tencent.com/pages/viewpage.action?pageId=289506637")
+	                System.err.println("|\n|  https://android.bihe0832.com/")
 	                System.err.println("|\n >>>>>>>>>>>>>>>>>>>>>>>>>>> AndroidAPPFactory <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<")
 	            })
 	
