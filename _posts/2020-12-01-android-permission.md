@@ -1,23 +1,25 @@
 ---
 layout: post
-title: Android 权限描述信息
+title: Android 权限 及设置描述信息
 category: 终端开发
 tags: tags
-keywords: Android 权限
+keywords: Android 权限 设置 Permission Settings
 description: 最近在整理权限相关的东西，每次查询比较方便，因此专门备份一下
 ---
 
 ### 背景
 
-最近在整理权限相关的东西，每次查询比较方便，因此专门备份一下
+最近在整理权限与设置相关的东西，每次查询比较方便，因此专门备份一下
 
-## 危险权限和权限组
+### 权限
+
+#### 危险权限和权限组
 
 ![](./../public/images/android_dev/android_permission.png )
 
 数据来源：https://webcache.googleusercontent.com/search?q=cache%3Ap2k4jou1DqUJ%3Ahttps%3A%2F%2Fdeveloper.android.com%2Fguide%2Ftopics%2Fsecurity%2Fpermissions%3Fhl%3Dzh-cn%20&cd=2&hl=zh-CN&ct=clnk&gl=hk
 
-### 权限列表
+#### 权限列表
 
 | Key                                                         | Title                                        | Memo                                                                                                                                                                 | Level |
 | ----------------------------------------------------------- | -------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- |
@@ -161,3 +163,82 @@ description: 最近在整理权限相关的东西，每次查询比较方便，�
 | com.android.browser.permission.WRITE_HISTORY_BOOKMARKS      | 写入浏览器历史和书签记录                     | 允许应用程序写入浏览器历史和书签记录。                                                                                                                               | 0     |
 | android.permission.WRITE_SECURE_SETTINGS                    | 修改安全系统设置                             | 允许应用程序修改系统的安全设置数据。普通应用程序不能使用此权限。                                                                                                     | 1     |
 | android.permission.WRITE_USER_DICTIONARY                    | 写入用户定义的词典                           | 允许应用程序向用户词典中写入新词。                                                                                                                                   | 1     |
+
+### 设置
+
+梳理应用权限需要跳转到一些系统设置界面，为了方便寻找总结整理备份一下，分为两部分：系统直接提供了Key的，需要直接使用Value的。然后这里面又分为两类：
+
+- 与应用无关的，属于系统设置的
+
+	如果使用 AAF [https://github.com/bihe0832/AndroidAppFactory](https://github.com/bihe0832/AndroidAppFactory) 提供的接口调用，请使用
+
+		IntentUtils.startSettings(context, android.provider.Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
+
+- 与应用关联的，属于应用设置的
+
+	如果使用 AAF [https://github.com/bihe0832/AndroidAppFactory](https://github.com/bihe0832/AndroidAppFactory) 提供的接口调用，请使用
+
+		IntentUtils.startAppSettings(context, android.provider.Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
+
+#### android.provider.Settings 已定义
+
+-  应用无关的
+
+	**这里可能存在部分应用相关的，后续根据实际使用逐渐整理**
+
+	| 定义Intent - Key                             | 相关界面               |
+	|:-------------------------------------------- |:---------------------- |
+	| `ACTION_SETTINGS`                            | **系统设置界面**       |
+	| `ACTION_APN_SETTINGS`                        | APN设置界面            |
+	| `ACTION_LOCATION_SOURCE_SETTINGS`            | 定位设置界面           |
+	| `ACTION_AIRPLANE_MODE_SETTINGS`              | 更多连接方式设置界面   |
+	| `ACTION_DATA_ROAMING_SETTINGS`               | 双卡和移动网络设置界面 |
+	| `ACTION_ACCESSIBILITY_SETTINGS`              | 无障碍设置界面         |
+	| `ACTION_SYNC_SETTINGS`                       | 同步设置界面           |
+	| `ACTION_ADD_ACCOUNT`                         | 添加账户界面           |
+	| `ACTION_NETWORK_OPERATOR_SETTINGS`           | 选取运营商的界面       |
+	| `ACTION_SECURITY_SETTINGS`                   | 安全设置界面           |
+	| `ACTION_PRIVACY_SETTINGS`                    | 备份重置设置界面       |
+	| `ACTION_VPN_SETTINGS`                        | VPN设置界面,可能不存在 |
+	| `ACTION_WIFI_SETTINGS`                       | 无线网设置界面         |
+	| `ACTION_WIFI_IP_SETTINGS`                    | WIFI的IP设置           |
+	| `ACTION_BLUETOOTH_SETTINGS`                  | 蓝牙设置               |
+	| `ACTION_CAST_SETTINGS`                       | 投射设置               |
+	| `ACTION_DATE_SETTINGS`                       | 日期时间设置           |
+	| `ACTION_SOUND_SETTINGS`                      | 声音设置               |
+	| `ACTION_DISPLAY_SETTINGS`                    | 显示设置               |
+	| `ACTION_LOCALE_SETTINGS`                     | 语言设置               |
+	| `ACTION_VOICE_INPUT_SETTINGS`                | 辅助应用和语音输入设置 |
+	| `ACTION_INPUT_METHOD_SETTINGS`               | 语言和输入法设置       |
+	| `ACTION_USER_DICTIONARY_SETTINGS`            | 个人字典设置界面       |
+	| `ACTION_INTERNAL_STORAGE_SETTINGS`           | 存储空间设置的界面     |
+	| `ACTION_SEARCH_SETTINGS`                     | 搜索设置界面           |
+	| `ACTION_APPLICATION_DEVELOPMENT_SETTINGS`    | **开发者选项设置**     |
+	| `ACTION_DEVICE_INFO_SETTINGS`                | 手机状态信息的界面     |
+	| `ACTION_DREAM_SETTINGS`                      | 互动屏保设置的界面     |
+	| `ACTION_NOTIFICATION_LISTENER_SETTINGS`      | 通知使用权设置的界面   |
+	| `ACTION_NOTIFICATION_POLICY_ACCESS_SETTINGS` | 勿扰权限设置的界面     |
+	| `ACTION_CAPTIONING_SETTINGS`                 | 字幕设置的界面         |
+	| `ACTION_PRINT_SETTINGS`                      | 打印设置界面           |
+	| `ACTION_BATTERY_SAVER_SETTINGS`              | 节电助手界面           |
+	| `ACTION_HOME_SETTINGS`                       | 主屏幕设置界面         |
+	| `ACTION_ZEN_MODE_PRIORITY_SETTINGS`          | 退出APP                |
+	| `ACTION_USAGE_ACCESS_SETTINGS`               | 查看使用情况的应用     |
+	| `ACTION_MEMORY_CARD_SETTINGS`                | 储存空间               |
+	| `ACTION_MANAGE_WRITE_SETTINGS`               | 修改系统设置           |
+	| `ACTION_MANAGE_OVERLAY_PERMISSION`           | 悬浮窗管理             |
+	
+		
+- 应用相关的
+
+	| 定义Intent - Key                             | 相关界面               |
+	|:-------------------------------------------- |:---------------------- |
+	| `ACTION_APPLICATION_DETAILS_SETTINGS`        | **应用权限设置**       |
+
+#### android.provider.Settings 无定义
+
+- 应用无关的
+
+	| 定义Intent - Value                            | 相关界面            |
+	| :------------------------------------------- | :----------------- |
+	|`com.android.settings.TTS_SETTINGS`           | TTS设置             |
