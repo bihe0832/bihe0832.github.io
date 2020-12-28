@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 服务器迁移到腾讯云笔记
+title: 服务器 迁移到 腾讯云 记录
 category: 后台开发
 tags: tags
 keywords: 服务器 nginx http https
@@ -25,8 +25,9 @@ description: 由于目前个人域名已经备案了，而且因为小程序也�
 - 大家来捉鬼微信公众号后台：game.bihe0832.com
 - 摇吧官网：shakeba.bihe0832.com
 - readhub官网：readhub.bihe0832.com
-- 在线PPT：show.bihe0832.com
+- 个人展示内容（PPT、小玩意等）：show.bihe0832.com
 - 一些个人相关的内容：we.bihe0832.com
+- 一些通用工具：demo.bihe0832.com，后对接cdn.bihe0832.com
 
 ### 依赖环境：
 
@@ -46,12 +47,11 @@ description: 由于目前个人域名已经备案了，而且因为小程序也�
 - MyWeb：个人常用web相关资源收集
 
     - 主目录对应  microdemo.bihe0832.com/MyJS
-    - res特殊 对应microdemo.bihe0832.com根目录的res
     - crossDomain/server特殊，对应microdemotest/crossDomain
 
 - MultiQrcode：浏览器组件
 
-    - 对应 SVN microdemo/MultiQrcode
+    - 对应仓库 microdemo/MultiQrcode
     
 - QrcodeSign：扫码登陆
 
@@ -71,15 +71,20 @@ description: 由于目前个人域名已经备案了，而且因为小程序也�
 
 - we
 
-	- 对应show.bihe0832.com
+	- 对应we.bihe0832.com
 
 - Show
 
-	- 对应we.bihe0832.com
+	- 对应show.bihe0832.com
 
 - vampire-wechat
 
 	- 对应wxapp.bihe0832.com，注意使用node-version分支
+
+- demo.bihe0832.com
+
+	- 对应demo.bihe0832.com，作为cdn.bihe0832.com的源
+
 
 ### 迁移数据库
 
@@ -111,6 +116,7 @@ description: 由于目前个人域名已经备案了，而且因为小程序也�
 		│   │   ├── readhub.bihe0832.com
 		│   │   ├── shakeba.bihe0832.com
 		│   │   ├── show.bihe0832.com
+		│   │   ├── ………
 		│   │   ├── we.bihe0832.com
 		│   │   └── wxapp.bihe0832.com
 		│   ├── uwsgi_params
@@ -122,96 +128,4 @@ description: 由于目前个人域名已经备案了，而且因为小程序也�
 		    ├── env.sh：服务器环境安装
 		    ├── init.sh：所有web代码首次部署
 		    └── update.sh：所有web代码更新
-
-- nginx.conf
-
-		
-		user nginx;
-		worker_processes auto;
-		pid /run/nginx.pid;
-		
-		events {
-			worker_connections 10000;
-		}
-		
-		http {
-		
-			sendfile on;
-			tcp_nopush on;
-			tcp_nodelay on;
-			keepalive_timeout 65;
-			types_hash_max_size 2048;
-
-			include /etc/nginx/mime.types;
-			default_type application/octet-stream;
-		
-			……
-			
-			include /etc/nginx/conf.d/*.conf;
-			include /etc/nginx/sites-enabled/*;
-		}
-	
-
-
-- microdemotest.bihe0832.com
-
-		server {
-			listen 80;
-			listen [::]:80;
-		
-			server_name microdemotest.bihe0832.com; 
-		
-			error_page 404 https://blog.bihe0832.com/404.html;
-		
-			root ~/web/microdemotest;
-			index index.html;
-		
-			location / {
-				try_files $uri $uri/ =404;
-			}
-			location ~ \.php$ {
-		            include fastcgi_params;
-		            fastcgi_pass  localhost:9000;
-		            fastcgi_param SCRIPT_FILENAME ~/web/microdemotest/$fastcgi_script_name;
-		    }
-		}
-	
-- wxapp.bihe0832.com
-
-		server {
-
-			listen 443 ssl http2;
-		  	listen [::]:443 ssl http2;
-		
-			server_name wxapp.bihe0832.com; 
-		
-			error_page 404 http://blog.bihe0832.com/404.html;
-		
-			ssl on;
-			ssl_certificate wxapp.bihe0832.com_bundle.crt; 
-			ssl_certificate_key wxapp.bihe0832.com.key;
-		   	ssl_session_timeout 5m;
-			ssl_protocols TLSv1.2;
-			ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
-			ssl_prefer_server_ciphers on;
-		
-		    root ~/web/vampire-wechat/wx-app;
-		    index index.html index.php;
-		
-			location / {
-				proxy_intercept_errors on;
-				proxy_pass http://127.0.0.1:3000/;
-			}
-		}
-		
-		server {
-		    listen 80;
-		    listen [::]:80;
-		
-			server_name wxapp.bihe0832.com; 
-			rewrite ^(.*) https://$server_name$1 permanent;
-		}
-
-
-
 

@@ -2,7 +2,7 @@
 layout: post
 title: iMac（OS X）开发和使用中经验汇总（持续更新）
 category: 开发工具
-tags: 常用工具 iMac
+tags: iMac
 keywords: iMac 经验 
 description: 个人写的所有关于iMac相关的文章汇总
 ---
