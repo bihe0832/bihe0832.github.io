@@ -9,6 +9,16 @@ description: Markdown格式优化及使用技巧
 
 从很早开始就热衷于使用markdown以及推广markdown，效果都还不错。目前个人基本上所有的文档都是使用markdown来书写。用的久了就会遇到一些之前没有遇到的奇奇怪怪的问题，以及一些经验总结，在这里集中记录一下，方便后续查找。
 
+## Markdown处理后HTML使用的css
+
+- 地址：`http://cdn.bihe0832.com/css/markdown.css`
+- 说明：目前文档都使用markdown来编写，但是有时候文档使用者木有markdown工具，因此一般会把markdown导出为html。该css主要是用于针对markdown生成的html的排版。
+- 常用markdown转html站点：
+	- [http://daringfireball.net/projects/markdown/dingus](http://daringfireball.net/projects/markdown/dingus)
+	- [http://www.atool.org/html2markdown.php](http://www.atool.org/html2markdown.php)
+	- [http://softwaremaniacs.org/playground/showdown-highlight/](http://softwaremaniacs.org/playground/showdown-highlight/)
+
+
 ## 表格
 
 其余通用的一些markdown的用法或者标签就不介绍了，这里重点介绍一下表格相关的内容。当使用markdown制作表格时，经常会遇到下面的问题：
@@ -53,7 +63,7 @@ Tables Generator 是一个可以在线快速生成 Text、Markdown 格式等多�
 
 	![](./../public/images/markdown_table_2.jpg )
 
-- 对应源码
+- 对应源码：https://cdn.bihe0832.com/css/markdown-table.css
 	
 		<style>
 		table {
