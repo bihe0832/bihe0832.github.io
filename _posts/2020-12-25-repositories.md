@@ -38,4 +38,4 @@ description: desc1
 
 ### 关于子勰
 
-<a href="https://github.com/bihe0832/bihe0832"><img src="https://cdn.bihe0832.com/images/cv_1080.jpg" width ="40%"/></a>
+<a href="https://github.com/bihe0832"><img src="https://cdn.bihe0832.com/images/cv_1080.jpg" width ="40%"/></a>
