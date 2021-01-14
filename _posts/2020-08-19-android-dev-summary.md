@@ -9,8 +9,6 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 
 开始做酱油的时候发现做开发那么久竟然没有一整套顺手的开发方案，要从头开始一个一个搭建（相当于之前做的就没什么沉淀），因此开始逐渐整理一整套相对全面并且顺手的开发方案。随着这几年逐渐完善，现在基本上具备雏形了，逐渐总结一下。
 
-目前主要总结方案的实现思路和方法，同时提供对于整体方案实现比较关键的代码片段。后续脱敏以后会逐渐将完整的方案代码整理出来。
-
 ## 方案范围
 
 终端项目其实就是一个个版本。所以方案**将会从版本的日常开发、发布升级和遇到问题怎么回溯**逐渐整理总结，可能也会把之前写的一些东西整合一下加入进来。
@@ -27,9 +25,33 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 
 ## 相关链接
 
-在下面的文章中，将会详细的介绍在这几个方面我们做的一些沉淀。
+现附上涉及到的相关开源项目的链接，之后的文章列表中，将会详细的介绍在这几个方面我们做的一些沉淀。
 
-### 组件化框架
+### AAF框架相关
+
+- **框架主页：[https://android.bihe0832.com](https://android.bihe0832.com)**
+
+    主要**介绍框架的使用以及怎么新增，升级组件**
+
+- 框架源码：[https://github.com/bihe0832/AndroidAppFactory](https://github.com/bihe0832/AndroidAppFactory)
+
+    基础组件和公共组件等可直接复用组件的源码。
+	
+- 框架代码统计：[https://android.bihe0832.com/source/lib/index.html](https://android.bihe0832.com/source/lib/index.html)
+
+### AAF框架具体实践
+
+- **AAF Sample：[https://android.bihe0832.com/samples/](https://android.bihe0832.com/samples/)**
+
+    **所有基于AAF开发的应用的集中展示。**
+
+- AAF Sample 源码：[https://github.com/bihe0832/AndroidAppFactory-Sample](https://github.com/bihe0832/AndroidAppFactory-Sample)
+
+    具体实践已开源源码
+
+- AAF Sample 代码统计：[https://android.bihe0832.com/source/sample/index.html](https://android.bihe0832.com/source/sample/index.html)
+
+### 组件化框架介绍
 
 由于整套框架的核心就是组件化开发，因此日常开发文章都会围绕组件化展开，框架设计将整体的设计，接下来的内容都是围绕组件管理、组件及调试运行、组件的自动构建来介绍；主要还是对整体设计中的一些细节的进一步完善。
 
@@ -53,16 +75,12 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 
 	这篇文章主要总结了我们基于路由的组件通信怎么设计的，包括路由怎么配置、怎么生成，以及怎么基于路由处理通用拦截及页面返回等逻辑。
 
+### 通用技术方案
+
 - `H5页面通过指定Schema拉起Android应用的实现（H5调用路由）`：[https://blog.bihe0832.com/android_schema.html](https://blog.bihe0832.com/android_schema.html)
 
 	在路由的使用场景中，有一个就是和H5结合。但是H5的页面还没开发好的时候，联调测试比较麻烦，因此专门写了一个通用的路由测试工具
-
-- `安卓开发那些事之版本管理`：[https://blog.bihe0832.com/android-dev-module-version.html](https://blog.bihe0832.com/android-dev-module-version.html)
-
-	这篇文章和组件化的关系不大，主要是讲应用的版本，包括版本怎么定义，有哪些标识，以及这些标识怎么生成，用于什么场景，解决什么问题。以及版本发布方法，遇到问题怎么回溯。
 	
-### 通用技术方案
-
 - `Android JSBridge简介`：[https://blog.bihe0832.com/android_jsbridge.html](https://blog.bihe0832.com/android_jsbridge.html)
 
 	Android JSBridge 的实现及测试方法总结。	
@@ -74,6 +92,11 @@ description: 开始做酱油的时候发现做开发那么久竟然没有一整�
 
 这部分内容主要是一些通用内容以及为了提升开发效率开发的一些工具。
 
+
+- `安卓开发那些事之版本管理`：[https://blog.bihe0832.com/android-dev-module-version.html](https://blog.bihe0832.com/android-dev-module-version.html)
+
+	这篇文章和组件化的关系不大，主要是讲应用的版本，包括版本怎么定义，有哪些标识，以及这些标识怎么生成，用于什么场景，解决什么问题。以及版本发布方法，遇到问题怎么回溯。
+	
 - `安卓开发那些事之组件开发基本规范` 
 
 	这篇文章总结组件化开发框架相关的一些开发规范，这些规范是保证组件化框架可以持续保持生命力的基本条件。对应链接为：[https://blog.bihe0832.com/android-dev-rules.html](https://blog.bihe0832.com/android-dev-rules.html)
