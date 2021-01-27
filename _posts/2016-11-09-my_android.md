@@ -28,12 +28,23 @@ description: desc
 
 -  对应链接：[http://romannurik.github.io/AndroidAssetStudio/index.html](http://romannurik.github.io/AndroidAssetStudio/index.html)
 
+#### Material Design 指南中文版
+
+-  简单介绍：Material Design 指南中文版
+
+-  对应链接：[https://www.mdui.org/design/](https://www.mdui.org/design/)
 
 #### 终端JSBridge接口调试
 
 -  简单介绍：子勰的Jsbridge测试Demo，使用方式链接有介绍。详细内容可以参考文章：[Android JSBridge简介 - 子勰的博客](https://blog.bihe0832.com/android_jsbridge.html)
 
 -  对应链接：[https://cdn.bihe0832.com/tools/jsbridge/index.html](https://cdn.bihe0832.com/tools/jsbridge/index.html)
+
+#### Material Design Palette
+
+-  简单介绍：选择主色调，快速生成基于 material design  的主题色彩
+
+-  对应链接：[https://www.materialpalette.com/indigo/indigo](https://www.materialpalette.com/indigo/indigo)
 
 #### 终端路由跳转调试
 
