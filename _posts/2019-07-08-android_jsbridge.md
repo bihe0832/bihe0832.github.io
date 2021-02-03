@@ -7,6 +7,8 @@ keywords: JSBridge inspect
 description: 最近有一个产品需求又涉及到了JSBridge，继续一边开发一边简单总结一下。
 ---
 
+## 此文档不再更新，最新文档请点击链接查看：[https://android.bihe0832.com/doc/tools/android_jsbridge.html](https://android.bihe0832.com/doc/tools/android_jsbridge.html)
+
 最近有一个产品需求又涉及到了JSBridge，继续一边开发一边简单总结一下。
 
 ### 什么是JSBridge

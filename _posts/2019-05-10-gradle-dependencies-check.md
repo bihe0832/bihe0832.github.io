@@ -9,6 +9,10 @@ description: 在平时的开发中，大家经常会遇到因为gradle的构建�
 
 ## 背景介绍
 
+
+
+## 此文档不再更新，最新文档请点击链接查看：[https://android.bihe0832.com/doc/tools/gradle-dependencies-check.html](https://android.bihe0832.com/doc/tools/gradle-dependencies-check.html)
+
 在平时的开发中，大家经常会遇到因为gradle的构建配置错误引起的各种奇奇怪怪的问题，每次梳理依赖关系都需要很长时间，为了更方便的找出项目中的依赖冲突，专门开发了这个插件。
 
 ## 使用方法：
