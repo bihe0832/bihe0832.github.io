@@ -170,13 +170,13 @@ description: 最近在整理权限相关的东西，每次查询比较方便，�
 
 - 与应用无关的，属于系统设置的
 
-	如果使用 AAF [https://github.com/bihe0832/AndroidAppFactory](https://github.com/bihe0832/AndroidAppFactory) 提供的接口调用，请使用
+	如果使用 AAF 的 [IntentUtils](https://android.bihe0832.com/doc/use/libs/noui/lib-utils-apk.html#intentutils) 提供的接口调用，请使用
 
 		IntentUtils.startSettings(context, android.provider.Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
 
 - 与应用关联的，属于应用设置的
 
-	如果使用 AAF [https://github.com/bihe0832/AndroidAppFactory](https://github.com/bihe0832/AndroidAppFactory) 提供的接口调用，请使用
+	如果使用 AAF 的 [IntentUtils](https://android.bihe0832.com/doc/use/libs/noui/lib-utils-apk.html#intentutils) 提供的接口调用，请使用
 
 		IntentUtils.startAppSettings(context, android.provider.Settings.ACTION_APPLICATION_DEVELOPMENT_SETTINGS)
 
@@ -234,6 +234,8 @@ description: 最近在整理权限相关的东西，每次查询比较方便，�
 	| 定义Intent - Key                             | 相关界面               |
 	|:-------------------------------------------- |:---------------------- |
 	| `ACTION_APPLICATION_DETAILS_SETTINGS`        | **应用权限设置**       |
+	| `ACTION_MANAGE_UNKNOWN_APP_SOURCES `        | 引导授权安装未知来源应用，参考  AAF 中的  [IntentUtils](https://android.bihe0832.com/doc/use/libs/noui/lib-utils-apk.html#intentutils)    |
+	
 
 #### android.provider.Settings 无定义
 
