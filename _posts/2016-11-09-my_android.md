@@ -11,7 +11,47 @@ description: desc
 
 ## 开发调试
 
-#### Android开发调试常用工具例如
+#### 图标及Logo 制作
+
+- Android Asset Studio
+
+	-  简单介绍：Android Asset Studio 是一个在线制作工具，它可以制作Iocn，ActionBar，点9 图等等，简单的操作，大大提高了我们开发的效率。
+	
+	-  对应链接：[http://romannurik.github.io/AndroidAssetStudio/index.html](http://romannurik.github.io/AndroidAssetStudio/index.html)
+
+- 蒲公英
+
+	-  简单介绍：根据文字、图片、生成APP Icon。
+	
+	-  对应链接：[https://www.pgyer.com/tools/appIcon](https://www.pgyer.com/tools/appIcon)
+
+- Logo制作
+
+	-  简单介绍：制作类似pubhorn 的Icon
+	
+	-  对应链接：[https://cdn.bihe0832.com/tools/logo/index.htm](https://cdn.bihe0832.com/tools/logo/index.htm)
+
+#### Material Design
+
+- Material Design Palette
+
+	-  简单介绍：选择主色调，快速生成基于 material design  的主题色彩
+	
+	-  对应链接：[https://www.materialpalette.com/indigo/indigo](https://www.materialpalette.com/indigo/indigo)
+
+- Material Design 指南中文版
+
+	-  简单介绍：Material Design 指南中文版
+	
+	-  对应链接：[https://www.mdui.org/design/](https://www.mdui.org/design/)
+
+#### Android 权限 及 描述
+
+-  简单介绍：Android 权限列表，及设置权限的跳转方式
+
+-  对应链接：[https://blog.bihe0832.com/android-permission.html](https://blog.bihe0832.com/android-permission.html)
+
+#### Android开发调试常用工具介绍
 
 - 说明：介绍apktool、dex2jar、aapt、ndk-stack、jd-gui等简单介绍
 - 地址：[http://blog.bihe0832.com/android_tools_develop_debug.html](http://blog.bihe0832.com/android_tools_develop_debug.html)
@@ -22,29 +62,11 @@ description: desc
 
 - 图片信息查看工具 getImageInfo：[https://github.com/bihe0832/getImageInfo](https://github.com/bihe0832/getImageInfo)
 
-#### AndroidAssetStudio
-
--  简单介绍：Android Asset Studio 是一个在线制作工具，它可以制作Iocn，ActionBar，点9 图等等，简单的操作，大大提高了我们开发的效率。
-
--  对应链接：[http://romannurik.github.io/AndroidAssetStudio/index.html](http://romannurik.github.io/AndroidAssetStudio/index.html)
-
-#### Material Design 指南中文版
-
--  简单介绍：Material Design 指南中文版
-
--  对应链接：[https://www.mdui.org/design/](https://www.mdui.org/design/)
-
 #### 终端JSBridge接口调试
 
 -  简单介绍：子勰的Jsbridge测试Demo，使用方式链接有介绍。详细内容可以参考文章：[Android JSBridge简介 - 子勰的博客](https://blog.bihe0832.com/android_jsbridge.html)
 
 -  对应链接：[https://cdn.bihe0832.com/tools/jsbridge/index.html](https://cdn.bihe0832.com/tools/jsbridge/index.html)
-
-#### Material Design Palette
-
--  简单介绍：选择主色调，快速生成基于 material design  的主题色彩
-
--  对应链接：[https://www.materialpalette.com/indigo/indigo](https://www.materialpalette.com/indigo/indigo)
 
 #### 终端路由跳转调试
 

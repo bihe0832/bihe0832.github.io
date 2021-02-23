@@ -2,7 +2,7 @@
 layout: post
 title: 颜色透明度对照表
 category: 开发资源
-tags: 常用工具 tags
+tags: tags
 keywords: 颜色 透明度  对照
 description: 每次遇到颜色透明度调整，都要去查询或者计算一次，为了方便，整理一个透明度对照表
 ---
