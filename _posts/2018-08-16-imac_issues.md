@@ -56,3 +56,16 @@ description: 这篇文章主要总结记录一下在使用过程中遇到的一�
     Instant: checked
   
  这部分内容github的readme有介绍。
+ 
+## macOS Catalina(10.15)解决阻止程序运行“macOS无法验证此App不包含恶意软件”
+ 
+ - 问题现象：
+
+ 	命令行运行程序是会被系统阻止，并弹框
+ 	
+ - 解决方案
+
+ 	对于开发者来说，比较简单的办法就是禁用Gatekeeper，执行如下命令：
+ 	
+ 		sudo spctl --master-disable
+
