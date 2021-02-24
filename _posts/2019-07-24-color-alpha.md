@@ -7,6 +7,8 @@ keywords: 颜色 透明度  对照
 description: 每次遇到颜色透明度调整，都要去查询或者计算一次，为了方便，整理一个透明度对照表
 ---
 
+## 此文档不在维护，颜色透明度可以参考文档：[https://cdn.bihe0832.com/tools/color.html](https://cdn.bihe0832.com/tools/color.html)
+
 每次遇到颜色透明度调整，都要去查询或者计算一次，为了方便，整理一个透明度对照表：
 
 
