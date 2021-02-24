@@ -6,17 +6,25 @@ tags: android adb
 keywords: adb shell input keyevent text
 description: 最近开发一个新的接口，在调试的时候要手动输入蛮多参数，关键是参数又都太长，就专门看了下adb有木有模拟输入，果然adb shell里是有的。这样以后开发调试、自动化测试等就更加方便了。
 ---
-最近开发一个新的接口，在调试的时候要手动输入蛮多参数，关键是参数又都太长，就专门看了下adb有木有模拟输入，果然adb shell里是有的。这样以后开发调试、自动化测试等就更加方便了。专门简单总结下：
+最近开发一个新的接口，在调试的时候要手动输入蛮多参数，关键是参数又都太长，就专门看了下 adb 有木有模拟输入，果然adb shell里是有的。这样以后开发调试、自动化测试等就更加方便了。专门简单总结下：
  
 ## 相关文章
  
- - ADB命令系列之 Base Command：[点击查看](https://blog.bihe0832.com/adb-base.html)
+- ADB命令系列之 Base Command：[http://blog.bihe0832.com/adb-base.html](http://blog.bihe0832.com/adb-base.html)
 
--   ADB命令系列之  Advanced Command：[点击查看](https://blog.bihe0832.com/adb-advanced.html)
+	重点介绍一些基本的adb命令，例如devices，start-server，kill-server，install，uninstall，push，pull，bugreport，logcat等。
 
--   ADB命令系列之 adb shell input：[点击查看](https://blog.bihe0832.com/adb-shell-input.html)
+- ADB命令系列之  Advanced Command：[http://blog.bihe0832.com/adb-advanced.html](http://blog.bihe0832.com/adb-advanced.html)
 
--   ADB命令系列之 再说ADB：[点击查看](https://blog.bihe0832.com/review_adb.html)
+	重点介绍一些相对比较复杂的adb命令，主要是adb shell 相关的。例如screencap，monkey，getprop，setprop，pm，am，dumpsys等。
+
+- ADB命令系列之 adb shell input：[http://blog.bihe0832.com/adb-shell-input.html](http://blog.bihe0832.com/adb-shell-input.html)
+
+	重点介绍adb shell input的用法，包括怎么输入内容，怎么模拟按键，模拟屏幕滑动等各种输入模拟。
+	
+-   ADB命令系列之 再说ADB：[https://blog.bihe0832.com/review_adb.html](https://blog.bihe0832.com/review_adb.html)
+
+	重点结合使用场景介绍ADB 的使用，例如解锁手机、截屏、Monkey点击、获取厂商机型等
 
 ## 简介
     
@@ -51,7 +59,7 @@ input可以用来模拟各种输入设备的输入操作。
 1. source对应各种输入源。一般开发中都是用默认值即可。也就是说一般使用中我们的参数中并没有source。
 2. `输入命令中text 和 keyevent是通用的；tap和swipe适用于触摸屏；而press和roll用于有触摸球的设备，由于使用的很少，因此不做说明。`
  
- ## 模拟输入文本（text） 
+## 模拟输入文本（text） 
 
 ### 用法与事例
 
