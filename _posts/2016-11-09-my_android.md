@@ -45,6 +45,12 @@ description: desc
 	
 	-  对应链接：[https://www.mdui.org/design/](https://www.mdui.org/design/)
 
+- Material Icons
+
+	-  简单介绍：Material Icons
+	
+	-  对应链接：[https://material.io/icons/](https://material.io/icons/)
+
 #### Android 权限 及 描述
 
 -  简单介绍：Android 权限列表，及设置权限的跳转方式
