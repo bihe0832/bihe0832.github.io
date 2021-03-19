@@ -23,6 +23,7 @@ description: desc
 - git官方文档：[http://git-scm.com/book/en/v2](http://git-scm.com/book/en/v2)
 - git 语法：[http://git-scm.com/docs](http://git-scm.com/docs)
 - git常用命令：[http://blog.bihe0832.com/git-client-cmd.html](http://blog.bihe0832.com/git-client-cmd.html)
+- git练习游戏：[https://learngitbranching.js.org/?locale=zh_CN](https://learngitbranching.js.org/?locale=zh_CN)
 
 ### OAuth 2.0：
 
