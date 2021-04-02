@@ -10,23 +10,23 @@
   <div class="row">
     <div class="col-md-4 col-xs-4 aside1">
       <br>
-      <a class="pjaxlink" href="/"><img src="{{ site.gavatar }}" class="img-circle avatar"></a>
+      <a class="pjaxlink" href="{{ site.author.tools }}"><img src="{{ site.gavatar }}" class="img-circle avatar"></a>
       <br><br>
       <ul class="nav nav-pills nav-stacked">
+        <li><a class="pjaxlink" href="{{ site.author.tools }}" target="_blank">{{ site.locals.tools }}</a></li>
         {% for category in site.categories %}
           <li><a href="#{{ category | first }}" data-toggle="tab">{{ category[0] }}</a></li>
         {% endfor %}
-        <li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li>
+        <!-- <li><a href="#tags" data-toggle="tab">{{ site.locals.tags }}</a></li> -->
         <li><a class="pjaxlink" href="/pages/archive.html">{{ site.locals.archive }}</a></li>
         <li><a class="pjaxlink" href="/pages/about.html">{{ site.locals.about }}</a></li>
       </ul>
       <div class="aside1_bottom">
         <table class="table table-condensed" style="border-width: 1px 0 0 0">
           <tr class="aside1_bottom_tr">
-          	<td><a href="{{ site.author.weibo }}" target="_blank"><i class="fa fa-weibo fa-x"></i></a></td>
            	<td><a href="{{ site.author.github }}" target="_blank"><i class="fa fa-github fa-x"></i></a></td>
-           	<td><a href="{{ site.author.oldblog }}" target="_blank"><i class="fa fa-wordpress fa-x"></i></a></td>
-            <td><a href="http://wpa.qq.com/msgrd?v=3&uin={{ site.author.qq }}&site=qq&menu=yes" target="_blank"><i class="fa fa-qq fa-x"></i></a></td>
+            <td><a href="{{ site.author.android }}" target="_blank"><i class="fa fa-android fa-x"></i></a></td>
+            <td><a href="{{ site.author.tools }}" target="_blank"><i class="fa fa-magic fa-x"></i></a></td>
             <td><a href="mailto:{{ site.author.email }}?subject={{ site.title }}"><i class="fa fa-envelope-o fa-x"></i></a></td>
             <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-x"></i></a></td>
           </tr>

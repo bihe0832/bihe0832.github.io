@@ -12,9 +12,9 @@ author:
   name: 子勰
   email: blog@bihe0832.com
   link: https://blog.bihe0832.com
-  weibo: http://weibo.com/bihe0832
   github: https://github.com/bihe0832
-  qq: 402998643
+  tools: https://cdn.bihe0832.com/
+  android: http://android.bihe0832.com/
 
 # 站点信息
 title: 子勰的博客
@@ -50,3 +50,4 @@ locals:
   newest: 最新文章
   archive: 历史文章
   content: 本文结构
+  tools: 开发工具集
