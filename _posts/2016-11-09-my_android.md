@@ -29,7 +29,7 @@ description: desc
 
 	-  简单介绍：制作类似pubhorn 的Icon
 	
-	-  对应链接：[https://cdn.bihe0832.com/tools/logo/index.htm](https://cdn.bihe0832.com/tools/logo/index.htm)
+	-  对应链接：[https://cdn.bihe0832.com/tools/logo/index.html](https://cdn.bihe0832.com/tools/logo/index.html)
 
 #### Material Design
 
