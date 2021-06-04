@@ -119,45 +119,108 @@ description: 最近把服务器从海外迁移到腾讯云，迁移的过程中�
 
 		[zixie@VM_89_48_centos ~]# cat /etc/nginx/sites-enabled/wxapp.bihe0832.com 
 		server {
-	        listen 443;
-	        listen [::]:443;
-		
-	        server_name wxapp.bihe0832.com; 
-	        ssl on;
-	        ssl_certificate /etc/nginx/1_wxapp.bihe0832.com_bundle.crt; 
-	        ssl_certificate_key /etc/nginx/2_wxapp.bihe0832.com.key;
-	        ssl_session_timeout 5m;
-	        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-	        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
-	        ssl_prefer_server_ciphers on;
-		
-	        root /data/zixie/wxapp;
-	        index index.html;
-	        location / {
-	            proxy_intercept_errors on;
-	            proxy_pass http://127.0.0.1:3000/;
-	        }
-		}
+
+        	listen 443 ssl http2;
+          	listen [::]:443 ssl http2;
+        
+        	server_name wxapp.bihe0832.com; 
+        
+        	error_page 404 https://blog.bihe0832.com/404.html;
+        
+        	ssl_certificate /etc/nginx/site-key/1_wxapp.bihe0832.com_bundle.crt; 
+        	ssl_certificate_key /etc/nginx/site-key/2_wxapp.bihe0832.com.key;
+           	ssl_session_timeout 5m;
+        	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        	ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
+        	ssl_prefer_server_ciphers on;
+        
+            root /data/zixie/wx-app;
+            index index.html index.php;
+        
+        	location / {
+        		proxy_intercept_errors on;
+        		proxy_pass http://127.0.0.1:3000/;
+        	}	
+        }
+        
+        server {
+            listen 80;
+        	server_name wxapp.bihe0832.com; 
+        	rewrite ^(.*) https://$server_name$1 permanent;
+        }
 	
 	第二个是使用php写的服务，并且配置了http的业务
 	
-		[zixie@VM_89_48_centos ~]# cat /etc/nginx/sites-enabled/readhub.bihe0832.com 
+		[zixie@VM_89_48_centos ~]# cat /etc/nginx/sites-enabled/show.bihe0832.com 
 		server {
-	        listen 80;
-	        listen [::]:80;
-		
-	        server_name readhub.bihe0832.com; 
-		
-	        root /data/zixie/readhub;
-	        index index.html index.php;
-		
-	        location / {
-	                try_files $uri $uri/ =404;
-	        }
-	        
-	        location ~ \.php$ {
-		        include fastcgi_params;
-		        fastcgi_pass  localhost:9000;
-		        fastcgi_param SCRIPT_FILENAME /data/zixie/web/readhub-server/$fastcgi_script_name;
-		    }
-		}
+        	listen 443 ssl http2;
+          	listen [::]:443 ssl http2;
+        
+        	server_name show.bihe0832.com; 
+        
+        	charset utf-8;
+        
+        	error_page 404 https://blog.bihe0832.com/404.html;
+        
+        	ssl_certificate /etc/nginx/site-key/1_show.bihe0832.com_bundle.crt; 
+        	ssl_certificate_key /etc/nginx/site-key/2_show.bihe0832.com.key;
+        	ssl_session_timeout 5m;
+        	ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        	ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
+        	ssl_prefer_server_ciphers on;
+        
+        
+        	root /data/zixie/Show;
+        	index index.html;
+        	
+        	# 精确匹配 优先级最高
+        	location = /marry/welcome.php {
+        		return 301 https://we.bihe0832.com/marry/welcome.php;
+        	}
+        
+        	# 匹配路径的前缀，如果找到停止搜索 location，第二优先级
+        	location ^~ /marry/ {
+        		rewrite ^(.*)$ http://we.bihe0832.com$1 permanent;
+        	}
+        
+        	# 不区分大小写的正则匹配，第三优先级
+        	location ~* \.(?:html?|xml|json|md)$ {
+        		expires -1;
+        	}
+        	# Feed
+        	location ~* \.(?:rss|atom)$ {
+        		expires 1h;
+        		add_header Cache-Control "public";
+        	}
+        	# Media: images, icons, video, audio, HTC
+        	location ~* \.(?:jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc)$ {
+        		expires 1M;
+        		access_log off;
+        		add_header Cache-Control "public";
+        	}
+        	# CSS and Javascript
+        	location ~* \.(?:css|js)$ {
+        		expires 1y;
+        		access_log off;
+        		add_header Cache-Control "public";
+        	}
+        
+        	# 正则匹配，解析第四优先级 
+        	location ~ \.php$ {
+                include fastcgi_params;
+                fastcgi_pass  localhost:9000;
+                fastcgi_param SCRIPT_FILENAME /data/zixie/web/Show/$fastcgi_script_name;
+            }
+        
+        	# 普通路径前缀匹配 最低优先级
+        	location / {
+        		try_files $uri $uri/ =404;
+        	}
+        }
+        
+        server {
+            listen 80;
+        
+        	server_name show.bihe0832.com; 
+        	rewrite ^(.*) https://$server_name$1 permanent;
+        }
