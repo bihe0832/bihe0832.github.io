@@ -913,7 +913,7 @@ git的配置修改有两种方法：
 
 	文件chmod后其文件某些位是改变了的，如果严格的比较原文件和chmod后的文件，两者是有区别的，但是源代码通常只关心文本内容，因此chmod产生的变化应该忽略：
 	
-		git config --global  --add core.filemode false
+		git config --global core.filemode false
 		
 - 添加或忽略换行符检查
 
@@ -927,3 +927,15 @@ git的配置修改有两种方法：
 	设置方法
 	
 		 git config --global core.safecrlf warn 
+
+- 代理设置
+
+	如果你开启了VPN，git需要设置对应的http.proxy，假如你的端口号是7890，在git bash命令行中输入以下命令即可：
+
+		git config --global http.proxy 127.0.0.1:7890
+		git config --global https.proxy 127.0.0.1:7890
+
+	如果你之前git中已经设置过上述配置，则使用如下命令取消再进行配置即可：
+
+		git config --global --unset http.proxy
+		git config --global --unset https.proxy
