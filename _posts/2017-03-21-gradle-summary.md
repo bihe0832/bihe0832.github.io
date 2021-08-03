@@ -7,32 +7,38 @@ keywords: keywords
 description: desc
 ---
 
-在平时开发中，经常会遇到一些gradle相关的内容，本篇文章将用于收集整理自己总结的相关内容。
+在平时开发中，经常会遇到一些Gradle相关的内容，本篇文章将用于收集整理自己总结的相关内容。
 
 ## 个人博客
 
 - Gradle 的安卓插件标准版和实验版的区别
 	
-	- [Gradle介绍](http://blog.bihe0832.com/gradle_introducation.html)
+	- [Gradle介绍](http://blog.bihe0832.com/Gradle_introducation.html)
 
-	- [Gradle Android插件使用的中那些特别注意的点](http://blog.bihe0832.com/gradle_trap.html)
+	- [Gradle Android插件使用的中那些特别注意的点](http://blog.bihe0832.com/Gradle_trap.html)
 
 	- [Experimental Plugin User Guide(From Android Tools Project Site)
 ](http://blog.bihe0832.com/experimental_Plugin_User_Guide.html)
 	
 - Gradle 项目的基本配置：
 
-	- [终端基于gradle的开源项目运行环境配置指引](http://blog.bihe0832.com/android-as-gradle-config.html)
+	- [Gradle介绍](https://blog.bihe0832.com/gradle_introducation.html)
 	
-	- [基于Android Studio使用gradle构建包含jni以及so的构建实例](http://blog.bihe0832.com/gradle-test.html)
+	- [终端基于Gradle的开源项目运行环境配置指引](http://blog.bihe0832.com/android-as-Gradle-config.html)
 	
-	- [gradle常见配置项](http://blog.bihe0832.com/gradle-config.html)
+	- [基于Android Studio使用Gradle构建包含jni以及so的构建实例](http://blog.bihe0832.com/Gradle-test.html)
+	
+	- [Gradle常见配置项](http://blog.bihe0832.com/Gradle-config.html)
 
-	- [gradle常见错误解决方案](http://blog.bihe0832.com/gradle-issues.html)
+	- [Gradle环境变量那些事](https://blog.bihe0832.com/gradle_properties.html)
+
+	- [Gradle常见错误解决方案](http://blog.bihe0832.com/Gradle-issues.html)
 
 - Gradle 插件开发系列
 
-	- [Gradle插件开发系列之总纲](https://blog.bihe0832.com/gradle_plugin_summary.html)
+	- [Gradle插件开发系列之总纲](https://blog.bihe0832.com/Gradle_plugin_summary.html)
+
+	- [记一次升级Android Gradle Plugin后databing编译报错填坑经历](https://blog.bihe0832.com/android-agp-databind.html)
 	
 ## 外部资料
 
@@ -49,7 +55,7 @@ description: desc
 
 - Gradle学习系列：
 
-	- [http://www.cnblogs.com/davenkin/p/gradle-learning-1.html](http://www.cnblogs.com/davenkin/p/gradle-learning-1.html)
+	- [http://www.cnblogs.com/davenkin/p/Gradle-learning-1.html](http://www.cnblogs.com/davenkin/p/Gradle-learning-1.html)
 
 - 自定义Android Gradle插件
 
@@ -60,4 +66,4 @@ description: desc
 
 	- Writing Custom Plugins
 
-		- [https://docs.gradle.org/current/userguide/custom_plugins.html](https://docs.gradle.org/current/userguide/custom_plugins.html)
+		- [https://docs.Gradle.org/current/userguide/custom_plugins.html](https://docs.Gradle.org/current/userguide/custom_plugins.html)
