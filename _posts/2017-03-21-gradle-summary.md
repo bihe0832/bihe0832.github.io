@@ -1,6 +1,6 @@
 ---
 layout: post
-title: gradle相关资料汇总
+title: Gradle 相关资料汇总
 category: 终端开发
 tags: tags
 keywords: keywords
@@ -11,7 +11,7 @@ description: desc
 
 ## 个人博客
 
-- gradle的安卓插件标准版和实验版的区别
+- Gradle 的安卓插件标准版和实验版的区别
 	
 	- [Gradle介绍](http://blog.bihe0832.com/gradle_introducation.html)
 
@@ -20,7 +20,7 @@ description: desc
 	- [Experimental Plugin User Guide(From Android Tools Project Site)
 ](http://blog.bihe0832.com/experimental_Plugin_User_Guide.html)
 	
-- gradle项目的基本配置：
+- Gradle 项目的基本配置：
 
 	- [终端基于gradle的开源项目运行环境配置指引](http://blog.bihe0832.com/android-as-gradle-config.html)
 	
@@ -30,6 +30,9 @@ description: desc
 
 	- [gradle常见错误解决方案](http://blog.bihe0832.com/gradle-issues.html)
 
+- Gradle 插件开发系列
+
+	- [Gradle插件开发系列之总纲](https://blog.bihe0832.com/gradle_plugin_summary.html)
 	
 ## 外部资料
 
