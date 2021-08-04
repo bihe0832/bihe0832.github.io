@@ -3,7 +3,7 @@ layout: post
 title: Gradle 相关资料汇总
 category: 终端开发
 tags: tags
-keywords: keywords
+keywords: Gradle 插件 配置 资料 介绍 Gradle Android Plugin
 description: desc
 ---
 
@@ -36,7 +36,7 @@ description: desc
 
 - Gradle 插件开发系列
 
-	- [Gradle插件开发系列之总纲](https://blog.bihe0832.com/Gradle_plugin_summary.html)
+	- [Gradle插件开发系列之总纲](https://blog.bihe0832.com/gradle_plugin_summary.html)
 
 	- [记一次升级Android Gradle Plugin后databing编译报错填坑经历](https://blog.bihe0832.com/android-agp-databind.html)
 	
