@@ -235,7 +235,7 @@ description: desc
 
 - uupoop：
 	- 主要是对过于大的照片进行缩放，因为微信公众平台对于上传的图片尺寸有一定的限制，裁剪时宽（横版图片）或者高（竖版图片）要在1920以上
-	- 网址：[http://www.uupoop.com/ex/](http://www.uupoop.com/ex/)
+	- 网址：[https://www.gaoding.com/design/image](https://www.gaoding.com/design/image)
 
 - getImageInfo：
 	- 个人基于tinyjpg封装的图片压缩工具，主要是对过于大的照片进行压缩，微信公众平台对于上传的图片大小有一定的限制

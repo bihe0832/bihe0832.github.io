@@ -11,7 +11,7 @@ description: desc
 
 ## 开发调试
 
-#### 图标及Logo 制作
+#### 图标及 Logo 制作
 
 - Android Asset Studio
 
@@ -24,12 +24,6 @@ description: desc
 	-  简单介绍：根据文字、图片、生成APP Icon。
 	
 	-  对应链接：[https://www.pgyer.com/tools/appIcon](https://www.pgyer.com/tools/appIcon)
-
-- Logo制作
-
-	-  简单介绍：制作类似pubhorn 的Icon
-	
-	-  对应链接：[https://cdn.bihe0832.com/tools/logo/index.html](https://cdn.bihe0832.com/tools/logo/index.html)
 
 #### Material Design
 
@@ -65,7 +59,7 @@ description: desc
 #### 图片压缩及查看
 
 - Android安装包精简系列之图片优化：[http://blog.bihe0832.com/android-optimize-img.html](http://blog.bihe0832.com/android-optimize-img.html)
-
+	
 - 图片信息查看工具 getImageInfo：[https://github.com/bihe0832/getImageInfo](https://github.com/bihe0832/getImageInfo)
 
 #### 终端JSBridge接口调试
