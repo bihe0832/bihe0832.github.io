@@ -11,6 +11,8 @@ description: 总遇到使用git的时候需要敲一些不常用的命令，每�
 
 ## 仓库相关
 
+### 设置远程URL
+
 `git remote set-url ` 命令可更改现有远程仓库的 URL
 
 
@@ -27,6 +29,40 @@ description: 总遇到使用git的时候需要敲一些不常用的命令，每�
 - 事例
 
 		➜  blog git:(master) ✗ git remote set-url origin https://github.com/bihe0832/bihe0832.github.io.git
+
+### 删除所有没有tracked过的文件
+
+- 命令
+
+	git clean命令用来从你的工作目录中删除所有没有tracked过的文件
+	
+	- 删除 untracked files
+	
+		git clean -f
+	 
+	- 连 untracked 的目录也一起删掉
+	
+		git clean -fd
+	 
+	- 连 gitignore 的untrack 文件/目录也一起删掉 （慎用，一般这个是用来删掉编译出来的 .o之类的文件用的）
+	
+		git clean -xfd
+	
+	- git submodule中也存在需要删除的文件那么需要再加个f
+
+		git clean -dff
+
+	- 删除前先确认
+ 
+ 		git clean -nfd
+
+- 事例
+	
+		➜  _posts git:(master) ✗ git clean -nxfd
+
+		Would remove .jekyll-cache/
+		Would remove _site/
+
 
 ## 提交相关
 
