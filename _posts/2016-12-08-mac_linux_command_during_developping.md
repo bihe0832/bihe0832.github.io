@@ -47,6 +47,25 @@ xargs命令是给其他命令传递参数的一个过滤器，也是组合多个
 
 	find PATH -name 'NAME' 支持通配符
 
+### grep:
+
+
+- 以xxx开头：` ^`
+
+	`ls -l | grep ^xxx`  	过滤出以d开头的内容
+	
+	`ls -l | grep ^_`  		过滤出所有以下划线_开头的
+
+	`ls -l | grep -v ^_` 	将下划线开头的不显示
+
+- 以xxx结尾：`$`
+
+	`ls -f | grep .apk$`   	过滤出以.apk结尾的内容
+ 
+- 空行：`^$`
+
+- 任意一个字符：`.`
+
 ### kill
 		
 - kill -9 pid
