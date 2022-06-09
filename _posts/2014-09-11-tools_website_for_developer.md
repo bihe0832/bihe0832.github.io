@@ -24,7 +24,7 @@ description: desc
 - git 语法：[http://git-scm.com/docs](http://git-scm.com/docs)
 - git常用命令：[http://blog.bihe0832.com/git-client-cmd.html](http://blog.bihe0832.com/git-client-cmd.html)
 - git练习游戏：[https://learngitbranching.js.org/?locale=zh_CN](https://learngitbranching.js.org/?locale=zh_CN)
-
+- 动画图解Git命令，一看就懂：[https://mp.weixin.qq.com/s?__biz=MzI0MDQ4MTM5NQ==&mid=2247492813&idx=1&sn=886c2e6a4773fcdcaadb3e6034c07a52](https://mp.weixin.qq.com/s?__biz=MzI0MDQ4MTM5NQ==&mid=2247492813&idx=1&sn=886c2e6a4773fcdcaadb3e6034c07a52)
 ### OAuth 2.0：
 
 - OAuth 2.0 介绍（看这个系列就够了）：[http://ifeve.com/oauth2-tutorial-all/](http://ifeve.com/oauth2-tutorial-all/)

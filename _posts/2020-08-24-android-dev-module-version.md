@@ -81,6 +81,10 @@ description: 这篇文章和组件化的关系不大，主要是讲应用的版�
 
 ### 用户更新方法
 
+**对于用户侧怎么更新，后续都集中在AAF的更新模块介绍，相关内容可以点击链接查看：**
+
+- **[https://android.bihe0832.com/doc/use/common/framework/framework-update.html](https://android.bihe0832.com/doc/use/common/framework/framework-update.html)**
+
 
 | 更新类型     | 强制更新                         | 可选更新                         | 红点更新               | 无状态更新 | 最新版本       |
 |--------------|----------------------------------|----------------------------------|------------------------|------------|----------------|
