@@ -41,7 +41,16 @@
               <div class="list-group">
                 <h2 class="center">{{ category[0] }}</h2>
                 {% for post in category[1] %}
-                  <a href="{{ post.url }}" class="list-group-item pjaxlink">{{post.title}}</a>
+                  
+                  {% if post.recommand == true %}
+                    <a href="{{ post.url }}" class="pjaxlink recommand_by_zixie list-group-item ">{{post.title}}</a>
+                  {% else %}
+                    <a href="{{ post.url }}" class="list-group-item pjaxlink">{{post.title}}</a>
+                  {% endif %} 
+
+
+
+                  
                 {% endfor %}
               </div>
             </div>

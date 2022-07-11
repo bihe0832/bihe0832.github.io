@@ -5,6 +5,7 @@ category: 终端开发
 tags: tags
 keywords: Gradle 插件 配置 资料 介绍 Gradle Android Plugin
 description: desc
+recommand: true
 ---
 
 在平时开发中，经常会遇到一些Gradle相关的内容，本篇文章将用于收集整理自己总结的相关内容。

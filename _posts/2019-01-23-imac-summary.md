@@ -5,6 +5,7 @@ category: 开发工具
 tags: iMac
 keywords: iMac 经验 
 description: 个人写的所有关于iMac相关的文章汇总
+recommand: true
 ---
 
 最近有时候在开发或者使用mac的过程中总会遇到一些坑，每次都要专门去搜索引擎查询太麻烦，因此也专门整理总结一下。

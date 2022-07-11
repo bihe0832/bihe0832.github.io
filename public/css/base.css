@@ -99,6 +99,7 @@ h3,h4,h5,h6{
   font-weight: 900;
   color: #428bca;
 }
+
 table {
     width: 100%; /*表格宽度*/
     border: 1px solid #dddddd;
@@ -128,3 +129,6 @@ table tr:hover {
     background: #B2B2B2; 
 }
 
+.recommand_by_zixie {
+  font-weight: bold; /*加粗*/
+}

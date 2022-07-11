@@ -5,6 +5,7 @@ category: 终端开发
 tags: SDK
 keywords: Android SDK 热更
 description: desc
+recommand: true
 ---
 
 ## 项目介绍

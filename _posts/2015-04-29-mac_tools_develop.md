@@ -5,6 +5,7 @@ category: 开发工具
 tags: 工具 iMac
 keywords: 包管理 Homebrew 流程图 Gliffy Diagrams 抓包 网络代理 chairs   Fiddler 快速启动工具 Alfred 终极 Shell zsh 最强终端 iTerm 订阅管理 Reeder
 description: 主要介绍iMac下提高效率的一些工具，包括：Homebrew、Alfred、zsh、iTerm2、Charles & Fiddler等
+recommand: true
 ---
 
 工欲善其事，必先利其器。每个程序员都会有一套自己喜欢的，适用自己的提供工作效率的工具。之前每次换电脑总是要折腾一次，总会遗漏一些，这次就统一整理一下。这里主要介绍iMac下的一些提高效率或者很好用的工具。

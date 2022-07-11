@@ -5,6 +5,7 @@ category: 终端开发
 tags: tags
 keywords: Gradle 插件 plugin
 description: desc1
+recommand: true
 ---
 ## 背景
 

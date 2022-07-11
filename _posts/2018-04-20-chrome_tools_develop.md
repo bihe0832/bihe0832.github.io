@@ -5,6 +5,7 @@ category: 开发工具
 tags: chrome 工具
 keywords: 流程图 请求模拟 Gliffy Diagrams JSON Postman JSON Editor Online OneTab QR SwitchyOmega Isometric Contributions GitHub-Chart Momentum 二维码 Github
 description: 介绍Chrome下的一些提高效率或者很好用的工具，包括流程图、请求模拟、tab折叠、JSON视图、二维码生成、Github视图美化等
+recommand: true
 ---
 
 工欲善其事，必先利其器。每个程序员都会有一套自己喜欢的，适用自己的提高工作效率的工具。之前每次换电脑总是要折腾一次，总会遗漏一些，这次就统一整理一下。这里主要介绍Chrome下的一些提高效率或者很好用的工具。

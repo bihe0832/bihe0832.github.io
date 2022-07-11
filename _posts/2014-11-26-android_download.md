@@ -7,6 +7,8 @@ keywords: Android download 多线程 下载
 description: desc
 ---
 
+## 此文档及组件均不再更新维护，最新组件请点击链接查看：[https://android.bihe0832.com/doc/use/libs/noui/lib-download.html](https://android.bihe0832.com/doc/use/libs/noui/lib-download.html)
+
 在项目开发中遇到一个从服务器下载图片的需求。使用一些开源的库也能解决问题，但是对于这个简单的需求又有点重，因为项目对包大小的要求更高。
 在四处浏览和自己努力下，最终写了一个可以满足以下需求的简单的工具类：
 

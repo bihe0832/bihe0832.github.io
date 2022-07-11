@@ -5,6 +5,7 @@ category: 经验总结
 tags: 总结
 keywords: keywords
 description: desc
+recommand: true
 ---
 
 ## 基本理念

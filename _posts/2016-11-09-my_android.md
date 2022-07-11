@@ -5,6 +5,7 @@ category: 终端开发
 tags: 常用工具 android
 keywords: 前端资源 通用 github
 description: desc
+recommand: true
 ---
 
 这里简单汇总一下个人常用的一些简单的终端开发相关资源的地址以及功能，方便检索。

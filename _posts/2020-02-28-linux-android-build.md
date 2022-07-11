@@ -5,6 +5,7 @@ category: 终端开发
 tags: android linux 
 keywords: keywords
 description: 在腾讯云的服务器搭建一套 Android 编译环境
+recommand: true
 ---
 
 最近因为在家办公，需要发布两个jcenter的库，也不知道什么情况VPN访问bintray.com 超时和丢包格外严重，最后决定选一台在腾讯云的服务器 搭建一套 Android 编译环境用来发布。这里记录一下。

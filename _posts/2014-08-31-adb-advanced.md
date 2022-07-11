@@ -5,6 +5,7 @@ category: 终端开发
 tags: android adb
 keywords: android adb monkey getprop setprop pm am dumpsys  
 description: adb中一些相对复杂的命令，主要有monkey、getprop、setprop、pm、am、dumpsys等。monkey主要用于自动化测试，而getprop和dumpsys则在定位问题的时候非常有用。
+recommand: true
 ---
 
 # 相关文章
