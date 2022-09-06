@@ -10,9 +10,21 @@ recommand: true
 
 最近因为在家办公，需要发布两个jcenter的库，也不知道什么情况VPN访问bintray.com 超时和丢包格外严重，最后决定选一台在腾讯云的服务器 搭建一套 Android 编译环境用来发布。这里记录一下。
 
-### 安装 Java
+### 卸载原有JDK
 
-由于腾讯云的机器已经有yum，因此直接使用yum安装jdk：
+如果是RPM安装，先查找已经安装的rpm包。
+
+- 查出安装的rpm包有哪些
+
+	`rpm -qa | grep jdk`
+	
+- 删除要卸载的包名
+
+	`rpm -e 包名` 或者 `yum remove包名`
+
+### 安装 JDK
+
+由于腾讯云的机器已经有yum，因此直接使用yum安装jdk 8 **使用sdkmanager安装时，请确认当前系统Java版本不是Java 11 ，Java 11 运行 sdkmanager 会报错**：
 
 - 命令：
 
@@ -351,5 +363,28 @@ OK 至此就算搭建安装完成~
     sdkmanager --install "build-tools;19.1.0" "build-tools;28.0.3" "platforms;android-28"
 
 
-    
+### 常见错误
 
+#### 安装提示 java.lang.NoClassDefFoundError
+
+- 错误事例：
+
+	    ➜  android-sdk-linux  ./sdkmanager 
+		Exception in thread "main" java.lang.NoClassDefFoundError: javax/xml/bind/annotation/XmlSchema
+	        at com.android.repository.api.SchemaModule$SchemaModuleVersion.<init>(SchemaModule.java:156)
+	        at com.android.repository.api.SchemaModule.<init>(SchemaModule.java:75)
+	        at com.android.sdklib.repository.AndroidSdkHandler.<clinit>(AndroidSdkHandler.java:81)
+	        at com.android.sdklib.tool.sdkmanager.SdkManagerCli.main(SdkManagerCli.java:73)
+	        at com.android.sdklib.tool.sdkmanager.SdkManagerCli.main(SdkManagerCli.java:48)
+		Caused by: java.lang.ClassNotFoundException: javax.xml.bind.annotation.XmlSchema
+		        at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+		        at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+		        at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+		        ... 5 more
+- 问题原因：
+
+	当前系统的JDK 版本过高。
+	
+- 解决方案：
+
+	先回退系统JDK 版本到 1.8，SDK更新结束以后再升级JDK版本
