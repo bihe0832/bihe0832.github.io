@@ -64,6 +64,11 @@ recommand: true
 		Would remove .jekyll-cache/
 		Would remove _site/
 
+### clone 以后同步 submodule
+
+很多项目会存在子项目，在首次clone以后，submodule并不会自动更新，因此可以用下面的命令更新：
+
+	git submodule update --init
 
 ## 提交相关
 
