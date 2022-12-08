@@ -65,7 +65,7 @@ recommand: true
                  –v -v ：日志级别 Level1，提供较为详细的日志，包括每个发送到Activity的事件信息
                  –v -v –v ：日志级别 Level 2，最详细的日志，包括了测试中选中/未选中的Activity信息
             –s 表示指定伪随机数生成器的seed值，如果seed相同，则两次Monkey测试所产生的事件序列也相同的。
-            具体参照：http://developer.android.com/tools/help/monkey.html
+            具体参照：https://developer.android.com/tools/help/monkey.html
         
 
 *   **事例：**
@@ -104,7 +104,7 @@ recommand: true
                 dhcp.wlan 是网关、IP地址等无线网络相关信息；
                 external_sd_path 是外部存储SD卡的路径
                 fmradio.driver 是FMradio相关属性
-                具体的内容可以参照：http://baike.baidu.com/view/9775823.htm?fr=aladdin
+                具体的内容可以参照：https://baike.baidu.com/view/9775823.htm?fr=aladdin
         
 
 *   **事例：**
@@ -166,7 +166,7 @@ recommand: true
         pm enable PACKAGE_OR_COMPONENT
         pm disable PACKAGE_OR_COMPONENT
         pm setInstallLocation [0/auto] [1/internal] [2/external]。
-            具体参照：http://developer.android.com/tools/help/adb.html#pm
+            具体参照：https://developer.android.com/tools/help/adb.html#pm
         
 
 *   **事例：**
@@ -200,7 +200,7 @@ recommand: true
         adb shell am broadcast [options] <INTENT>
             作用：发送一个广播
         
-        [options]与<INTENT>具体参照：http://developer.android.com/tools/help/adb.html#am
+        [options]与<INTENT>具体参照：https://developer.android.com/tools/help/adb.html#am
         
 
 *   **事例：**
@@ -211,7 +211,7 @@ recommand: true
         Browser（浏览器）的启动方法为：
             adb shell am start -n com.android.browser/com.android.browser.BrowserActivity
         启动浏览器 :
-            adb shell am start -a android.intent.action.VIEW -d  http://www.google.cn/
+            adb shell am start -a android.intent.action.VIEW -d  https://www.google.cn/
         拨打电话 :
             adb shell am start -a android.intent.action.CALL -d tel:10086
         

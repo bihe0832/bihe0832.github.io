@@ -16,7 +16,7 @@ description: desc
 - 一般涉及到NDK的，大部分使用实验版的gradle插件
 - 原生项目基本上使用标准版
 
-两个版本的差异可以查看之前写过的两篇文章[Gradle Android插件使用的中那些特别注意的点](http://blog.bihe0832.com/gradle_trap.html)和[基于Android Studio使用gradle构建包含jni以及so的构建实例](http://blog.bihe0832.com/gradle-test.html)，下面不在区分实验板和标准版
+两个版本的差异可以查看之前写过的两篇文章[Gradle Android插件使用的中那些特别注意的点](https://blog.bihe0832.com/gradle_trap.html)和[基于Android Studio使用gradle构建包含jni以及so的构建实例](https://blog.bihe0832.com/gradle-test.html)，下面不在区分实验板和标准版
 
 ### 含NDK项目
 

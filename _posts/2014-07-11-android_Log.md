@@ -29,6 +29,6 @@ description: 测试遇到的android log中遇到的一些边界值
 
 * * *
 
-PS：对于Log的详细描述，可以参考下面的博客：http://blog.csdn.net/thl789/article/details/6629905
+PS：对于Log的详细描述，可以参考下面的博客：https://blog.csdn.net/thl789/article/details/6629905
 
  [1]: https://github.com/bihe0832/Sharing/tree/master/lesson_5

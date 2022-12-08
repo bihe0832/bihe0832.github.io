@@ -11,7 +11,7 @@ description: desc
 
 本文是SDKHotfix相关的SDK热更系列文章中的一篇，以下为项目及系列文章相关链接：
 
-- **SDKHotfix整体介绍**：[http://blog.bihe0832.com/sdk_hotfix_project.html](http://blog.bihe0832.com/sdk_hotfix_project.html)
+- **SDKHotfix整体介绍**：[https://blog.bihe0832.com/sdk_hotfix_project.html](https://blog.bihe0832.com/sdk_hotfix_project.html)
 
 - **SDKHotfix对应github地址**：[https://github.com/bihe0832/SDKHoxFix](https://github.com/bihe0832/SDKHoxFix)
 
@@ -24,7 +24,7 @@ description: desc
 **为了降低项目的理解难度，关于java热更新，该项目暂时不会涉及怎么管理版本号、怎么在代码中插桩、怎么生成版本差异包、怎么将差异包编为dex文件等内容，这部分内容我会在另外的项目来介绍。**
 
 **为了降低项目的理解难度，关于so的热更新，该项目暂时仅使用arm的so，关于如何在热更时根据so的类型来选择下发什么类型的so，请参考作者之前的文章 [SDK热更之如何获取应用在当前设备上的so对应的指令集
-](http://blog.bihe0832.com/sdk_hotfix_so_abi.html)。**
+](https://blog.bihe0832.com/sdk_hotfix_so_abi.html)。**
 
 **由于本项目重点介绍重点SDK的热更新相关的内容，因此项目中的代码虽然是实现简单的功能，但是使用了SDK和demo等多个项目以及java和Native多层调用。**本项目中不会再介绍SDK相关的内容，建议可以先通过下面的链接了解这个项目的结构，然后再看热更新项目的内容，[点击了解Android-gradle-jni-so](https://github.com/bihe0832/Android-gradle-jni-so)。
 
@@ -71,7 +71,7 @@ description: desc
 
 #### 代码插桩并生成支持热更新的SDK 
 
-关于代码插桩可以参考[SDK热更之如何在SDK代码中自动插桩及如何生成补丁包](http://blog.bihe0832.com/sdk_hotfix_patch.html)中相关的说明。插桩后默认生成的jar因为没有实现代码分包，还包含插桩类，因此会带来预校验的问题，因此我们需要对SDK代码分包和做一些预处理，具体做法包括：
+关于代码插桩可以参考[SDK热更之如何在SDK代码中自动插桩及如何生成补丁包](https://blog.bihe0832.com/sdk_hotfix_patch.html)中相关的说明。插桩后默认生成的jar因为没有实现代码分包，还包含插桩类，因此会带来预校验的问题，因此我们需要对SDK代码分包和做一些预处理，具体做法包括：
 
 - 拿到SDK编译并插桩后的完整jar
 - 解压jar，删除com.bihe0832.hotfix.Fix文件
@@ -80,7 +80,7 @@ description: desc
 
 #### 生成补丁包
 
-Demo中关于补丁包生成通过自动构建生成，关于这部分内容可以参考[SDK热更之如何在SDK代码中自动插桩及如何生成补丁包](http://blog.bihe0832.com/sdk_hotfix_patch.html)中关于热补丁生成相关的说明。主要流程为：
+Demo中关于补丁包生成通过自动构建生成，关于这部分内容可以参考[SDK热更之如何在SDK代码中自动插桩及如何生成补丁包](https://blog.bihe0832.com/sdk_hotfix_patch.html)中关于热补丁生成相关的说明。主要流程为：
 
 - 拿到SDK编译后的完整jar
 - 解压jar，删除com.bihe0832.hotfix.Fix文件

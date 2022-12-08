@@ -104,7 +104,7 @@ description: desc
 
 路线规划以及后面的游记整理我都是用markdown，什么是markdown。markdown的语法以及编辑工具可以参考下面的文章。
 
-- Markdown语法简介：[http://blog.bihe0832.com/markdow_intrduce.html](http://blog.bihe0832.com/markdow_intrduce.html) 
+- Markdown语法简介：[https://blog.bihe0832.com/markdow_intrduce.html](https://blog.bihe0832.com/markdow_intrduce.html) 
 
 ### 旅行约伴
 
@@ -135,7 +135,7 @@ description: desc
 
 等旅行结束回到家，也就算旅行基本结束了。有人会选择整理一下照片，有人会写个游记；我更多的会以攻略的角度为主来写。写游记既是对旅行的一次回顾，又可以通过文字加图片记录下更多的旅行信息，方便后来人了解。在游记整理中最关键的点就是什么时间到了什么位置做了什么事。做了什么有照片为证，什么时间什么地点怎么解决呢？
 
-每张照片在拍摄的时候一般拍摄设备都会同时记下一些相关信息，这里面的信息很多，但是我们只需要一部分。网上找了很久一直没有找到适合的工具，于是就自动动手写了一个工具PhotoManager，关于PhotoManager的详细说明请参考文档 [基于命令行的照片整理及查看工具](http://blog.bihe0832.com/photomanage.html) 。下面列出查看照片时的某个事例：
+每张照片在拍摄的时候一般拍摄设备都会同时记下一些相关信息，这里面的信息很多，但是我们只需要一部分。网上找了很久一直没有找到适合的工具，于是就自动动手写了一个工具PhotoManager，关于PhotoManager的详细说明请参考文档 [基于命令行的照片整理及查看工具](https://blog.bihe0832.com/photomanage.html) 。下面列出查看照片时的某个事例：
 
 	➜  PhotoManager git:(master) ✗ java -jar ./managePhoto.jar --show ~/temp/IMG_3555.jpg
 	照片信息如下：

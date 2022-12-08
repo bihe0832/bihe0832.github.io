@@ -15,7 +15,7 @@ Gradle是一种构建工具，它抛弃了基于XML的构建脚本，取而代�
 
 ### 安装
 
-Mac下直接使用homebrew（[点击了解安装及使用方法](http://blog.bihe0832.com/Homebrew.html)）。命令如下：
+Mac下直接使用homebrew（[点击了解安装及使用方法](https://blog.bihe0832.com/Homebrew.html)）。命令如下：
 
 	brew install gradle
 

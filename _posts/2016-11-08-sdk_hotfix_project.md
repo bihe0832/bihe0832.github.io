@@ -35,11 +35,11 @@ recommand: true
 
 	因为我们的SDK热更项目的前提是这个项目是一个完成的SDK，而一个SDK又涉及到SDK库文件、和SDK的demo工程。Android-gradle-jni-so是一个使用Android Studio创建的，通过gradle编译的，存在多个模块的工程的gradle构建的事例。完整的模拟了第三方SDK，自己SDK以及Demo之前的调用关系以及相关的gradle编译脚本。
 	
-2. `SDK热更之Demo体验方法`：[点击查看](http://blog.bihe0832.com/sdk_hotfix_demo.html)
+2. `SDK热更之Demo体验方法`：[点击查看](https://blog.bihe0832.com/sdk_hotfix_demo.html)
 
 	为了方便大家SDK的热更项目，先介绍Demo相关的内容，先让大家熟悉Demo的使用，然后再基于此来了解SDKHotfix的原理，这篇文章就重点介绍Demo的体验方法，包括项目运行、补丁生成、热更效果验证等。
 	
-3. `SDK热更之Demo工程介绍`：[点击查看](http://blog.bihe0832.com/sdk_hotfix_demo_project.html)
+3. `SDK热更之Demo工程介绍`：[点击查看](https://blog.bihe0832.com/sdk_hotfix_demo_project.html)
 
 	为了方便大家SDK的热更项目，先介绍Demo相关的内容，先让大家熟悉Demo的使用，然后再基于此来了解SDKHotfix的原理。这篇文章就重点介绍Demo工程相关的内容，以及大家再体验demo的过程中需要关注到的一些点
 	
@@ -54,7 +54,7 @@ recommand: true
 
 这部分内容主要介绍SDKHotfix相关实现，包括怎么编译，怎么出版本，怎么出补丁等，在后续陆续补充。
 
-1. `SDK热更之gradle插件（如何在SDK代码中自动插桩及如何生成补丁包）`：[点击查看](http://blog.bihe0832.com/sdk_hotfix_patch.html)
+1. `SDK热更之gradle插件（如何在SDK代码中自动插桩及如何生成补丁包）`：[点击查看](https://blog.bihe0832.com/sdk_hotfix_patch.html)
 
 	主要介绍SDK热更中用到的gradle插件，包括怎么插桩、怎么生成补丁的原理；文章主要是介绍原理，没有对具体实现的代码做详细解读。
 
@@ -62,11 +62,11 @@ recommand: true
 
 这部分内容主要介绍目前SDKHotfix项目没有介绍到的或者没有实现的一些功能点以及待优化项
 
-1. `SDK热更之SDKHotfix待优化点`：[点击查看](http://blog.bihe0832.com/sdk_hotfix_need_to_do.html)
+1. `SDK热更之SDKHotfix待优化点`：[点击查看](https://blog.bihe0832.com/sdk_hotfix_need_to_do.html)
 
 	主要从安全性、后续的代码维护两个方面介绍了SDKHotfix中没有增加的相关内容。
 
-2. `SDK热更之如何获取应用在当前设备上的so对应的指令集`：[点击查看](http://blog.bihe0832.com/sdk_hotfix_so_abi.html)
+2. `SDK热更之如何获取应用在当前设备上的so对应的指令集`：[点击查看](https://blog.bihe0832.com/sdk_hotfix_so_abi.html)
 
 	目前的demo中只使用了arm的so，但是对于SDK的热更新，肯定要提供完整的so，当需要提供完整的so的时候，怎么下发正确的so主要在这边文章介绍
 	

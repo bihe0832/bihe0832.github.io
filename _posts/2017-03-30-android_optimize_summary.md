@@ -42,11 +42,11 @@ recommand: true
 
 #### 总纲
  	
-- `Android安装包精简系列（总纲）`：[点击查看](http://blog.bihe0832.com/android_optimize_summary.html)
+- `Android安装包精简系列（总纲）`：[点击查看](https://blog.bihe0832.com/android_optimize_summary.html)
 
 	也就是你正在看的这篇，算是个开头和总体总结，主要是相关文章的列表和概述。
 	
-- `Android安装包精简系列之为什么要优化精简安装包`：[点击查看](http://blog.bihe0832.com/android-optimize-why.html)
+- `Android安装包精简系列之为什么要优化精简安装包`：[点击查看](https://blog.bihe0832.com/android-optimize-why.html)
 
 	主要总结一下为什么要优化精简安装包，包括为什么安卓包越来越大和精简优化安装包有哪些好处和弊端。
 
@@ -54,15 +54,15 @@ recommand: true
 
 这里主要分析关于安装包优化中，与资源相关的一些优化手段。
 
-- `Android安装包精简系列之图标转字体`：[点击查看](http://blog.bihe0832.com/android-optimize-icontofont.html)
+- `Android安装包精简系列之图标转字体`：[点击查看](https://blog.bihe0832.com/android-optimize-icontofont.html)
 	
 	这是个人总结的应用安装精简系列的关于图片精简的第一篇，主要介绍怎么使用图标字体库来代替图标达到精简图片的效果。
 
-- `Android安装包精简系列之图片优化`：[点击查看](http://blog.bihe0832.com/android-optimize-img.html)
+- `Android安装包精简系列之图片优化`：[点击查看](https://blog.bihe0832.com/android-optimize-img.html)
 
 	这是个人总结的应用安装精简系列的关于图片精简的第二篇，主要介绍在不降低用户体验的前提下，尽可能的精简图片的相关方案。`优化总体原则就是：在不降低图片效果、保证用户体验的前提下尽最大可能缩小图片文件的大小`。	
 
-- `Android安装包精简系列之资源精简`：[点击查看](http://blog.bihe0832.com/android-optimize-resources.html)
+- `Android安装包精简系列之资源精简`：[点击查看](https://blog.bihe0832.com/android-optimize-resources.html)
 	
 	主要介绍整体资源的优化，包括怎么梳理apk里面的未被使用资源并精简优化以及怎么通过资源混淆等达到存量资源的精简。
 	

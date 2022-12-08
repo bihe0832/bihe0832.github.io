@@ -23,7 +23,7 @@ recommand: true
 
 - 安装及使用方法：
 
-	[http://blog.bihe0832.com/Homebrew.html](http://blog.bihe0832.com/homebrew.html)
+	[https://blog.bihe0832.com/Homebrew.html](https://blog.bihe0832.com/homebrew.html)
 
 ### 快速启动工具：Alfred
 
@@ -162,7 +162,7 @@ Zsh是一款强大的虚拟终端，既是一个系统的虚拟终端，也可�
 
 ### 网络代理设置：
 
-- 日常开发中各种代理设置方法汇总（shell、Android Studio、gem、npm）：[http://blog.bihe0832.com/proxy.html](http://blog.bihe0832.com/proxy.html)
+- 日常开发中各种代理设置方法汇总（shell、Android Studio、gem、npm）：[https://blog.bihe0832.com/proxy.html](https://blog.bihe0832.com/proxy.html)
 
 ### 订阅管理：Reeder
 

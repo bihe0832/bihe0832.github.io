@@ -11,7 +11,7 @@ description: desc
 
 回来上各种小网站巴拉巴拉找了一下，终于大概了解了前世今生，这里简单汇总一下MAC地址相关的内容。会在另一篇文章汇总imei相关的内容。链接如下：
 
-[关于终端设备的设备唯一性的那些事之IMEI](http://blog.bihe0832.com/Android_IMEI.html)
+[关于终端设备的设备唯一性的那些事之IMEI](https://blog.bihe0832.com/Android_IMEI.html)
 
 ## 什么是MAC地址？
 
@@ -61,7 +61,8 @@ IP地址专注于网络层，将数据包从一个网络转发到另外一个网
 不废话，先上代码：
 
 	The offending kernel code:
-		if((tuna_MAC_addr[4] == 0) && (tuna_mac_addr[5] == 0)) {
+	
+	if((tuna_MAC_addr[4] == 0) && (tuna_mac_addr[5] == 0)) {
 		srandom32((uint)jiffies); //
 		rand_mac = random32(); //
 		tuna_mac_addr[3] = (unsigned char)rand_mac;

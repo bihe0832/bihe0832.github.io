@@ -57,7 +57,7 @@ description: online：使用在线文档可以避免很多因为文档不及时�
 
 1. **`online`**：使用在线文档可以避免很多因为文档不及时替换引起的问题。而这也是我们前期关于接入咨询最多的问题。当然online也是一把双刃剑，带来的问题就是你的文档要支持所有的版本。所以如果有接口再某些版本发生变化，一定要描述的很清楚。
 
-- **`markdown`**：markdown的优势是无法用语言形容的。（附上一个自己写的Markdown的介绍[点击查看](http://blog.bihe0832.com/markdow_intrduce.html)）。使用Markdown可以大大提高开发者的开发效率。
+- **`markdown`**：markdown的优势是无法用语言形容的。（附上一个自己写的Markdown的介绍[点击查看](https://blog.bihe0832.com/markdow_intrduce.html)）。使用Markdown可以大大提高开发者的开发效率。
 
 - **`分模块`**：如果你的SDK够大，建议最好是按照模块来写文档。之前我们的API文档有40多页，从头到尾过一遍就要很久，更不要说比对内容……
 

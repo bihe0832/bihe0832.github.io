@@ -11,7 +11,7 @@ description: desc
 
 回来上各种小网站巴拉巴拉找了一下，终于大概了解了前世今生，这里简单汇总一下imei相关的内容。会在另一篇文章汇总MAC地址相关的内容。链接如下：
 
-[关于终端设备的设备唯一性的那些事之MAC地址](http://blog.bihe0832.com/Android_MAC.html)
+[关于终端设备的设备唯一性的那些事之MAC地址](https://blog.bihe0832.com/Android_MAC.html)
 
 ## 什么是IMEI？
 

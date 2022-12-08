@@ -15,7 +15,7 @@ description: 之前开发的时候涉及到 FileProvider 相关的功能，梳�
 
 在res目录下创建一个xml目录，在xml目录下新建一个filepaths.xml，例如：
 
-	<paths xmlns:android="http://schemas.android.com/apk/res/android"> 
+	<paths xmlns:android="https://schemas.android.com/apk/res/android"> 
 	    <files-path name="ziexie_download" path="download/"/> 
 	    ...
 	</paths>

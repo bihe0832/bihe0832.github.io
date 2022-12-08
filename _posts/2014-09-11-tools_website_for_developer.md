@@ -9,13 +9,13 @@ recommand: true
 ---
 ### Markdown：
 
-- Markdown 语法概述：[http://blog.bihe0832.com/markdow_intrduce.html](http://blog.bihe0832.com/markdow_intrduce.html)
+- Markdown 语法概述：[https://blog.bihe0832.com/markdow_intrduce.html](https://blog.bihe0832.com/markdow_intrduce.html)
 
 - Markdown格式优化及使用技巧：[https://blog.bihe0832.com/markdow_advanced.html](https://blog.bihe0832.com/markdow_advanced.html)
 
 ### SVN：
 
-- SVN 语法概述：[http://blog.bihe0832.com/SVN.html](http://blog.bihe0832.com/SVN.html)
+- SVN 语法概述：[https://blog.bihe0832.com/SVN.html](https://blog.bihe0832.com/SVN.html)
 
 ### Git：
 
@@ -23,7 +23,7 @@ recommand: true
 - git - 简易指南：[http://www.bootcss.com/p/git-guide/](http://www.bootcss.com/p/git-guide/)
 - git官方文档：[http://git-scm.com/book/en/v2](http://git-scm.com/book/en/v2)
 - git 语法：[http://git-scm.com/docs](http://git-scm.com/docs)
-- git常用命令：[http://blog.bihe0832.com/git-client-cmd.html](http://blog.bihe0832.com/git-client-cmd.html)
+- git常用命令：[https://blog.bihe0832.com/git-client-cmd.html](https://blog.bihe0832.com/git-client-cmd.html)
 - git练习游戏：[https://learngitbranching.js.org/?locale=zh_CN](https://learngitbranching.js.org/?locale=zh_CN)
 - 动画图解Git命令，一看就懂：[https://mp.weixin.qq.com/s?__biz=MzI0MDQ4MTM5NQ==&mid=2247492813&idx=1&sn=886c2e6a4773fcdcaadb3e6034c07a52](https://mp.weixin.qq.com/s?__biz=MzI0MDQ4MTM5NQ==&mid=2247492813&idx=1&sn=886c2e6a4773fcdcaadb3e6034c07a52)
 ### OAuth 2.0：

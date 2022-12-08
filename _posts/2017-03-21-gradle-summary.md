@@ -14,26 +14,26 @@ recommand: true
 
 - Gradle 的安卓插件标准版和实验版的区别
 	
-	- [Gradle介绍](http://blog.bihe0832.com/Gradle_introducation.html)
+	- [Gradle介绍](https://blog.bihe0832.com/Gradle_introducation.html)
 
-	- [Gradle Android插件使用的中那些特别注意的点](http://blog.bihe0832.com/Gradle_trap.html)
+	- [Gradle Android插件使用的中那些特别注意的点](https://blog.bihe0832.com/Gradle_trap.html)
 
 	- [Experimental Plugin User Guide(From Android Tools Project Site)
-](http://blog.bihe0832.com/experimental_Plugin_User_Guide.html)
+](https://blog.bihe0832.com/experimental_Plugin_User_Guide.html)
 	
 - Gradle 项目的基本配置：
 
 	- [Gradle介绍](https://blog.bihe0832.com/gradle_introducation.html)
 	
-	- [终端基于Gradle的开源项目运行环境配置指引](http://blog.bihe0832.com/android-as-Gradle-config.html)
+	- [终端基于Gradle的开源项目运行环境配置指引](https://blog.bihe0832.com/android-as-Gradle-config.html)
 	
-	- [基于Android Studio使用Gradle构建包含jni以及so的构建实例](http://blog.bihe0832.com/Gradle-test.html)
+	- [基于Android Studio使用Gradle构建包含jni以及so的构建实例](https://blog.bihe0832.com/Gradle-test.html)
 	
-	- [Gradle常见配置项](http://blog.bihe0832.com/Gradle-config.html)
+	- [Gradle常见配置项](https://blog.bihe0832.com/Gradle-config.html)
 
 	- [Gradle环境变量那些事](https://blog.bihe0832.com/gradle_properties.html)
 
-	- [Gradle常见错误解决方案](http://blog.bihe0832.com/Gradle-issues.html)
+	- [Gradle常见错误解决方案](https://blog.bihe0832.com/Gradle-issues.html)
 
 - Gradle 插件开发系列
 

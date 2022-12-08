@@ -15,7 +15,7 @@ description: 这里同样不会过度分析Android的自动构建工具有哪些
 
 早期的Android项目使用ADT（Eclipse）来开发，当时的自动构建工具大多是用ant。随着Android Studio的兴起和google停止对ADT的支持，越来越多的项目开始使用gradle来构建。因为上面的原因，目前Android项目的自动构建也主要是使用ant和gradle。这里同样也不展开介绍ant和gradle这两种自动构建的原理和语法。
 
-我们项目早期是使用ADT，而且当时的自动构建也是使用ant，目前已经全部转为AS + gradle，个人之前写过一篇关于SDK的Gradle构建的博客（[一个存在多个模块（包含Native）的工程的gradle构建的事例（点击查看）](http://blog.bihe0832.com/gradle-test.html)），里面有对SDK的gradle的简单介绍，以及对应的事例代码。关于ant构建相关的内容，后续根据情况看能不能推出。
+我们项目早期是使用ADT，而且当时的自动构建也是使用ant，目前已经全部转为AS + gradle，个人之前写过一篇关于SDK的Gradle构建的博客（[一个存在多个模块（包含Native）的工程的gradle构建的事例（点击查看）](https://blog.bihe0832.com/gradle-test.html)），里面有对SDK的gradle的简单介绍，以及对应的事例代码。关于ant构建相关的内容，后续根据情况看能不能推出。
  
 ## SDK自动构建包括的内容
 
@@ -23,7 +23,7 @@ description: 这里同样不会过度分析Android的自动构建工具有哪些
 
 - 分配版本号
 
-	我们SDK早期的版本号由人工维护，因此在[SDK开发经验之测试（点击查看）](http://blog.bihe0832.com/SDK_experience_test.html)介绍过，我们会在版本发布的checklist里面增加版本号的确认，确保发出去版本的版本号是正确的。
+	我们SDK早期的版本号由人工维护，因此在[SDK开发经验之测试（点击查看）](https://blog.bihe0832.com/SDK_experience_test.html)介绍过，我们会在版本发布的checklist里面增加版本号的确认，确保发出去版本的版本号是正确的。
 	
 	目前我们最新的SDK版本中，版本号不再人工维护，因此SDK在每次正式发布前，都会去专门分配一个新的版本号。
 
@@ -68,5 +68,5 @@ description: 这里同样不会过度分析Android的自动构建工具有哪些
 
 可以看到我们的自动构建涉及到的内容还是很多的，这一系列内容怎么完成呢？
 
-在使用ant的时候，我们全部都是在ant中完成，通过不同的task任务去实现。因此当时的ant脚本还是比较复杂（之前只是简单写过一个关于ant使用SVN的文档：[Ant中的SVN 使用](http://blog.bihe0832.com/Ant_SVN.html)）。在切换到gradle以后，我们上面的所有内容都是放在shell中完成，gradle仅仅是完成代码编译。这部分可以参考之前写的[一个存在多个模块（包含Native）的工程的gradle构建的事例（点击查看）](http://blog.bihe0832.com/gradle-test.html)，在里面有一个类似的事例，后续看情况把目前在用的完整的构建脚本分享出来。
+在使用ant的时候，我们全部都是在ant中完成，通过不同的task任务去实现。因此当时的ant脚本还是比较复杂（之前只是简单写过一个关于ant使用SVN的文档：[Ant中的SVN 使用](https://blog.bihe0832.com/Ant_SVN.html)）。在切换到gradle以后，我们上面的所有内容都是放在shell中完成，gradle仅仅是完成代码编译。这部分可以参考之前写的[一个存在多个模块（包含Native）的工程的gradle构建的事例（点击查看）](https://blog.bihe0832.com/gradle-test.html)，在里面有一个类似的事例，后续看情况把目前在用的完整的构建脚本分享出来。
 

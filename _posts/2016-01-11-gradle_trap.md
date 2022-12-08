@@ -29,7 +29,7 @@ description: desc
 
 - Experimental Plugin User Guide：[http://tools.android.com/tech-docs/new-build-system/gradle-experimental](http://tools.android.com/tech-docs/new-build-system/gradle-experimental)
 
-- 为了防止有些被墙的人看不到，添加一篇个人博客对于官方文档的引用地址：[http://blog.bihe0832.com/Experimental_Plugin_User_Guide.html](http://blog.bihe0832.com/Experimental_Plugin_User_Guide.html)
+- 为了防止有些被墙的人看不到，添加一篇个人博客对于官方文档的引用地址：[https://blog.bihe0832.com/Experimental_Plugin_User_Guide.html](https://blog.bihe0832.com/Experimental_Plugin_User_Guide.html)
 
 其实对于编译中的大部分问题，以及上面说的参数定义的问题官方文档都已经有具体说明，可以参照文档来修改对应的gradle脚本。
 
@@ -72,7 +72,7 @@ description: desc
 
 由于墙的原因，很多资源更新很慢，正好nexus也推荐搭建私库，因此最好的办法就是自己搭建一套私服。自己也是在自己的Mac机器上部署一套私有仓库代理，即用于自己的开发，也可以提供给团队或者自己其余的机器使用。
 
-具体部署的方法可以查看：[Mac搭建私有maven仓库，提供Nexus Responsitory镜像](http://blog.bihe0832.com/private_maven.html)
+具体部署的方法可以查看：[Mac搭建私有maven仓库，提供Nexus Responsitory镜像](https://blog.bihe0832.com/private_maven.html)
 
 
 ## 一些gradle相关的博客：

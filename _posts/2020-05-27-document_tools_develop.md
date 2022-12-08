@@ -14,29 +14,29 @@ recommand: true
 
 从很早开始就热衷于使用markdown以及推广markdown，效果都还不错。下面是个人陆续整理的相关的文章：
 
-#### [markdown语法简介](http://blog.bihe0832.com/markdow_intrduce.html)
+#### [markdown语法简介](https://blog.bihe0832.com/markdow_intrduce.html)
 
 - 概述：主要介绍Markdown的基本语法、及常用工具以及关于boostnote的简单介绍
 
-- 链接：[http://blog.bihe0832.com/markdow_intrduce.html](http://blog.bihe0832.com/markdow_intrduce.html)
+- 链接：[https://blog.bihe0832.com/markdow_intrduce.html](https://blog.bihe0832.com/markdow_intrduce.html)
 
-#### [Markdown格式优化及使用技巧](http://blog.bihe0832.com/markdow_advanced.html)：
+#### [Markdown格式优化及使用技巧](https://blog.bihe0832.com/markdow_advanced.html)：
 
 - 概述：主要介绍Markdown 中表格使用遇到的问题基于其余主题优化相关的内容
 
-- 链接：[http://blog.bihe0832.com/markdow_advanced.html](http://blog.bihe0832.com/markdow_advanced.html)
+- 链接：[https://blog.bihe0832.com/markdow_advanced.html](https://blog.bihe0832.com/markdow_advanced.html)
 
-#### [基于remark.js使用Markdown实现的在线PPT](http://blog.bihe0832.com/remark.js.html)
+#### [基于remark.js使用Markdown实现的在线PPT](https://blog.bihe0832.com/remark.js.html)
 
 - 概述：主要介绍基于remark.js实现的在线PPT展示模板，所有的PPT内容通过Markdown实现，更多是用来炫技
 
-- 链接：[http://blog.bihe0832.com/remark.js.html](http://blog.bihe0832.com/remark.js.html)
+- 链接：[https://blog.bihe0832.com/remark.js.html](https://blog.bihe0832.com/remark.js.html)
 
-#### [基于mdwiki使用Markdown实现的wiki](http://blog.bihe0832.com/mdwiki.html)
+#### [基于mdwiki使用Markdown实现的wiki](https://blog.bihe0832.com/mdwiki.html)
 
 - 概述：主要介绍基于mdwiki和bootstrap实现的markdown编辑内容的js wiki框架的使用，比较适合对外文档
 
-- 链接：[http://blog.bihe0832.com/mdwiki.html](http://blog.bihe0832.com/mdwiki.html)
+- 链接：[https://blog.bihe0832.com/mdwiki.html](https://blog.bihe0832.com/mdwiki.html)
 
 ## 笔记工具：boostnote + 微云
 
@@ -103,4 +103,4 @@ Chrome的速度快，但缺点也很明显，打开的Tab页越多越耗内存�
 
 	[https://github.com/bihe0832/Settings-Tools/blob/master/xml/Subscriptions.opml](https://github.com/bihe0832/Settings-Tools/blob/master/xml/Subscriptions.opml)
 
-- 个人博客RSS：http://blog.bihe0832.com/pages/atom.xml
+- 个人博客RSS：https://blog.bihe0832.com/pages/atom.xml

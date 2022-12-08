@@ -55,11 +55,11 @@ recommand: true
 #### Android开发调试常用工具介绍
 
 - 说明：介绍apktool、dex2jar、aapt、ndk-stack、jd-gui等简单介绍
-- 地址：[http://blog.bihe0832.com/android_tools_develop_debug.html](http://blog.bihe0832.com/android_tools_develop_debug.html)
+- 地址：[https://blog.bihe0832.com/android_tools_develop_debug.html](https://blog.bihe0832.com/android_tools_develop_debug.html)
 
 #### 图片压缩及查看
 
-- Android安装包精简系列之图片优化：[http://blog.bihe0832.com/android-optimize-img.html](http://blog.bihe0832.com/android-optimize-img.html)
+- Android安装包精简系列之图片优化：[https://blog.bihe0832.com/android-optimize-img.html](https://blog.bihe0832.com/android-optimize-img.html)
 	
 - 图片信息查看工具 getImageInfo：[https://github.com/bihe0832/getImageInfo](https://github.com/bihe0832/getImageInfo)
 

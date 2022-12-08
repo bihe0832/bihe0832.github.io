@@ -91,7 +91,7 @@ gif图片转换主要是两部分，一部分是将前一步的录制的视频�
 
 	gifsicle是一款很强大的gif编辑工具，对应的github开源地址为：[https://github.com/zixieTools/gifsicle](https://github.com/zixieTools/gifsicle)。这里对于gifsicle不详细展开介绍太多内容，仅介绍怎么下载安装和使用。
 	
-	开发者可以直接通过在github上clone源码以后按照指引来编译安装（对于mac上，更推荐使用homebrew来安装。如果不了解homebrew，请参考文档[OS X 不可或缺的套件管理器 —— Homebrew](http://blog.bihe0832.com/homebrew.html)）。在命令行下输入下面的命令安装gifsicle：
+	开发者可以直接通过在github上clone源码以后按照指引来编译安装（对于mac上，更推荐使用homebrew来安装。如果不了解homebrew，请参考文档[OS X 不可或缺的套件管理器 —— Homebrew](https://blog.bihe0832.com/homebrew.html)）。在命令行下输入下面的命令安装gifsicle：
 		
 		➜	brew install gifsicle
  	

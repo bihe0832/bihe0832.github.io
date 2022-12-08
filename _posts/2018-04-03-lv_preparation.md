@@ -122,5 +122,5 @@ description: desc
 -  相机
 -  降噪耳机
 -  便捷耳机
--  各类软件：关于这部分内容个人专门写了一篇文章来介绍。请点击[ 旅行中不可或缺的软件](http://blog.bihe0832.com/lv_software.html) 查看详细内容。
+-  各类软件：关于这部分内容个人专门写了一篇文章来介绍。请点击[ 旅行中不可或缺的软件](https://blog.bihe0832.com/lv_software.html) 查看详细内容。
 

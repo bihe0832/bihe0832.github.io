@@ -11,7 +11,7 @@ description: desc
 
 本文是SDKHotfix相关的SDK热更系列文章中的一篇，以下为项目及系列文章相关链接：
 
-- **SDKHotfix整体介绍**：[http://blog.bihe0832.com/sdk_hotfix_project.html](http://blog.bihe0832.com/sdk_hotfix_project.html)
+- **SDKHotfix整体介绍**：[https://blog.bihe0832.com/sdk_hotfix_project.html](https://blog.bihe0832.com/sdk_hotfix_project.html)
 
 - **SDKHotfix对应github地址**：[https://github.com/bihe0832/SDKHoxFix](https://github.com/bihe0832/SDKHoxFix)
 
@@ -25,11 +25,11 @@ description: desc
 
 直接下载的方式，补丁包已经放在作者的服务器，体验时直接下载安装APK即可。
 	
-- [点击下载](http://blog.bihe0832.com/public/resource/Hotfix-debug.apk)
+- [点击下载](https://blog.bihe0832.com/public/resource/Hotfix-debug.apk)
 	
 - 扫码下载APK：
 	
-![Demo下载二维码](http://blog.bihe0832.com/public/images/gradle-test-hotfix-apk-download.png)
+![Demo下载二维码](https://blog.bihe0832.com/public/images/gradle-test-hotfix-apk-download.png)
 
 ### 运行项目生成：
 

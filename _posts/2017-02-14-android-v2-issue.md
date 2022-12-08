@@ -10,7 +10,7 @@ description: desc
 ## 背景
 
 前段时间因为项目关系，根据官方文档和Android源码写了一个校验APK是否使用了Android V2 签名的工具：[Android的APK Signature Scheme v2签名及一款基于Java环境的校验工具介绍
-](http://blog.bihe0832.com/android-v2-signature.html)。当时的思路**检查一个APK的ZIP Central Directory前面是否包含V2签名必需的APK Signing Block，如果有说明这个包是V2签名的包，然后校验其V2签名验证是否通过**。
+](https://blog.bihe0832.com/android-v2-signature.html)。当时的思路**检查一个APK的ZIP Central Directory前面是否包含V2签名必需的APK Signing Block，如果有说明这个包是V2签名的包，然后校验其V2签名验证是否通过**。
 
 在工具写完以后，官方签名校验工具的开发者Alex邮件联系我告诉官方其实已经提供了类似的工具apksig，对应源码为：[https://android.googlesource.com/platform/tools/apksig](https://android.googlesource.com/platform/tools/apksig)，但是因为工具已经有了，而且和他交流他表示直接使用Android源码的方式也是可以行的，因此就没有仔细去对比官方实现和自己方案的异同。也没有对比官方代码对校验工具做优化。
 
@@ -189,6 +189,6 @@ description: desc
 
 至此，问题已经定位清楚，可以确定修改以后的脚本可以解决所有的问题。
 
-- 对于应用开发者，如果想要继续使用上面的第二第三种打包方式的话，只能是选择禁用V2签名，禁用方法可以参考文章：[Android的APK Signature Scheme v2签名及一款基于Java环境的校验工具介绍](http://blog.bihe0832.com/android-v2-signature.html)；或者是使用新开发的注入方法，目前了解已经有多个团队都已经实现了基于V2的注入方法，方法和点评团队开源的类似，相关文档可以参考：[新一代开源Android渠道包生成工具Walle](http://tech.meituan.com/android-apk-v2-signature-scheme.html )
+- 对于应用开发者，如果想要继续使用上面的第二第三种打包方式的话，只能是选择禁用V2签名，禁用方法可以参考文章：[Android的APK Signature Scheme v2签名及一款基于Java环境的校验工具介绍](https://blog.bihe0832.com/android-v2-signature.html)；或者是使用新开发的注入方法，目前了解已经有多个团队都已经实现了基于V2的注入方法，方法和点评团队开源的类似，相关文档可以参考：[新一代开源Android渠道包生成工具Walle](http://tech.meituan.com/android-apk-v2-signature-scheme.html )
 
 - 对于渠道，如何检测开发者提供的APK是否使用V2签名可以继续使用本文开头提到的工具，而且目前个人也已经完成了官方校验工具的封装，也可以直接使用封装了官方校验工具的jar，均在同一个gtihub下开源：[https://github.com/bihe0832/AndroidGetAPKInfo](https://github.com/bihe0832/AndroidGetAPKInfo)

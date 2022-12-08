@@ -31,7 +31,7 @@ description: 微信5.0新版本成为行业内外讨论的焦点。除了对移�
 
 说简单点就是有APPID和APPSECRET。这个办法很简单啦。去你公共平台后台一看便知。如下图：如果你的配置有这么多，就证明你应该是可以创建自定义菜单咯。
 
-![demo](http://blog.bihe0832.com/public/images/wechat_mp_create_menu_image001.jpg)
+![demo](https://blog.bihe0832.com/public/images/wechat_mp_create_menu_image001.jpg)
 
 ## 第二步：获取一个access_token。
 
@@ -49,24 +49,24 @@ description: 微信5.0新版本成为行业内外讨论的焦点。除了对移�
 1.  启动firefox
 2.  打开httprequester 选择工具—》httprequester
     
-![demo](http://blog.bihe0832.com/public/images/wechat_mp_create_menu_image002.png)
+![demo](https://blog.bihe0832.com/public/images/wechat_mp_create_menu_image002.png)
 
 *   在URL中填上下面的链接（access_token 用你自己的替代）： <https://api.weixin.qq.com/cgi-bin/menu/create?access_token=ACCESS_TOKEN>
 *   配置其余参数。配置参照下图：
     
-![demo](http://blog.bihe0832.com/public/images/wechat_mp_create_menu_image003.jpg)
+![demo](https://blog.bihe0832.com/public/images/wechat_mp_create_menu_image003.jpg)
 
 *   填入自定义菜单信息，如下图。
     
-![demo](http://blog.bihe0832.com/public/images/wechat_mp_create_menu_image004.png)
+![demo](https://blog.bihe0832.com/public/images/wechat_mp_create_menu_image004.png)
 
 *   点击submit提交。
     
-![demo](http://blog.bihe0832.com/public/images/wechat_mp_create_menu_image005.jpg)
+![demo](https://blog.bihe0832.com/public/images/wechat_mp_create_menu_image005.jpg)
 
 *   查看结果。提交结束以后弹出窗口，等待片刻在右侧窗口就会出现对应的提示消息。
     
-![demo](http://blog.bihe0832.com/public/images/wechat_mp_create_menu_image006.png)
+![demo](https://blog.bihe0832.com/public/images/wechat_mp_create_menu_image006.png)
 
 *   登入APP查看。为了方便开发者调试，公共帐号的自定义菜单在设置后24小时才会生效，开发者可以重新关注公共帐号就可以及时看到效果。取消关注并再次关注以后就可以看到最终的效果。
 
@@ -74,9 +74,9 @@ description: 微信5.0新版本成为行业内外讨论的焦点。除了对移�
 
 查询和删除菜单的方法相对简单，不再赘述。如果有人感兴趣补上，那就更是感谢。最后附上开头的公共帐号的二维码。
 
-![demo](http://blog.bihe0832.com/public/images/wechat_mp_create_menu_image007.png)
+![demo](https://blog.bihe0832.com/public/images/wechat_mp_create_menu_image007.png)
 
 **大家来捉鬼，一路走来，因为由您！**
 
- [1]: http://game.bihe0832.com
- [2]: http://mp.weixin.qq.com/wiki/index.php?title=%E9%80%9A%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3
+ [1]: https://game.bihe0832.com
+ [2]: https://mp.weixin.qq.com/wiki/index.php?title=%E9%80%9A%E7%94%A8%E6%8E%A5%E5%8F%A3%E6%96%87%E6%A1%A3

@@ -46,4 +46,4 @@ description: desc
 
 		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-个人也写了一个Homebrew相关的介绍，可以[点击查看：OS X 不可或缺的套件管理器 —— Homebrew](http://blog.bihe0832.com/Homebrew.html)
+个人也写了一个Homebrew相关的介绍，可以[点击查看：OS X 不可或缺的套件管理器 —— Homebrew](https://blog.bihe0832.com/Homebrew.html)

@@ -168,22 +168,22 @@ Markdown 支持两种形式的链接语法： 行内式和参考式两种形式�
 - code：
 
 		行内式：
-			[This link](http://blog.bihe0832.com/) has no title attribute.
+			[This link](https://blog.bihe0832.com/) has no title attribute.
 		参考式：
 			This is [an example][id] reference-style link.
-			[id]: http://blog.bihe0832.com  "Optional Title Here"
+			[id]: https://blog.bihe0832.com  "Optional Title Here"
 
 - view：
 
 	行内式：
 
-	[This link](http://blog.bihe0832.com/) has no title attribute.
+	[This link](https://blog.bihe0832.com/) has no title attribute.
 
 	参考式：
 
 	This is [an example] [1] reference-style link.
 
-	[1]: http://blog.bihe0832.com/ "Optional Title Here"
+	[1]: https://blog.bihe0832.com/ "Optional Title Here"
 
 
 ### 代码片段：
@@ -252,8 +252,8 @@ Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符�
 ## Markdown 免费编辑器
 
 #### Windows 平台
-- MarkdownPad： [http://markdownpad.com/](http://markdownpad.com/)
-- MarkPad： [http://code52.org/DownmarkerWPF](http://code52.org/DownmarkerWPF)
+- MarkdownPad： [https://markdownpad.com/](https://markdownpad.com/)
+- MarkPad： [https://code52.org/DownmarkerWPF](https://code52.org/DownmarkerWPF)
 
 #### Mac 平台
 
@@ -261,14 +261,14 @@ Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符�
 
 #### 在线编辑器
 
-- Markable.in： [http://markable.in](http://markable.in)
-- Dillinger.io：[http://dillinger.io](http://dillinger.io)
+- Markable.in： [https://markable.in](https://markable.in)
+- Dillinger.io：[https://dillinger.io](https://dillinger.io)
 - stackedit.io：[https://stackedit.io/editor](https://stackedit.io/editor)
 
 #### 浏览器插件
 
 - MaDe (Chrome)：[MaDe](https://chrome.google.com/webstore/detail/oknndfeeopgpibecfjljjfanledpbkog)
-- 马克飞象：[http://maxiang.info/](http://maxiang.info/)
+- 马克飞象：[https://maxiang.info/](https://maxiang.info/)
 
 
 ## 基于markdown的云端笔记
@@ -294,4 +294,4 @@ Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符�
 
 ## 参考文章：
 
-##### Markdown 介绍PPT：[http://show.bihe0832.com/markdown.html](http://show.bihe0832.com/markdown.html)
+##### Markdown 介绍PPT：[https://show.bihe0832.com/markdown.html](https://show.bihe0832.com/markdown.html)

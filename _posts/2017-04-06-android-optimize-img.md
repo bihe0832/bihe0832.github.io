@@ -21,7 +21,7 @@ description: desc
 
 - `对于无透明或渐变的png图，一律转化为jpg`
 
-	如何判断一张png的图片有没有透明或者渐变的处理，可以参考文章[iMac下制作含透明度图片及判断图片透明度](http://blog.bihe0832.com/png_alpha.html)，或者直接使用文章中提到的工具[https://github.com/bihe0832/getImageInfo](https://github.com/bihe0832/getImageInfo)。该工具基于Java环境，通过命令行处理，可以检测一张图片是否有渐变效果。例如：
+	如何判断一张png的图片有没有透明或者渐变的处理，可以参考文章[iMac下制作含透明度图片及判断图片透明度](https://blog.bihe0832.com/png_alpha.html)，或者直接使用文章中提到的工具[https://github.com/bihe0832/getImageInfo](https://github.com/bihe0832/getImageInfo)。该工具基于Java环境，通过命令行处理，可以检测一张图片是否有渐变效果。例如：
 	
 		➜  getPNGInfo git:(master) java -jar getImgInfo.jar head.png
 		{"ret":0,"msg":"图片是否有渐变: true ,图片尺寸为(宽*高): 344 * 344 , 图片大小: 33 KB,图片类型: 6","hasAlpha":true,"type":6,"width":344,"height":344,"size":33}
@@ -89,7 +89,9 @@ tinyjpg 在设计师人群中比较流行，也是一款图片压缩的利器，
 	
 - github地址：
 
-	[https://github.com/bihe0832/getImageInfo/tree/master/tinyjpg](https://github.com/bihe0832/getImageInfo/tree/master/tinyjpg)- 使用事例：
+	[https://github.com/bihe0832/getImageInfo/tree/master/tinyjpg](https://github.com/bihe0832/getImageInfo/tree/master/tinyjpg)
+
+- 使用事例：
 
 		➜  getPNGInfo git:(master) ✗ java -jar ./tinyjpg.jar ~/temp/1/head.jpg
 		tinypng_api_key:QVFA4tI-IBD6Ge4gcCqQX44xTdQTay1f
@@ -99,8 +101,9 @@ tinyjpg 在设计师人群中比较流行，也是一款图片压缩的利器，
 		file optimized: /Users/zixie/temp/1/head_optimized.jpg
 		file optimized size: 4895
 		file compress percentage: 39.094193%
-### 非关键或基础场景，大图云端化
 
+### 非关键或基础场景，大图云端化
+https://blog.bihe0832.com/
 经过上面的流程，目前应该大部分图片都已经被处理过了，简单的通过压缩、优化这些方法已经不能再减少应用安装包中图片的大小了，接下来就是一些非技术的优化手段了。
 
 结合[Android安装包精简系列之为什么要优化精简安装包](http://blog.bihe0832.com/android-optimize-why.html)中提到的观点，我们会有下面的一些策略

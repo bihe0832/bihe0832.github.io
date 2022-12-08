@@ -134,7 +134,7 @@ description: 最近要把之前的一个项目迁移到云上，涉及到数据�
 			
 			mysql>
 			
-- 忘记root密码，可以参照文档：[Linux 下修改mysql的root密码](http://blog.bihe0832.com/mysql-modify-root.html)
+- 忘记root密码，可以参照文档：[Linux 下修改mysql的root密码](https://blog.bihe0832.com/mysql-modify-root.html)
 
 ## 新建DB，导入数据
 

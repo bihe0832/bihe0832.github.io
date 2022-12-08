@@ -13,15 +13,15 @@ description: desc
 
 之前已经写过三篇关于ADB的文章了，也在这里汇总一下。算作大纲吧。
 
-- ADB命令系列之 Base Command[点击查看](http://blog.bihe0832.com/adb-base.html)
+- ADB命令系列之 Base Command[点击查看](https://blog.bihe0832.com/adb-base.html)
 
 	重点介绍一些基本的adb命令，例如devices，start-server，kill-server，install，uninstall，push，pull，bugreport，logcat等。
 
-- ADB命令系列之  Advanced Command[点击查看](http://blog.bihe0832.com/adb-advanced.html)
+- ADB命令系列之  Advanced Command[点击查看](https://blog.bihe0832.com/adb-advanced.html)
 
 	重点介绍一些相对比较复杂的adb命令，主要是adb shell 相关的。例如screencap，monkey，getprop，setprop，pm，am，dumpsys等。
 
-- ADB命令系列之 adb shell input[点击查看](http://blog.bihe0832.com/adb-shell-input.html)
+- ADB命令系列之 adb shell input[点击查看](https://blog.bihe0832.com/adb-shell-input.html)
 
 	重点介绍adb shell input的用法，包括怎么输入内容，怎么模拟按键，模拟屏幕滑动等各种输入模拟。
 

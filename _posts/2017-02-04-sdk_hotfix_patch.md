@@ -11,7 +11,7 @@ description: Android SDK 热更
 
 本文是SDKHotfix相关的SDK热更系列文章中的一篇，以下为项目及系列文章相关链接：
 
-- **SDKHotfix整体介绍**：[http://blog.bihe0832.com/sdk_hotfix_project.html](http://blog.bihe0832.com/sdk_hotfix_project.html)
+- **SDKHotfix整体介绍**：[https://blog.bihe0832.com/sdk_hotfix_project.html](https://blog.bihe0832.com/sdk_hotfix_project.html)
 
 - **SDKHotfix对应github地址**：[https://github.com/bihe0832/SDKHoxFix](https://github.com/bihe0832/SDKHoxFix)
 

@@ -24,11 +24,11 @@ Github：[https://github.com/bihe0832/Android-gradle-jni-so](https://github.com/
 
 #### Demo 下载：
 	
-- [点击下载](http://blog.bihe0832.com/public/resource/GradleTest-debug.apk)
+- [点击下载](https://blog.bihe0832.com/public/resource/GradleTest-debug.apk)
 	
 - 扫码下载APK：
 	
-![获取大写md5值的函数调用流程](http://blog.bihe0832.com/public/images/gradle-test-apk-download.png)
+![获取大写md5值的函数调用流程](https://blog.bihe0832.com/public/images/gradle-test-apk-download.png)
 
 #### 运行工程：
 
@@ -86,7 +86,7 @@ GradleTest是核心工程，它里面包含了一个Android Library的模块grad
 
 下面用图示简单梳理demo中获取大写md5值的函数调用流程
 
-![获取大写md5值的函数调用流程](http://blog.bihe0832.com/public/images/gradle-test-func-call.png)
+![获取大写md5值的函数调用流程](https://blog.bihe0832.com/public/images/gradle-test-func-call.png)
 
 ## 使用场景
 
@@ -106,7 +106,7 @@ GradleTest是核心工程，它里面包含了一个Android Library的模块grad
 ## 特别说明
 
 1. 本文档只是重点介绍整个项目的工程架构，对于具体的语法没有做说明，后续会逐步整理增加到博客。
-- 目前gradle支持native构建需要使用特定的gradle版本和gradle tools版本以及NDK版本。具体相关说明可以参照[Experimental Plugin User Guide](http://blog.bihe0832.com/Experimental_Plugin_User_Guide.html)中的说明。对于该项目来说，不要修改项目build.gradle中buildscript内对于gradle tools的版本的声明以及根目录gradle下gradle-wrapper.properties中对于gradle版本的说明。也就是说：
+- 目前gradle支持native构建需要使用特定的gradle版本和gradle tools版本以及NDK版本。具体相关说明可以参照[Experimental Plugin User Guide](https://blog.bihe0832.com/Experimental_Plugin_User_Guide.html)中的说明。对于该项目来说，不要修改项目build.gradle中buildscript内对于gradle tools的版本的声明以及根目录gradle下gradle-wrapper.properties中对于gradle版本的说明。也就是说：
 	- 必须使用gradle-2.5-all 和 com.android.tools.build:gradle-experimental:0.2.+
 	- build.gradle 代码如下：
 		

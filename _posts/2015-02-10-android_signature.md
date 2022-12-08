@@ -92,7 +92,7 @@ debug签名的两个风险：
 
 ### 使用keytool签名
 
-目前使用keytool签名有两种方式，一种是java提供的jarsigner，另一种是安卓官方提供的apksigner，这里分别介绍一下。**不过需要注意的是目前Android已经在逐渐淘汰基于 jarsigner 的 Android V1 签名模式，因此如非必需，建议使用基于 apksigner的 Android V2 签名方式签名apk。**关于 Android V2 签名的更多文章，请参考个人的另一篇文章：[关于Android的APK Signature Scheme v2签名相关的资料汇总](http://blog.bihe0832.com/android-v2.html) 
+目前使用keytool签名有两种方式，一种是java提供的jarsigner，另一种是安卓官方提供的apksigner，这里分别介绍一下。**不过需要注意的是目前Android已经在逐渐淘汰基于 jarsigner 的 Android V1 签名模式，因此如非必需，建议使用基于 apksigner的 Android V2 签名方式签名apk。**关于 Android V2 签名的更多文章，请参考个人的另一篇文章：[关于Android的APK Signature Scheme v2签名相关的资料汇总](https://blog.bihe0832.com/android-v2.html) 
 
 #### 使用jarsigner 签名
  
@@ -197,7 +197,7 @@ Eclipse直接能导出带签名的最终apk，非常方便，推荐使用，步�
 1. [http://www.cnblogs.com/wanqieddy/p/3556060.html](http://www.cnblogs.com/wanqieddy/p/3556060.html)
 2. [http://www.tttabc.com/android/keytool-keystore-jarsigner-apk.htm](http://www.tttabc.com/android/keytool-keystore-jarsigner-apk.htm)
 3. [http://yangguangfu.iteye.com/blog/723182](http://yangguangfu.iteye.com/blog/723182)
-4. [关于Android的APK Signature Scheme v2签名相关的资料汇总](http://blog.bihe0832.com/android-v2.html)
+4. [关于Android的APK Signature Scheme v2签名相关的资料汇总](https://blog.bihe0832.com/android-v2.html)
 
 
 

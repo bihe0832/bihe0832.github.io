@@ -63,7 +63,7 @@ description: 本人使用macOS(Sierra 10.12.1)在本地checkout出AOSP(7.1.1)并
 为了避免该异常，我们要首先在macOS里面创建一个支持大小写敏感的文件系统。具体的方法可以参考下面两篇文章：
 
 - Android官网的Setting up a Mac OS build environment：[https://source.android.com/source/initializing.html#setting-up-a-mac-os-x-build-environment](https://source.android.com/source/initializing.html#setting-up-a-mac-os-x-build-environment)
-- 个人博客的macOS中设置大小写敏感的分区并切换：[http://blog.bihe0832.com/mac-disk-utility.html](http://blog.bihe0832.com/mac-disk-utility.html)
+- 个人博客的macOS中设置大小写敏感的分区并切换：[https://blog.bihe0832.com/mac-disk-utility.html](https://blog.bihe0832.com/mac-disk-utility.html)
 
 **本人选择checkout的源码是android-7.1.1_r6，下载完占用空间22.12 GB，编译完占用空间 67.4G，因此建议分区的时候，Android源码至少使用 80G**
 

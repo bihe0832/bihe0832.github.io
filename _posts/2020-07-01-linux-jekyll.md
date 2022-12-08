@@ -13,7 +13,7 @@ description: 使用 Jekyll 搭建技术博客并部署到 CentOS 服务器
 
 - 海外访问继续用GitHub，使用域名：[http://blog-oversea.bihe0832.com/](http://blog-oversea.bihe0832.com/)
 
-- 国内访问用国内服务器，使用域名：[http://blog.bihe0832.com/](http://blog.bihe0832.com/)
+- 国内访问用国内服务器，使用域名：[https://blog.bihe0832.com/](https://blog.bihe0832.com/)
 
 最开始打算用腾讯云的静态托管，大概结合流量算了下，穷，不划算，还是在自己的服务器搭建吧。中间没想到竟然还是遇到了问题，简单总结下，文章重点介绍，环境搭建，基本上不涉及Jekyll相关的内容。如果想了解怎么基于 Jekyll搭建博客，可以参考文章：[使用 Jekyll 搭建技术博客](https://blog.bihe0832.com/jekyll.html)
 

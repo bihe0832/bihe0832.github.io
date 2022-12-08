@@ -10,15 +10,15 @@ description: 最近开发一个新的接口，在调试的时候要手动输入�
  
 ## 相关文章
  
-- ADB命令系列之 Base Command：[http://blog.bihe0832.com/adb-base.html](http://blog.bihe0832.com/adb-base.html)
+- ADB命令系列之 Base Command：[https://blog.bihe0832.com/adb-base.html](https://blog.bihe0832.com/adb-base.html)
 
 	重点介绍一些基本的adb命令，例如devices，start-server，kill-server，install，uninstall，push，pull，bugreport，logcat等。
 
-- ADB命令系列之  Advanced Command：[http://blog.bihe0832.com/adb-advanced.html](http://blog.bihe0832.com/adb-advanced.html)
+- ADB命令系列之  Advanced Command：[https://blog.bihe0832.com/adb-advanced.html](https://blog.bihe0832.com/adb-advanced.html)
 
 	重点介绍一些相对比较复杂的adb命令，主要是adb shell 相关的。例如screencap，monkey，getprop，setprop，pm，am，dumpsys等。
 
-- ADB命令系列之 adb shell input：[http://blog.bihe0832.com/adb-shell-input.html](http://blog.bihe0832.com/adb-shell-input.html)
+- ADB命令系列之 adb shell input：[https://blog.bihe0832.com/adb-shell-input.html](https://blog.bihe0832.com/adb-shell-input.html)
 
 	重点介绍adb shell input的用法，包括怎么输入内容，怎么模拟按键，模拟屏幕滑动等各种输入模拟。
 	

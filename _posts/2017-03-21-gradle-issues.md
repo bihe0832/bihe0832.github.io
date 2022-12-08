@@ -40,7 +40,7 @@ description: 在使用Android Studio开发过程中，经常会遇到一些gradl
 
 - 解决方法
 
-	修改项目根目录build.gradle中对于使用的maven库的声明，具体方法可以参考文章[终端基于gradle的开源项目运行环境配置指引](http://blog.bihe0832.com/android-as-gradle-config.html)
+	修改项目根目录build.gradle中对于使用的maven库的声明，具体方法可以参考文章[终端基于gradle的开源项目运行环境配置指引](https://blog.bihe0832.com/android-as-gradle-config.html)
 
 #### 构建失败，提示Downloading gradle Operation timed out
 
@@ -57,7 +57,7 @@ description: 在使用Android Studio开发过程中，经常会遇到一些gradl
 
 - 解决方法
 
-	修改项目根目录gradle/wrapper/gradle-wrapper.properties中使用的gradle版本的地址，具体方法可以参考文章[终端基于gradle的开源项目运行环境配置指引](http://blog.bihe0832.com/android-as-gradle-config.html)
+	修改项目根目录gradle/wrapper/gradle-wrapper.properties中使用的gradle版本的地址，具体方法可以参考文章[终端基于gradle的开源项目运行环境配置指引](https://blog.bihe0832.com/android-as-gradle-config.html)
 
 #### 构建失败，提示gc overhead limit exceeded 或者java.lang.outofmemoryerror java heap space 
 
@@ -91,7 +91,7 @@ description: 在使用Android Studio开发过程中，经常会遇到一些gradl
 
 		org.gradle.jvmargs=-Xmx2048m -XX:MaxPermSize=512m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8
 	
-	建议最好是直接按照[gradle常见配置项](http://blog.bihe0832.com/gradle_config.html)里面关于构建速度优化提到的方式配置所有的选项。
+	建议最好是直接按照[gradle常见配置项](https://blog.bihe0832.com/gradle_config.html)里面关于构建速度优化提到的方式配置所有的选项。
 	
 	
 	

@@ -11,17 +11,17 @@ description: 支持多微信公共账号同时接入的微信公共账号第三�
 
 ### 应用案例：
 
-[http://game.bihe0832.com](http://game.bihe0832.com)
+[https://game.bihe0832.com](https://game.bihe0832.com)
 	
 ### demo路径：
 
-[http://microdemo.bihe0832.com/WechatAPI/](http://microdemo.bihe0832.com/WechatAPI/)
+[https://microdemo.bihe0832.com/WechatAPI/](https://microdemo.bihe0832.com/WechatAPI/)
 
 线上代码结构与本地一致，可以追加完整的路径测试效果
 
 ### 对应demo二维码：
 
-![demo](http://microdemo.bihe0832.com/WechatAPI/demo.png)
+![demo](https://microdemo.bihe0832.com/WechatAPI/demo.png)
 
 ### 代码结构：
 
