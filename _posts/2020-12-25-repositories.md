@@ -7,6 +7,8 @@ keywords: keywords
 description: desc1
 ---
 
+**`如果出现图片无法正常展示，请点击链接：[https://github.com/bihe0832/bihe0832.github.io/blob/master/_posts/2020-12-25-repositories.md](https://github.com/bihe0832/bihe0832.github.io/blob/master/_posts/2020-12-25-repositories.md) 查看`**
+
 ### 部分开源项目
 
 - **总体代码统计**
