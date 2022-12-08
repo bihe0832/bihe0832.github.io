@@ -35,7 +35,7 @@ description: Java参数引用传递引发的惨案（又一次Java的String的�
 
 #### 推荐好文：
 
-之前在ImportNew的微信公共号上看到一篇关于[Java String、StringBuilder和StringBuffer（点击查看）](http://mp.weixin.qq.com/s?__biz=MjM5NzMyMjAwMA==&amp;mid=205005129&amp;idx=1&amp;sn=bd657e94b5b3545fc7ad3f2ea5e03f22&amp;scene=1#rd)的文章，感觉还不错，推荐一下，也是备忘。
+之前在ImportNew的微信公共号上看到一篇关于[Java String、StringBuilder和StringBuffer（点击查看）](https://mp.weixin.qq.com/s?__biz=MjM5NzMyMjAwMA==&amp;mid=205005129&amp;idx=1&amp;sn=bd657e94b5b3545fc7ad3f2ea5e03f22&amp;scene=1#rd)的文章，感觉还不错，推荐一下，也是备忘。
 
 ### 举证：
 
