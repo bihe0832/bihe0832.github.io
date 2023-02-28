@@ -13,17 +13,25 @@ description: desc
 
 之前已经写过三篇关于ADB的文章了，也在这里汇总一下。算作大纲吧。
 
-- ADB命令系列之 Base Command[点击查看](https://blog.bihe0832.com/adb-base.html)
+- ADB命令系列之 Base Command：[https://blog.bihe0832.com/adb-base.html](https://blog.bihe0832.com/adb-base.html)
 
-	重点介绍一些基本的adb命令，例如devices，start-server，kill-server，install，uninstall，push，pull，bugreport，logcat等。
+      重点介绍一些基本的adb命令，例如devices，start-server，kill-server，install，uninstall，push，pull，bugreport，logcat等。
 
-- ADB命令系列之  Advanced Command[点击查看](https://blog.bihe0832.com/adb-advanced.html)
+- ADB命令系列之  Advanced Command：[https://blog.bihe0832.com/adb-advanced.html](https://blog.bihe0832.com/adb-advanced.html)
 
-	重点介绍一些相对比较复杂的adb命令，主要是adb shell 相关的。例如screencap，monkey，getprop，setprop，pm，am，dumpsys等。
+      重点介绍一些相对比较复杂的adb命令，主要是adb shell 相关的。例如screencap，monkey，getprop，setprop，pm，am，dumpsys等。
 
-- ADB命令系列之 adb shell input[点击查看](https://blog.bihe0832.com/adb-shell-input.html)
+- ADB命令系列之 adb shell input：[https://blog.bihe0832.com/adb-shell-input.html](https://blog.bihe0832.com/adb-shell-input.html)
 
-	重点介绍adb shell input的用法，包括怎么输入内容，怎么模拟按键，模拟屏幕滑动等各种输入模拟。
+      重点介绍adb shell input的用法，包括怎么输入内容，怎么模拟按键，模拟屏幕滑动等各种输入模拟。
+
+- ADB命令系列之 再说ADB：[https://blog.bihe0832.com/review_adb.html](https://blog.bihe0832.com/review_adb.html)
+
+      重点结合使用场景介绍ADB 的使用，例如解锁手机、截屏、Monkey点击、获取厂商机型等
+
+- ADB命令系列之 ADB快捷输入法：[https://blog.bihe0832.com/input.html](https://blog.bihe0832.com/input.html)
+
+      主要解决 ADB hell input 无法输入中文的问题
 
 ### 常用命令
 
