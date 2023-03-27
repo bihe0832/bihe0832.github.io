@@ -104,3 +104,10 @@ android {
 ### 怎么基于APPTest开发
 
 在组件化框架里所有的UI内容都是基于Fragment进行开发，因此我们在APPTest提供了一个占位的Fragment入口，平时开发时可以将这个占位入口设置为自己正在开发的Fragment直接开发。等开发调试结束以后主模块直接调用联调即可。
+
+### 目前提供的调试模块的主要能力
+
+目前调试模块已经集成了非常丰富的能力，例如：调试主界面，列表页面，列表样式，通用的环境、版本、环境、使用情况等信息、模块结合其余基础库提供了便捷丰富的日志功能等。详细内容可以点击查看：[common-debug · AndroidAppFactory](https://android.bihe0832.com/doc/use/common/common-debug.html)
+
+
+<img src="https://android.bihe0832.com/doc/use/common/common-debug/DebugCommonFragment.png" width="80%" />

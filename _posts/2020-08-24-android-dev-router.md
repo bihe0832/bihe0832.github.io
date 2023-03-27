@@ -21,6 +21,9 @@ description: 这篇文章主要总结了我们基于路由的组件通信怎么�
 
 ### 路由实现
 
+<img src="./../public/images/android_dev/aaf_router.png" width="80%" />
+
+
 - 路由表生成
 
 	路由表的生成使用注解动态生成代码，部分代码如下
