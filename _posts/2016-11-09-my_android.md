@@ -14,23 +14,7 @@ recommand: true
 
 #### 图标及 Logo 制作
 
-- Android Asset Studio
-
-	-  简单介绍：Android Asset Studio 是一个在线制作工具，它可以制作Iocn，ActionBar，点9 图等等，简单的操作，大大提高了我们开发的效率。
-	
-	-  对应链接：[http://romannurik.github.io/AndroidAssetStudio/index.html](http://romannurik.github.io/AndroidAssetStudio/index.html)
-
-- 蒲公英
-
-	-  简单介绍：根据文字、图片、生成APP Icon。
-	
-	-  对应链接：[https://www.pgyer.com/tools/appIcon](https://www.pgyer.com/tools/appIcon)
-
-- iconfont
-
-	-  简单介绍：各种常见业务 Icon，支持SVG等形式。
-	
-	-  对应链接：[https://www.iconfont.cn](https://www.iconfont.cn)
+各种图标、Icon、favicon、Shields等的制作都可以点击链接查看：[开发中图片图标处理常用工具资源](https://blog.bihe0832.com/my_image.html)
 
 #### Material Design
 
@@ -46,11 +30,6 @@ recommand: true
 	
 	-  对应链接：[https://www.mdui.org/design/](https://www.mdui.org/design/)
 
-- Material Icons
-
-	-  简单介绍：Material Icons
-	
-	-  对应链接：[https://material.io/icons/](https://material.io/icons/)
 
 #### Android 权限 及 描述
 
