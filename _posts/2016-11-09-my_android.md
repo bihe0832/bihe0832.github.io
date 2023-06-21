@@ -10,13 +10,13 @@ recommand: true
 
 这里简单汇总一下个人常用的一些简单的终端开发相关资源的地址以及功能，方便检索。
 
-## 开发调试
+# 开发调试
 
-#### 图标及 Logo 制作
+### 图标及 Logo 制作工具
 
 各种图标、Icon、favicon、Shields等的制作都可以点击链接查看：[开发中图片图标处理常用工具资源](https://blog.bihe0832.com/my_image.html)
 
-#### Material Design
+### Material Design
 
 - Material Design Palette
 
@@ -31,18 +31,22 @@ recommand: true
 	-  对应链接：[https://www.mdui.org/design/](https://www.mdui.org/design/)
 
 
-#### Android 权限 及 描述
+### Android 权限 及 描述
 
 -  简单介绍：Android 权限列表，及设置权限的跳转方式
 
 -  对应链接：[https://blog.bihe0832.com/android-permission.html](https://blog.bihe0832.com/android-permission.html)
 
-#### Android开发调试常用工具介绍
+### 隐私政策快速生成
+
+- 隐私政策生成器 - 免费在线生成，10秒部署使用： [https://privacy.1ts.fun/](https://privacy.1ts.fun/)
+
+### Android开发调试常用工具介绍
 
 - 说明：介绍apktool、dex2jar、aapt、ndk-stack、jd-gui等简单介绍
 - 地址：[https://blog.bihe0832.com/android_tools_develop_debug.html](https://blog.bihe0832.com/android_tools_develop_debug.html)
 
-#### 图片压缩及查看
+### 图片压缩及查看方法
 
 - Android安装包精简系列之图片优化：[https://blog.bihe0832.com/android-optimize-img.html](https://blog.bihe0832.com/android-optimize-img.html)
 	
