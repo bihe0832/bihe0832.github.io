@@ -26,7 +26,7 @@ description: 一款可以获取设备应用包名、keystore、MD5、应用版�
 
 ### 应用下载
 
-[点击下载到本地](https://cdn.bihe0832.com/app/release/ZAPK_official.apk)
+[点击下载到本地](https://android.bihe0832.com/app/release/ZAPK_official.apk)
 
-![扫码下载](https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://cdn.bihe0832.com/app/release/ZAPK_official.apk)
+![扫码下载](https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=https://android.bihe0832.com/app/release/ZAPK_official.apk)
  
