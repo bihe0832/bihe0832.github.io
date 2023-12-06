@@ -3,7 +3,7 @@ layout: post
 title: Android签名校验机制（数字证书）
 category: 终端开发
 tags: android 签名 工具
-keywords: Android 签名 signature keystore keytool jarsigner
+keywords: Android 签名 signature keystore keytool jarsigner 公钥 私钥 MD5
 description: 在Android 系统中，所有安装到系统的应用程序都必有一个数字证书，此数字证书用于标识应用程序的作者和在应用程序之间建立信任关系,如果一个permission的protectionLevel为signature，那么就只有那些跟该permission所在的程序拥有同一个数字证书的应用程序才能取得该权限。
 ---
 
@@ -62,7 +62,7 @@ debug签名的两个风险：
 
 - 生成命令：
 
-		keytool -genkey -keystore bihe0832.keystore -alias bihe0832 -keypass android -keyalg RSA -validity 40000
+		keytool -genkey -keystore debug.keystore -alias bihe0832 -keypass android -keyalg RSA -validity 40000
 	
 - **常用参数含义：**
 
@@ -88,6 +88,78 @@ debug签名的两个风险：
 	- storepasswd 修改keystore口令 keytool -storepasswd -keystore g:\sso\michael.keystore(需修改口令的keystore) -storepass pwdold(原始密码) -new pwdnew(新密码)
 	- import 将已签名数字证书导入密钥库 keytool -import -alias 指定导入条目的别名 -keystore 指定keystore -file 需导入的证书
 
+## 命令行信息查看
+
+### 查看基本信息
+
+- 查看命令:
+
+		keytool -list -v -keystore debug.keystore	
+		
+- 使用事例：
+
+
+		➜  AndroidAppFactory git:(master) keytool -list -v -keystore debug.keystore
+		输入密钥库口令:
+		密钥库类型: JKS
+		密钥库提供方: SUN
+		
+		您的密钥库包含 1 个条目
+		
+		别名: androiddebugkey
+		创建日期: 2015年1月19日
+		条目类型: PrivateKeyEntry
+		证书链长度: 1
+		证书[1]:
+		所有者: CN=Android Debug, O=Android, C=US
+		发布者: CN=Android Debug, O=Android, C=US
+		序列号: 54bc748d
+		生效时间: Mon Jan 19 11:05:49 CST 2015, 失效时间: Wed Jan 11 11:05:49 CST 2045
+		证书指纹:
+			 SHA1: F1:61:47:EC:C2:98:F4:F2:ED:DE:B5:5E:C9:4B:62:92:2F:52:BE:2C
+			 SHA256: 3A:DB:9E:16:EE:E3:84:81:63:91:F7:CE:A0:FF:F0:BF:24:8F:F2:C3:00:EA:06:97:2B:83:8B:AA:95:FF:48:8A
+		签名算法名称: SHA1withRSA (弱)
+		主体公共密钥算法: 1024 位 RSA 密钥 (弱)
+		版本: 3
+		
+		
+		*******************************************
+		*******************************************
+
+### 查看公私钥
+
+- 查看命令:
+
+		keytool -list -rfc --keystore debug.keystore | openssl x509 -inform pem -pubkey
+	
+- 使用事例：
+
+		➜  AndroidAppFactory git:(master) keytool -list -rfc --keystore ./debug.keystore | openssl x509 -inform pem -pubkey
+		输入密钥库口令:  android
+		-----BEGIN PUBLIC KEY-----
+		MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCU1yjobRCWKk70XfM3lYM/Vsb9
+		eTNs8wavDOrH2VHi471/WtW+vuvXWdeF2NmvciVU7y+E6qf561rA7hdx5iDi4z7K
+		vvCri6ySiXM7Dq+4UBL3FT1V4kqLtvzjNIKs2Cp2HIRI/DAwgD6lOKseApSPj5Kw
+		iFxe35iwTAYDr9EykQIDAQAB
+		-----END PUBLIC KEY-----
+		-----BEGIN CERTIFICATE-----
+		MIIB5TCCAU6gAwIBAgIEVLx0jTANBgkqhkiG9w0BAQUFADA3MQswCQYDVQQGEwJV
+		UzEQMA4GA1UEChMHQW5kcm9pZDEWMBQGA1UEAxMNQW5kcm9pZCBEZWJ1ZzAeFw0x
+		NTAxMTkwMzA1NDlaFw00NTAxMTEwMzA1NDlaMDcxCzAJBgNVBAYTAlVTMRAwDgYD
+		VQQKEwdBbmRyb2lkMRYwFAYDVQQDEw1BbmRyb2lkIERlYnVnMIGfMA0GCSqGSIb3
+		DQEBAQUAA4GNADCBiQKBgQCU1yjobRCWKk70XfM3lYM/Vsb9eTNs8wavDOrH2VHi
+		471/WtW+vuvXWdeF2NmvciVU7y+E6qf561rA7hdx5iDi4z7KvvCri6ySiXM7Dq+4
+		UBL3FT1V4kqLtvzjNIKs2Cp2HIRI/DAwgD6lOKseApSPj5KwiFxe35iwTAYDr9Ey
+		kQIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAEYAcZE2H9kwJELwIOSB1ezTTvYGvdZw
+		R2gYm1gnQhWtUxGS05iewhTv8GynPWxuRVyEAOZdrIy1EP+ToPlyD9COgU61pyEs
+		bcWbp7WFBxC/+V0XazOJ0PbPpECTzJLYnd/By7rQK8SkkVimm9rufiTnZCdzKQgZ
+		+WvQ/Jv7n2cU
+		-----END CERTIFICATE-----
+		
+
+## APK信息查看
+
+如果要使用APK 查看加密信息，可以参考下面的链接：[应用信息及Keystore信息获取 - AAF](https://blog.bihe0832.com/getapkinfo.html)
 ## 签名方法
 
 ### 使用keytool签名
