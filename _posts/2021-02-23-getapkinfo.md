@@ -20,9 +20,9 @@ description: 一款可以获取设备应用包名、keystore、MD5、应用版�
 
 ### 应用截图
 
-<img src="https://android.bihe0832.com/doc/summary/getapkinfo.png" width="40%" />
+<img src="https://android.bihe0832.com/doc/demo/getapkinfo.png" width="40%" />
 
-<img src="https://android.bihe0832.com/doc/summary/getapkinfo_dialog.png" width="40%" />
+<img src="https://android.bihe0832.com/doc/demo/getapkinfo_dialog.png" width="40%" />
 
 ### 应用下载
 
