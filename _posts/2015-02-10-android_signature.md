@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android签名校验机制（数字证书）
+title: Android签名校验机制（数字证书）及命令行获取 keystore 公钥等信息
 category: 终端开发
 tags: android 签名 工具
 keywords: Android 签名 signature keystore keytool jarsigner 公钥 私钥 MD5

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 应用信息获取 - AAF
+title: 快速获取已安装应用信息（包名、keystore、MD5、应用版本、安装时间、MD5等） - AAF
 category: 玩一玩
 tags: 个人作品
 keywords: 应用信息获取 keystore 签名 MD5 SHA1 公钥 私钥 证书完全解析
