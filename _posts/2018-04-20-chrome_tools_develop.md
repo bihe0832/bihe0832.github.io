@@ -24,6 +24,10 @@ Gliffy Diagrams是一种全新类别的谷歌浏览器程序，它甚至可以�
 - chrome插件地址：
 
 	[https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad](https://chrome.google.com/webstore/detail/gliffy-diagrams/bhmicilclplefnflapjmnngmkkkkpfad)
+	
+- online：
+
+	[https://go.gliffy.com/go/html5/launch](https://go.gliffy.com/go/html5/launch)
 
 
 ### JSON数据格式化：JSON Editor Online
@@ -37,6 +41,11 @@ Gliffy Diagrams是一种全新类别的谷歌浏览器程序，它甚至可以�
 - chrome插件地址：
 
 	[https://chrome.google.com/webstore/detail/json-editor/lhkmoheomjbkfloacpgllgjcamhihfaj](https://chrome.google.com/webstore/detail/json-editor/lhkmoheomjbkfloacpgllgjcamhihfaj)
+	
+	
+- online:
+
+	[https://jsoneditoronline.org/#left=local.bocena&right=local.sizasi](https://jsoneditoronline.org/#left=local.bocena&right=local.sizasi)
 
 ### 请求模拟：Postman
 
@@ -53,6 +62,10 @@ Postman是google开发的一款功能强大的网页调试与发送网页HTTP请
 - chrome插件地址：
 
 	[https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
+	
+- APP 下载：
+
+	[https://www.postman.com/downloads/](https://www.postman.com/downloads/)
 
 ### 浏览器页面的稍后阅读：OneTab
 
