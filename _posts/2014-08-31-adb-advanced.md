@@ -243,8 +243,8 @@ recommand: true
         adb shell dumpsys activity 显示activity相关的信息，这个是最常用的，可以分析当前栈上的内存信息
         adb shell dumpsys statusbar 显示状态栏相关的信息
         adb shell dumpsys meminfo $package_name or $pid 使用程序的包名或者进程id显示内存信息
+        adb shell "dumpsys window | grep mCurrentFocus" 获取当前界面的Activity
         
-
 *   **事例：**
     
         adb shell dumpsys activity activities
