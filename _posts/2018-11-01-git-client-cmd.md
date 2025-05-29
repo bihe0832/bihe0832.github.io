@@ -30,6 +30,7 @@ recommand: true
 - 事例
 
 		➜  blog git:(master) ✗ git remote set-url origin https://github.com/bihe0832/bihe0832.github.io.git
+		➜  blog git:(master) ✗ git remote set-url origin2 https://github.com/bihe0832/bihe0832.github.io.git
 
 ### 删除所有没有tracked过的文件
 
@@ -189,6 +190,10 @@ recommand: true
 	 --hard 切换到指定commit，此commit之后的修改都不保留，谨慎使用
 	 
 	 -f 会强制提交，此commit之后的修改都不保留，谨慎使用
+
+### 提交到多个源
+
+提交到多个源的前提是，在前面已经给代码设置了多个远程的代码源，然后再提交的时候逐个push。
 
 ## branch相关操作
 
