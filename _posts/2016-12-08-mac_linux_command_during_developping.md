@@ -193,6 +193,25 @@ crontab 是用来让使用者在固定时间或固定间隔执行程序。
 
 - 在线测试：[https://crontab.guru/](https://crontab.guru/)
 
+## lsof
+
+查看端口占用：
+
+	➜  ~  sudo lsof -wni tcp:4000
+	COMMAND   PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+	ruby    46559 zixie    9u  IPv4 0xbb90ea0c4aa06c0b      0t0  TCP 127.0.0.1:terabase (LISTEN)
+	➜  ~ lsof -wni :5037
+	
+常用端口：
+
+- 5037 ： ADB
+
+## unzip 
+
+查看压缩包是否包含指定文件：
+
+	$ unzip -l your_app.apk | grep channel.ini
+
 ## MAC
 
 ### pbcopy & pbpaste
@@ -220,12 +239,3 @@ screencapture命令可以截图。和Grab.app与cmd + shift + 3或cmd + shift + 
 
 
 		$ screencapture -W -c -C -P /tmp/screen.png
-
-## lsof
-
-查看端口占用：
-
-	➜  ~  sudo lsof -wni tcp:4000
-	COMMAND   PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
-	ruby    46559 zixie    9u  IPv4 0xbb90ea0c4aa06c0b      0t0  TCP 127.0.0.1:terabase (LISTEN)
-	➜  ~
