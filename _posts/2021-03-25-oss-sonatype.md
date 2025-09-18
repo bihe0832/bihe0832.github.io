@@ -119,59 +119,7 @@ Jcenter对于 Group Id的归属没有强校验，Sonatype会要求你提供权�
 
 ### 配置gpg信息
 
-gpg用于签署上传的 jar 或 aar 文件，这里介绍如何使用 iMac 生成gpg秘钥对，并发布到第三方
-
-1. 安装 gpg
-
-	如果没有安装gpg，使用brew安装。
-
-		➜   brew install gpg
-
-2. 生成秘钥对
-
-	安装gpg后，使用命令生成秘钥对
-	
-		➜   gpg --gen-key
-		
-	依次输入：用户ID 和邮箱，然后选择Okay，然后输入密码，即可生成秘钥对
-
-3. 查看公钥Id
-
-	在秘钥生成以后，通过下面的命令查看公钥id
-
-		➜  ~ gpg --list-key --keyid-format short
-		~/.gnupg/pubring.kbx
-		-------------------------------
-		pub   rsa3072/E6A1AD98 2021-03-23 [SC] [expires: 2023-03-23]
-		      C925167XXXXXXXXXXXXXXXXX6A1AD98
-		uid         [ultimate] XXXXXXXXXX <XXXXXXXXXX>
-
-	pub rsa3072/E6A1AD98 2021-03-23 [SC] [expires: 2023-03-23] 里面，rsa3072后面的E6A1AD98就是公钥Id
-
-4. 发布公钥
-
-	上传公钥Id到公网，为了方便后续访问，我同时上传了多个公网：
-	
-		➜   gpg --keyserver hkp://pgp.mit.edu --send-keys E6A1AD98
-		gpg: sending key 08587B8CE6A1AD98 to hkp://pgp.mit.edu
-		➜   gpg --keyserver hkp://keyserver.ubuntu.com --send-keys E6A1AD98
-		gpg: sending key 08587B8CE6A1AD98 to hkp://keyserver.ubuntu.com
-		➜   gpg --keyserver hkp://keys.gnupg.net --send-keys E6A1AD98
-		gpg: sending key 08587B8CE6A1AD98 to hkp://hkps.pool.sks-keyservers.net	
-5. 生成密钥环文件：
-
-	执行命令生成本地的加密私钥文件。
-
-		➜   gpg --export-secret-keys  -o ~/.gnupg/secring.gpg
-	
-6. 配置gpg信息
-
-	在项目根目录的 `gradle.properties` 添加gpg的配置信息，其中`signing.secretKeyRingFile ` 的值为上一步生成的私钥文件的绝对路径。例如：
-	
-		# gpg信息
-		signing.keyId=E6A1AD98
-		signing.password=XXXXXX
-		signing.secretKeyRingFile=/secring.gpg
+配置并发布GPG信息，关于GPG信息的生成，可以参考文章：[https://blog.bihe0832.com/gpg.html](https://blog.bihe0832.com/gpg.html)
 
 ### 配置账号信息
 
