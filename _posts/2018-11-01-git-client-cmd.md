@@ -756,6 +756,29 @@ recommand: true
 		  remotes/origin/v1.1
 		  remotes/origin/v1.1-preview-1	
 
+## 大文件相关
+
+在 github 中，对于一些大型文件会使用 Git LFS 来存储，这里简单列举相关的命令。
+
+### 安装 Git LFS
+
+- 命令
+
+	brew install git-lfs
+
+### 拉取远程提交的大文件
+
+- 命令
+
+	git lfs fetch --all
+
+- 事例
+
+		➜  model git:(main) git lfs fetch --all
+
+		10 objects found, done.
+		Fetching all references...	
+		
 ## 日志相关
 
 ### 日志展示参数
