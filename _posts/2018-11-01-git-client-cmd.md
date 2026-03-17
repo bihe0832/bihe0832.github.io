@@ -3,7 +3,7 @@ layout: post
 title: git常用命令整理（已包括branch、tag等持续更新~）
 category: 开发工具
 tags: git 常用工具
-keywords: git branch tag origin config user.name user.email --global --system
+keywords: git branch tag origin config user.name user.email --global --system worktree
 description: 总遇到使用git的时候需要敲一些不常用的命令，每次敲的时候都要搜索引擎查一次很麻烦，因此专门整理一篇文章.
 recommand: true
 ---
@@ -755,6 +755,80 @@ recommand: true
 		  remotes/origin/v1.0
 		  remotes/origin/v1.1
 		  remotes/origin/v1.1-preview-1	
+
+## Worktree相关
+
+Git Worktree 允许在同一个仓库下创建多个独立的工作目录，每个目录可以检出不同的分支，实现并行开发而无需多次 clone。
+
+### 查看工作树列表
+
+- 命令
+
+		git worktree list
+
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) git worktree list
+		~/github/Android-GetAPKInfo  abc1234 [master]
+		/tmp/getapkinfo-dev                                     def5678 [dev]
+
+### 创建新工作树
+
+- 命令
+
+		# 检出已有分支到新目录
+		git worktree add <path> <branch>
+
+		# 创建新分支并检出到新目录
+		git worktree add -b <new-branch> <path> <start-point>
+
+		# 以游离HEAD模式检出指定commit
+		git worktree add --detach <path> <commit>
+
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) git worktree add ../getapkinfo-dev dev
+		Preparing worktree (checking out 'dev')
+		HEAD is now at def5678 update readme
+
+		➜  Android-GetAPKInfo git:(master) git worktree add -b hotfix ../getapkinfo-hotfix master
+		Preparing worktree (new branch 'hotfix')
+		HEAD is now at abc1234 release v2.0
+
+- 详细说明
+
+	每个分支在所有工作树中只能被检出一次。如果需要在新目录中工作于已在其他工作树检出的分支，需要先在原工作树切走。
+
+### 删除工作树
+
+- 命令
+
+		# 删除指定工作树（要求工作目录干净）
+		git worktree remove <worktree>
+
+		# 强制删除（即使有未提交的修改）
+		git worktree remove --force <worktree>
+
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) git worktree remove ../getapkinfo-dev
+		➜  Android-GetAPKInfo git:(master) git worktree list
+		~/github/Android-GetAPKInfo  abc1234 [master]
+
+### 清理失效工作树记录
+
+- 命令
+
+	当手动删除了工作树目录（而非用 `git worktree remove`）后，可以用 prune 清理失效的记录：
+
+		git worktree prune
+
+- 事例
+
+		➜  Android-GetAPKInfo git:(master) rm -rf /tmp/getapkinfo-dev
+		➜  Android-GetAPKInfo git:(master) git worktree prune
+		➜  Android-GetAPKInfo git:(master) git worktree list
+		~/github/Android-GetAPKInfo  abc1234 [master]
 
 ## 大文件相关
 
