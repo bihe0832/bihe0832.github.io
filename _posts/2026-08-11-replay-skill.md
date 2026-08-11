@@ -1,7 +1,7 @@
 ---
 layout: post
 title: replay：四端 UI 自动化录制与回放工具详解
-category: 工具效率
+category: 开发工具
 tags: tags
 keywords: UI自动化 录制回放 replay ADB Playwright CGEventTap pynput Flow编排 跨平台
 description: 介绍 replay skill 的架构设计、四端技术栈、Flow 编排机制与核心原理，一个支持 Android/Web/macOS/Windows 四端的 UI 自动化录制与回放工具。
