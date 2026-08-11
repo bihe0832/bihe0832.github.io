@@ -29,26 +29,26 @@ description: 由于历史原因，OS X虽然支持文件系统大小写敏感，
 
 在launchpad中找到mac系统提供的磁盘工具Disk Utility，如下图：
 
-![disk utility版本](../public/images/imac_disk_utility.jpg "disk utility版本")
+<img src="./../public/images/imac_disk_utility.jpg" width="70%" />
 
 操作界面如下图：
 
-![disk utility界面](../public/images/imac_disk_utility_ui.jpg "disk utility版本")
+<img src="./../public/images/imac_disk_utility_ui.jpg" width="70%" />
 
 #### 调整分区
 
 点击左侧边栏中的`Fusion Drive`，然后点击UI上方的分区按钮，就会弹出完整的分区界面。
 
-![disk utility界面](../public/images/imac_disk_utility_resize_view.jpg "disk utility版本")
+<img src="./../public/images/imac_disk_utility_resize_view.jpg" width="70%" />
 
 
 你可以根据自己的需求来调整分区，例如我将默认分区减小100G，从658减小的558；修改完数字以后点击左侧的扇形，就会发现分区调整以后的预览图。
 
-![disk utility界面](../public/images/imac_disk_utility_resize.jpg "disk utility版本")
+<img src="./../public/images/imac_disk_utility_resize.jpg" width="70%" />
 
 点击调整出来的部分，修改为你自定义的名称，**`然后在格式中修改文件格式为区分大小写`**，调整空间到整数。如下图
 
-![disk utility界面](../public/images/imac_disk_utility_resize_after.jpg "disk utility版本")
+<img src="./../public/images/imac_disk_utility_resize_after.jpg" width="70%" />
 
 #### 开始分区
 

@@ -31,11 +31,11 @@ description: desc
 
 在Android Studuio的菜单选择 "Analyze" -> "Run Inspection by Name"，如下图：
 
-![](./../public/images/android_optimize_lint_unused.png )
+<img src="./../public/images/android_optimize_lint_unused.png" width="70%" />
 	
 在弹框中输入 "Unused resources"后，点击列表中的 "Unused resources"，然后在弹框中选择 "Whole project" ，然后点击OK，在视图的左侧（红框1的位置）就会列出所有当前项目包含但是并未被使用的资源：
 
-![](./../public/images/android_optimize_lint_unused_result.png )
+<img src="./../public/images/android_optimize_lint_unused_result.png" width="70%" />
 
 #### 确认未被使用资源确实没用
 
@@ -58,11 +58,11 @@ description: desc
 
 - `如果不确定项目木有使用动态加载资源的方式，那就需要逐个资源去确认，如果发现确实没有使用，那就可以手动删除。`确认的方法很简单，全局查找：在Android Studio中选择："Edit" -> "Find" -> "Find in Path" 如下图：
 
-	![](./../public/images/android_optimize_find.png )
+	<img src="./../public/images/android_optimize_find.png" width="70%" />
 
 	然后在弹框中输入需要查找的资源名称，确认选项如下：
 
-	![](./../public/images/android_optimize_find_option.png )
+	<img src="./../public/images/android_optimize_find_option.png" width="70%" />
 	
 	之后点击查找，就可以看到查找结果。这是基于文本的全局查找，虽然费事但是全面，在查找出结果后逐个确认是否确与该资源相关，如果全部无关或者查无结果，那就证明该资源确实无用。
 
@@ -78,7 +78,7 @@ description: desc
 
 	其实就是通过AS结合lint找出所有未使用的资源，然后一键删除。如下图：
 
-	![](./../public/images/android_optimize_lint_unused_result.png )
+	<img src="./../public/images/android_optimize_lint_unused_result.png" width="70%" />
 
 	点击红框2的区域，Android Studio就会自动删除所有查找出来的无用资源。这里可以清除的资源包括：
 	

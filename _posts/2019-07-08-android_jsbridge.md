@@ -73,7 +73,7 @@ description: 最近有一个产品需求又涉及到了JSBridge，继续一边�
 
 	手机连接电脑，开启调试模式，然后在chrome浏览器里面通过inspect打开webview调试页面，如下图：
 	
-	![d4374952.png](./../public/images/jsbridge_inspect.png)
+	<img src="./../public/images/jsbridge_inspect.png" width="70%" />
 
 	点击当前打开的webview页面地址下方的inspec超链接，打开详细调试页面
 	
@@ -215,6 +215,6 @@ description: 最近有一个产品需求又涉及到了JSBridge，继续一边�
 		
 	详细返回截图如下：
 	
-	![d4374952.png](./../public/images/jsbridge_result.png)
+	<img src="./../public/images/jsbridge_result.png" width="70%" />
 	
 至此就完成了一个终端JSBridge接口的调试。

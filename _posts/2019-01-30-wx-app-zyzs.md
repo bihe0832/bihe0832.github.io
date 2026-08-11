@@ -23,10 +23,10 @@ description: 因为工作的原因，中断了一段时间以后，又开始接�
 
 - 小程序码：
 
-	![](./../public/img/wxapp-code.jpg )
+	<img src="./../public/img/wxapp-code.jpg" width="70%" />
 
 - 页面截图：
 
-	![](./../public/images/zyzs_wxapp_home.jpg )
+	<img src="./../public/images/zyzs_wxapp_home.jpg" width="70%" />
 
 

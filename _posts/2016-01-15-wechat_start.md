@@ -7,7 +7,7 @@ keywords: keywords
 description: desc
 ---
 
-![二维码](../public/img/head.jpg "二维码")
+<img src="./../public/img/head.jpg" width="70%" />
 
 ## X0 长长的序
 
@@ -39,6 +39,6 @@ description: desc
 
 1. 以前关注《子勰》玩大家来捉鬼的同学们如果对分享的内容不感兴趣，可以选择扫描或者长按下方二维码关注《大家来捉鬼》，目前提供真心话大冒险和谁是卧底等多种游戏。
 
-	![二维码](../public/images/vampire_homepage.jpg "二维码")
+	<img src="./../public/images/vampire_homepage.jpg" width="70%" />
 
 2. 以前博客中有些是完全原创，有些即使不是完全借鉴了别人的内容，但是应该别人的内容也是重要的参考，有引用的我会继续加上，如果没有的，原作者看到了可以提醒我增加引用说明，或者删除对应文章。

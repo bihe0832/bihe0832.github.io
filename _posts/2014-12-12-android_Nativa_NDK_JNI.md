@@ -14,7 +14,7 @@ SDK的C++接口由JNI实现，使用SDK的C++接口的游戏在集成时，SDK�
 
 选择 **window -> preferences -> Android -> NDK**,按照下图配置
 
-![NDK配置](../public/images/ndk.png "ndk 配置")
+<img src="./../public/images/ndk.png" width="70%" />
 
 **备注：在最新的adt版本（adt-bundle-windows-x86-20140702）中没有集成ndk，游戏在Android选项中可能无法看到上述配置。解决方法如下：**
 
@@ -27,11 +27,11 @@ SDK的C++接口由JNI实现，使用SDK的C++接口的游戏在集成时，SDK�
 
 ADT中已经整合了关于CDT编译的相关内容。当需要工程支持native编译的时候，只需要**选择工程->右键->properties->Android Tools -> Add Native Support**（如下图）即可。：
 
-![CDT配置](../public/images/cdt.jpg "CDT配置")
+<img src="./../public/images/cdt.jpg" width="70%" />
 
 这时**选择工程->右键->properties->**可以看到已经在配置中多了C++相关的配置，同时工程的builder里面也增加了native编译相关的配置。如下图：
 
-![CDT配置](../public/images/cdt-succ.jpg "CDT配置")
+<img src="./../public/images/cdt-succ.jpg" width="70%" />
 
 #### 在Builder中手动增加native的支持
 

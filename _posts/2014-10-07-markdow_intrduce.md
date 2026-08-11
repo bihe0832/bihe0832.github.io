@@ -15,7 +15,7 @@ description: Markdown —— 基于HTML 轻量 易读 标记语言
 
 - Markdown 吸收了很多在电子邮件中已有的纯文本标记的特性。
 
-![这是一个Markdown的对比图](../public/images/markdownSample.jpg "Markdown的原码和展示对比")
+<img src="./../public/images/markdownSample.jpg" width="70%" />
 
 ### Markdown有什么优点
 
@@ -25,7 +25,7 @@ description: Markdown —— 基于HTML 轻量 易读 标记语言
 
 - ** 兼容 HTML**
 
-![这是一个Markdown 兼容HTML的效果图](../public/images/markdown_html.png "Markdown 兼容HTML的效果图")
+<img src="./../public/images/markdown_html.png" width="70%" />
 
 #### Markdown的目标是：成为一种适用于网络的书写语言。
 
@@ -210,10 +210,10 @@ Markdown 使用一种和链接很相似的语法来标记图片，同样也允�
 
 - Code：
 
-		![Alt text](../public/images/img1.png "Optional title")
+		<img src="./../public/images/img1.png" width="70%" />
 - View：
 
-	![Alt text](./../public/images/img1.png "Optional title")
+	<img src="./../public/images/img1.png" width="70%" />
 
 
 #### 参考式的图片语法：

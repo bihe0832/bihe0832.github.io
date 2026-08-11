@@ -94,4 +94,4 @@ Demo中关于补丁包生成通过自动构建生成，关于这部分内容可�
 
 - **SDK初始化简单流程**
 
-![SDK初始化简单流程](../public/images/hotfix_sample.jpg "SDK初始化简单流程")
+<img src="./../public/images/hotfix_sample.jpg" width="70%" />

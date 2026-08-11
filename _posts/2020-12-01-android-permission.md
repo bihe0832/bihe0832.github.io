@@ -15,7 +15,7 @@ description: 最近在整理权限相关的东西，每次查询比较方便，�
 
 #### 危险权限和权限组
 
-![](./../public/images/android_dev/android_permission.png )
+<img src="./../public/images/android_dev/android_permission.png" width="70%" />
 
 数据来源：https://webcache.googleusercontent.com/search?q=cache%3Ap2k4jou1DqUJ%3Ahttps%3A%2F%2Fdeveloper.android.com%2Fguide%2Ftopics%2Fsecurity%2Fpermissions%3Fhl%3Dzh-cn%20&cd=2&hl=zh-CN&ct=clnk&gl=hk
 

@@ -13,19 +13,19 @@ description: 使用Android Studio开发可独立运行（runnable）Jar程序
 
 启动Android Studio，新建一个Android Studio项目，如下图
 
-![](./../public/images/as-jar-1.jpg )
+<img src="./../public/images/as-jar-1.jpg" width="70%" />
 
 在弹出的项目配置框中填写项目的名称、包名、代码路径等信息，然后点击下一步，如下图。
 
-![](./../public/images/as-jar-2.jpg )
+<img src="./../public/images/as-jar-2.jpg" width="70%" />
 
 选择一个项目类型，最简单的就是手机和平板应用了，然后其余的参数都不用修改，直接下一步，如下图：
 
-![](./../public/images/as-jar-3.jpg )
+<img src="./../public/images/as-jar-3.jpg" width="70%" />
 
 选择不含任何Activity的项目，如下图：
 
-![](./../public/images/as-jar-4.jpg )
+<img src="./../public/images/as-jar-4.jpg" width="70%" />
 
 因为我们并不是要新建一个Android 应用，只是需要一个壳。之后点击finish，然后就开始项目创建，如果个人的网络环境无法代理到外网，可以点击取消，然后切换为个人本地的开发用gradle常见配置项。配置方法可以参考文档：[终端基于gradle的开源项目运行环境配置指引](https://blog.bihe0832.com/android-as-gradle-config.html)。构建中的一些错误，也可以参考文章[gradle常见错误解决方案](https://blog.bihe0832.com/gradle-issues.html)来解决。
 
@@ -35,15 +35,15 @@ description: 使用Android Studio开发可独立运行（runnable）Jar程序
 
 选择 "File"->"New"->"New Module"，弹出新建module对话框，选择Java Library，如下图：
 
-![](./../public/images/as-jar-5.jpg )
+<img src="./../public/images/as-jar-5.jpg" width="70%" />
 
 在弹窗的模块配置框中填写模块响应的信息，然后点击完成，如下图：
 
-![](./../public/images/as-jar-6.jpg )
+<img src="./../public/images/as-jar-6.jpg" width="70%" />
 
 至此就已经完成了一个新模块的创建，同时在该模块的java代码目录创建MyClas类，如下图：
 
-![](./../public/images/as-jar-7.jpg )
+<img src="./../public/images/as-jar-7.jpg" width="70%" />
 
 ### 创建入口类
 
@@ -59,7 +59,7 @@ description: 使用Android Studio开发可独立运行（runnable）Jar程序
 
 然后在项目视图，选择MyClass，右击选择"Run 'MyClass.main()'"，然后就看到在控制台打印出了项目的执行结果。如下图：
 
-![](./../public/images/as-jar-8.jpg )
+<img src="./../public/images/as-jar-8.jpg" width="70%" />
 
 至此就可以在Android Studio完成项目的开发了。
 
@@ -181,7 +181,7 @@ description: 使用Android Studio开发可独立运行（runnable）Jar程序
 
 使用JDGui查看，可以看到Jar也确实已经被混淆过了~
 
-![](./../public/images/as-jar-9.jpg )
+<img src="./../public/images/as-jar-9.jpg" width="70%" />
 
 至此，我们就完成了所有关于使用Android Studio开发可以独立运行的Jar程序的所有工作。
 

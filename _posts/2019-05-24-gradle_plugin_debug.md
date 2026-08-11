@@ -40,15 +40,15 @@ description: 文章主要介绍在插件开发过程中，如何设置断点动�
 
 首先为**插件工程**添加远程调试任务，点击选择 `Edit Configurations …`
 
-![](./../public/images/gradle-plugin-add-configuration.png )
+<img src="./../public/images/gradle-plugin-add-configuration.png" width="70%" />
 
 点击添加，在弹出的对话框中选择 Remote。
 
-![](./../public/images/gradle-plugin-add-remote.png )
+<img src="./../public/images/gradle-plugin-add-remote.png" width="70%" />
 
 这时会自动生成一个 Remote debug 的配置，建议所有配置都使用默认值，点击 OK 按钮。
 
-![](./../public/images/gradle-plugin-add-remote-config.png )
+<img src="./../public/images/gradle-plugin-add-remote-config.png" width="70%" />
 
 #### 配置调试环境变量
 
@@ -81,7 +81,7 @@ description: 文章主要介绍在插件开发过程中，如何设置断点动�
 
 3. 在**插件工程**的IDE中点击 Debug 按钮，添加调试器，如下图：
 
-	![](./../public/images/gradle-plugin-debug.png )
+	<img src="./../public/images/gradle-plugin-debug.png" width="70%" />
 
 	这时在**插件工程**的IDE的调试器终端中会打印：
 
@@ -106,7 +106,7 @@ description: 文章主要介绍在插件开发过程中，如何设置断点动�
 	
 4. 在**插件工程**的IDE中再次点击 Debug 按钮，在**Demo工程**命令行查看构建开始执行，当运行到**插件工程**断点时，就会自动暂停。后续调试与正常调试一致。如下图：
 
-	![](./../public/images/gradle-plugin-debug-result.png )
+	<img src="./../public/images/gradle-plugin-debug-result.png" width="70%" />
 	
 5. 调试结束，命令执行成功，**插件工程**的IDE的调试器终端中会打印另一行日志：
 
@@ -130,4 +130,4 @@ description: 文章主要介绍在插件开发过程中，如何设置断点动�
 
 	之前在调试时遇到过，再次点击 Debug 按钮时，弹出下面的提示框，选择 `Stop and Return` 即可：
 	
-	![](./../public/images/gradle-plugin-debug-tips.png )
+	<img src="./../public/images/gradle-plugin-debug-tips.png" width="70%" />

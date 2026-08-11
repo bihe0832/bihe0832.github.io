@@ -15,7 +15,7 @@ description: 前几天腾讯云推出了静态网站托管服务，受邀体验�
 	
 	打开腾讯云「云开发 [https://console.cloud.tencent.com/tcb/env/index](https://console.cloud.tencent.com/tcb/env/index)」 服务的页面。如下图，点击新建环境，然后在弹框中输入你自定义的环境名称，选择付费模式，然后点击下方的「立即开通」。
 
-	![qcloud_jekyll_evn.png](./../public/images/qcloud_jekyll_evn.png)
+	<img src="./../public/images/qcloud_jekyll_evn.png" width="70%" />
 
 	之后就进入了环境的初始化阶段，初始化比较久。一般需要 1 分钟左右，当初始化结束，点击对应的 tab 就进入了 环境总览界面，可以看到具体的资源等信息。
 
@@ -23,7 +23,7 @@ description: 前几天腾讯云推出了静态网站托管服务，受邀体验�
 
 	点击进入「静态网站托管 [https://console.cloud.tencent.com/tcb/hosting](https://console.cloud.tencent.com/tcb/hosting)」 服务的页面。如下图，选择之前创建的开发环境，然后点击「开始使用」初始化环境。静态网站服初始化一般需要约 3 分钟
 
-	![qcloud_jekyll_hosting.png](./../public/images/qcloud_jekyll_hosting.png)
+	<img src="./../public/images/qcloud_jekyll_hosting.png" width="70%" />
 
 ### 将静态页面部署到托管服务
 
@@ -104,7 +104,7 @@ description: 前几天腾讯云推出了静态网站托管服务，受邀体验�
 
 上传结束以后，在静态页面托管的「文件管理」页面可以对我们上传的内容进行调整，在「设置」页面可以添加域名、错误页面等信息，同时也给出了腾讯云提供的默认域名。如果你有自己的域名，你也可以添加自己的域名解析，例如下面我修改为使用我自己的域名，并设置了自定义的索引页和404页面：
 	
-![qcloud_jekyll_settings.png](./../public/images/qcloud_jekyll_settings.png)
+<img src="./../public/images/qcloud_jekyll_settings.png" width="70%" />
 
 ### 访问静态页面
 

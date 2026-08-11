@@ -44,17 +44,17 @@ description: desc
 
 - 1.选择项目工程，然后右击选择导出，如下图：
 
-	![文件导出](./../public/images/java_jar_export.jpg "文件导出")
+	<img src="./../public/images/java_jar_export.jpg" width="70%" />
 
 - 2.在弹框（Select）中选择Java分类下面的`Jar File`，之后下一步。
 - 3.在新的弹框（JAR File Specification）中，选择你要导出的工程，并选择Jar包含的内容，一般一些IDE的配置文件之类的就不用导出了。然后选择并指定导出文件的路径和地址，之后下一步，如下图：
 
-	![选择内容](./../public/images/java_jar_select_content.jpg "选择内容")
+	<img src="./../public/images/java_jar_select_content.jpg" width="70%" />
 
 - 4.在新的弹框（JAR Packaging Options）中，保持默认的配置，然后继续下一步。
 - 5.在新的弹框（JAR Mainfest Specification）中，在最下方选择应用的主入口（Select the class of the application entry point）如下图：
 
-	![选择入口](./../public/images/java_jar_select_main.jpg "选择入口")
+	<img src="./../public/images/java_jar_select_main.jpg" width="70%" />
 
 - 6.设置OK以后直接点击Finish，如果不出意外，就会在之前设置的路径生成对应的jar
 - 7.执行命令检查效果，已经OK
@@ -79,12 +79,12 @@ description: desc
 
 - 1.选择项目工程，然后右击选择导出，如下图：
 
-	![文件导出](./../public/images/java_jar_export.jpg "文件导出")
+	<img src="./../public/images/java_jar_export.jpg" width="70%" />
 
 - 2.在弹框（Select）中选择Java分类下面的`Runnable JAR file`，然后下一步。
 - 3.在新的弹框（Runnable Jar File Specification）中，选择你程序运行的入口类，指定导出文件的路径和地址，之后点击完成，如下图：
 
-	![导出](./../public/images/java_jar_runnable.jpg "导出")
+	<img src="./../public/images/java_jar_runnable.jpg" width="70%" />
 
 - 4.如果不出意外，就会在之前设置的路径生成对应的jar。执行命令检查效果，已经OK
 

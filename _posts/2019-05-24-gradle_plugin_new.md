@@ -84,7 +84,7 @@ description: 主要介绍如何新建一个插件并可以在本地运行
 	
 - gradle-plugins目录中的文件夹的名称，以及配置中的implementation-class与代码文件的名称都有对应关系，如下图
 
-	![](./../public/images/gradle-plugin.png )
+	<img src="./../public/images/gradle-plugin.png" width="70%" />
 	
 - 插件入口文件名必须为***Plugin，即文件名必须以Plugin结尾
 	

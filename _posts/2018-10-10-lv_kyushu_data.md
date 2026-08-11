@@ -245,7 +245,7 @@ description: 这是个人在出行前为了方便制作攻略专门整理的各�
 
   運賃・時刻表 -トッピー&ロケット：[https://www.tykousoku.jp/fare_time/](https://www.tykousoku.jp/fare_time/)
   
-  ![f836e166.png](./../public/resource/kagoshima/f836e166.png)
+  <img src="./../public/resource/kagoshima/f836e166.png" width="70%" />
 
 - 屋久岛船票通航状态
 

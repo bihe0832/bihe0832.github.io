@@ -21,6 +21,6 @@ description: 大家来捉鬼，基于微信公共帐号的线下桌游助手！�
 
 **二维码：**
 
-![二维码](../public/images/vampire_homepage.jpg "二维码")
+<img src="./../public/images/vampire_homepage.jpg" width="70%" />
 
 

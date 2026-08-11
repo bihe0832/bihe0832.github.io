@@ -50,7 +50,7 @@ description: desc
 		
 ### 效果展示
 
-![](./../public/images/android_optimize_fontawesome.gif )
+<img src="./../public/images/android_optimize_fontawesome.gif" width="70%" />
 
 ## 其他
 
@@ -64,7 +64,7 @@ description: desc
 
 	打开字体编辑工具以后，按照下图的指引完成字体的修改，修改完成保存以后会发现字体已经大大减少了~
 
-	![](./../public/images/android_optimize_fontawesome_modify.jpg )
+	<img src="./../public/images/android_optimize_fontawesome_modify.jpg" width="70%" />
 
 ## 参考文章
 

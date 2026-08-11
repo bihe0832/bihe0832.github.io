@@ -66,7 +66,7 @@ boostnote + 微云（**也阔以是任意一个云同步软件**）可以方便�
 
 		打开Boostnote的配置，选择「本地存储」，点击「添加一个本地存储」，然后如图配置
 		
-		![bootsnote_settings.jpg](./../public/images/bootsnote_settings.jpg )
+		<img src="./../public/images/bootsnote_settings.jpg" width="70%" />
 
 	3. 后续boostnote就只是一个笔记工具了 ，所有的同步都交给微云等云盘
 

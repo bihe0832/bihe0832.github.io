@@ -113,7 +113,7 @@ Robotium提供了非常丰富的函数来模拟用户的各种输入。所有的
 
 这个在介绍上面常用的函数的时候说过。这里列一下Android 中控件类的扩展结构。这里所有的控件的点击等公用方法都可以直接使用view的方法即可。
 
-![Android 中控件类](../public/images/android_view.png "Android 中控件类")
+<img src="./../public/images/android_view.png" width="70%" />
 
 ### 怎么基于APK测试
 

@@ -16,7 +16,7 @@ description: 在这里汇总下MSDK开发以来遇到的一些游戏的坑
 
 - **具体代码出问题的位置**：
 
-![代码出错位置](../public/images/android_devices_space.png "代码出错位置")
+<img src="./../public/images/android_devices_space.png" width="70%" />
 
 - **问题原因：找了台相同型号的机器，但是发现获取的ro.product.device中间木有空格。初步怀疑有可能是玩家root以后或者刷了第三方rom以后修改了build.prop对应的值导致。**
 - **解决办法**：将所有的get请求的参数都urlencode 一遍

@@ -29,7 +29,7 @@ description: 介绍如何把一个gradle插件发布到gradle插件库和jcenter
 
 如下图，点击右上角的个人账号，然后进入个人编辑页，然后切换到API Keys的tab，就可以看到对应的内容
 
-![](./../public/images/gradle-plugin-publish-api.png )
+<img src="./../public/images/gradle-plugin-publish-api.png" width="70%" />
 
 如果没有生成过应该会提示生成。已经生成的按照提示复制内容到用户根目录的` ~/.gradle/gradle.properties ` 文件中，这里是gradle的全局变量的保存位置。关于gradle环境变量的更多内容，可以通过文章[Gradle环境变量那些事](https://blog.bihe0832.com/gradle_properties.html)了解。
 

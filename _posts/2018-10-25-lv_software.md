@@ -15,8 +15,8 @@ description: desc
 
 下面是我手机里面出行时使用的应用的汇总，简单截图了下。主要包括攻略查询类、导航类、打车类、订票订酒店类、信息查询类。接下来会按照的旅行的不同阶段详细介绍一下其中的一些。
 
-![](./../public/photo/software/lv_software.jpg )
-![](./../public/photo/software/lv_software_2.jpg )
+<img src="./../public/photo/software/lv_software.jpg" width="70%" />
+<img src="./../public/photo/software/lv_software_2.jpg" width="70%" />
 
 
 ## 出行准备

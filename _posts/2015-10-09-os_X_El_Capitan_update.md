@@ -50,7 +50,7 @@ OS X El Capitan官方介绍地址：[https://www.apple.com/cn/osx/whats-new/](ht
 		
 2. 系统弹框提示安装命令行开发者工具，如下图
 
-	![系统弹框提示安装命令行开发者工具](../public/images/xcode-select-install.jpg "系统弹框提示安装命令行开发者工具")
+	<img src="./../public/images/xcode-select-install.jpg" width="70%" />
 	
 - 点击安装。一般安装过程需要1分钟左右。安装好以后即可正常使用。
 

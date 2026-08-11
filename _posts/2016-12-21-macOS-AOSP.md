@@ -204,7 +204,7 @@ Repo is a tool that makes it easier to work with Git in the context of Android.�
 
 源码的下载时间会非常长，因此建议选择晚上下载。**由于macOS默认的节能设置，为了防止mac在长时间无操作以后休眠，因此建议修改macOS中关于节能相关的配置。修改路径为：系统偏好设置-》节能。下图为本人修改后的效果：**
 
-![macOS中关于节能相关配置](../public/images/imac_android_source_resave.jpg '节能信息')
+<img src="./../public/images/imac_android_source_resave.jpg '节能信息'" width="70%" />
 
 ## 编译
 

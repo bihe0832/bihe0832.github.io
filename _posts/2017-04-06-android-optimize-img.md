@@ -138,7 +138,7 @@ https://blog.bihe0832.com/
 
 对于找到的每一张图，在Android Studio里面右击图片，然后选择Find Usages(或者直接使用快捷键Alt + F7)，IDE就会帮你找出代码中所有的引用。如下图：
 
-![](./../public/images/android-studio-find-usages.jpg )
+<img src="./../public/images/android-studio-find-usages.jpg" width="70%" />
 
 接下来的就是具体的代码分析了。这里要注意`通过反射获取的资源是无法通过这种方式发现的，因此如果项目中有使用比较多的反射，建议通过别的方法处理，这部分内容我会在后面介绍资源精简的时候说明。`
 
