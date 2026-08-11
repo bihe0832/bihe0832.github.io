@@ -102,33 +102,33 @@ HTML 报告包含最多 **7 个 Tab**：
 
 - **总览**：CSS 饼图 + 八大类别交互表格（文件数 / 压缩后 / 原始 / 占比 / 进度条）
 
-  ![](/images/android_dev/apk-size-analyzer/review.png)
+  ![](./../public/images/android_dev/apk-size-analyzer/review.png)
 
 - **DEX**：各 DEX 文件的方法数 / 类数 / 字符串数，MultiDex 与 R8 状态
 
-  ![](/images/android_dev/apk-size-analyzer/dex.png)
+  ![](./../public/images/android_dev/apk-size-analyzer/dex.png)
 
 - **Native**：ABI 分布表 + SO 详情表（文件名 / ABI / 大小 / 来源模块 / 存储方式）
 
-  ![](/images/android_dev/apk-size-analyzer/native.png)
+  ![](./../public/images/android_dev/apk-size-analyzer/native.png)
 
 - **大文件**：>1MB 文件 Top 20，按路径 / 类别 / 大小展示
 
-  ![](/images/android_dev/apk-size-analyzer/large.png)
+  ![](./../public/images/android_dev/apk-size-analyzer/large.png)
 
 - **可优化图片**：>100KB PNG/JPG 缩略图网格（点击放大）+ 源码引用位置 + 一键批量压缩命令面板
 
-  ![](/images/android_dev/apk-size-analyzer/image-1.png)
+  ![](./../public/images/android_dev/apk-size-analyzer/image-1.png)
 
-  ![](/images/android_dev/apk-size-analyzer/image-2.png)
+  ![](./../public/images/android_dev/apk-size-analyzer/image-2.png)
 
 - **未用资源**：Lint 未使用资源多 module 聚合，分类视图（图片缩略图 / 表格）+ module 筛选
 
-  ![](/images/android_dev/apk-size-analyzer/nouse.png)
+  ![](./../public/images/android_dev/apk-size-analyzer/nouse.png)
 
 - **优化建议**：15+ 条建议卡片，按严重程度排序，附操作命令和涉及文件
 
-  ![](/images/android_dev/apk-size-analyzer/plan.png)
+  ![](./../public/images/android_dev/apk-size-analyzer/plan.png)
 
 ### 4.3 批量压缩工作流
 
