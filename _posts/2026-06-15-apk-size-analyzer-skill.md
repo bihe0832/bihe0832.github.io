@@ -8,6 +8,8 @@ description: 介绍 apk-size-analyzer skill 的设计思路、功能与使用方
 recommand: true
 ---
 
+## 此文档不再更新，最新文档请点击链接查看：[https://android.bihe0832.com/doc/tools/apk-size-analyzer.html](https://android.bihe0832.com/doc/tools/apk-size-analyzer.html)
+
 # APK 体积分析与瘦身助手详解
 
 > **背景**：Google Play 对应用大小有诸多建议（< 150MB、优先 App Bundle），APK 体积直接影响下载转化率、更新成本和用户留存。Android Studio 自带的 APK Analyzer 虽然能看到基本构成，但不支持源码关联反查、Lint 未用资源扫描、跨模块未用资源聚合，也无法一键生成可执行的批量压缩方案。

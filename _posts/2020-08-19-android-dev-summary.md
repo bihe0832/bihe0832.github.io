@@ -91,6 +91,18 @@ recommand: true
 
 	Android安装包精简的方案的总结，包括为什么精简、怎么精简等
 
+- `APK/AAB/AAR 16KB 页面对齐检查工具详解`：[https://blog.bihe0832.com/apk-16kb-check-skill.html](https://blog.bihe0832.com/apk-16kb-check-skill.html)
+
+	介绍 `apk-16kb-check` skill，一键完成 APK / AAB / AAR / 工程目录的 16KB 页面对齐合规检查与自动修复，满足 Google Play 上架要求。
+
+- `APK 体积分析与瘦身助手详解`：[https://blog.bihe0832.com/apk-size-analyzer-skill.html](https://blog.bihe0832.com/apk-size-analyzer-skill.html)
+
+	介绍 `apk-size-analyzer` skill，支持 APK/AAB/AAR 体积深度拆解、SO 来源归因、源码关联、Lint 未用资源扫描与一键批量压缩。
+
+- `replay：四端 UI 自动化录制与回放工具详解`：[https://blog.bihe0832.com/replay-skill.html](https://blog.bihe0832.com/replay-skill.html)
+
+	介绍 `replay` skill，支持 Android/Web/macOS/Windows 四端的 UI 自动化录制与回放，core 内核 + 各端薄适配器架构，Flow 编排与跨平台执行。
+
 ### 其他工具和流程
 
 这部分内容主要是一些通用内容，为了提升开发效率开发的一些工具，以及前面提到的关于版本管理、发布升级与回溯的内容。

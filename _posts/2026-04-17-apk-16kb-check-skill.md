@@ -8,6 +8,8 @@ description: 介绍 apk-16kb-check skill 的设计思路、功能与使用方法
 recommand: true
 ---
 
+## 此文档不再更新，最新文档请点击链接查看：[https://android.bihe0832.com/doc/tools/apk-16kb-check.html](https://android.bihe0832.com/doc/tools/apk-16kb-check.html)
+
 # APK/AAB/AAR 16KB 页面对齐检查工具详解
 
 > **合规背景**：自 2025 年 11 月 1 日起，Google Play 要求所有以 Android 15 (API 35) 及以上为目标的应用必须支持 **16KB 页面大小**（此前 Android 默认 4KB 页）。不合规的包将无法在 Pixel 8+ 等新设备上安装，也会被商店拦截上架。

@@ -8,6 +8,8 @@ description: 介绍 replay skill 的架构设计、四端技术栈、Flow 编排
 recommand: true
 ---
 
+## 此文档不再更新，最新文档请点击链接查看：[https://android.bihe0832.com/doc/tools/replay.html](https://android.bihe0832.com/doc/tools/replay.html)
+
 # replay：四端 UI 自动化录制与回放工具详解
 
 > **背景**：日常开发中经常需要重复执行一系列 UI 操作——回归测试、演示录制、Bug 复现步骤记录。传统做法是手动操作 + 截图，不仅效率低，而且无法跨平台复用。更麻烦的是，脚本式自动化（Selenium/Appium）需要写大量代码，维护成本高。
