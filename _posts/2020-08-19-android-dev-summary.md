@@ -26,8 +26,6 @@ recommand: true
 
 具体到开发就是一套代码可以支持所有项目（尤其是业务无关的底层逻辑），即使不能支持所有项目，也要做到相同逻辑的代码尽可能只有一份。这份代码是经过认真优化和项目考验的。
 
-随着 AI 编码能力的成熟，AAF 已经进一步演进为「**框架 + AI 工具链 + UI 自动化**」的完整体系，在组件化框架之上，沉淀了一套面向 AI 时代的开发工具链与自动化能力。
-
 ## AI 工具链与自动化体系
 
 AAF 已经从单纯的组件化框架，演进为「**框架 + AI 工具链 + UI 自动化**」的完整闭环：
@@ -38,37 +36,7 @@ AAF 已经从单纯的组件化框架，演进为「**框架 + AI 工具链 + UI
 | 工具链层 | `aaf` CLI + 9 个 Skill + 3 个 Agent | 文档同步、版本升级、发布检查、示例升级 |
 | 自动化层 | `replay` 四端 UI 自动化 | UI 录制回放与回归验证 |
 
-核心设计理念是**确定性逻辑下沉**：模块信息提取、版本查找、巡检等确定性逻辑全部由 `aaf` CLI 承载，LLM 只负责语义理解和文档撰写，避免 LLM 幻觉（如版本号、模块映射）；文档定位是「**给 AI 编码时参考的 API 能力索引**」，而非给人读的手册。
-
-### aaf Skill 体系
-
-基于 ZixieKit 沉淀了 9 个 AAF Skill，按职能分为五类：
-
-| 分类 | Skill | 职责 |
-|------|-------|------|
-| 项目定位 | `aaf-project-finder` | 通过 `AAF_HOME` 定位项目，模块目录名 ↔ artifactId 映射 |
-| 文档管理 | `aaf-doc-management` | 文档生成 / 同步 / 更新入口 |
-| | `aaf-doc-generator` | 分析源码，按 AI-facing 模板生成 API 能力索引 |
-| 版本管理 | `aaf-version-reader` | 读取最新 SDK 配置与各模块真实版本 |
-| | `aaf-version-upgrade` | 识别项目 AAF 模块最新版本，生成升级报告并应用 |
-| 发布检查 | `aaf-release-check` | 发布前检查（版本号 / 模块完整性 / 依赖 / 编译） |
-| 示例升级 | `aaf-sample-apply` | 升级 Template-AAF 到最新框架版本 |
-| | `aaf-sample-upgrade` | 编排升级三个 Template 项目并编译验证 |
-| 开发辅助 | `aaf-demo` | Demo 开发助手（支持自动编译安装启动） |
-
-### Agent 编排
-
-文档同步采用「生成 → 校验 → 修正」三 Agent 流水线：
-
-- `aaf-doc-orchestrator`（主 Agent）：获取变更模块列表，逐模块编排 A→B，通知结果；
-- `aaf-doc-sync`（子 Agent）：生成文档并创建 MR；
-- `aaf-doc-fixer`（子 Agent）：对比文档与源码，修正不一致（只修文档不动源码）。
-
-两个子 Agent 环境无关（只接收 `module + aaf_path + doc_path`），可被任意编排层调用。
-
-### replay 四端 UI 自动化
-
-跨平台 UI 自动化录制与回放，共享 core 内核，支持 Android / Web / macOS / Windows 四端；录制产物为 JSON Flow，可复用、可编辑、可生成 HTML 报告（含关键截图）。详见 [replay：四端 UI 自动化录制与回放工具详解](https://blog.bihe0832.com/replay-skill.html)。
+核心设计理念是**确定性逻辑下沉**：模块信息提取、版本查找、巡检等确定性逻辑全部由 `aaf` CLI 承载，LLM 只负责语义理解和文档撰写，避免 LLM 幻觉（如版本号、模块映射）；文档定位是「**给 AI 编码时参考的 API 能力索引**」，而非给人读的手册。详细的 Skill 体系、Agent 编排与工具链接见下方相关链接中的「AI 工具链与自动化」。
 
 ## 相关链接
 
@@ -136,6 +104,30 @@ AAF 已经从单纯的组件化框架，演进为「**框架 + AI 工具链 + UI
 	Android安装包精简的方案的总结，包括为什么精简、怎么精简等
 
 ### AI 工具链与自动化
+
+基于 ZixieKit 沉淀了 9 个 AAF Skill，按职能分为五类：
+
+| 分类 | Skill | 职责 |
+|------|-------|------|
+| 项目定位 | `aaf-project-finder` | 通过 `AAF_HOME` 定位项目，模块目录名 ↔ artifactId 映射 |
+| 文档管理 | `aaf-doc-management` | 文档生成 / 同步 / 更新入口 |
+| | `aaf-doc-generator` | 分析源码，按 AI-facing 模板生成 API 能力索引 |
+| 版本管理 | `aaf-version-reader` | 读取最新 SDK 配置与各模块真实版本 |
+| | `aaf-version-upgrade` | 识别项目 AAF 模块最新版本，生成升级报告并应用 |
+| 发布检查 | `aaf-release-check` | 发布前检查（版本号 / 模块完整性 / 依赖 / 编译） |
+| 示例升级 | `aaf-sample-apply` | 升级 Template-AAF 到最新框架版本 |
+| | `aaf-sample-upgrade` | 编排升级三个 Template 项目并编译验证 |
+| 开发辅助 | `aaf-demo` | Demo 开发助手（支持自动编译安装启动） |
+
+文档同步采用「生成 → 校验 → 修正」三 Agent 流水线：
+
+- `aaf-doc-orchestrator`（主 Agent）：获取变更模块列表，逐模块编排 A→B，通知结果；
+- `aaf-doc-sync`（子 Agent）：生成文档并创建 MR；
+- `aaf-doc-fixer`（子 Agent）：对比文档与源码，修正不一致（只修文档不动源码）。
+
+两个子 Agent 环境无关（只接收 `module + aaf_path + doc_path`），可被任意编排层调用。
+
+相关的 skill 工具介绍文章：
 
 - `APK/AAB/AAR 16KB 页面对齐检查工具详解`：[https://blog.bihe0832.com/apk-16kb-check-skill.html](https://blog.bihe0832.com/apk-16kb-check-skill.html)
 
