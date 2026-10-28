@@ -1,8 +1,6 @@
 ---
-layout: page
 title: 关于
 ---
-
 
 <div id="content">
 <h2>写在前面</h2>
@@ -12,7 +10,7 @@ title: 关于
 <p>“互联网精神”中最后的一点就是分享。分享的意义很多时候在于昭显彼此，寻找共鸣，以及，在由字句构筑起来的世界中，找到吸引自己的那一座灯塔。不知道可以坚持多久，但是我会努力；道阻且长，行则将至。</p>
 
 <h4>子勰于2014年11月6日（一个有纪念意义的日子）</h4>
-<img alt="" src="https://blog.bihe0832.com/public/img/helloworld.jpg" width="80%">
+<img alt="" src="https://blog.bihe0832.com/img/helloworld.jpg" width="80%">
 <hr>
 
 <h2>关于这个博客</h2>
@@ -23,20 +21,9 @@ title: 关于
 <p>公众号「子勰随笔」，博客「https://blog.bihe0832.com」，GitHub「https://github.com/bihe0832」；先后做过前端、终端的SDK和应用，注重技术沉淀与分享，努力学技术，潜心做精品</p>
 <p>屌丝程序猿，鸡血攻城狮！努力学技术，潜心做精品！一直想做一个有情怀的攻城狮，最终到现在发现也只是一只很普通的程序狗了……</p>
 
-<p><img alt="" src="https://blog.bihe0832.com/public/img/cv.png" style="height: 300px;" ></p>
+<p><img alt="" src="https://blog.bihe0832.com/img/cv.png" style="height: 300px;" ></p>
 
-<a href="{{ site.author.weibo }}" target="_blank"> <i
-	class="fa fa-weibo fa-2x"></i> </a>
-<a href="{{ site.author.github }}" target="_blank"> <i
-	class="fa fa-github fa-2x"></i> </a>
-<a
-	href="https://wpa.qq.com/msgrd?v=3&uin={{ site.author.qq }}&site=qq&menu=yes"
-	target="_blank"> <i class="fa fa-qq fa-2x"></i> </a>
-<a href="mailto:{{ site.author.email }}"> <i
-	class="fa fa-envelope-o fa-2x"></i> </a>
-<a href="/pages/atom.xml" target="_blank"> <i
-	class="fa fa-rss fa-2x"></i> </a>
-<a
-	href="/pages/cv.html"
-	target="_blank"> <img src="https://blog.bihe0832.com/public/img/resume.ico" style="width: 37px; height: 52px;  padding-bottom: 15px"> </a>	
+<a href="https://github.com/bihe0832" target="_blank"> <i class="fa fa-github fa-2x"></i> </a>
+<a href="mailto:blog@bihe0832.com"> <i class="fa fa-envelope-o fa-2x"></i> </a>
+<a href="/atom.xml" target="_blank"> <i class="fa fa-rss fa-2x"></i> </a>
 </div>

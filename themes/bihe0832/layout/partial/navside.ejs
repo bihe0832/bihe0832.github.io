@@ -13,8 +13,8 @@
         <% site.categories.each(function(category) { %>
           <li><a href="#<%= category.name %>" data-toggle="tab"><%= category.name %></a></li>
         <% }) %>
-        <li><a class="pjaxlink" href="/pages/archive.html"><%= theme.locals.archive %></a></li>
-        <li><a class="pjaxlink" href="/pages/about.html"><%= theme.locals.about %></a></li>
+        <li><a class="pjaxlink" href="/archives/"><%= theme.locals.archive %></a></li>
+        <li><a class="pjaxlink" href="/about/"><%= theme.locals.about %></a></li>
       </ul>
       <div class="aside1_bottom">
         <table class="table table-condensed" style="border-width: 1px 0 0 0">
@@ -23,7 +23,7 @@
             <td><a href="<%= config.author_info.android %>" target="_blank"><i class="fa fa-android fa-x"></i></a></td>
             <td><a href="<%= config.author_info.tools %>" target="_blank"><i class="fa fa-magic fa-x"></i></a></td>
             <td><a href="mailto:<%= config.author_info.email %>?subject=<%= config.title %>"><i class="fa fa-envelope-o fa-x"></i></a></td>
-            <td><a href="/pages/atom.xml" target="_blank"><i class="fa fa-rss fa-x"></i></a></td>
+            <td><a href="/atom.xml" target="_blank"><i class="fa fa-rss fa-x"></i></a></td>
           </tr>
         </table>
       </div>
