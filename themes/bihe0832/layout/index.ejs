@@ -6,7 +6,7 @@
       <% page.posts.each(function(post) { %>
         <a href="<%= url_for(post.path) %>" class="list-group-item pjaxlink clearfix">
           <%= post.title %>
-          <span class="badge"><%= date(post.date, 'YYYY年MM月DD日') %></span>
+          <% if (!post.no_date) { %><span class="badge"><%= date(post.date, 'YYYY年MM月DD日') %></span><% } %>
         </a>
       <% }) %>
     </div>
@@ -20,7 +20,7 @@
             <% tag.posts.each(function(post) { %>
               <a href="<%= url_for(post.path) %>" class="list-group-item pjaxlink clearfix">
                 <%= post.title %>
-                <span class="badge"><%= date(post.date, 'YYYY年MM月DD日') %></span>
+                <% if (!post.no_date) { %><span class="badge"><%= date(post.date, 'YYYY年MM月DD日') %></span><% } %>
               </a>
             <% }) %>
           <% } %>
