@@ -1,0 +1,9 @@
+# bihe0832 主题配置
+# 站点级自定义字段在根 _config.yml 的 author_info 等节点
+locals:
+  tags: 标签
+  about: 写在最后
+  newest: 最新文章
+  archive: 历史文章
+  content: 本文结构
+  tools: 开发工具集

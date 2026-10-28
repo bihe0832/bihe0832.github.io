@@ -1,0 +1,134 @@
+/* 页面配置 */
+.container {width: 100%; height: 100%;}
+body, html {
+  margin: 0px;
+  height: 100%;
+  overflow: hidden;
+  background-color: #1f2c39;
+  font-family: "Microsoft Yahei";
+}
+.row {height: 100%;}
+/* 导航栏 + 目录栏 */
+.aside {height: 100%;}
+/* 左侧导航栏 */
+.aside1 {
+  background-color: #1f2c39;
+  height: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+}
+.aside1 > .nav > li > a {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-radius: 0px;
+}
+.avatar {width: 60px; height: 60px;}
+.aside1_bottom {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.aside1_bottom > .table {margin-bottom: 0px;}
+#content ul, ol, dl, li {margin: 0px;}
+/* 中部目录栏 */
+.aside2 {
+  background-color: #fafaf6;
+  height: 100%;
+  border-right: 2px solid #18bc9c;
+  overflow-y: auto;
+}
+/* 右侧内容栏 */
+.aside3 {
+  height: 100%;
+  overflow-y: auto;
+  background-color: #fafaf6;
+}
+.aside3-title {
+  background-color: #1f2c39;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  color: #FFF;
+}
+.aside3-title h5{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #FFF;
+}
+
+.legend_add{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.aside3-content {padding-left: 30px;padding-right: 30px;}
+/* 文章内容排版 */
+a:hover {text-decoration:none;}
+#content {font-size: 18px; line-height: 1.5;}
+#content p {margin: 20px 0px;}
+#content ul, ol, dl, li {margin: 10px 0px;}
+.nav > li {margin: 0px;}
+#content h2, h3 {line-height: 2;}
+#content blockquote > :first-child {margin-top: 0; }
+#content blockquote > :last-child {margin-bottom: 0;}
+/* 其他配置 */
+.center { text-align: center;}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+  color: #2a6496;
+  background-color: #fafaf6;
+}
+/* 显示评论按钮 */
+.show-commend {width: 100%; margin-bottom: 40px;}
+h1{
+  font-size: 30px;
+}
+
+h2{
+  font-size: 26px;
+}
+h3{
+  font-size: 24px;
+}
+
+h4{
+  font-size: 20px;
+}
+
+h3,h4,h5,h6{
+  font-weight: 900;
+  color: #428bca;
+}
+
+table {
+    width: 100%; /*表格宽度*/
+    border: 1px solid #dddddd;
+    border-collapse: collapse; /*使用单一线条的边框*/
+    empty-cells: show; /*单元格无内容依旧绘制边框*/
+}
+
+table th,td {
+  height: 35px; /*统一每一行的默认高度*/
+  border: 1px solid #dddddd;
+  padding-left: 5px;
+}
+
+table th {
+    font-weight: bold; /*加粗*/
+    text-align: center !important; /*内容居中，加上 !important 避免被 Markdown 样式覆盖*/
+    background: #ECF2F9; /*背景色*/
+    white-space: nowrap; /*表头内容强制在一行显示*/
+}
+
+/* 隔行变色 */
+table tbody tr:nth-child(2n) {
+    background: #F4F7FB; 
+}
+/* 悬浮变色 */
+table tr:hover {
+    background: #B2B2B2; 
+}
+
+.recommand_by_zixie {
+  font-weight: bold; /*加粗*/
+}

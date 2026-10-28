@@ -18,12 +18,12 @@ buildNumber.properties
 .mvn/timing.properties
 
 ######################
-# jekyll
+# hexo
 ######################
-.jekyll-cache
-_site
-Gemfile.lock
-.jekyll-metadata
+node_modules
+public
+.deploy_git
+db.json
 
 ######################
 # 解决各类编辑器自动产生的文件

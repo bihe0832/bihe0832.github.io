@@ -1,0 +1,23 @@
+{
+  "name": "bihe0832-blog",
+  "version": "1.0.0",
+  "private": true,
+  "description": "子勰的博客（Hexo）",
+  "hexo": {
+    "version": "7.3.0"
+  },
+  "scripts": {
+    "dev": "hexo server",
+    "build": "hexo generate",
+    "clean": "hexo clean"
+  },
+  "dependencies": {
+    "hexo": "^7.3.0",
+    "hexo-generator-archive": "^2.0.0",
+    "hexo-generator-category": "^2.0.0",
+    "hexo-generator-index": "^4.0.0",
+    "hexo-generator-tag": "^2.0.0",
+    "hexo-renderer-ejs": "^2.0.0",
+    "hexo-renderer-marked": "^6.3.0"
+  }
+}

@@ -1,0 +1,31 @@
+<br>
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-primary">
+      <div class="panel-heading"><%= theme.locals.newest %></div>
+      <% page.posts.each(function(post) { %>
+        <a href="<%= url_for(post.path) %>" class="list-group-item pjaxlink clearfix">
+          <%= post.title %>
+          <span class="badge"><%= date(post.date, 'YYYY年MM月DD日') %></span>
+        </a>
+      <% }) %>
+    </div>
+  </div>
+  <% (config.cates || []).forEach(function(cate) { %>
+    <div class="col-md-12">
+      <div class="panel panel-primary">
+        <div class="panel-heading"><%= cate %></div>
+        <% site.tags.each(function(tag) { %>
+          <% if (tag.name == cate) { %>
+            <% tag.posts.each(function(post) { %>
+              <a href="<%= url_for(post.path) %>" class="list-group-item pjaxlink clearfix">
+                <%= post.title %>
+                <span class="badge"><%= date(post.date, 'YYYY年MM月DD日') %></span>
+              </a>
+            <% }) %>
+          <% } %>
+        <% }) %>
+      </div>
+    </div>
+  <% }) %>
+</div>
