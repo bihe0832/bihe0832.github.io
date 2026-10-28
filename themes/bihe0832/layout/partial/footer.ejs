@@ -1,5 +1,27 @@
 <style>
 .cb-search-tool strong { font-weight: bolder; color: red; }
+.cb-search-dropdown {
+  position: fixed;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 600px;
+  max-height: 60vh;
+  overflow-y: auto;
+  z-index: 10000;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+.cb-search-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+.cb-search-item:hover { background: #18bc9c; color: #fff; }
 </style>
 
 <div style="position:fixed;right:20px;top:10px;">
@@ -10,19 +32,9 @@
     <i class="fa fa-2x fa-search" id="cb-search-btn"></i>
   </button>
 </div>
-<script type="text/javascript" src="/js/jquery.js"></script>
-<script type="text/javascript" src="/js/bootstrap.js"></script>
-<script src="/js/jquery.pjax.js"></script>
-<script src="/js/prettify/prettify.js"></script>
-<script src="/js/base.js"></script>
+<script type="text/javascript" src="/js/base.js"></script>
 <script>
-    <% if (page.category) { %>
-      $('a[href="#<%= page.category %>"]').tab('show');
-    <% } else if (config.active) { %>
-      $('a[href="#<%= config.active %>"]').tab('show');
-    <% } else { %>
-      $('a[href="#终端开发"]').tab('show');
-    <% } %>
+  window.activeTab = <%- JSON.stringify((page.categories && page.categories.length) ? page.categories.data[0].name : (config.active ? config.active : '终端开发')) %>;
 </script>
 <div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right: 0px;
       opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
@@ -38,5 +50,4 @@
 </div>
 
 <link rel="stylesheet" href="/search/css/cb-search.css">
-<script src="/search/js/bootstrap3-typeahead.min.js"></script>
 <script src="/search/js/cb-search.js"></script>
