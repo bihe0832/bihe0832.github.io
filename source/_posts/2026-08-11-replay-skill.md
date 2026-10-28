@@ -80,13 +80,13 @@ replay/
 
 **前置条件**：ADB 已安装、手机 USB 连接并授权调试、Python 3.8+
 
-<img src="./../public/images/android_dev/replay/record.png" width="70%" />
+<img src="/images/android_dev/replay/record.png" width="70%" />
 
 ### ADB 回放
 
 读取录制产物，通过 `adb shell input` 系列命令精确复现每一步操作（tap / swipe / keyevent / text），支持截图前后对比。
 
-<img src="./../public/images/android_dev/replay/replay.png" width="70%" />
+<img src="/images/android_dev/replay/replay.png" width="70%" />
 
 ### Web (Playwright)
 
@@ -236,7 +236,7 @@ setup → [创建目录 → 进度打印 → step_executor(
 }
 ```
 
-<img src="./../public/images/android_dev/replay/flow.png" width="70%" />
+<img src="/images/android_dev/replay/flow.png" width="70%" />
 
 ## 六、事件编辑器
 
@@ -246,7 +246,7 @@ replay 提供了 Web 界面用于查看和编辑录制事件，通过 `zk replay
 - 支持坐标微调、延迟设置、关键帧标记
 - 预览事件截图
 
-<img src="./../public/images/android_dev/replay/edit.png" width="70%" />
+<img src="/images/android_dev/replay/edit.png" width="70%" />
 
 ## 七、报告系统
 
@@ -257,11 +257,11 @@ replay 提供了 Web 界面用于查看和编辑录制事件，通过 `zk replay
 - **关键帧**：标记 `is_critical: true` 的步骤作为报告的"封面"
 - **运行日志**：完整的 run.log 可追溯
 
-<img src="./../public/images/android_dev/replay/report.png" width="70%" />
+<img src="/images/android_dev/replay/report.png" width="70%" />
 
-<img src="./../public/images/android_dev/replay/screenshot.png" width="70%" />
+<img src="/images/android_dev/replay/screenshot.png" width="70%" />
 
-<img src="./../public/images/android_dev/replay/screenshot-web.png" width="70%" />
+<img src="/images/android_dev/replay/screenshot-web.png" width="70%" />
 
 ## 八、通知系统
 

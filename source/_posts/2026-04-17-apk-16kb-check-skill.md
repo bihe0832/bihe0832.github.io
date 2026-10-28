@@ -64,7 +64,7 @@ Google 官方提供了 `zipalign` 和 AOSP 的 `check_elf_alignment.sh`，但在
 
 ### 4.1 zipalign 验证 + 自动修复
 
-<img src="./../public/images/android_dev/apk-16kb-check/zipalign-report.png" width="70%" />
+<img src="/images/android_dev/apk-16kb-check/zipalign-report.png" width="70%" />
 
 - 总检查项 **1173**，通过 **1161**，未通过 **12**
 - 工具识别出未对齐后，自动执行 `zipalign -P 16 -f 4` 修复
@@ -72,7 +72,7 @@ Google 官方提供了 `zipalign` 和 AOSP 的 `check_elf_alignment.sh`，但在
 
 ### 4.2 ELF LOAD 段检查
 
-<img src="./../public/images/android_dev/apk-16kb-check/elf-alignment-report.png" width="70%" />
+<img src="/images/android_dev/apk-16kb-check/elf-alignment-report.png" width="70%" />
 
 - 64 位 `.so` 文件共 **16** 个
 - 对齐 (ALIGNED) **13** 个，未对齐 (UNALIGNED) **3** 个
@@ -80,7 +80,7 @@ Google 官方提供了 `zipalign` 和 AOSP 的 `check_elf_alignment.sh`，但在
 
 ### 4.3 针对性修复方案
 
-<img src="./../public/images/android_dev/apk-16kb-check/fix-solution.png" width="70%" />
+<img src="/images/android_dev/apk-16kb-check/fix-solution.png" width="70%" />
 
 - **方案一**：zipalign 重新对齐（已自动执行）
 - **方案二**：ELF 段需重新编译，给出具体链接参数和可替换的 NDK 版本

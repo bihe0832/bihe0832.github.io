@@ -24,11 +24,11 @@ description: desc
 
 直接下载的方式，补丁包已经放在作者的服务器，体验时直接下载安装APK即可。
 	
-- [点击下载](https://blog.bihe0832.com/public/resource/Hotfix-debug.apk)
+- [点击下载](https://blog.bihe0832.com/resource/Hotfix-debug.apk)
 	
 - 扫码下载APK：
 	
-![Demo下载二维码](https://blog.bihe0832.com/public/images/gradle-test-hotfix-apk-download.png)
+![Demo下载二维码](https://blog.bihe0832.com/images/gradle-test-hotfix-apk-download.png)
 
 ### 运行项目生成：
 

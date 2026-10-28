@@ -39,13 +39,13 @@ description: 基于二维码实现签到的完整流程
     1.设备1（与会者手机）根据需求扫描对应二维码获取入场券。PS：现实场景入场券为事先获得
     
 
-![二维码入场券](https://blog.bihe0832.com/public/images/qrsign1.png "二维码入场券")
+![二维码入场券](https://blog.bihe0832.com/images/qrsign1.png "二维码入场券")
 
     2.设备2（会场签到设备）打开微信，扫描设备1入场券，无法获得报名信息 
     3.设备2打开微信，扫描下方二维码获得授权 
     
 
-![签到设备授权](https://blog.bihe0832.com/public/images/qrsign2.png "签到设备授权")
+![签到设备授权](https://blog.bihe0832.com/images/qrsign2.png "签到设备授权")
 
     4.设备2再次扫描设备1入场券，获得报名信息并签到 
     5.设备1扫描不同类别的与会者二维码后，重复第四步

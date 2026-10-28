@@ -14,8 +14,8 @@ description: desc
 
 下面是我手机里面出行时使用的应用的汇总，简单截图了下。主要包括攻略查询类、导航类、打车类、订票订酒店类、信息查询类。接下来会按照的旅行的不同阶段详细介绍一下其中的一些。
 
-<img src="./../public/photo/software/lv_software.jpg" width="70%" />
-<img src="./../public/photo/software/lv_software_2.jpg" width="70%" />
+<img src="/photo/software/lv_software.jpg" width="70%" />
+<img src="/photo/software/lv_software_2.jpg" width="70%" />
 
 
 ## 出行准备
@@ -43,16 +43,16 @@ description: desc
 	- 主要用于路线规划、和总体了解
 	- 网址：[http://map.baidu.com/](http://map.baidu.com/)
 	
-		<img alt="" src="./../public/photo/software/baidu_map_lx.jpg" width="600px">
+		<img alt="" src="/photo/software/baidu_map_lx.jpg" width="600px">
 
 - 谷歌地图：
 	- 主要用于制作路线图
 	- [https://www.google.com/maps](https://www.google.com/maps)		
-		<img alt="" src="./../public/photo/software/google_map.jpg" width="600px">
+		<img alt="" src="/photo/software/google_map.jpg" width="600px">
 
 下面附上一张自己制作的路线图事例：
 
-<img alt="" src="./../public/photo/2017cd/CD_MY_LX.jpg" width="800px">
+<img alt="" src="/photo/2017cd/CD_MY_LX.jpg" width="800px">
 	
 ### 机票酒店
 
@@ -95,8 +95,8 @@ description: desc
 
 除了上面的准备，出发前的行李准备也很重要，尤其是长途旅行，准备的东西更加多，因此更容易漏了东西。而且有时候这次出去发现应该带什么忘了，下次出去的时候还是忘记了。目前我是用iPacking，主要用于出发前物品整理和打包。是一款iPhone应用，AppStore应用名称：iPacking。软件截图如下：
 
-<img alt="" src="./../public/photo/software/iPacking_list.png" width="365px">
-<img alt="" src="./../public/photo/software/iPacking_item.png" width="365px">
+<img alt="" src="/photo/software/iPacking_list.png" width="365px">
+<img alt="" src="/photo/software/iPacking_item.png" width="365px">
 
 
 ### 路线规划
@@ -122,7 +122,7 @@ description: desc
 
 	如果去一些海拔比较高的地方的话，可以用实时高度表来实时查看当前的海拔高度的行车速度。实时高度表也是一款iPhone应用，AppStore应用名称：实时高度表。软件截图如下：
 	
-	<img alt="" src="./../public/photo/software/haiba.jpg" width="365px">
+	<img alt="" src="/photo/software/haiba.jpg" width="365px">
 
 - 大众点评
 	
@@ -152,7 +152,7 @@ description: desc
 
 可以看到上面的工具在获取位置时只能获取到拍摄照片的位置的经纬度，这个还是不够直观，因此我们需要将经纬度转化为地理位置。由于自己平时电脑用google地图比较多，因此解析照片的时候直接解析为了google地图支持的经纬度。当需要知道具体的位置的时候，在google数据经纬度即可。如下图：
 
-<img alt="" src="./../public/photo/software/google_map_location.png" width="600px">
+<img alt="" src="/photo/software/google_map_location.png" width="600px">
 
 最后剩下的就是照片修改了，这里的照片修改不是指调色、增加滤镜等。个人很少做这些修改。这里的修改主要是针对图片尺寸和大小。目前拍摄的照片单张都在1M以上，如果浏览者用手机或者网络不好的时候体验都很不好，因此在发表游记时要对拍摄的照片做一些图片压缩、大小修改等方便浏览的调整。
 

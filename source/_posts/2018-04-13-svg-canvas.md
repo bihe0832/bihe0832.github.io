@@ -20,7 +20,7 @@ description: 最近在使用canvas的时候，遇到需要画一些线条的场�
 
 首先我们去google doc自己随便画一个简单的SVG的图片，如下图：
 
-<img src="./../public/images/wx-app-svg-canvas-img.jpg" width="70%" />
+<img src="/images/wx-app-svg-canvas-img.jpg" width="70%" />
 
 最终我们导出为SVG格式，具体svg的图片资源保存在文章对应开源代码的根目录。
 
@@ -32,7 +32,7 @@ description: 最近在使用canvas的时候，遇到需要画一些线条的场�
 
 - 截图：
 
-	<img src="./../public/images/wx-app-svg-canvas-screenshot.jpg" width="70%" />
+	<img src="/images/wx-app-svg-canvas-screenshot.jpg" width="70%" />
 
 	页面左边是我们拖入的SVG文件，右侧就是生成的SVG的JS 代码，部分代码如下：
 	
@@ -143,7 +143,7 @@ description: 最近在使用canvas的时候，遇到需要画一些线条的场�
 
 至此我们就完成了图片到Canvas的转化，最终效果截图如下：
 
-<img src="./../public/images/wx-app-svg-canvas-result-screenshot.jpg" width="70%" />
+<img src="/images/wx-app-svg-canvas-result-screenshot.jpg" width="70%" />
 
 ## 相关资源：
 

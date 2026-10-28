@@ -23,11 +23,11 @@ Github：[https://github.com/bihe0832/Android-gradle-jni-so](https://github.com/
 
 #### Demo 下载：
 	
-- [点击下载](https://blog.bihe0832.com/public/resource/GradleTest-debug.apk)
+- [点击下载](https://blog.bihe0832.com/resource/GradleTest-debug.apk)
 	
 - 扫码下载APK：
 	
-![获取大写md5值的函数调用流程](https://blog.bihe0832.com/public/images/gradle-test-apk-download.png)
+![获取大写md5值的函数调用流程](https://blog.bihe0832.com/images/gradle-test-apk-download.png)
 
 #### 运行工程：
 
@@ -85,7 +85,7 @@ GradleTest是核心工程，它里面包含了一个Android Library的模块grad
 
 下面用图示简单梳理demo中获取大写md5值的函数调用流程
 
-![获取大写md5值的函数调用流程](https://blog.bihe0832.com/public/images/gradle-test-func-call.png)
+![获取大写md5值的函数调用流程](https://blog.bihe0832.com/images/gradle-test-func-call.png)
 
 ## 使用场景
 

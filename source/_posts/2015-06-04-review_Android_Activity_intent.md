@@ -8,7 +8,7 @@ description: Activity
 
 #### Activity生命周期：
 
-<img src="./../public/images/android-activity-basic-lifecycle.png" width="70%" />
+<img src="/images/android-activity-basic-lifecycle.png" width="70%" />
 
 #### 指定程序首次启动的Activity
 

@@ -96,7 +96,7 @@ Nexus安装完成以后，成功启动服务以后，打开浏览器，输入：
 
 点击add，选择 proxy Repository，然后添加相关配置。下图为个人添加oschina的镜像的相关配置：
 
-![添加oschina的镜像](https://blog.bihe0832.com/public/images/nexus-repository-add-new.jpeg "添加oschina的镜像")
+![添加oschina的镜像](https://blog.bihe0832.com/images/nexus-repository-add-new.jpeg "添加oschina的镜像")
 
 配置完所有配置以后点击save，即可把oschina添加到代理仓库。
 
@@ -110,7 +110,7 @@ Nexus安装完成以后，成功启动服务以后，打开浏览器，输入：
 
 由于公司内网存在代理，因此为了让仓库正常使用，需要添加网络代理。在左侧Administraion中选择Server，在里面有设置Http Proxy的地方，配置对应的代理即可。如下图：
 
-![代理设置](https://blog.bihe0832.com/public/images/nexus-proxy.jpeg "代理设置")
+![代理设置](https://blog.bihe0832.com/images/nexus-proxy.jpeg "代理设置")
 
 ## 使用私有库
 

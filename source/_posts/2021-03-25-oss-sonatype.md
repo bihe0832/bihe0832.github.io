@@ -8,7 +8,7 @@ description: 这篇文章从头开始介绍怎么把开源代码发布到Sonatyp
 
 在平时的开发中，经常会写一些通用的代码，为了方便自己后续使用，也为了方便更多的人，大都会选择发布到github或者jcenter等一些开源库。之前一直是使用jcenter，结果活久见，前几天发布的时候登录，竟然看到了这：
 
-<img alt="" src="./../public/images/jcenter/jcenter_die.png" width="600px">
+<img alt="" src="/images/jcenter/jcenter_die.png" width="600px">
 
 又红又粗必然是有大事，果然没想到他竟然要跑路了，核心内容就是：
 
@@ -46,7 +46,7 @@ Jcenter对于 Group Id的归属没有强校验，Sonatype会要求你提供权�
 
 	登录以后，点击上面的链接，进入网页，按照下图的指引，点击新建，只需要填写概要以下的信息即可，基本上主要是项目主页，项目源码和要注册的Group Id。
 
-	<img alt="" src="./../public/images/jcenter/sonatype_new.png" width="600px">
+	<img alt="" src="/images/jcenter/sonatype_new.png" width="600px">
 	
 	如果后续有信息需要修改，比如要修改Group Id，改完之后点击工单上方的“response”按钮，以通知平台已修改完毕。
 	
@@ -128,7 +128,7 @@ Jcenter对于 Group Id的归属没有强校验，Sonatype会要求你提供权�
 	
 	使用注册 Group Id是注册的sonatype 的账号和密码登录，按照下图的步骤，获取Token
 	
-	<img alt="" src="./../public/images/jcenter/sonatype_token.png" width="600px">
+	<img alt="" src="/images/jcenter/sonatype_token.png" width="600px">
 
 2. 配置Token信息
 
@@ -165,13 +165,13 @@ Jcenter对于 Group Id的归属没有强校验，Sonatype会要求你提供权�
 
 打开 [https://s01.oss.sonatype.org](https://s01.oss.sonatype.org) 使用注册 Group Id是注册的sonatype 的账号和密码登录，按照下图的步骤，查看刚才新上传的代码
 
-<img alt="" src="./../public/images/jcenter/sonatype_upload.png" width="600px">
+<img alt="" src="/images/jcenter/sonatype_upload.png" width="600px">
 
 ### 同步到 Maven Central
 
 如果确认Content的信息正确，勾选点击上方的Close，提交申请
 
-<img alt="" src="./../public/images/jcenter/sonatype_request.png" width="600px">
+<img alt="" src="/images/jcenter/sonatype_request.png" width="600px">
 
 然后刷新页面，就可以在Activity查看信息审核的进度，如果失败了，这里会提示哪一步出错了，以及出错原因，根据原因解决问题，删了有问题版本，再次提交申请，如果审核通过了，上面的Release按钮会变为可点击，点击即可同步到中央仓库
 

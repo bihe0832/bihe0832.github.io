@@ -944,7 +944,7 @@ git log包含了相当丰富的版本提交信息，平时我们有时候想要�
 	
 	* 55df910 - android schema (2019-12-06 16:34:10) <子勰>|
 	|  _posts/2019-12-04-androir_schema.md |  34 ++++++++++++++++++++++++++++++++++
-	|  public/images/router_page.png       | Bin 0 -> 282166 bytes
+	|  /images/router_page.png       | Bin 0 -> 282166 bytes
 	|  2 files changed, 34 insertions(+)
 
 ### 添加快捷方式
@@ -969,7 +969,7 @@ git log包含了相当丰富的版本提交信息，平时我们有时候想要�
 	
 	* 55df910 - android schema (2019-12-06 16:34:10) <子勰>|
 	|  _posts/2019-12-04-androir_schema.md |  34 ++++++++++++++++++++++++++++++++++
-	|  public/images/router_page.png       | Bin 0 -> 282166 bytes
+	|  /images/router_page.png       | Bin 0 -> 282166 bytes
 	|  2 files changed, 34 insertions(+)
 
 	➜  _posts git:(master) ✗ git logl

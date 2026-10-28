@@ -693,16 +693,16 @@ description: 十一川西 7 人自驾寻秋，深圳往返，九寨沟、黄龙�
 
 ### 第 2 天 · 2026-09-29 · 九寨沟全日（VIP 观光车）
 
-<img alt="九寨沟景区开放区域游览线路" src="./../public/photo/2026chuanxi/jiuzhaigou-open-area.jpg" width="600px">
+<img alt="九寨沟景区开放区域游览线路" src="/photo/2026chuanxi/jiuzhaigou-open-area.jpg" width="600px">
 
 ### 第 3 天 · 2026-09-30 · 黄龙（索道+观光车）→ 毕棚沟
 
-<img alt="黄龙景区路线图" src="./../public/photo/2026chuanxi/huanglong-route.png" width="600px">
+<img alt="黄龙景区路线图" src="/photo/2026chuanxi/huanglong-route.png" width="600px">
 
 ### 第 4 天 · 2026-10-01 · 毕棚沟 → 理小路 → 四姑娘山镇
 
-<img alt="毕棚沟路线攻略" src="./../public/photo/2026chuanxi/bipenggou-route.png" width="600px">
+<img alt="毕棚沟路线攻略" src="/photo/2026chuanxi/bipenggou-route.png" width="600px">
 
 ### 第 5 天 · 2026-10-02 · 双桥沟全日 → 卧龙神树坪
 
-<img alt="四姑娘山景区游玩攻略" src="./../public/photo/2026chuanxi/siguniangshan-route.png" width="600px">
+<img alt="四姑娘山景区游玩攻略" src="/photo/2026chuanxi/siguniangshan-route.png" width="600px">

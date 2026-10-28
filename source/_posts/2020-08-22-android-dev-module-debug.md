@@ -50,7 +50,7 @@ description: 这篇文章总结组件化开发框架怎么基于组件化更好�
 
 	以下面的依赖关系为例：
 
-	<img src="./../public/images/android_dev/module_debug.png" width="80%" />
+	<img src="/images/android_dev/module_debug.png" width="80%" />
 
 	在 PubA 的开发中，他作为 APPTest 的 一个子模块，APPTest 是整个应用的宿主；而等到正式发布的时候，他将作为应用的宿主，整个应用不再包含APPTest
 

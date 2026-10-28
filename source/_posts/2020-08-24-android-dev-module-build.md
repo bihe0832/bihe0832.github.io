@@ -22,7 +22,7 @@ description: 这篇文章总结组件化开发框架怎么通过自动构建，�
 
 下面是AAF 目前的构建、发布、归档的流程。
 
-<img src="./../public/images/android_dev/aaf_build.png" width="80%" />
+<img src="/images/android_dev/aaf_build.png" width="80%" />
 
 
 关于自动构建的具体构建内容，也阔以看一篇以前写的 [SDK开发经验之自动构建](https://blog.bihe0832.com/sdk_experience_auto_build.html) ，两者算是一脉相承不断完善吧。

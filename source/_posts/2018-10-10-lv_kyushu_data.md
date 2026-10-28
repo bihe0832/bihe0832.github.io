@@ -80,11 +80,11 @@ description: 这是个人在出行前为了方便制作攻略专门整理的各�
 
 - 相关附件：
 
-  - [JR九州列车时刻表.pdf](./../public/resource/kagoshima/d1226ac0.pdf)
+  - [JR九州列车时刻表.pdf](/resource/kagoshima/d1226ac0.pdf)
   
-  - [JR九州列车路线图.pdf](./../public/resource/kagoshima/96510b3b.pdf)
+  - [JR九州列车路线图.pdf](/resource/kagoshima/96510b3b.pdf)
   
-  - [JR九州列车路线图_en.pdf](./../public/resource/kagoshima/fc269096.pdf)
+  - [JR九州列车路线图_en.pdf](/resource/kagoshima/fc269096.pdf)
   
 #### 小火车介绍：
 
@@ -132,13 +132,13 @@ description: 这是个人在出行前为了方便制作攻略专门整理的各�
 
 	- [https://kyushurailpass.jrkyushu.co.jp/reserve/TopPage](https://kyushurailpass.jrkyushu.co.jp/reserve/TopPage)
 	  
-	- [旅行社购买九州铁路周游券预约指定席.pdf](./../public/resource/kagoshima/1d40e923.pdf)
+	- [旅行社购买九州铁路周游券预约指定席.pdf](/resource/kagoshima/1d40e923.pdf)
 	
-	- [旅行社购买九州铁路周游券预约指定席兑换材料.pdf](./../public/resource/kagoshima/f9696e10.pdf)
+	- [旅行社购买九州铁路周游券预约指定席兑换材料.pdf](/resource/kagoshima/f9696e10.pdf)
 	  
 - 特色列车申请表
 
-  [南部九州版铁路周游券指定席申请表.pdf](./../public/resource/kagoshima/4620527c.pdf)
+  [南部九州版铁路周游券指定席申请表.pdf](/resource/kagoshima/4620527c.pdf)
 
 - 网上预订常见问题（JR KYUSHU RAIL PASS Online Booking   Q&A ）：
 
@@ -150,17 +150,17 @@ description: 这是个人在出行前为了方便制作攻略专门整理的各�
 
   - 指南电子版官网：[http://www.kagoshima-kankou.com/for/brochures.htm](http://www.kagoshima-kankou.com/for/brochures.html)
 
-    - [鹿儿岛市旅行观光指南.pdf](./../public/resource/kagoshima/d488cf86.pdf)
+    - [鹿儿岛市旅行观光指南.pdf](/resource/kagoshima/d488cf86.pdf)
 
-    - [鹿儿岛市旅行指南.pdf](./../public/resource/kagoshima/aacffdef.pdf)
+    - [鹿儿岛市旅行指南.pdf](/resource/kagoshima/aacffdef.pdf)
 
-    - [鹿儿岛市CityView路线图.pdf](./../public/resource/kagoshima/43bd47fb.pdf)
+    - [鹿儿岛市CityView路线图.pdf](/resource/kagoshima/43bd47fb.pdf)
   
   - 霧島市観光協会网站
   
     - [http://kirishimakankou.com/charms_ck ](http://kirishimakankou.com/charms_ck)
     
-    - [雾岛观光.pdf](./../public/resource/kagoshima/36b3ac55.pdf)
+    - [雾岛观光.pdf](/resource/kagoshima/36b3ac55.pdf)
   
 #### 鹿儿岛各种交通介绍
 
@@ -182,13 +182,13 @@ description: 这是个人在出行前为了方便制作攻略专门整理的各�
 
     [http://nangoku-kotsu.com/ashuttle/kagoshima](http://nangoku-kotsu.com/ashuttle/kagoshima/)
 
-    [鹿儿岛机场市内机场巴士时刻.pdf](./../public/resource/kagoshima/93d09481.pdf)
+    [鹿儿岛机场市内机场巴士时刻.pdf](/resource/kagoshima/93d09481.pdf)
     
-    [鹿儿岛机场隼人机场巴士时刻.pdf](./../public/resource/kagoshima/73518a45.pdf)
+    [鹿儿岛机场隼人机场巴士时刻.pdf](/resource/kagoshima/73518a45.pdf)
     
-    [鹿儿岛机场雾岛机场巴士时刻.pdf](./../public/resource/kagoshima/399bdade.pdf)
+    [鹿儿岛机场雾岛机场巴士时刻.pdf](/resource/kagoshima/399bdade.pdf)
     
-    [鹿儿岛机场国分机场巴士时刻.pdf](./../public/resource/kagoshima/dd726b56.pdf)
+    [鹿儿岛机场国分机场巴士时刻.pdf](/resource/kagoshima/dd726b56.pdf)
     
  - 樱岛轮渡 - 时刻表 收费表
  
@@ -244,7 +244,7 @@ description: 这是个人在出行前为了方便制作攻略专门整理的各�
 
   運賃・時刻表 -トッピー&ロケット：[https://www.tykousoku.jp/fare_time/](https://www.tykousoku.jp/fare_time/)
   
-  <img src="./../public/resource/kagoshima/f836e166.png" width="70%" />
+  <img src="/resource/kagoshima/f836e166.png" width="70%" />
 
 - 屋久岛船票通航状态
 
@@ -252,14 +252,14 @@ description: 这是个人在出行前为了方便制作攻略专门整理的各�
 
 #### 屋久岛岛内交通介绍
 
-- [屋久岛旅行路线.pdf](./../public/resource/kagoshima/86680189.pdf)
-- [屋久岛公交站点日文.pdf](./../public/resource/kagoshima/a193c334.pdf)
-- [屋久岛公交站点.pdf](./../public/resource/kagoshima/c773e47c.pdf)
-- [屋久岛公交主要路线时刻.pdf](./../public/resource/kagoshima/4527c52b.pdf)
-- [屋久岛公交详细路线时刻.pdf](./../public/resource/kagoshima/fd7bc103.pdf)
-- [屋久岛公交详细路线时刻英文.pdf](./../public/resource/kagoshima/5d391186.pdf)
-- [屋久岛白谷云水峡路线.pdf](./../public/resource/kagoshima/00c68205.pdf)
-- [屋久岛登山路线用时参考.pdf](./../public/resource/kagoshima/3ec6c207.pdf)
+- [屋久岛旅行路线.pdf](/resource/kagoshima/86680189.pdf)
+- [屋久岛公交站点日文.pdf](/resource/kagoshima/a193c334.pdf)
+- [屋久岛公交站点.pdf](/resource/kagoshima/c773e47c.pdf)
+- [屋久岛公交主要路线时刻.pdf](/resource/kagoshima/4527c52b.pdf)
+- [屋久岛公交详细路线时刻.pdf](/resource/kagoshima/fd7bc103.pdf)
+- [屋久岛公交详细路线时刻英文.pdf](/resource/kagoshima/5d391186.pdf)
+- [屋久岛白谷云水峡路线.pdf](/resource/kagoshima/00c68205.pdf)
+- [屋久岛登山路线用时参考.pdf](/resource/kagoshima/3ec6c207.pdf)
 
 #### 屋久岛部分重要公交站点：
 

@@ -22,10 +22,10 @@ description: 因为工作的原因，中断了一段时间以后，又开始接�
 
 - 小程序码：
 
-	<img src="./../public/img/wxapp-code.jpg" width="70%" />
+	<img src="/img/wxapp-code.jpg" width="70%" />
 
 - 页面截图：
 
-	<img src="./../public/images/zyzs_wxapp_home.jpg" width="70%" />
+	<img src="/images/zyzs_wxapp_home.jpg" width="70%" />
 
 

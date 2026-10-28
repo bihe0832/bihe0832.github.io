@@ -20,7 +20,7 @@ description: 这篇文章主要总结了我们基于路由的组件通信怎么�
 
 ### 路由实现
 
-<img src="./../public/images/android_dev/aaf_router.png" width="80%" />
+<img src="/images/android_dev/aaf_router.png" width="80%" />
 
 
 - 路由表生成
@@ -144,7 +144,7 @@ description: 这篇文章主要总结了我们基于路由的组件通信怎么�
 
 如果对于一些页面，在打开前有前置条件，例如是不是已经登录，或者对于特权相关的，需要有权限才能跳转的，在没有路由之前添加就会很麻烦，在基于路由以后，我们可以在打开路由之前添加拦截规则，拦截规则处理结束以后再继续跳转。
 
-<img src="./../public/images/android_dev/router.png" width="80%" />
+<img src="/images/android_dev/router.png" width="80%" />
 
 相关代码：
 

@@ -14,7 +14,7 @@ description: 这篇文章主要总结组件化开发框架中，我们是怎么�
 
 下图列出来大部分项目都会遇到的常用的依赖关系（后面的内容都会基于这个依赖关系图来介绍。）
 
-<img src="./../public/images/android_dev/module_dependencies.png" width="80%" />
+<img src="/images/android_dev/module_dependencies.png" width="80%" />
 
 在基于上面的依赖关系下，我们设想一个场景：当前参与开发源码依赖的模块有ModuleH、ModuleE、ModuleB、ModuleI；此时
 
@@ -30,7 +30,7 @@ description: 这篇文章主要总结组件化开发框架中，我们是怎么�
 
 为了方便组件依赖的管理，我们对整个组件化项目的工程配置、编译、依赖管理等进行了整体重构。
 
-<img src="./../public/images/android_dev/aaf_dependencies.png" width="80%" />
+<img src="/images/android_dev/aaf_dependencies.png" width="80%" />
 
 
 包括**模块怎么导入、依赖关系怎么添加、修改以后怎么更新组件**。由于Android 原有的构建方式解决这几个问题比较复杂，因此我们基于Gradle对于这部分做了比较大的改动。重构以后：

@@ -37,7 +37,7 @@ Tables Generator 是一个可以在线快速生成 Text、Markdown 格式等多�
 
 - 使用示例：
 
-	<img src="./../public/images/markdown_table_new.gif" width="70%" />
+	<img src="/images/markdown_table_new.gif" width="70%" />
 
 #### 表格对齐
 
@@ -45,7 +45,7 @@ Tables Generator 是一个可以在线快速生成 Text、Markdown 格式等多�
 
 - 应用效果
 
-	<img src="./../public/images/markdown_table.jpg" width="70%" />
+	<img src="/images/markdown_table.jpg" width="70%" />
 
 
 - 对应源码
@@ -60,7 +60,7 @@ Tables Generator 是一个可以在线快速生成 Text、Markdown 格式等多�
 
 - 应用效果
 
-	<img src="./../public/images/markdown_table_2.jpg" width="70%" />
+	<img src="/images/markdown_table_2.jpg" width="70%" />
 
 - 对应源码：https://cdn.bihe0832.com/css/markdown-table.css
 	

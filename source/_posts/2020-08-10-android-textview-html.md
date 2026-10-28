@@ -31,6 +31,6 @@ Android 原生 Textview 对于 HTML的 支持相对还比较多，考虑到兼�
 
 - Android 效果：
 	
-	<img src="./../public/images/android_textview_html.png" width="600px" />
+	<img src="/images/android_textview_html.png" width="600px" />
 
 	

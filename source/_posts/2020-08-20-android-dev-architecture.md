@@ -50,7 +50,7 @@ description: 这篇文章主要总结和介绍开发框架的设计。框架核�
 
 目前主流的开发框架一般都是三层（基础库、业务公共逻辑、业务模块），然后所有模块单向依赖，例如下图。
 
-<img src="./../public/images/android_dev/common_architecture.png" width="80%" />
+<img src="/images/android_dev/common_architecture.png" width="80%" />
 
 这种框架设计结构简单明了，而且单向依赖模块之间的耦合就可以大大减小，但是他存在一个缺点，随着业务的增长，模块越来越多，还是会越来越膨胀。
 

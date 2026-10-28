@@ -17,7 +17,7 @@ TODO顾名思义就是要做的事情，一般你当前做不了但是迟早需�
 
 TODO标签是目前个人感觉作用最大的一个功能。一般的每个的IDE都会有tasklist。例如下面是eclipse的：
 
-![eclipse todo](https://blog.bihe0832.com/public/images/sdk_eclipse_todo.png)
+![eclipse todo](https://blog.bihe0832.com/images/sdk_eclipse_todo.png)
 
 当你在代码中添加注释的时候以大写的TODO开始，这个标记就会出现在tasklist里面。例如下面的TODO就对应tasklist里面的第一条TODO信息：
 

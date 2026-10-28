@@ -16,7 +16,7 @@ description: 随着拍摄设备的普及，我们随时随地都可以留下各�
 
 - 使用 文件 -> 导出  将照片从相薄导出到文件，配置如下图：
 
-	<img src="./../public/photo/software/iPhotos.png" width="80%" />
+	<img src="/photo/software/iPhotos.png" width="80%" />
 
 - 复制一份已下载好的所有已备份照片到照片处理目录
 
