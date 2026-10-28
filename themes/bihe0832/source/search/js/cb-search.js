@@ -77,7 +77,11 @@
       matches.forEach(function (m) {
         var div = document.createElement('div');
         div.className = 'cb-search-item';
-        div.textContent = m.name;
+        var esc = m.name.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        var idx = esc.toLowerCase().indexOf(q);
+        div.innerHTML = idx >= 0
+          ? esc.slice(0, idx) + '<mark>' + esc.slice(idx, idx + q.length) + '</mark>' + esc.slice(idx + q.length)
+          : esc;
         div.addEventListener('click', function () {
           closeSearch();
           window.location.href = m.url;

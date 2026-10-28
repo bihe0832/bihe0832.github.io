@@ -2,16 +2,14 @@
 .cb-search-tool strong { font-weight: bolder; color: red; }
 .cb-search-dropdown {
   position: fixed;
-  top: 96px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  max-width: 640px;
+  top: 116px;
+  left: 15%;
+  width: 70%;
   max-height: 60vh;
   overflow-y: auto;
   z-index: 10000;
   background: #fff;
-  border-radius: 6px;
+  border-radius: 0 0 6px 6px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.35);
 }
 .cb-search-item {
@@ -24,6 +22,8 @@
 }
 .cb-search-item:last-child { border-bottom: none; }
 .cb-search-item:hover { background: #18bc9c; color: #fff; }
+.cb-search-item mark { background: #ffe58f; color: #d4380d; padding: 0 2px; border-radius: 2px; }
+.cb-search-item:hover mark { color: #fff; background: rgba(0,0,0,0.25); }
 .cb-search-empty { padding: 20px; text-align: center; color: #999; }
 </style>
 
