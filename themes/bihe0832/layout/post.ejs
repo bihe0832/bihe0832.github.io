@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-12 aside3-title">
+    <br>
+    <h2 id="#identifier"><%= page.title %></h2>
+    <h5>「 <%= (page.categories && page.categories.length) ? page.categories.data[0].name : '' %> 」<% if (!page.no_date) { %> ——  &nbsp;<%= date(page.date, 'YYYY年MM月DD日') %><% } %> </h5>
+  </div>
+  <div class="col-md-12 aside3-content">
+    <%- partial('partial/content') %>
+    <hr>
+    <div id="content">
+      <%- page.content %>
+    </div>
+    <hr>
+    <%- partial('partial/reward') %>
+    <hr>
+  </div>
+</div>

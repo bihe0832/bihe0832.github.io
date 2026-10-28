@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+<title><%= page.title %> | <%= config.title %></title>
+<meta name="author" content="<%= config.author %>">
+<% if (page.keywords) { %>
+  <meta name="keywords" content="<%= page.keywords %>">
+<% } %>
+<% if (page.description) { %>
+  <meta name="description" content="<%= page.description %>">
+<% } %>
+<meta property="og:title" content="<%= page.title %>" />
+<meta property="og:locale" content="zh_CN" />
+<meta name="google-site-verification" content="3wzNgbjvFNHkH-8QpougMZ0s9Y4GEjG49kEb49QQqpw" />
+<meta property="og:description" content="<%= page.description %>" />
+<link rel="canonical" href="<%= config.url %><%= url_for(page.path) %>" />
+<meta property="og:url" content="<%= config.url %><%= url_for(page.path) %>" />
+<meta property="og:site_name" content="<%= config.title %>" />
+<meta property="og:type" content="article" />
+<script type="application/ld+json">
+{
+    "@type":"BlogPosting",
+    "url":"<%= config.url %><%= url_for(page.path) %>",
+    "headline":"<%= page.title %>",
+    "dateModified":"<%= date(Date.now(), 'YYYY-MM-DD') %>",
+    "datePublished":"<%= page.date ? date(page.date, 'YYYY-MM-DD') : '' %>",
+    "author":{"@type":"Person","name":"<%= config.author %>"},
+    "description":"<%= page.description %>",
+    "publisher":{
+        "@type":"Organization",
+        "name":"<%= config.author %>",
+        "logo": {"@type": "ImageObject", "url": "<%= config.url %>/img/head.jpg"}
+      },
+    "image": "<%= config.url %>/img/cv.png",
+    "mainEntityOfPage":{"@type":"WebPage", "@id":"<%= config.url %><%= url_for(page.path) %>"},
+    "@context":"https://schema.org"
+  }
+</script>
+<link rel="shortcut icon" href="<%= config.favicon %>" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/bootstrap.css">
+<link rel="stylesheet" href="/css/font-awesome.css">
+<link rel="stylesheet" href="/css/base.css?version=1">
+<link href="/atom.xml" rel="alternate" title="<%= config.title %>" type="application/atom+xml">

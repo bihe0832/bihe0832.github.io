@@ -1,0 +1,48 @@
+---
+layout: false
+---
+<!doctype html>
+<html>
+<head>
+  <%- partial('partial/header') %>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="/css/kityminder.css">
+  <style type="text/css">
+    html, body { height: 100%; margin: 0; }
+    body { display: flex; flex-direction: column; background-color: #1f2c39; }
+    .go-back { padding: 20px 0 0 20px; font-size: 18px; line-height: 1.5; }
+    .go-back a { color: #fff; }
+    .aside3-title { padding: 0 20px; color: #fff; }
+    .aside3-title h3 { color: #fff; margin: 10px 0; }
+    .aside3-title hr { border-color: #3a4a5a; }
+    .km-view { flex: 1; min-height: 500px; }
+  </style>
+  <script type="text/javascript" src="/js/kity.min.js"></script>
+</head>
+<body>
+  <div class="go-back">
+    <a class="pjaxlink" href="/"> 回到主页</a>
+  </div>
+  <div class="col-md-12 aside3-title">
+    <h3 id="#identifier"><%= page.title %></h3>
+    <% if (!page.no_date) { %><%= date(page.date, 'YYYY年MM月DD日') %><% } %>
+    <HR>
+  </div>
+  <%- page.content %>
+  <script type="text/javascript" src="/js/kityminder.core.min.js"></script>
+  <script type="text/javascript">
+    // 兼容：kity 在 Paper 未 renderTo 时 node.style 为 undefined，导致 setStyle 报错
+    if (window.kity && kity.Paper && kity.Paper.prototype.setStyle) {
+      var _setStyle = kity.Paper.prototype.setStyle;
+      kity.Paper.prototype.setStyle = function () {
+        try { return _setStyle.apply(this, arguments); }
+        catch (e) { return this; }
+      };
+    }
+    var km = window.km = new kityminder.Minder();
+    km.setup('#minder-view');
+    km.disable();
+    km.execCommand('hand');
+  </script>
+</body>
+</html>

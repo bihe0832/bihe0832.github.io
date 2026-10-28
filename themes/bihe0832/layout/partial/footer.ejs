@@ -1,0 +1,56 @@
+<style>
+.cb-search-tool strong { font-weight: bolder; color: red; }
+.cb-search-dropdown {
+  position: fixed;
+  top: 116px;
+  left: 15%;
+  width: 70%;
+  max-height: 60vh;
+  overflow-y: auto;
+  z-index: 10000;
+  background: #fff;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
+}
+.cb-search-item {
+  padding: 13px 18px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
+.cb-search-item:last-child { border-bottom: none; }
+.cb-search-item:hover, .cb-search-item.active { background: #E74851; color: #fff; }
+.cb-search-item mark { background: #fdecea; color: #E74851; padding: 0 2px; border-radius: 2px; }
+.cb-search-item:hover mark { color: #fff; background: rgba(0,0,0,0.25); }
+.cb-search-empty { padding: 20px; text-align: center; color: #999; }
+</style>
+
+<div style="position:fixed;right:20px;top:10px;">
+  <button id="nav_btn" class="btn btn-primary">
+    <i class="fa fa-2x fa-navicon"></i>
+  </button>
+  <button id="search_btn" class="btn btn-primary">
+    <i class="fa fa-2x fa-search" id="cb-search-btn"></i>
+  </button>
+</div>
+<script type="text/javascript" src="/js/base.js"></script>
+<script>
+  window.activeTab = <%- JSON.stringify((page.categories && page.categories.length) ? page.categories.data[0].name : (config.active ? config.active : '终端开发')) %>;
+</script>
+<div class="cb-search-tool" style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right: 0px;
+      opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
+    <input type="text" class="form-control cb-search-content" id="cb-search-content" style="position: fixed; top: 60px" placeholder="文章标题 摘要 关键字 标签" >
+    <div style="position: fixed; top: 16px; right: 16px;">
+        <button id="nav_btn" class="btn">
+          <a id="cb-search-google"><i class="fa fa-2x fa-google"></i></a>
+        </button>
+        <button id="nav_btn" class="btn">
+          <a id="cb-close-btn"><i class="fa fa-2x fa-close"></i></a>
+        </button>
+    </div>
+</div>
+
+<link rel="stylesheet" href="/search/css/cb-search.css">
+<script src="/search/js/cb-search.js"></script>

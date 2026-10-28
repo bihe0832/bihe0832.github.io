@@ -1,0 +1,73 @@
+<style>
+.aside1_bottom_tr:hover { background: transparent; }
+.aside1_bottom_tr td { border: 0px; }
+</style>
+<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 aside visible-md visible-lg">
+  <div class="row">
+    <div class="col-md-4 col-xs-4 aside1">
+      <br>
+      <a class="pjaxlink" href="<%= config.author_info.link %>"><img src="<%= config.gavatar %>" class="img-circle avatar"></a>
+      <br><br>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a class="pjaxlink" href="<%= config.author_info.tools %>" target="_blank"><%= theme.locals.tools %></a></li>
+        <% site.categories.each(function(category) { %>
+          <li><a href="#<%= category.name %>" data-toggle="tab"><%= category.name %></a></li>
+        <% }) %>
+        <li><a href="#tags" data-toggle="tab"><%= theme.locals.tags %></a></li>
+        <li><a class="pjaxlink" href="/archives/"><%= theme.locals.archive %></a></li>
+        <li><a class="pjaxlink" href="/about/"><%= theme.locals.about %></a></li>
+      </ul>
+      <div class="aside1_bottom">
+        <table class="table table-condensed" style="border-width: 1px 0 0 0">
+          <tr class="aside1_bottom_tr">
+            <td><a href="<%= config.author_info.github %>" target="_blank"><i class="fa fa-github fa-x"></i></a></td>
+            <td><a href="<%= config.author_info.android %>" target="_blank"><i class="fa fa-android fa-x"></i></a></td>
+            <td><a href="<%= config.author_info.tools %>" target="_blank"><i class="fa fa-magic fa-x"></i></a></td>
+            <td><a href="mailto:<%= config.author_info.email %>?subject=<%= config.title %>"><i class="fa fa-envelope-o fa-x"></i></a></td>
+            <td><a href="/atom.xml" target="_blank"><i class="fa fa-rss fa-x"></i></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-8 col-xs-8 aside2">
+      <div class="row">
+        <div class="tab-content">
+          <% site.categories.each(function(category) { %>
+            <div class="tab-pane" id="<%= category.name %>">
+              <div class="list-group">
+                <h2 class="center"><%= category.name %></h2>
+                <% category.posts.each(function(post) { %>
+                  <% if (post.recommand) { %>
+                    <a href="<%= url_for(post.path) %>" class="pjaxlink recommand_by_zixie list-group-item "><%= post.title %></a>
+                  <% } else { %>
+                    <a href="<%= url_for(post.path) %>" class="list-group-item pjaxlink"><%= post.title %></a>
+                  <% } %>
+                <% }) %>
+              </div>
+            </div>
+          <% }) %>
+          <div class="tab-pane" id="tags">
+            <div class="panel-group" id="accordion">
+              <h2 class="center"><%= theme.locals.tags %></h2>
+              <% site.tags.each(function(tag) { %>
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#<%= tag.name %>"><%= tag.name %></a>
+                      <span class="badge pull-right"><%= tag.length %></span>
+                    </h4>
+                  </div>
+                  <div id="<%= tag.name %>" class="panel-collapse collapse">
+                    <% tag.posts.each(function(post) { %>
+                      <a href="<%= url_for(post.path) %>" class="list-group-item pjaxlink"><%= post.title %></a>
+                    <% }) %>
+                  </div>
+                </div>
+              <% }) %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

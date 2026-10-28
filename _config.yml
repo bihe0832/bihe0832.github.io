@@ -1,14 +1,53 @@
-permalink: /:title.html
-paginate: 10
-markdown: kramdown
-# auto: true
-plugins: [jekyll-paginate]
+# Hexo 站点配置
+title: 子勰的博客
+subtitle: ''
+description: 屌丝程序猿，鸡血攻城狮；努力学技术，潜心做精品！
+author: 子勰
+language: zh-CN
+timezone: Asia/Shanghai
 
-kramdown:
-  input: GFM
+# URL
+url: https://blog.bihe0832.com
+root: /
+permalink: :post_title.html
+# 文章文件名格式（含日期前缀，用于从文件名推断发表日期）
+new_post_name: :year-:month-:day-:title.md
 
-# 作者信息
-author:
+# 目录
+source_dir: source
+public_dir: public
+
+# 主题
+theme: bihe0832
+
+# 分页
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# 分类/标签/归档
+category_generator:
+  per_page: 10
+tag_generator:
+  per_page: 10
+archive_generator:
+  per_page: 50
+  yearly: true
+  monthly: false
+  daily: false
+
+# 渲染
+highlight:
+  enable: true
+  line_number: true
+
+marked:
+  gfm: true
+  breaks: false
+
+# 作者信息（主题自定义字段）
+author_info:
   name: 子勰
   email: blog@bihe0832.com
   link: https://blog.bihe0832.com
@@ -16,38 +55,11 @@ author:
   tools: https://cdn.bihe0832.com/
   android: https://android.bihe0832.com/
 
-# 站点信息
-title: 子勰的博客
-description: 屌丝程序猿，鸡血攻城狮；努力学技术，潜心做精品！
-url: https://blog.bihe0832.com
-rss_url: /pages/atom.xml
+gavatar: /img/head.jpg
+favicon: /img/favicon.ico
 
-# gavatar头像及Favicon
-gavatar: /public/img/head.jpg
-favicon: /public/img/favicon.ico
-
-# disqus 设置
-disqus:
-  shortname: bihe0832
-
-# Search
-search: true
-
-# Night mode
 nightMode: true
-
-# 主题设置，自动激活某个标签
 active: 终端开发
 
-# 首页除了最新文章外显示分类
 cates:
   - 常用工具
-
-# 中文本地化
-locals:
-  tags: 标签
-  about: 写在最后
-  newest: 最新文章
-  archive: 历史文章
-  content: 本文结构
-  tools: 开发工具集
