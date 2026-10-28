@@ -26,6 +26,14 @@ layout: false
   <%- page.content %>
   <script type="text/javascript" src="/js/kityminder.core.min.js"></script>
   <script type="text/javascript">
+    // 兼容：kity 在 Paper 未 renderTo 时 node.style 为 undefined，导致 setStyle 报错
+    if (window.kity && kity.Paper && kity.Paper.prototype.setStyle) {
+      var _setStyle = kity.Paper.prototype.setStyle;
+      kity.Paper.prototype.setStyle = function () {
+        try { return _setStyle.apply(this, arguments); }
+        catch (e) { return this; }
+      };
+    }
     var km = window.km = new kityminder.Minder();
     km.setup('#minder-view');
     km.disable();
