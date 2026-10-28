@@ -36,8 +36,9 @@
       if (hideBox) hideBox.classList.toggle('show');
       if (shangBox) shangBox.classList.toggle('show');
     }
-    document.addEventListener('DOMContentLoaded', function(){
-      var hideBox = document.querySelector('.hide_box');
-      if (hideBox) hideBox.addEventListener('click', dashangToggle);
+    document.addEventListener('click', function(e){
+      if (e.target.classList && e.target.classList.contains('hide_box')) {
+        dashangToggle();
+      }
     });
 </script>

@@ -67,6 +67,13 @@
           matches.push({ name: names[i], url: urls[i] });
         }
       }
+      if (matches.length === 0) {
+        var empty = document.createElement('div');
+        empty.className = 'cb-search-empty';
+        empty.textContent = '无匹配结果';
+        dropdown.appendChild(empty);
+        return;
+      }
       matches.forEach(function (m) {
         var div = document.createElement('div');
         div.className = 'cb-search-item';

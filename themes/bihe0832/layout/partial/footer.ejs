@@ -2,33 +2,36 @@
 .cb-search-tool strong { font-weight: bolder; color: red; }
 .cb-search-dropdown {
   position: fixed;
-  top: 100px;
+  top: 96px;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
-  max-width: 600px;
+  max-width: 640px;
   max-height: 60vh;
   overflow-y: auto;
   z-index: 10000;
   background: #fff;
-  border-radius: 4px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  border-radius: 6px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.35);
 }
 .cb-search-item {
-  padding: 12px 16px;
-  border-bottom: 1px solid #eee;
+  padding: 13px 18px;
+  border-bottom: 1px solid #f0f0f0;
   cursor: pointer;
   font-size: 14px;
-  color: #333;
+  color: #444;
+  line-height: 1.5;
 }
+.cb-search-item:last-child { border-bottom: none; }
 .cb-search-item:hover { background: #18bc9c; color: #fff; }
+.cb-search-empty { padding: 20px; text-align: center; color: #999; }
 </style>
 
 <div style="position:fixed;right:20px;top:10px;">
   <button id="nav_btn" class="btn btn-primary">
     <i class="fa fa-2x fa-navicon"></i>
   </button>
-  <button id="nav_btn" class="btn btn-primary">
+  <button id="search_btn" class="btn btn-primary">
     <i class="fa fa-2x fa-search" id="cb-search-btn"></i>
   </button>
 </div>

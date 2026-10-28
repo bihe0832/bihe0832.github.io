@@ -13,6 +13,7 @@
         <% site.categories.each(function(category) { %>
           <li><a href="#<%= category.name %>" data-toggle="tab"><%= category.name %></a></li>
         <% }) %>
+        <li><a href="#tags" data-toggle="tab"><%= theme.locals.tags %></a></li>
         <li><a class="pjaxlink" href="/archives/"><%= theme.locals.archive %></a></li>
         <li><a class="pjaxlink" href="/about/"><%= theme.locals.about %></a></li>
       </ul>

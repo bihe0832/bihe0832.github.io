@@ -123,24 +123,6 @@ function setupPjax() {
 
 /* 初始化 */
 document.addEventListener('DOMContentLoaded', function () {
-  var navBtn = $('#nav_btn');
-  if (navBtn) {
-    navBtn.addEventListener('click', function () {
-      var clicked = navBtn.getAttribute('data-clicked') === 'true';
-      nav_click(clicked);
-      navBtn.setAttribute('data-clicked', String(!clicked));
-    });
-  }
-
-  var contentBtn = $('#content_btn');
-  if (contentBtn) {
-    contentBtn.addEventListener('click', function () {
-      var clicked = contentBtn.getAttribute('data-clicked') === 'true';
-      content_click(!clicked);
-      contentBtn.setAttribute('data-clicked', String(!clicked));
-    });
-  }
-
   setupTabs();
   setupCollapse();
   setupPjax();
@@ -150,5 +132,22 @@ document.addEventListener('DOMContentLoaded', function () {
   if (window.activeTab) {
     var activeLink = document.querySelector('a[data-toggle="tab"][href="#' + window.activeTab + '"]');
     if (activeLink) activeLink.click();
+  }
+});
+
+// 事件委托（pjax 加载新内容后也能响应）
+document.addEventListener('click', function (e) {
+  var navBtn = e.target.closest('#nav_btn');
+  if (navBtn) {
+    var clicked = navBtn.getAttribute('data-clicked') === 'true';
+    nav_click(clicked);
+    navBtn.setAttribute('data-clicked', String(!clicked));
+  }
+
+  var contentBtn = e.target.closest('#content_btn');
+  if (contentBtn) {
+    var cClicked = contentBtn.getAttribute('data-clicked') === 'true';
+    content_click(!cClicked);
+    contentBtn.setAttribute('data-clicked', String(!cClicked));
   }
 });
