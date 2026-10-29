@@ -15,7 +15,7 @@ new_post_name: :year-:month-:day-:title.md
 
 # 目录
 source_dir: source
-public_dir: public
+public_dir: _site
 
 # 主题
 theme: bihe0832
