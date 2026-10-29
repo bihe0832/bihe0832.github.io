@@ -14,7 +14,7 @@ description: 一款可以获取设备应用包名、keystore、MD5、应用版�
 
 渠道SDK开发者、SDK联调同学、应用开发者的福音。
 
-更多信息可以点击链接：[https://android.bihe0832.com/doc/summary/samples.html](https://android.bihe0832.com/doc/summary/samples.html)
+更多信息可以点击链接：[https://android.bihe0832.com/doc/demo/samples.html](https://android.bihe0832.com/doc/demo/samples.html)
 
 
 ### 应用截图
