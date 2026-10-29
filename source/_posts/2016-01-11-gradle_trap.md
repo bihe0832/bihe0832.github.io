@@ -1,7 +1,7 @@
 ---
 title: Gradle Android插件使用的中那些特别注意的点
 categories: 终端开发
-tags: android gradle
+tags: [android, gradle]
 keywords: keywords
 description: desc
 ---

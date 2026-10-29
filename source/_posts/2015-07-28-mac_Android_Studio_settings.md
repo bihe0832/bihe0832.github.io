@@ -1,7 +1,7 @@
 ---
 title: iMac上Android Studio 相关设置及常见问题
 categories: 终端开发
-tags: android 工具
+tags: [android, 工具]
 keywords: Mac Android Studio 快捷键
 description: desc
 ---

@@ -1,7 +1,7 @@
 ---
 title: Google也看不下去被玩坏的悬浮窗了么？
 categories: 终端开发
-tags: android bug
+tags: [android, bug]
 keywords: Adding more than one toast window for UID at a time
 description: Adding more than one toast window for UID at a time ;Unable to add window;window android.view.ViewRootImpl; has already been added
 ---

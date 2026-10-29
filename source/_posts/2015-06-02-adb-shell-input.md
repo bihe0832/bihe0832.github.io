@@ -1,7 +1,7 @@
 ---
 title: ADB命令系列之 adb shell input（Android模拟输入）简单总结
 categories: 终端开发
-tags: android adb
+tags: [android, adb]
 keywords: adb shell input keyevent text
 description: 最近开发一个新的接口，在调试的时候要手动输入蛮多参数，关键是参数又都太长，就专门看了下adb有木有模拟输入，果然adb shell里是有的。这样以后开发调试、自动化测试等就更加方便了。
 ---

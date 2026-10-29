@@ -1,7 +1,7 @@
 ---
 title: 如何使用Eclipse开发可执行Jar程序，并生成混淆过的jar程序
 categories: 终端开发
-tags: android java 工具
+tags: [android, java, 工具]
 keywords: keywords
 description: desc
 ---

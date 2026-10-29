@@ -1,7 +1,7 @@
 ---
 title: H5页面通过指定Schema拉起Android应用
 categories: 终端开发
-tags: android schema 
+tags: [android, schema]
 keywords: android schema h5 web 
 description: 在终端开发中，经常会遇到Web页面与终端联动的需求，因此基本上终端都会添加schema支持。终端测试总是很方便，但是一旦和H5结合，尤其H5的页面还没开发好的时候，联动测试就比较麻烦。最近就顺手撸了一个工具，一劳永逸。这里不介绍终端页面如何添加schema支持。
 ---

@@ -1,7 +1,7 @@
 ---
 title: Instrumentation框架介绍-Android自动化测试系列（三）
 categories: 终端开发
-tags: android 测试
+tags: [android, 测试]
 keywords: Instrumentation Activity Manager manifest TestCase ActivityTestCase  SyncBaseInstrumentation  SingleLaunchActivityTestCase ActivityUnitTestCase SyncBaseInstrumentation ActivityInstrumentationTestCase2 TestRunner InstrumentationTestRunner
 description: 这篇里面主要介绍一下Instrumentation框架以及其实现原理、相关的工具类以及驱动类，介绍一下框架中主要的组成部分。
 ---

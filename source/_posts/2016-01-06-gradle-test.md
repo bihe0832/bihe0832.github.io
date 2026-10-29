@@ -1,7 +1,7 @@
 ---
 title: 基于Android Studio使用gradle构建包含jni以及so的构建实例
 categories: 终端开发
-tags: android gradle 工具
+tags: [android, gradle, 工具]
 keywords: keywords
 description: desc
 ---

@@ -1,7 +1,7 @@
 ---
 title: macOS（Sierra 10.12）上Android源码（AOSP）的下载、编译与导入到Android Studio
 categories: 终端开发
-tags: mac android 
+tags: [mac, android]
 keywords: AOSP Sierra 10.12.1 MacOSX-SDK MacPorts Repo aosp_arm-eng 
 description: 本人使用macOS(Sierra 10.12.1)在本地checkout出AOSP(7.1.1)并编译导入Android Studio的完整过程
 ---

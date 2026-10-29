@@ -1,7 +1,7 @@
 ---
 title: iMac搭建jekyll本地环境
 categories: 开发工具
-tags: jekyll ruby
+tags: [jekyll, ruby]
 keywords: jekyll ruby
 description: 每次更新机器的时候都因为iMac默认的Ruby导致搭建本地的jekyll环境格外麻烦，之前都是零零散散的总结，这次彻底总结一下正确的步骤
 ---

@@ -1,7 +1,7 @@
 ---
 title: Android Log的那些坑…………
 categories: 终端开发
-tags: android log
+tags: [android, log]
 keywords: android log 
 description: 测试遇到的android log中遇到的一些边界值
 ---

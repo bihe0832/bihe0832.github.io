@@ -1,7 +1,7 @@
 ---
 title: Linux & MacOS中一些常用命令备忘
 categories: 开发工具
-tags: 常用工具 mac
+tags: [常用工具, mac]
 keywords: xargs find kill crontab chmod chown pbcopy pbpaste open screencapture lsof 
 description: 一些开发中经常要敲的命令，备忘一下懒得经常敲
 recommand: true

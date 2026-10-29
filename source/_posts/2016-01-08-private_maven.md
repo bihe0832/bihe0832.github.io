@@ -1,7 +1,7 @@
 ---
 title: iMac（OS X）搭建私有maven仓库，提供Nexus Responsitory镜像
 categories: 开发工具
-tags: android iMac 工具
+tags: [android, iMac, 工具]
 keywords: android iMac 工具
 description: 在iMac机器上部署一套私有maven仓库代理
 ---

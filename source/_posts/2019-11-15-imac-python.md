@@ -1,7 +1,7 @@
 ---
 title: iMac上安装Python2.7 和 Python3
 categories: 开发工具
-tags: iMac 
+tags: [iMac]
 keywords: iMac Python 2.7 Python Python3
 description: 在日常开发中有时候需要在本地用python做一些测试，iMac自带的python为2.7 而且版本比较老，发现升级比较麻烦，最后就用brew重新安装了，这里汇总整理一下
 ---

@@ -9,7 +9,7 @@ timezone: Asia/Shanghai
 # URL
 url: https://blog.bihe0832.com
 root: /
-permalink: :post_title.html
+permalink: :slug.html
 # 文章文件名格式（含日期前缀，用于从文件名推断发表日期）
 new_post_name: :year-:month-:day-:title.md
 

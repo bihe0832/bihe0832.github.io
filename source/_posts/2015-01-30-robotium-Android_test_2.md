@@ -1,7 +1,7 @@
 ---
 title: Robotium二三事-Android自动化测试系列（二）
 categories: 终端开发
-tags: Android 测试
+tags: [Android, 测试]
 keywords: clickOnView clickOnText scrollToSide getCurrentActivity clearEditText enterText setText sleep  hideSoftKeyboard takeScreenshot goBack 反射 基于APK测试 生命周期 堆栈
 description: 这篇里面主要记录一些个人在使用Robotium的时候遇到的问题，以及解决的过程。也会留下一些尚未解决的问题，后续慢慢整理。
 ---

@@ -1,7 +1,7 @@
 ---
 title: Robotium介绍-Android自动化测试系列（一）
 categories: 终端开发
-tags: Android 测试
+tags: [Android, 测试]
 keywords: Monkey MonkeyRunner ActivityInstrumentationTestCase2 单元测试 Robotium 基于UI 黑盒 Junit
 description: Robotium是一个基于模拟点击事件的用于进行黑盒测试的android测试的开源项目:[http://code.google.com/p/robotium/](http://code.google.com/p/robotium/)。不用做太多介绍哈。
 ---

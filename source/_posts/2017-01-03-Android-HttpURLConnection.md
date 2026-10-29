@@ -1,7 +1,7 @@
 ---
 title: 封装HttpURLConnection实现的简单的网络请求库
 categories: 终端开发
-tags: android 工具
+tags: [android, 工具]
 keywords: keywords
 description: desc
 ---

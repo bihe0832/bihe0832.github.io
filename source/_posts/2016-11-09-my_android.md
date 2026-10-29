@@ -1,7 +1,7 @@
 ---
 title: Android开发常用工具资源
 categories: 终端开发
-tags: 常用工具 android
+tags: [常用工具, android]
 keywords: 前端资源 通用 github
 description: desc
 recommand: true

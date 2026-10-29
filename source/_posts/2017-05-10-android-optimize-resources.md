@@ -1,7 +1,7 @@
 ---
 title: Android安装包精简系列之资源精简
 categories: 终端开发
-tags: Android apk
+tags: [Android, apk]
 keywords: Android 安装包 精简
 description: desc
 ---

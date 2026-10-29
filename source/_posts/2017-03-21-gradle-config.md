@@ -1,7 +1,7 @@
 ---
 title: Android编译编译速度提升
 categories: 终端开发
-tags: gradle 
+tags: [gradle]
 keywords: gradle jvmargs daemon parallel configureondemand javaMaxHeapSize
 description: desc
 ---

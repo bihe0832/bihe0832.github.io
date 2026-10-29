@@ -1,7 +1,7 @@
 ---
 title: Android的APK Signature Scheme v2签名及一款基于Java环境的校验工具介绍
 categories: 终端开发
-tags: android 
+tags: [android]
 keywords: APK Signature Scheme v2 v2SigningEnabled false
 description: desc
 ---

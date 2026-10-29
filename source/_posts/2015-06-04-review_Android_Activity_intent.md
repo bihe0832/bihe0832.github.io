@@ -1,7 +1,7 @@
 ---
 title: 再看Android官方文档之Activity&Intent
 categories: 终端开发
-tags: android 
+tags: [android]
 keywords: Activity onCreate OnDestroy onPause
 description: Activity
 ---

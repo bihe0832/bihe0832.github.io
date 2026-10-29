@@ -1,7 +1,7 @@
 ---
 title: 制作终端产品演示的gif
 categories: 终端开发
-tags: 工具 Android adb
+tags: [工具, Android, adb]
 keywords: 工具 Android adb gif imac mac macOS androidtool screenrecord PicGif GIF Brewery ezgif
 description: 作为终端开发，经常需要展示项目进度或者UI的效果，此时最好的方法自然是提供安装包来亲自体验，然而有些时候有些场合做一些产品展示时这种形式并不适用，提供一个简单的视频或者动图是一种更好的演示方法。最近正好想做一些演示的gif，在网上查阅了很多录屏的方法，但都不是很好用，因此专门整理了一下制作终端产品演示的gif的工具和方法。
 ---

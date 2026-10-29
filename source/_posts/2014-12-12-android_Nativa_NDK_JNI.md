@@ -1,7 +1,7 @@
 ---
 title: Android中关于Nativa编译（NDK、JNI）的一些问题
 categories: 终端开发
-tags: Android NDK jni
+tags: [Android, NDK, jni]
 keywords: Android Native jni ndk cdt
 description: SDK的C++接口由JNI实现，使用SDK的C++接口的游戏在集成时，SDK直接向游戏游戏提供源码编译，因此需要使用NDK完成编译。在编译和环境配置过程中经常会遇到一些问题，在此总结一下。
 ---

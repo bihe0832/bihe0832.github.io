@@ -1,7 +1,7 @@
 ---
 title: Experimental Plugin User Guide(From Android Tools Project Site)
 categories: 终端开发
-tags: android gradle 工具
+tags: [android, gradle, 工具]
 keywords: keywords
 description: desc
 ---

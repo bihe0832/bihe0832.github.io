@@ -1,7 +1,7 @@
 ---
 title: ant常见错误解决方案
 categories: 终端开发
-tags: android ant 工具
+tags: [android, ant, 工具]
 keywords: ant gradle 
 description: 
 ---

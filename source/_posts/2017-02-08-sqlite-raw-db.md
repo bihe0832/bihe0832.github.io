@@ -1,7 +1,7 @@
 ---
 title: 如何随apk一起打包并使用SQLite
 categories: 终端开发
-tags: androir sqlite
+tags: [androir, sqlite]
 keywords: android sqlite
 description: desc
 ---

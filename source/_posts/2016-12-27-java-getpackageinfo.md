@@ -1,7 +1,7 @@
 ---
 title: 一款基于Java环境的读取应用包名、签名、是否V2签名等基本信息的工具
 categories: 终端开发
-tags: android 工具
+tags: [android, 工具]
 keywords: Java Android 包名 签名
 description: desc
 ---

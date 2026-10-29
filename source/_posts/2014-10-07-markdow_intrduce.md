@@ -1,7 +1,7 @@
 ---
 title: Markdown语法简介
 categories: 开发工具
-tags: Markdown 资源
+tags: [Markdown, 资源]
 keywords: markdown
 description: Markdown —— 基于HTML 轻量 易读 标记语言
 ---

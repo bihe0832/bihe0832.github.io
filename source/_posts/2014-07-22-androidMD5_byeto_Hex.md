@@ -1,7 +1,7 @@
 ---
 title: Android MD5后 bye数组转化为Hex字符串的坑（记一次为女神排忧解难的经历）
 categories: 终端开发
-tags: android md5 bug
+tags: [android, md5, bug]
 keywords: android md5 hex byte
 description: 在java中：**一个byte是8位，而16进制是4位，所以要把一个bye转化为hex的时候，其高四位和低四位分别转化为为2个16进制字符。当高四位为0时，转化完要用‘0’补齐。**
 ---

@@ -1,7 +1,7 @@
 ---
 title: git常用命令整理（已包括branch、tag等持续更新~）
 categories: 开发工具
-tags: git 常用工具
+tags: [git, 常用工具]
 keywords: git branch tag origin config user.name user.email --global --system worktree
 description: 总遇到使用git的时候需要敲一些不常用的命令，每次敲的时候都要搜索引擎查一次很麻烦，因此专门整理一篇文章.
 recommand: true

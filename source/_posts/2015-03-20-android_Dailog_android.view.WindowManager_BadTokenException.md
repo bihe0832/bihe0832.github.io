@@ -1,7 +1,7 @@
 ---
 title: android.view.WindowManager$BadTokenException,Unable to add window
 categories: 终端开发
-tags: android bug
+tags: [android, bug]
 keywords: android.view.WindowManager$BadTokenException,Unable to add window dialog
 description: 通过谷歌和stackFlow找到报错在new AlertDialog.Builder(mcontext)中，虽然这里的参数是Context，但我们不能使用getApplicationContext()获得的Context，而必须使用Activity的上下文。
 ---

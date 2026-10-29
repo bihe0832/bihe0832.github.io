@@ -1,7 +1,7 @@
 ---
 title: Linux 搭建 Android 编译构建环境
 categories: 终端开发
-tags: android linux 
+tags: [android, linux]
 keywords: keywords
 description: 在腾讯云的服务器搭建一套 Android 编译环境
 recommand: true

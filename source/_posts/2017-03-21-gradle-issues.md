@@ -1,7 +1,7 @@
 ---
 title: Android编译常见错误解决
 categories: 终端开发
-tags: gradle android
+tags: [gradle, android]
 keywords: gradle jvmargs daemon parallel configureondemand javaMaxHeapSize android 
 description: 在使用Android Studio开发过程中，经常会遇到一些gradle相关的问题，本篇文章将用于收集整理这些问题，免得以后再去google。
 ---

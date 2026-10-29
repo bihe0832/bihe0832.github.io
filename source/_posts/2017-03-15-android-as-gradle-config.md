@@ -1,7 +1,7 @@
 ---
 title: 终端基于gradle的开源项目运行环境配置指引
 categories: 终端开发
-tags: gradle 工具
+tags: [gradle, 工具]
 keywords: keywords
 description: desc
 ---

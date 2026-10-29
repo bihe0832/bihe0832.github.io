@@ -1,7 +1,7 @@
 ---
 title: iMac上 Xcode 相关设置及常见问题
 categories: 终端开发
-tags: iOS 工具
+tags: [iOS, 工具]
 keywords: iMac Xcode 快捷键
 description: desc
 ---

@@ -1,7 +1,7 @@
 ---
 title: Android签名校验机制（数字证书）及命令行获取 keystore 公钥等信息
 categories: 终端开发
-tags: android 签名 工具
+tags: [android, 签名, 工具]
 keywords: Android 签名 signature keystore keytool jarsigner 公钥 私钥 MD5
 description: 在Android 系统中，所有安装到系统的应用程序都必有一个数字证书，此数字证书用于标识应用程序的作者和在应用程序之间建立信任关系,如果一个permission的protectionLevel为signature，那么就只有那些跟该permission所在的程序拥有同一个数字证书的应用程序才能取得该权限。
 ---

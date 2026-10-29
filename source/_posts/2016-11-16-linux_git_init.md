@@ -1,7 +1,7 @@
 ---
 title: 在Linux服务器（ubuntu 16）上部署并配置git 
 categories: 后台开发
-tags: web git 工具
+tags: [web, git, 工具]
 keywords: ubuntu git id_rsa.pub  ssh authorized_keys passwd /usr/bin/git-shell 22
 description: 在Linux服务器（ubuntu 16）上部署并配置git
 ---

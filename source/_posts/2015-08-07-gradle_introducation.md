@@ -1,7 +1,7 @@
 ---
 title: Gradle介绍
 categories: 终端开发
-tags: android gradle 工具
+tags: [android, gradle, 工具]
 keywords: keywords
 description: desc
 ---

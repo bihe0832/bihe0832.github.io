@@ -4,9 +4,10 @@
     <div class="panel panel-primary">
       <div class="panel-heading"><%= theme.locals.newest %></div>
       <% page.posts.each(function(post) { %>
+        <% if (post.no_date) return; %>
         <a href="<%= url_for(post.path) %>" class="list-group-item pjaxlink clearfix">
           <%= post.title %>
-          <% if (!post.no_date) { %><span class="badge"><%= date(post.date, 'YYYY年MM月DD日') %></span><% } %>
+          <span class="badge"><%= date(post.date, 'YYYY年MM月DD日') %></span>
         </a>
       <% }) %>
     </div>

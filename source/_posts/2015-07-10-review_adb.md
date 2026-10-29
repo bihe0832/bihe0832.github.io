@@ -1,7 +1,7 @@
 ---
 title: ADB命令系列之再说ADB
 categories: 终端开发
-tags: android adb
+tags: [android, adb]
 keywords: adb
 description: desc
 ---

@@ -1,7 +1,7 @@
 ---
 title: 再看Android官方文档之建立第一个APP
 categories: 终端开发
-tags: android 学习
+tags: [android, 学习]
 keywords: build gradle gradlew android
 description: desc
 ---

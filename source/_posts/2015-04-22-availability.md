@@ -1,7 +1,7 @@
 ---
 title: 我理解的高可用
 categories: 经验总结
-tags: 经验 SDK
+tags: [经验, SDK]
 keywords: keywords
 description: desc
 ---

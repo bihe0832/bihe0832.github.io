@@ -1,7 +1,7 @@
 ---
 title: Android开发中遇到的那些坑
 categories: 终端开发
-tags: 终端 bug
+tags: [终端, bug]
 keywords: Android 机型
 description: 在这里汇总下MSDK开发以来遇到的一些游戏的坑
 ---

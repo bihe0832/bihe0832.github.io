@@ -1,7 +1,7 @@
 ---
 title: 基于Instrumentation框架的自动化测试 - Android自动化测试系列（四）
 categories: 终端开发
-tags: android  测试
+tags: [android, 测试]
 keywords: Instrumentation Android TestCase JUnit setUp tearDown
 description: 这篇里面主要介绍一下使用Instrumentation框架来进行自动化测试时的测试工程的结构和组成，以及运行自动化测试时的执行原理。
 ---

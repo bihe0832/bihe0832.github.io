@@ -1,7 +1,7 @@
 ---
 title: Android学习之路
 categories: 终端开发
-tags: android 学习资源
+tags: [android, 学习资源]
 keywords: android 入门
 description: 最近看到的一篇极好的关于Android入门的系列文章，回头在看，温故而知新！
 ---

@@ -1,7 +1,7 @@
 ---
 title: Java参数引用传递引发的惨案（又一次Java的String的“非对象”特性的踩坑经历）
 categories: 终端开发
-tags: android bug
+tags: [android, bug]
 keywords: Java参数引用传递引发的惨案（又一次Java的String的“非对象”特性的踩坑经历）
 description: Java参数引用传递引发的惨案（又一次Java的String的“非对象”特性的踩坑经历）
 ---

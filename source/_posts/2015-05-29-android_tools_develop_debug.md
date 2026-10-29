@@ -1,7 +1,7 @@
 ---
 title: Android开发调试常用工具
 categories: 终端开发
-tags: 调试 android
+tags: [调试, android]
 keywords: Android开发调试常用工具 apktool dex2jar aapt ndk-stack jd-gui
 description: desc
 recommand: true
