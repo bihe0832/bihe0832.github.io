@@ -46,7 +46,11 @@ function content_effects() {
       var tag = parseInt(header.tagName.substr(1), 10);
       var div = document.createElement('div');
       div.style.marginLeft = (15 * (tag - 1)) + 'px';
-      div.innerHTML = "<a id='link" + i + "' href='#title" + i + "'>" + header.innerHTML + "</a>";
+      var link = document.createElement('a');
+      link.id = 'link' + i;
+      link.href = '#title' + i;
+      link.textContent = header.textContent;
+      div.appendChild(link);
       nav.appendChild(div);
     });
     $all('#content img').forEach(function (img) {
