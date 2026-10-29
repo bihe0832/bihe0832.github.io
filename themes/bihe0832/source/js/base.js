@@ -150,4 +150,15 @@ document.addEventListener('click', function (e) {
     content_click(!cClicked);
     contentBtn.setAttribute('data-clicked', String(!cClicked));
   }
+
+  var tocLink = e.target.closest('#nav a');
+  if (tocLink) {
+    e.preventDefault();
+    var id = (tocLink.getAttribute('href') || '').replace('#', '');
+    var target = document.getElementById(id);
+    var aside3 = $('.aside3');
+    if (target && aside3) {
+      aside3.scrollTop += (target.getBoundingClientRect().top - aside3.getBoundingClientRect().top);
+    }
+  }
 });

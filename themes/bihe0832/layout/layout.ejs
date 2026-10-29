@@ -18,15 +18,21 @@
   </div>
   <%- partial('partial/footer') %>
   <script type="text/javascript" charset="UTF-8">
-  	var _mtac = {};
-  	(function() {
-  		var mta = document.createElement("script");
-  		mta.src = "//pingjs.qq.com/h5/stats.js?v2.0.4";
-  		mta.setAttribute("name", "MTAH5");
-  		mta.setAttribute("sid", "500724774");
-  		var s = document.getElementsByTagName("script")[0];
-  		s.parentNode.insertBefore(mta, s);
-  	})();
+    (function () {
+      var STATS_URL = 'https://stats.bihe0832.com/stats';
+      var KEY = 'bihe0832_blog_vid';
+      var vid = localStorage.getItem(KEY);
+      if (!vid) {
+        vid = (window.crypto && crypto.randomUUID && crypto.randomUUID()) ||
+          ('vid-' + Date.now() + '-' + Math.random().toString(36).slice(2));
+        localStorage.setItem(KEY, vid);
+      }
+      fetch(STATS_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ page: location.href, vid: vid, ref: document.referrer })
+      }).catch(function () {});
+    })();
   </script>
 </body>
 </html>
