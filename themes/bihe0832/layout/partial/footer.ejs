@@ -35,7 +35,7 @@
     <i class="fa fa-2x fa-search" id="cb-search-btn"></i>
   </button>
 </div>
-<script type="text/javascript" src="/js/base.js"></script>
+<script type="text/javascript" src="/js/base.js?v=<%= asset_version('js/base.js') %>"></script>
 <script>
   window.activeTab = <%- JSON.stringify((page.categories && page.categories.length) ? page.categories.data[0].name : (config.active ? config.active : '终端开发')) %>;
 </script>
@@ -53,4 +53,4 @@
 </div>
 
 <link rel="stylesheet" href="/search/css/cb-search.css">
-<script src="/search/js/cb-search.js"></script>
+<script src="/search/js/cb-search.js?v=<%= asset_version('search/js/cb-search.js') %>"></script>
